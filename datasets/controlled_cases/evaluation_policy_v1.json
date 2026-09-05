@@ -1,0 +1,153 @@
+{
+  "evaluation_policy_id": "rag_reliability_eval_policy_v1",
+  "version": "1.0",
+  "frozen_on": "2026-09-05",
+  "canonical_case_count": 60,
+  "role_counts": {
+    "evaluation_development_case": 20,
+    "intervention_tuning_case": 20,
+    "held_out_release_case": 20
+  },
+  "per_role_source_family_quota": {
+    "issues": 4,
+    "pull_requests": 4,
+    "repositories_and_repository_webhooks": 4,
+    "actions": 4,
+    "cross_cutting_rest_guidance": 4
+  },
+  "per_role_scenario_class_quota": {
+    "current_single_source_answerable": 4,
+    "current_multi_evidence_answerable": 4,
+    "version_freshness_disambiguation": 4,
+    "authority_scope_disambiguation": 4,
+    "must_refuse_insufficient_or_conflicting_evidence": 4
+  },
+  "response_modes": [
+    "answer",
+    "qualified_answer",
+    "refuse"
+  ],
+  "held_out_execution": {
+    "paired_baseline_and_final": true,
+    "inspect_outcomes_only_after_both_batches_complete": true,
+    "selective_semantic_reruns_allowed": false,
+    "change_after_outcome_requires_new_suite_identity": true
+  },
+  "runtime_forbidden_evaluator_fields": [
+    "gold_fact_rubric",
+    "required_fact_ids",
+    "required_source_ids",
+    "forbidden_source_ids",
+    "expected_response_mode",
+    "must_refuse_reason",
+    "held_out_scoring_outcomes",
+    "post_run_failure_labels",
+    "scoring_notes"
+  ],
+  "scorers": [
+    {
+      "scorer_id": "retrieval_gold_recall_at_k_v1",
+      "layer": "retrieval",
+      "method": "deterministic",
+      "primary_metric": "gold_evidence_recall_at_k"
+    },
+    {
+      "scorer_id": "required_source_retrieval_v1",
+      "layer": "retrieval",
+      "method": "deterministic",
+      "primary_metric": "required_source_retrieval_rate"
+    },
+    {
+      "scorer_id": "context_gold_inclusion_v1",
+      "layer": "context",
+      "method": "deterministic",
+      "primary_metric": "gold_evidence_inclusion_rate"
+    },
+    {
+      "scorer_id": "authority_source_state_compliance_v1",
+      "layer": "authority",
+      "method": "deterministic",
+      "primary_metric": "authority_source_state_violation_rate"
+    },
+    {
+      "scorer_id": "citation_reference_validity_v1",
+      "layer": "citation",
+      "method": "deterministic",
+      "primary_metric": "citation_reference_validity_rate"
+    },
+    {
+      "scorer_id": "refusal_behavior_v1",
+      "layer": "refusal",
+      "method": "deterministic",
+      "derived_metrics": [
+        "unsafe_answer_rate",
+        "safe_refusal_precision",
+        "false_refusal_rate"
+      ]
+    },
+    {
+      "scorer_id": "trace_completeness_v1",
+      "layer": "evidence",
+      "method": "deterministic",
+      "primary_metric": "trace_completeness"
+    },
+    {
+      "scorer_id": "runtime_gold_leakage_v1",
+      "layer": "integrity",
+      "method": "deterministic",
+      "primary_metric": "evaluation_leakage_event_count"
+    },
+    {
+      "scorer_id": "answer_fact_accuracy_v1",
+      "layer": "answer",
+      "method": "semantic_judge_plus_adjudication",
+      "primary_metric": "answer_fact_accuracy"
+    },
+    {
+      "scorer_id": "required_fact_coverage_v1",
+      "layer": "answer",
+      "method": "semantic_judge_plus_adjudication",
+      "primary_metric": "required_fact_coverage"
+    },
+    {
+      "scorer_id": "claim_support_v1",
+      "layer": "citation",
+      "method": "semantic_judge_plus_adjudication",
+      "derived_metrics": [
+        "claim_support_rate",
+        "citation_precision",
+        "citation_recall",
+        "citation_missing_rate",
+        "unsupported_material_claim_rate"
+      ]
+    }
+  ],
+  "semantic_judge_policy": {
+    "paid_correctness_dependency_allowed": false,
+    "structured_output_required": true,
+    "invalid_output": "unscorable",
+    "held_out_human_review_count": 20,
+    "preserve_raw_and_adjudicated_scores": true
+  },
+  "threshold_freeze": {
+    "calibration_sources": [
+      "evaluation_development_case",
+      "intervention_tuning_case"
+    ],
+    "held_out_results_allowed_for_calibration": false,
+    "must_freeze_before_held_out": [
+      "scorer_registry",
+      "held_out_manifest",
+      "baseline_identity",
+      "final_intervention_identity",
+      "numeric_thresholds",
+      "release_preregistration"
+    ],
+    "post_held_out_change_classification": "evaluation_integrity_violation"
+  },
+  "reporting": {
+    "case_counts_required_with_rates": true,
+    "single_aggregate_score_can_determine_release": false,
+    "per_case_results_preserved": true
+  }
+}

@@ -14,9 +14,9 @@ implementation must not invent a value.
 | 4 | Exact historical comparison snapshot / version | SETTLED | Same frozen OpenAPI repository snapshot; comparison API `2022-11-28` |
 | 5 | Extraction and normalization method | SETTLED | Commit/version-pinned acquisition; fail-closed authored-Markdown normalization; deterministic per-operation OpenAPI normalization |
 | 6 | Source licensing and attribution manifest format | SETTLED | GitHub Docs content `CC-BY-4.0`; REST API description `MIT`; source ledger JSONL + frozen snapshot JSON |
-| 7 | Exact 60-case split: development / tuning / held-out | OPEN | Freeze in evaluation constitution |
-| 8 | Scorer definitions and evidence requirements | OPEN | Freeze in evaluation constitution |
-| 9 | Threshold-freeze procedure | OPEN | Freeze in evaluation constitution / release policy |
+| 7 | Exact 60-case split: development / tuning / held-out | SETTLED | Evaluation Constitution v1 + ADR-0003: 20 development / 20 tuning / 20 held-out |
+| 8 | Scorer definitions and evidence requirements | SETTLED | Layered deterministic + semantic scorer registry frozen in Evaluation Constitution v1 and `evaluation_policy_v1.json` |
+| 9 | Threshold-freeze procedure | SETTLED | Calibrate on development/tuning only; freeze scorer/suite/config/threshold identities before paired held-out execution |
 | 10 | Initial baseline configuration | OPEN | Freeze before baseline characterization |
 | 11 | Intervention-ablation order | PARTIALLY_SETTLED | PRD requires bounded B0/I1/I2/I3/I4/IF-style ladder; exact final ladder remains open |
 | 12 | Resource telemetry implementation | OPEN | Freeze before load implementation |
