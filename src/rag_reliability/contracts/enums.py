@@ -1,4 +1,4 @@
-"""Frozen enum values derived from Phase 0 governance."""
+"""Frozen enum values derived from project governance and runtime boundary design."""
 
 from enum import StrEnum
 
@@ -159,3 +159,32 @@ class ReleaseVerdict(StrEnum):
     PASS = "PASS"
     CONDITIONAL_PASS = "CONDITIONAL_PASS"
     FAIL = "FAIL"
+
+
+class RuntimeOutcomeStatus(StrEnum):
+    ANSWER = "answer"
+    REFUSAL = "refusal"
+    ERROR = "error"
+
+
+class RefusalReason(StrEnum):
+    INSUFFICIENT_EVIDENCE = "insufficient_evidence"
+    CONFLICTING_EVIDENCE = "conflicting_evidence"
+    UNSUPPORTED_CITATION = "unsupported_citation"
+    DEPENDENCY_UNAVAILABLE = "dependency_unavailable"
+    POLICY_BLOCKED = "policy_blocked"
+
+
+class RuntimeErrorCode(StrEnum):
+    RETRIEVAL_ERROR = "retrieval_error"
+    SOURCE_POLICY_ERROR = "source_policy_error"
+    CONTEXT_BUILD_ERROR = "context_build_error"
+    PROVIDER_TIMEOUT = "provider_timeout"
+    PROVIDER_MALFORMED_RESPONSE = "provider_malformed_response"
+    CITATION_VALIDATION_ERROR = "citation_validation_error"
+
+
+class CitationValidationStatus(StrEnum):
+    SUPPORTED = "supported"
+    UNSUPPORTED = "unsupported"
+    MISSING = "missing"
