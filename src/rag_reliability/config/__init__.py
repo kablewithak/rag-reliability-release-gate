@@ -1,5 +1,6 @@
-"""Deterministic runtime configuration identity."""
+"""Deterministic runtime configuration identity and release custody."""
 
+from rag_reliability.config.custody import ReleaseConfigurationCustody
 from rag_reliability.config.identity import (
     CitationConfig,
     ContextConfig,
@@ -8,6 +9,7 @@ from rag_reliability.config.identity import (
     RerankerConfig,
     RetrievalConfig,
     RuntimeConfiguration,
+    RuntimeConfigurationBinding,
     SourcePolicyConfig,
 )
 
@@ -16,8 +18,10 @@ __all__ = [
     "ContextConfig",
     "FallbackConfig",
     "ProviderConfig",
+    "ReleaseConfigurationCustody",
     "RerankerConfig",
     "RetrievalConfig",
     "RuntimeConfiguration",
+    "RuntimeConfigurationBinding",
     "SourcePolicyConfig",
 ]

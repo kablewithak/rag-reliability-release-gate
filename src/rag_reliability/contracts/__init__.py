@@ -1,5 +1,6 @@
 """Typed contracts for the RAG Reliability Release Gate."""
 
+from rag_reliability.contracts.base import NotApplicableIdentity
 from rag_reliability.contracts.chaos import ChaosExperimentContract
 from rag_reliability.contracts.corpus import RealSourceRecord, SyntheticChaosOverlay
 from rag_reliability.contracts.evaluation import (
@@ -48,6 +49,7 @@ __all__ = [
     "ContextBundle",
     "ErrorOutcome",
     "EvaluationCase",
+    "NotApplicableIdentity",
     "OrchestrationCaseView",
     "ProviderAdapter",
     "ProviderRequest",

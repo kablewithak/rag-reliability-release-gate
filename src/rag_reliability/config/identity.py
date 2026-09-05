@@ -5,11 +5,16 @@ from hashlib import sha256
 
 from pydantic import Field
 
-from rag_reliability.contracts.base import ContractModel, NonEmptyStr, Sha256
+from rag_reliability.contracts.base import (
+    ContractModel,
+    NonEmptyStr,
+    NotApplicableIdentity,
+    Sha256,
+)
 
 
 class CanonicalConfigModel(ContractModel):
-    """Configuration model with deterministic canonical serialization and identity."""
+    """Configuration model with deterministic serialization and identity."""
 
     def canonical_json(self) -> str:
         payload = self.model_dump(mode="json")
@@ -63,6 +68,14 @@ class FallbackConfig(CanonicalConfigModel):
     allow_qualified_answer: bool
 
 
+class RuntimeConfigurationBinding(ContractModel):
+    """Release-facing hashes derived from one runtime configuration."""
+
+    runtime_configuration_hash: Sha256
+    retrieval_configuration_hash: Sha256
+    reranker_configuration_hash: Sha256 | NotApplicableIdentity
+
+
 class RuntimeConfiguration(CanonicalConfigModel):
     schema_version: NonEmptyStr
     retrieval: RetrievalConfig
@@ -72,3 +85,17 @@ class RuntimeConfiguration(CanonicalConfigModel):
     provider: ProviderConfig
     citation: CitationConfig
     fallback: FallbackConfig
+
+    def release_binding(self) -> RuntimeConfigurationBinding:
+        if self.reranker is None:
+            reranker_identity: Sha256 | NotApplicableIdentity = (
+                NotApplicableIdentity(reason="reranker disabled in runtime configuration")
+            )
+        else:
+            reranker_identity = self.reranker.configuration_id
+
+        return RuntimeConfigurationBinding(
+            runtime_configuration_hash=self.configuration_id,
+            retrieval_configuration_hash=self.retrieval.configuration_id,
+            reranker_configuration_hash=reranker_identity,
+        )

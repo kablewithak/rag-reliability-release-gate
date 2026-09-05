@@ -1,6 +1,7 @@
 import pytest
 from pydantic import ValidationError
 
+from rag_reliability.contracts.base import NotApplicableIdentity
 from rag_reliability.contracts.chaos import ChaosExperimentContract
 from rag_reliability.contracts.enums import (
     BlastRadiusTarget,
@@ -12,6 +13,37 @@ from rag_reliability.contracts.release import ReleaseIdentity
 
 SHA = "b" * 64
 GIT_SHA = "c" * 40
+
+
+def build_release_payload() -> dict[str, object]:
+    return {
+        "release_id": "release-1",
+        "run_id": "run-1",
+        "git_commit_sha": GIT_SHA,
+        "corpus_manifest_hash": SHA,
+        "chunk_configuration_hash": SHA,
+        "runtime_configuration_hash": SHA,
+        "retrieval_configuration_hash": SHA,
+        "reranker_configuration_hash": NotApplicableIdentity(
+            reason="reranker disabled for this run"
+        ),
+        "provider_or_model_identifier": "fake-replay-v1",
+        "provider_mode": "fake_replay",
+        "evaluation_suite_version": "1.0",
+        "case_role_manifest_hash": SHA,
+        "chaos_profile_manifest_hash": SHA,
+        "scorer_registry_hash": SHA,
+        "threshold_set_hash": SHA,
+        "baseline_or_intervention_id": "final-v1",
+        "execution_environment_id": "local-env-v1",
+        "load_profile_id": NotApplicableIdentity(
+            reason="load phase not applicable to this release fixture"
+        ),
+        "fault_profile_id": "CR-CLEAN",
+        "result_package_hash": SHA,
+        "sanitization_policy_version": "1.0",
+        "verdict": ReleaseVerdict.PASS,
+    }
 
 
 def test_chaos_contract_accepts_named_profile() -> None:
@@ -74,55 +106,23 @@ def test_chaos_contract_rejects_unknown_profile() -> None:
 
 
 def test_release_identity_rejects_invalid_hash() -> None:
+    payload = build_release_payload()
+    payload["corpus_manifest_hash"] = "not-a-hash"
+
     with pytest.raises(ValidationError):
-        ReleaseIdentity(
-            release_id="release-1",
-            run_id="run-1",
-            git_commit_sha=GIT_SHA,
-            corpus_manifest_hash="not-a-hash",
-            chunk_configuration_hash=SHA,
-            retrieval_configuration_hash=SHA,
-            reranker_configuration_hash=SHA,
-            provider_or_model_identifier="fake-replay-v1",
-            provider_mode="fake_replay",
-            evaluation_suite_version="1.0",
-            case_role_manifest_hash=SHA,
-            chaos_profile_manifest_hash=SHA,
-            scorer_registry_hash=SHA,
-            threshold_set_hash=SHA,
-            baseline_or_intervention_id="final-v1",
-            execution_environment_id="local-env-v1",
-            load_profile_id="not_applicable",
-            fault_profile_id="CR-CLEAN",
-            result_package_hash=SHA,
-            sanitization_policy_version="1.0",
-            verdict=ReleaseVerdict.PASS,
-        )
+        ReleaseIdentity.model_validate(payload)
+
+
+def test_release_identity_rejects_bare_not_applicable() -> None:
+    payload = build_release_payload()
+    payload["load_profile_id"] = "not_applicable"
+
+    with pytest.raises(ValidationError):
+        ReleaseIdentity.model_validate(payload)
 
 
 def test_release_identity_accepts_complete_hash_bound_identity() -> None:
-    release = ReleaseIdentity(
-        release_id="release-1",
-        run_id="run-1",
-        git_commit_sha=GIT_SHA,
-        corpus_manifest_hash=SHA,
-        chunk_configuration_hash=SHA,
-        retrieval_configuration_hash=SHA,
-        reranker_configuration_hash=SHA,
-        provider_or_model_identifier="fake-replay-v1",
-        provider_mode="fake_replay",
-        evaluation_suite_version="1.0",
-        case_role_manifest_hash=SHA,
-        chaos_profile_manifest_hash=SHA,
-        scorer_registry_hash=SHA,
-        threshold_set_hash=SHA,
-        baseline_or_intervention_id="final-v1",
-        execution_environment_id="local-env-v1",
-        load_profile_id="not_applicable",
-        fault_profile_id="CR-CLEAN",
-        result_package_hash=SHA,
-        sanitization_policy_version="1.0",
-        verdict=ReleaseVerdict.PASS,
-    )
+    release = ReleaseIdentity.model_validate(build_release_payload())
 
     assert release.verdict is ReleaseVerdict.PASS
+    assert isinstance(release.load_profile_id, NotApplicableIdentity)
