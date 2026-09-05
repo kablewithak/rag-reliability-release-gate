@@ -3,16 +3,17 @@
 **Phase:** 0 — Governance and experiment constitution  
 **Purpose:** Track the decisions that must be frozen before implementation proceeds.  
 **Rule:** A status of `SETTLED_BY_PRD` means the governing PRD already fixes the decision.
-`OPEN` means implementation must not invent a value.
+`SETTLED` means an accepted constitution/ADR freezes the decision. `OPEN` means
+implementation must not invent a value.
 
 | # | Decision | Status | Current evidence / required output |
 |---:|---|---|---|
 | 1 | Final repository name and path | SETTLED_BY_PRD | `rag-reliability-release-gate`; local path under the user's Machine Learning Workspace |
-| 2 | Exact GitHub source families | OPEN | Freeze in corpus constitution / snapshot ADR |
-| 3 | Exact current source snapshot / API version | OPEN | Freeze in snapshot ADR |
-| 4 | Exact historical comparison snapshot / version | OPEN | Freeze in snapshot ADR |
-| 5 | Extraction and normalization method | OPEN | Freeze in corpus constitution / methodology |
-| 6 | Source licensing and attribution manifest format | OPEN | Freeze in corpus constitution |
+| 2 | Exact GitHub source families | SETTLED | Corpus Constitution v1 + ADR-0002: authored cross-cutting REST guidance plus `issues`, `pull_requests`, `repositories_and_repository_webhooks`, `actions` OpenAPI families |
+| 3 | Exact current source snapshot / API version | SETTLED | `github/docs@ec3629a...`; `github/rest-api-description@3cef12e...`; target API `2026-03-10` |
+| 4 | Exact historical comparison snapshot / version | SETTLED | Same frozen OpenAPI repository snapshot; comparison API `2022-11-28` |
+| 5 | Extraction and normalization method | SETTLED | Commit/version-pinned acquisition; fail-closed authored-Markdown normalization; deterministic per-operation OpenAPI normalization |
+| 6 | Source licensing and attribution manifest format | SETTLED | GitHub Docs content `CC-BY-4.0`; REST API description `MIT`; source ledger JSONL + frozen snapshot JSON |
 | 7 | Exact 60-case split: development / tuning / held-out | OPEN | Freeze in evaluation constitution |
 | 8 | Scorer definitions and evidence requirements | OPEN | Freeze in evaluation constitution |
 | 9 | Threshold-freeze procedure | OPEN | Freeze in evaluation constitution / release policy |
