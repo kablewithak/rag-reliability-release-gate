@@ -1,0 +1,70 @@
+{
+  "policy_id": "rag_reliability_public_evidence_policy_v1",
+  "version": "1.0",
+  "frozen_on": "2026-09-05",
+  "repository_posture": "public",
+  "runtime_evidence_public_by_default": false,
+  "internal_evidence_workspace": "evidence_vault/",
+  "allowed_public_classes": [
+    "release_identity_and_hashes",
+    "configuration_identifiers",
+    "corpus_source_manifest_metadata",
+    "public_source_urls_and_attribution",
+    "aggregate_metrics_with_counts",
+    "per_case_ids_roles_scenarios_failure_labels",
+    "sanitized_before_after_tables",
+    "metadata_safe_trace_samples",
+    "chaos_load_profile_identities",
+    "environment_bounded_load_measurements",
+    "recovery_measurements",
+    "ttud",
+    "remediation_backlog",
+    "limitations_and_non_claims",
+    "bounded_sanitized_excerpts"
+  ],
+  "prohibited_public_classes": [
+    "secrets",
+    "credentials",
+    "tokens",
+    "cookies",
+    "pii",
+    "customer_private_data",
+    "raw_full_prompts",
+    "raw_full_source_documents",
+    "raw_full_model_outputs",
+    "provider_request_response_payloads",
+    "internal_absolute_local_paths",
+    "hidden_evaluator_only_gold_fields"
+  ],
+  "sanitized_excerpt": {
+    "full_artifact_allowed": false,
+    "minimal_only": true,
+    "label_required": "sanitized_excerpt",
+    "internal_hash_reference_required": true,
+    "attribution_required_when_source_derived": true
+  },
+  "public_trace_raw_bodies_allowed": false,
+  "viewer": {
+    "static": true,
+    "read_only": true,
+    "sanitized_artifacts_only": true,
+    "live_inference": false,
+    "live_chaos": false,
+    "live_load_testing": false,
+    "credentials_allowed": false
+  },
+  "sanitization": {
+    "finding_count_required": 0,
+    "manual_review_required": true,
+    "secret_scan_required": true,
+    "absolute_path_scan_required": true,
+    "prohibited_field_scan_required": true,
+    "license_attribution_check_required": true
+  },
+  "retention": {
+    "raw_secrets_persist_by_default": false,
+    "unsanitized_runtime_artifacts": "purpose_bounded_until_safe_replacement_verified",
+    "sanitized_public_releases": "versioned_not_silently_overwritten",
+    "fixed_statutory_retention_claimed": false
+  }
+}
