@@ -1,6 +1,6 @@
 """Shared contract primitives."""
 
-from typing import Annotated
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, StringConstraints
 
@@ -18,3 +18,10 @@ class ContractModel(BaseModel):
         str_strip_whitespace=True,
         validate_default=True,
     )
+
+
+class NotApplicableIdentity(ContractModel):
+    """Structured identity for a component that does not apply to a run."""
+
+    status: Literal["not_applicable"] = "not_applicable"
+    reason: NonEmptyStr
