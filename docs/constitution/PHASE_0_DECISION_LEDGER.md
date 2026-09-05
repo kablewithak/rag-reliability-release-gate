@@ -21,7 +21,7 @@ implementation must not invent a value.
 | 11 | Intervention-ablation order | PARTIALLY_SETTLED | PRD requires bounded B0/I1/I2/I3/I4/IF-style ladder; exact final ladder remains open |
 | 12 | Resource telemetry implementation | OPEN | Freeze before load implementation |
 | 13 | Minimal local HTTP wrapper for load tests | OPEN | Decide only if required for diagnostic load evidence |
-| 14 | Exact chaos-profile manifest | PARTIALLY_SETTLED | PRD names required profile families; exact frozen manifest remains open |
+| 14 | Exact chaos-profile manifest | SETTLED | Chaos-Testing Constitution v1 + ADR-0004 + `chaos_profile_manifest_v1.json`; 12 named profiles, 11 negative controls, one flagship cascade |
 | 15 | Execution-environment capture format | OPEN | Freeze before meaningful load/release runs |
 | 16 | Public release licensing and evidence retention policy | OPEN | Freeze in public-evidence policy |
 

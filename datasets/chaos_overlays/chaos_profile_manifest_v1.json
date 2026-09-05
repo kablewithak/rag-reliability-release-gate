@@ -1,0 +1,236 @@
+{
+  "manifest_id": "rag_reliability_chaos_profiles_v1",
+  "version": "1.0",
+  "frozen_on": "2026-09-05",
+  "baseline_repository_commit": "f5d460862ca467a888985f470c67ce6a97d6c57e",
+  "relative_intensity": {
+    "moderate_dependency_delay_multiplier_of_clean_p95": 2.0,
+    "high_dependency_delay_multiplier_of_clean_p95": 4.0,
+    "long_context_candidate_multiplier": 2.0,
+    "semantic_distractors_per_case": 5,
+    "wrong_scope_candidate_cap_per_case": 4
+  },
+  "load_band_binding": {
+    "clean": "later load policy",
+    "moderate": "later load policy",
+    "high": "later load policy",
+    "machine_specific_rps_frozen_here": false
+  },
+  "steady_state_required": [
+    "evaluation_integrity_violation_count == 0",
+    "corpus_manifest_valid == true",
+    "authoritative_source_violation_count == 0",
+    "trace_completeness == 1.0",
+    "critical_must_refuse_unsafe_answer_count == 0",
+    "semantic_quality_meets_frozen_case_or_release_gate == true",
+    "operational_measurement_path_healthy == true"
+  ],
+  "abort_on": [
+    "evaluation_integrity_violation",
+    "corpus_or_snapshot_identity_mismatch",
+    "profile_or_configuration_identity_mismatch",
+    "synthetic_overlay_role_escape",
+    "fault_boundary_escape",
+    "required_tracing_unavailable",
+    "resource_safety_cap_exceeded",
+    "unbounded_retry_or_runaway_request_creation",
+    "operator_stop"
+  ],
+  "recovery": {
+    "time_window_operational_consecutive_pass_windows": 3,
+    "time_window_semantic_consecutive_pass_windows": 3,
+    "batch_recovery_requires_complete_clean_replay": true,
+    "fault_clear_is_not_recovery": true
+  },
+  "ttud": {
+    "applies_to": "time_based_or_load_experiments",
+    "definition": "fault onset to first frozen critical semantic-gate breach",
+    "no_breach_value": "not_observed"
+  },
+  "flagship_cascade_count": 1,
+  "flagship_profile_id": "CR-FLAGSHIP-CASCADE",
+  "profiles": [
+    {
+      "profile_id": "CR-CLEAN",
+      "primary_hypothesis": "Establish clean steady-state comparison evidence.",
+      "load_band": "clean",
+      "faults": [],
+      "context_candidate_multiplier": 1.0,
+      "synthetic_distractors_per_case": 0,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-LONG-CONTEXT",
+      "primary_hypothesis": "Required evidence remains usable under bounded context pressure or the system safely refuses.",
+      "load_band": "clean",
+      "faults": [
+        "context_pressure"
+      ],
+      "context_candidate_multiplier": 2.0,
+      "final_context_budget": "unchanged",
+      "synthetic_distractors_per_case": 0,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-MIDDLE-EVIDENCE",
+      "primary_hypothesis": "Answer and citation quality do not materially depend on required evidence being at context edges.",
+      "load_band": "clean",
+      "faults": [
+        "evidence_position_middle"
+      ],
+      "context_candidate_multiplier": 1.0,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-SEMANTIC-DISTRACTOR",
+      "primary_hypothesis": "Authoritative evidence remains preferred under semantic retrieval competition.",
+      "load_band": "clean",
+      "faults": [
+        "synthetic_semantic_distractors"
+      ],
+      "synthetic_distractors_per_case": 5,
+      "synthetic_authority": "none",
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-STALE-CONFLICT",
+      "primary_hypothesis": "The target current contract outranks verified conflicting historical-comparison evidence or triggers safe fallback.",
+      "load_band": "clean",
+      "faults": [
+        "current_historical_conflict"
+      ],
+      "current_api_version": "2026-03-10",
+      "historical_api_version": "2022-11-28",
+      "material_difference_required": true,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-WRONG-SCOPE",
+      "primary_hypothesis": "Wrong-scope evidence does not become materially relied-upon authoritative evidence.",
+      "load_band": "clean",
+      "faults": [
+        "wrong_scope_candidates"
+      ],
+      "wrong_scope_candidate_cap_per_case": 4,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-RERANKER-DOWN",
+      "primary_hypothesis": "Reranker loss follows the declared fallback/refusal path without unsafe silent bypass.",
+      "load_band": "clean",
+      "faults": [
+        "reranker_unavailable"
+      ],
+      "reranker_availability_during_fault": 0.0,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-PROVIDER-DELAY",
+      "primary_hypothesis": "Provider latency degradation triggers bounded timeout/retry/fallback behavior without semantic safety loss.",
+      "load_band": "clean",
+      "faults": [
+        "provider_delay"
+      ],
+      "delay_class": "moderate",
+      "delay_multiplier_of_clean_p95": 2.0,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-HIGH-LOAD",
+      "primary_hypothesis": "Semantic degradation relative to local operational saturation is measurable under isolated high load.",
+      "load_band": "high",
+      "faults": [
+        "load_only"
+      ],
+      "load_binding": "deferred_to_load_policy",
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-LOAD-STALE-CONFLICT",
+      "primary_hypothesis": "Freshness/source-state safety survives a real historical conflict under moderate local load.",
+      "load_band": "moderate",
+      "faults": [
+        "current_historical_conflict"
+      ],
+      "load_binding": "deferred_to_load_policy",
+      "material_difference_required": true,
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-LOAD-PROVIDER-FAULT",
+      "primary_hypothesis": "Provider timeouts under moderate load remain bounded and degrade safely.",
+      "load_band": "moderate",
+      "faults": [
+        "provider_timeout"
+      ],
+      "fault_request_fraction": 0.1,
+      "load_binding": "deferred_to_load_policy",
+      "release_eligible": true
+    },
+    {
+      "profile_id": "CR-FLAGSHIP-CASCADE",
+      "primary_hypothesis": "The system detects and safely handles semantic degradation that may outpace operational degradation during one bounded cascade.",
+      "load_band": "moderate",
+      "faults": [
+        "context_pressure",
+        "reranker_delay",
+        "current_historical_conflict"
+      ],
+      "context_candidate_multiplier": 2.0,
+      "reranker_delay_class": "moderate",
+      "reranker_delay_multiplier_of_clean_p95": 2.0,
+      "load_binding": "deferred_to_load_policy",
+      "mandatory_flagship_cascade": true,
+      "release_eligible": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "control_id": "NC-TOPK-INFLATION",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-NO-FRESHNESS-FILTER",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-CITATION-FORMAT-ONLY",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-ANSWER-ANYWAY",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-RERANKER-DISABLED",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-ORACLE-GOLD-CONTEXT",
+      "release_eligible": false,
+      "integrity_probe": true
+    },
+    {
+      "control_id": "NC-EVALUATOR-LABEL-ASSISTED",
+      "release_eligible": false,
+      "integrity_probe": true
+    },
+    {
+      "control_id": "NC-CORRUPT-SOURCE-MANIFEST",
+      "release_eligible": false,
+      "integrity_probe": true
+    },
+    {
+      "control_id": "NC-PROVIDER-MALFORMED",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-DEPENDENCY-TIMEOUT",
+      "release_eligible": false
+    },
+    {
+      "control_id": "NC-MORE-CONTEXT-WORSE",
+      "release_eligible": false
+    }
+  ]
+}
