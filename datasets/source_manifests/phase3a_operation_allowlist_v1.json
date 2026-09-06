@@ -1,0 +1,52 @@
+{
+  "allowlist_version": "phase3a-operation-allowlist-v1",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_shortlist_sha256": "26ca1daa07f469260c0912017c415f4df71b2518f9223ee396ad52144877b335",
+  "selection_status": "frozen_allowlist",
+  "ingestion_authorized": true,
+  "authorization_scope": "phase3_corpus_ingestion_from_pinned_snapshot_only",
+  "release_eligible": false,
+  "target_per_family": 5,
+  "families": [
+    {
+      "family": "actions",
+      "operation_ids": [
+        "actions/create-workflow-dispatch",
+        "actions/create-registration-token-for-org",
+        "actions/create-registration-token-for-repo",
+        "actions/create-remove-token-for-org",
+        "actions/create-remove-token-for-repo"
+      ]
+    },
+    {
+      "family": "issues",
+      "operation_ids": [
+        "issues/create",
+        "issues/update",
+        "issues/add-assignees",
+        "issues/add-blocked-by-dependency",
+        "issues/add-sub-issue"
+      ]
+    },
+    {
+      "family": "pull_requests",
+      "operation_ids": [
+        "pulls/create",
+        "pulls/get",
+        "pulls/remove-requested-reviewers",
+        "pulls/update",
+        "pulls/list"
+      ]
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "operation_ids": [
+        "repos/accept-invitation-for-authenticated-user",
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org",
+        "repos/get-content",
+        "repos/list-attestations"
+      ]
+    }
+  ]
+}

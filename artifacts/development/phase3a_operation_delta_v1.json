@@ -1,0 +1,42 @@
+{
+  "current_only_operation_ids": [],
+  "current_operation_count": 479,
+  "family_summaries": [
+    {
+      "current_only_count": 0,
+      "family": "actions",
+      "historical_only_count": 0,
+      "shared_identity_changed_count": 0
+    },
+    {
+      "current_only_count": 0,
+      "family": "issues",
+      "historical_only_count": 0,
+      "shared_identity_changed_count": 0
+    },
+    {
+      "current_only_count": 0,
+      "family": "pull_requests",
+      "historical_only_count": 0,
+      "shared_identity_changed_count": 0
+    },
+    {
+      "current_only_count": 0,
+      "family": "repositories_and_repository_webhooks",
+      "historical_only_count": 0,
+      "shared_identity_changed_count": 0
+    }
+  ],
+  "historical_only_operation_ids": [],
+  "historical_operation_count": 479,
+  "ingestion_authorized": false,
+  "release_eligible": false,
+  "report_version": "phase3a-operation-delta-v1",
+  "selection_status": "candidate_only",
+  "shared_identity_changes": [],
+  "shared_operation_count": 479,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_catalog_sha256": "d16fe4774dedef38e96cb021e4ebe03b50e4d8eda9b1fcc679318f6425251fe0",
+  "source_catalog_version": "phase3a-operation-catalog-candidate-v1",
+  "unchanged_shared_operation_count": 479
+}

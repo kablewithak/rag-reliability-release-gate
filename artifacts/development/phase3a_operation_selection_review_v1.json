@@ -1,0 +1,954 @@
+{
+  "changed_operation_count": 62,
+  "family_tier_counts": [
+    {
+      "family": "actions",
+      "tier_a_direct": 1,
+      "tier_b_substantive_reference": 13,
+      "tier_c_example_only": 0
+    },
+    {
+      "family": "issues",
+      "tier_a_direct": 2,
+      "tier_b_substantive_reference": 19,
+      "tier_c_example_only": 0
+    },
+    {
+      "family": "pull_requests",
+      "tier_a_direct": 0,
+      "tier_b_substantive_reference": 6,
+      "tier_c_example_only": 0
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "tier_a_direct": 5,
+      "tier_b_substantive_reference": 16,
+      "tier_c_example_only": 0
+    }
+  ],
+  "ingestion_authorized": false,
+  "items": [
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-org",
+      "path": "/orgs/{org}/actions/runners/registration-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/registration-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-org",
+      "path": "/orgs/{org}/actions/runners/remove-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/remove-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_only",
+      "direct_change_categories": [
+        "request_body",
+        "responses"
+      ],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-workflow-dispatch",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": false
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run-attempt",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-enabled-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runs",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-blocked-by-dependency",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/create",
+      "path": "/repos/{owner}/{repo}/issues",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-event",
+      "path": "/repos/{owner}/{repo}/issues/events/{event_id}",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-parent",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/parent",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list",
+      "path": "/issues",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocking",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocking",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-events-for-repo",
+      "path": "/repos/{owner}/{repo}/issues/events",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-events-for-timeline",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-authenticated-user",
+      "path": "/user/issues",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-org",
+      "path": "/orgs/{org}/issues",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-repo",
+      "path": "/repos/{owner}/{repo}/issues",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-sub-issues",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-dependency-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by/{issue_id}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issue",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/reprioritize-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "example_reference_change": true,
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/update",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/create",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/get",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "pull_requests",
+      "method": "delete",
+      "operation_id": "pulls/remove-requested-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/request-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "pull_requests",
+      "method": "patch",
+      "operation_id": "pulls/update",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/accept-invitation-for-authenticated-user",
+      "path": "/user/repository_invitations/{invitation_id}",
+      "reference_component_classes": [
+        "responses",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/add-collaborator",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-for-authenticated-user",
+      "path": "/user/repos",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-fork",
+      "path": "/repos/{owner}/{repo}/forks",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-in-org",
+      "path": "/orgs/{org}/repos",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-using-template",
+      "path": "/repos/{template_owner}/{template_repo}/generate",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get",
+      "path": "/repos/{owner}/{repo}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-combined-status-for-ref",
+      "path": "/repos/{owner}/{repo}/commits/{ref}/status",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "direct_only",
+      "direct_change_categories": [
+        "description_or_summary"
+      ],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-content",
+      "path": "/repos/{owner}/{repo}/contents/{path}",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": false
+    },
+    {
+      "change_mode": "direct_only",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-attestations",
+      "path": "/repos/{owner}/{repo}/attestations/{subject_digest}",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "substantive_reference_change": false
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-authenticated-user",
+      "path": "/user/repos",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-org",
+      "path": "/orgs/{org}/repos",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-user",
+      "path": "/users/{username}/repos",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-forks",
+      "path": "/repos/{owner}/{repo}/forks",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-invitations",
+      "path": "/repos/{owner}/{repo}/invitations",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-invitations-for-authenticated-user",
+      "path": "/user/repository_invitations",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-public",
+      "path": "/repositories",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-pull-requests-associated-with-commit",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/pulls",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/transfer",
+      "path": "/repos/{owner}/{repo}/transfer",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": true,
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update",
+      "path": "/repos/{owner}/{repo}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    },
+    {
+      "change_mode": "referenced_only",
+      "direct_change_categories": [],
+      "example_reference_change": false,
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-invitation",
+      "path": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "substantive_reference_change": true
+    }
+  ],
+  "release_eligible": false,
+  "report_version": "phase3a-operation-selection-review-v1",
+  "review_status": "selection_review",
+  "selection_status": "candidate_only",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_contract_change_review_sha256": "1628d0a0178bf5d7b7bce48b0bfb1fa15f894dd3ec7b3ba88fe840708077ab56",
+  "tier_counts": [
+    {
+      "count": 8,
+      "tier": "tier_a_direct"
+    },
+    {
+      "count": 54,
+      "tier": "tier_b_substantive_reference"
+    },
+    {
+      "count": 0,
+      "tier": "tier_c_example_only"
+    }
+  ]
+}
