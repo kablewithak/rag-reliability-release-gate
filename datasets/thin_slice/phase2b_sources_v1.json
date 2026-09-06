@@ -1,0 +1,255 @@
+{
+  "suite_id": "phase2b-thin-slice-dev-v1",
+  "sources": [
+    {
+      "manifest": {
+        "source_id": "thin-src-api-versions",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/about-the-rest-api/api-versions.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "7fba1393bbdbfc3e4fbe886d314fc4c343674594",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "647a53de7fe8a12bbc77446732baa848e477cff58c49388fe22c921c290d8f16",
+        "title": "API Versions",
+        "topic_tags": [
+          "api-versioning",
+          "headers"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "You should use the `X-GitHub-Api-Version` header to specify an API version. If you specify an API version that is no longer supported, you will receive a `410 Gone` response."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-authentication",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/authentication/authenticating-to-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "2194dd7ffbd8baab1806b680ad19908e2282942b",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "d3d029b5c5714d5361729f30a6cf610c4168810ec9bf77d527941925e15dd1bb",
+        "title": "Authenticating to the REST API",
+        "topic_tags": [
+          "authentication",
+          "authorization-header"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "Many REST API endpoints require authentication or return additional information if you are authenticated. After creating a token, you can authenticate your request by sending the token in the `Authorization` header of your request."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-pagination",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "01e66579e9e6a033340ff8b730c42fed45ed7ff9",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "bb09fccfd77ee6d6a939de6e2d369181e039eb96ceff80e1be270b07fdea15db",
+        "title": "Using pagination in the REST API",
+        "topic_tags": [
+          "pagination",
+          "link-header"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "You can use the `link` header from the response to request additional pages of data. If an endpoint supports the `per_page` query parameter, you can control how many results are returned on a page."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-rate-limits",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "ea3aea138a5aa2a12f6295713d1bdad591a76891",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "663fd9a8d29df186508c711bcd3a79701e9bb2687bff5bdccf5979f1493a4273",
+        "title": "Rate limits for the REST API",
+        "topic_tags": [
+          "rate-limits",
+          "retry"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "If you exceed your primary rate limit, you will receive a `403` or `429` response, and the `x-ratelimit-remaining` header will be `0`. You should not retry your request until after the time specified by the `x-ratelimit-reset` header."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-best-practices",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "dc18f2ed09cec7d06a546c0497781ab7233faed1",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "69859518bfe7830b290f6b94f408f6d35026c81e6c7d311ae79f9cde076ae131",
+        "title": "Best practices for using the REST API",
+        "topic_tags": [
+          "best-practices",
+          "secondary-rate-limits"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "To avoid exceeding secondary rate limits, you should make requests serially instead of concurrently. To achieve this, you can implement a queue system for requests."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-getting-started",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "c93a61b3f0306e47184c9f98f33451448908a02d",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "9cb05241a4e797d78229a3352f75114f85cf9beb9092c3dff46ec91a40f30c51",
+        "title": "Getting started with the REST API",
+        "topic_tags": [
+          "request-headers",
+          "user-agent"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "Requests with no `User-Agent` header will be rejected. If you provide an invalid `User-Agent` header, you will receive a `403 Forbidden` response."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-troubleshooting",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "126d87219982fd988caf4840c13bc7ff1131ba36",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "f2aa1a48630350edec03774e8894aff30360c571f9b82c682639bab52aeb2bff",
+        "title": "Troubleshooting the REST API",
+        "topic_tags": [
+          "troubleshooting",
+          "404-authentication"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "If you make a request to access a private resource and your request isn't properly authenticated, you will receive a `404 Not Found` response."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-credential-security",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "310b24727e099cf9ea8bc17a401b1118094b123a",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "dcccc406aa7b42d8b37e37478bfaad23008459a68cadc4a131607ac21dd8d900",
+        "title": "Keeping your API credentials secure",
+        "topic_tags": [
+          "credentials",
+          "secrets"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "Treat authentication credentials the same way you would treat your passwords or other sensitive credentials. Never hardcode authentication credentials like tokens, keys, or app-related secrets into your code."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-breaking-changes",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/about-the-rest-api/breaking-changes.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "424e3b291710d7063d3f21403f4477c39dc2ad1f",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "eeb3c8fec73ff69ee35162207dad8ac84fc218658e2dc10a488b7226f9cbc4c5",
+        "title": "Breaking changes",
+        "topic_tags": [
+          "api-versioning",
+          "breaking-changes"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "Before upgrading to a new REST API version, you should read the section on this page that corresponds to the new API version to understand what breaking changes are included and to learn more about how to upgrade to that API version."
+    },
+    {
+      "manifest": {
+        "source_id": "thin-src-timezones",
+        "source_family": "github_rest_authored_guidance",
+        "source_url": "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/timezones-and-the-rest-api.md",
+        "source_license": "CC-BY-4.0",
+        "retrieved_at": "2026-09-05T23:51:02Z",
+        "source_commit_sha_or_version": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+        "document_version": "00218725a1025ab06c49a3f874403b3a1785ac53",
+        "effective_from": null,
+        "effective_to": null,
+        "authority_level": "authoritative",
+        "source_state": "current",
+        "product_scope": "api.github.com",
+        "api_version_or_snapshot": "2026-03-10",
+        "content_sha256": "7c070352dbe023e7aba9c4be54341396e31e1632192cf08ad78ead03ed1291a8",
+        "title": "Timezones and the REST API",
+        "topic_tags": [
+          "timezones",
+          "timestamps"
+        ],
+        "data_role": "unit_fixture"
+      },
+      "content": "Timestamps returned by the API are in UTC time, ISO 8601 format. If the steps above don't result in any information, we use UTC as the timezone."
+    }
+  ]
+}

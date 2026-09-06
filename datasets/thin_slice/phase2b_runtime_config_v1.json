@@ -1,0 +1,31 @@
+{
+  "schema_version": "phase2b-v1",
+  "retrieval": {
+    "retriever_id": "lexical-v1",
+    "top_k": 3
+  },
+  "source_policy": {
+    "policy_id": "github-rest-current-v1"
+  },
+  "reranker": null,
+  "context": {
+    "builder_id": "bounded-context-v1",
+    "budget_unit_id": "characters",
+    "max_budget": 1200,
+    "max_evidence_items": 3
+  },
+  "provider": {
+    "adapter_id": "replay-provider-v1",
+    "model_id": "replay-model-v1",
+    "timeout_ms": 1000,
+    "max_retries": 0
+  },
+  "citation": {
+    "validator_id": "exact-citation-v1",
+    "require_citations": true
+  },
+  "fallback": {
+    "policy_id": "safe-refusal-v1",
+    "allow_qualified_answer": false
+  }
+}

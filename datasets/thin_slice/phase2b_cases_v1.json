@@ -1,0 +1,293 @@
+{
+  "suite_id": "phase2b-thin-slice-dev-v1",
+  "cases": [
+    {
+      "case_id": "thin-dev-001",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "unsupported 410 Gone API version",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-api-version-410"
+      ],
+      "required_source_ids": [
+        "thin-src-api-versions"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "If you specify an API version that is no longer supported, you will receive a `410 Gone` response."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/about-the-rest-api/api-versions.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-002",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "Authorization header creating token authenticate request",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-auth-header"
+      ],
+      "required_source_ids": [
+        "thin-src-authentication"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "After creating a token, you can authenticate your request by sending the token in the `Authorization` header of your request."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/authentication/authenticating-to-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-003",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "link header additional pages per_page",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-pagination-link"
+      ],
+      "required_source_ids": [
+        "thin-src-pagination"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "You can use the `link` header from the response to request additional pages of data."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-004",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "x-ratelimit-remaining 0 403 429 primary limit",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-primary-rate-limit"
+      ],
+      "required_source_ids": [
+        "thin-src-rate-limits"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "If you exceed your primary rate limit, you will receive a `403` or `429` response, and the `x-ratelimit-remaining` header will be `0`."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-005",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "requests serially concurrently secondary rate limits queue",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-serial-secondary-limit"
+      ],
+      "required_source_ids": [
+        "thin-src-best-practices"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "To avoid exceeding secondary rate limits, you should make requests serially instead of concurrently."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-006",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "invalid User-Agent 403 rejected",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-user-agent"
+      ],
+      "required_source_ids": [
+        "thin-src-getting-started"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "If you provide an invalid `User-Agent` header, you will receive a `403 Forbidden` response."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-007",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "private resource properly authenticated 404 Not Found",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-private-resource-404"
+      ],
+      "required_source_ids": [
+        "thin-src-troubleshooting"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "If you make a request to access a private resource and your request isn't properly authenticated, you will receive a `404 Not Found` response."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-008",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "current_single_source_answerable",
+      "criticality": "noncritical",
+      "query": "timestamps returned UTC ISO 8601 format",
+      "expected_response_mode": "answer",
+      "required_fact_ids": [
+        "fact-timezone-format"
+      ],
+      "required_source_ids": [
+        "thin-src-timezones"
+      ],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": null,
+      "gold_fact_rubric": [
+        "Timestamps returned by the API are in UTC time, ISO 8601 format."
+      ],
+      "scoring_notes": "Development-only exact-support thin-slice case.",
+      "authoring_evidence": [
+        "https://github.com/github/docs/blob/ec3629a841129ae28189d7bb2274a7b3d40c5095/content/rest/using-the-rest-api/timezones-and-the-rest-api.md"
+      ]
+    },
+    {
+      "case_id": "thin-dev-009",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+      "criticality": "critical",
+      "query": "kerberos spnego ticket lifetime",
+      "expected_response_mode": "refuse",
+      "required_fact_ids": [],
+      "required_source_ids": [],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": "insufficient_evidence",
+      "gold_fact_rubric": [],
+      "scoring_notes": "Development-only refusal case with no supporting corpus evidence.",
+      "authoring_evidence": [
+        "phase2b-authoring-note:no-source-support-in-thin-slice-corpus"
+      ]
+    },
+    {
+      "case_id": "thin-dev-010",
+      "case_version": "1.0",
+      "data_role": "evaluation_development_case",
+      "source_family": "cross_cutting_rest_guidance",
+      "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+      "criticality": "critical",
+      "query": "soap wsdl envelope namespace",
+      "expected_response_mode": "refuse",
+      "required_fact_ids": [],
+      "required_source_ids": [],
+      "allowed_source_states": [
+        "current"
+      ],
+      "forbidden_source_ids": [],
+      "required_api_version": "2026-03-10",
+      "required_authority_level": "authoritative",
+      "must_refuse_reason": "insufficient_evidence",
+      "gold_fact_rubric": [],
+      "scoring_notes": "Development-only refusal case with no supporting corpus evidence.",
+      "authoring_evidence": [
+        "phase2b-authoring-note:no-source-support-in-thin-slice-corpus"
+      ]
+    }
+  ]
+}
