@@ -1,0 +1,61 @@
+{
+  "suite_id": "phase2b-thin-slice-dev-v1",
+  "entries": [
+    {
+      "query": "unsupported 410 Gone API version",
+      "answer_text": "If you specify an API version that is no longer supported, you will receive a `410 Gone` response.",
+      "cited_source_ids": [
+        "thin-src-api-versions"
+      ]
+    },
+    {
+      "query": "Authorization header creating token authenticate request",
+      "answer_text": "After creating a token, you can authenticate your request by sending the token in the `Authorization` header of your request.",
+      "cited_source_ids": [
+        "thin-src-authentication"
+      ]
+    },
+    {
+      "query": "link header additional pages per_page",
+      "answer_text": "You can use the `link` header from the response to request additional pages of data.",
+      "cited_source_ids": [
+        "thin-src-pagination"
+      ]
+    },
+    {
+      "query": "x-ratelimit-remaining 0 403 429 primary limit",
+      "answer_text": "If you exceed your primary rate limit, you will receive a `403` or `429` response, and the `x-ratelimit-remaining` header will be `0`.",
+      "cited_source_ids": [
+        "thin-src-rate-limits"
+      ]
+    },
+    {
+      "query": "requests serially concurrently secondary rate limits queue",
+      "answer_text": "To avoid exceeding secondary rate limits, you should make requests serially instead of concurrently.",
+      "cited_source_ids": [
+        "thin-src-best-practices"
+      ]
+    },
+    {
+      "query": "invalid User-Agent 403 rejected",
+      "answer_text": "If you provide an invalid `User-Agent` header, you will receive a `403 Forbidden` response.",
+      "cited_source_ids": [
+        "thin-src-getting-started"
+      ]
+    },
+    {
+      "query": "private resource properly authenticated 404 Not Found",
+      "answer_text": "If you make a request to access a private resource and your request isn't properly authenticated, you will receive a `404 Not Found` response.",
+      "cited_source_ids": [
+        "thin-src-troubleshooting"
+      ]
+    },
+    {
+      "query": "timestamps returned UTC ISO 8601 format",
+      "answer_text": "Timestamps returned by the API are in UTC time, ISO 8601 format.",
+      "cited_source_ids": [
+        "thin-src-timezones"
+      ]
+    }
+  ]
+}

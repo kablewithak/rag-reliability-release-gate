@@ -1,0 +1,623 @@
+{
+  "all_cases_passed": true,
+  "case_count": 10,
+  "case_fixture_hash": "857fdd5b4f866f3150bd86c373b94af5906c39d4f3b06c040c511b386fe431fe",
+  "case_results": [
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-001",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-api-versions",
+            "thin-src-breaking-changes",
+            "thin-src-authentication"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-api-versions",
+            "thin-src-breaking-changes",
+            "thin-src-authentication"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-api-versions",
+            "thin-src-breaking-changes",
+            "thin-src-authentication"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-api-versions"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-api-versions"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-001:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-002",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-authentication",
+            "thin-src-pagination",
+            "thin-src-rate-limits"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-authentication",
+            "thin-src-pagination",
+            "thin-src-rate-limits"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-authentication",
+            "thin-src-pagination",
+            "thin-src-rate-limits"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-authentication"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-authentication"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-002:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-003",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-pagination",
+            "thin-src-authentication",
+            "thin-src-api-versions"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-pagination",
+            "thin-src-authentication",
+            "thin-src-api-versions"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-pagination",
+            "thin-src-authentication",
+            "thin-src-api-versions"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-pagination"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-pagination"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-003:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-004",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-rate-limits",
+            "thin-src-api-versions",
+            "thin-src-getting-started"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-rate-limits",
+            "thin-src-api-versions",
+            "thin-src-getting-started"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-rate-limits",
+            "thin-src-api-versions",
+            "thin-src-getting-started"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-rate-limits"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-rate-limits"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-004:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-005",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-best-practices",
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-best-practices",
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-best-practices",
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-best-practices"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-best-practices"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-005:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-006",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-getting-started",
+            "thin-src-rate-limits"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-getting-started"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-getting-started"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-006:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-007",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-troubleshooting",
+            "thin-src-authentication",
+            "thin-src-rate-limits"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-troubleshooting",
+            "thin-src-authentication",
+            "thin-src-rate-limits"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-troubleshooting",
+            "thin-src-authentication",
+            "thin-src-rate-limits"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-troubleshooting"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-troubleshooting"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-007:9990c5e82084"
+    },
+    {
+      "actual_status": "answer",
+      "case_id": "thin-dev-008",
+      "citation_support_pass": true,
+      "context_required_source_pass": true,
+      "expected_response_mode": "answer",
+      "passed": true,
+      "primary_failure": null,
+      "refusal_behavior_pass": null,
+      "required_fact_coverage_pass": true,
+      "retrieval_required_source_pass": true,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-timezones",
+            "thin-src-pagination"
+          ],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-timezones",
+            "thin-src-pagination"
+          ],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-timezones",
+            "thin-src-pagination"
+          ],
+          "stage": "context_assembly",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-timezones"
+          ],
+          "stage": "provider_generation",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [
+            "thin-src-timezones"
+          ],
+          "stage": "citation_validation",
+          "status": "ok"
+        }
+      ],
+      "trace_id": "trace:thin-dev-008:9990c5e82084"
+    },
+    {
+      "actual_status": "refusal",
+      "case_id": "thin-dev-009",
+      "citation_support_pass": null,
+      "context_required_source_pass": null,
+      "expected_response_mode": "refuse",
+      "passed": true,
+      "primary_failure": "retrieval_miss",
+      "refusal_behavior_pass": true,
+      "required_fact_coverage_pass": null,
+      "retrieval_required_source_pass": null,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "refusal_fallback",
+          "status": "refused"
+        }
+      ],
+      "trace_id": "trace:thin-dev-009:9990c5e82084"
+    },
+    {
+      "actual_status": "refusal",
+      "case_id": "thin-dev-010",
+      "citation_support_pass": null,
+      "context_required_source_pass": null,
+      "expected_response_mode": "refuse",
+      "passed": true,
+      "primary_failure": "retrieval_miss",
+      "refusal_behavior_pass": true,
+      "required_fact_coverage_pass": null,
+      "retrieval_required_source_pass": null,
+      "runtime_error_code": null,
+      "trace_completeness_pass": true,
+      "trace_events": [
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "retrieval",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "filtering",
+          "status": "ok"
+        },
+        {
+          "error_code": null,
+          "source_ids": [],
+          "stage": "refusal_fallback",
+          "status": "refused"
+        }
+      ],
+      "trace_id": "trace:thin-dev-010:9990c5e82084"
+    }
+  ],
+  "evidence_class": "development_only",
+  "failed_case_count": 0,
+  "metric_summaries": [
+    {
+      "applicable_cases": 8,
+      "failed_cases": 0,
+      "metric_id": "required_source_retrieval_v1",
+      "passed_cases": 8
+    },
+    {
+      "applicable_cases": 8,
+      "failed_cases": 0,
+      "metric_id": "context_gold_inclusion_v1",
+      "passed_cases": 8
+    },
+    {
+      "applicable_cases": 8,
+      "failed_cases": 0,
+      "metric_id": "citation_reference_validity_v1",
+      "passed_cases": 8
+    },
+    {
+      "applicable_cases": 8,
+      "failed_cases": 0,
+      "metric_id": "required_fact_coverage_v1",
+      "passed_cases": 8
+    },
+    {
+      "applicable_cases": 2,
+      "failed_cases": 0,
+      "metric_id": "refusal_behavior_v1",
+      "passed_cases": 2
+    },
+    {
+      "applicable_cases": 10,
+      "failed_cases": 0,
+      "metric_id": "trace_completeness_v1",
+      "passed_cases": 10
+    }
+  ],
+  "passed_case_count": 10,
+  "release_eligible": false,
+  "replay_fixture_hash": "123cc8921bfaf5517dbcee88d4a01b58182e456845c1e8f1b784012c98011753",
+  "report_schema_version": "phase2b-report-v1",
+  "runtime_config_file_hash": "76567a339d1357fd47d8da8beca00ca54ecdc559f66011b6172ce6a3abefeee8",
+  "runtime_configuration_hash": "9990c5e820840e0579042141fdf285165bebecad21e3e06b761e7d1d868b1853",
+  "source_fixture_hash": "4655a12361bbfa61168c99f1f7087b61354f6af6843e866578c1b3180493437a",
+  "suite_id": "phase2b-thin-slice-dev-v1"
+}
