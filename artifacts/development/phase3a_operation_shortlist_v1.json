@@ -1,0 +1,302 @@
+{
+  "family_counts": [
+    {
+      "family": "actions",
+      "selected_count": 5,
+      "tier_a_direct_count": 1,
+      "tier_b_substantive_reference_count": 4
+    },
+    {
+      "family": "issues",
+      "selected_count": 5,
+      "tier_a_direct_count": 2,
+      "tier_b_substantive_reference_count": 3
+    },
+    {
+      "family": "pull_requests",
+      "selected_count": 5,
+      "tier_a_direct_count": 0,
+      "tier_b_substantive_reference_count": 5
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "selected_count": 5,
+      "tier_a_direct_count": 5,
+      "tier_b_substantive_reference_count": 0
+    }
+  ],
+  "ingestion_authorized": false,
+  "items": [
+    {
+      "direct_change_categories": [
+        "request_body",
+        "responses"
+      ],
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-workflow-dispatch",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-org",
+      "path": "/orgs/{org}/actions/runners/registration-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/registration-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-org",
+      "path": "/orgs/{org}/actions/runners/remove-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/remove-token",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/create",
+      "path": "/repos/{owner}/{repo}/issues",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/update",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-blocked-by-dependency",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/create",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/get",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "method": "delete",
+      "operation_id": "pulls/remove-requested-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "method": "patch",
+      "operation_id": "pulls/update",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_component_classes": [
+        "schemas"
+      ],
+      "selection_tier": "tier_b_substantive_reference",
+      "shortlist_reason": "family_balance_substantive_reference"
+    },
+    {
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/accept-invitation-for-authenticated-user",
+      "path": "/user/repository_invitations/{invitation_id}",
+      "reference_component_classes": [
+        "responses",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-for-authenticated-user",
+      "path": "/user/repos",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-in-org",
+      "path": "/orgs/{org}/repos",
+      "reference_component_classes": [
+        "examples",
+        "schemas"
+      ],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [
+        "description_or_summary"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-content",
+      "path": "/repos/{owner}/{repo}/contents/{path}",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    },
+    {
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-attestations",
+      "path": "/repos/{owner}/{repo}/attestations/{subject_digest}",
+      "reference_component_classes": [],
+      "selection_tier": "tier_a_direct",
+      "shortlist_reason": "mandatory_direct_change"
+    }
+  ],
+  "release_eligible": false,
+  "report_version": "phase3a-operation-shortlist-v1",
+  "review_status": "shortlist_review",
+  "selection_status": "candidate_only",
+  "shortlist_count": 20,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_selection_review_sha256": "d013591c644fc2c06bcdca9d775fe7291677edfd24d5c919d9dff1617af00e99",
+  "target_per_family": 5
+}

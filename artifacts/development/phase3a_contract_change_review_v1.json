@@ -1,0 +1,1475 @@
+{
+  "change_mode_counts": [
+    {
+      "count": 54,
+      "name": "referenced_only"
+    },
+    {
+      "count": 5,
+      "name": "direct_and_referenced"
+    },
+    {
+      "count": 3,
+      "name": "direct_only"
+    }
+  ],
+  "changed_operation_count": 62,
+  "direct_category_counts": [
+    {
+      "count": 5,
+      "name": "responses"
+    },
+    {
+      "count": 3,
+      "name": "request_body"
+    },
+    {
+      "count": 1,
+      "name": "description_or_summary"
+    }
+  ],
+  "family_summaries": [
+    {
+      "changed_operation_count": 14,
+      "direct_and_referenced_count": 0,
+      "direct_only_count": 1,
+      "family": "actions",
+      "referenced_only_count": 13
+    },
+    {
+      "changed_operation_count": 21,
+      "direct_and_referenced_count": 2,
+      "direct_only_count": 0,
+      "family": "issues",
+      "referenced_only_count": 19
+    },
+    {
+      "changed_operation_count": 6,
+      "direct_and_referenced_count": 0,
+      "direct_only_count": 0,
+      "family": "pull_requests",
+      "referenced_only_count": 6
+    },
+    {
+      "changed_operation_count": 21,
+      "direct_and_referenced_count": 3,
+      "direct_only_count": 2,
+      "family": "repositories_and_repository_webhooks",
+      "referenced_only_count": 16
+    }
+  ],
+  "ingestion_authorized": false,
+  "reference_component_class_counts": [
+    {
+      "count": 99,
+      "name": "schemas"
+    },
+    {
+      "count": 23,
+      "name": "examples"
+    },
+    {
+      "count": 1,
+      "name": "responses"
+    }
+  ],
+  "release_eligible": false,
+  "report_version": "phase3a-contract-change-review-v1",
+  "review_items": [
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "748fb9335896bb309db7b288f2228e535857ff521f9f55bf4354a3151584e093",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "812b33a9ee4abfd177e908f89675542a569abaa7cb48afd9da6cde84fd77652d",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-org",
+      "path": "/orgs/{org}/actions/runners/registration-token",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9742012dd23921cff0ea3b94feac63ca7d037c5bbd5d0f8f753cbca1748c6d32",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "6f437bd34ee48667e7dd4ae0cc48dad959495f6f3feb570533b0cb449bf477a6",
+      "method": "post",
+      "operation_id": "actions/create-registration-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/registration-token",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "2b0d0b62fa04935eeb20d5419dd1b9b89c7a8385fbc259d640edae0161c41502",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "912b32f61983b1e6d3aacc7ff03920ee67c8f8decc668bf00ccc87a707c791dd",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-org",
+      "path": "/orgs/{org}/actions/runners/remove-token",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "956b4b19bad9d252b6a23a5f7d9a8d357a61e511ff83b32f8fe4b7ab0fa9eea7",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "93e05f9c540bd73b26c9ec6f2fb66361fdb7646b93e2dd12e9ef44213f874a5a",
+      "method": "post",
+      "operation_id": "actions/create-remove-token-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/remove-token",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_only",
+      "changed_operation_fields": [
+        "requestBody",
+        "responses"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "853fe51ba55d8e7c0c3c55059ab27a1c3225bea6b7a4f6a09af69acc147f4c2e",
+      "direct_change_categories": [
+        "request_body",
+        "responses"
+      ],
+      "family": "actions",
+      "historical_contract_sha256": "732b07e8e3873bc6976549687b3aa00baf558e0b7481d9f8bdaafd728265ce34",
+      "method": "post",
+      "operation_id": "actions/create-workflow-dispatch",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/dispatches",
+      "reference_change_summaries": []
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "710610533126f91fa18efd2f2c3b0d5704212958d1defcfe64708686b5cdccf6",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "305499aada177797baea2f3b9dcec210724a1581cd6a734f054201ec90f36f32",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9d36e710b0e182f983f85ff4e5e5e327d79c1248b4351cedb7c301d9d87f5357",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "266448a4dd9357681d8cb7b041cab1a095551493eb184d50fe171c13ed058afe",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run-attempt",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "bc79a82a6bbb3da966355bff2948769196f721f8ab897e570aaebf74fa0a3589",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "df525d2329980557a24c9e1cce662d55e0975a3f07806a8bcad5b4c70dd480f7",
+      "method": "get",
+      "operation_id": "actions/list-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "c2107840c2c5554839762d0bfcc8c4af87ddce1a8e635b778d972375a8395135",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "59c92ebfd98ca3b3428bef51e5941ea00918ea8295b06bcb26c8fdea402691d1",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9274f0dd726ac682a85b128f65bb4ec8b4a6190a5d36ca7f1975de5205f7336d",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "4dbee61ec4a0b2b1157bb46dbdaac5a709a0415ad52a6591a0a510f68224e6e0",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "dcfded92994039a5bf1da4a22d698277966b7374929467ed3c32bb44006a6ac3",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "a2773637bc600ff0f7160a0b943420a1b585c1197e3b09188da3d7fc2913314e",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-enabled-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "07e682b381f63df190f8e6be6abffbbf03716709654143812268d5e25d15e741",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "6c19e51fb39f2b38cec0848edface69aa4aa618629737e5c6e4421b660ccc8b7",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "dc8f0dfea8b71d1c0b681fe16199c02442e4cf69b545d14d952d08e25d6a3ff9",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "0cd1cfc7ffbe37ed70317d4685bf5ee689421204fa4958d519a8d06b14948988",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "342c53d7b3c6e6025ab6124331320db8e32d62badc2aac40d33a5635d902374f",
+      "direct_change_categories": [],
+      "family": "actions",
+      "historical_contract_sha256": "5c197f557e8ec1688963ea5a9031f3eca3a1c24004b3d2b603c971ed621daff6",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runs",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "8a96c39a77cfeff68afcf4b5db95a0a04efb8a31aadbdda277b1e90c6e6114ac",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "d6a3f93a861c74c5ef9f84c31b8169da72d66c09c09fc63c2c5e0026ef557797",
+      "method": "post",
+      "operation_id": "issues/add-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "c80ed32073e3f12a973a13296f7f5d5ba389ea7d6d118167b6df120104b05280",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "506dfacc8d81809eddaae7d531201627396e8c950b28f66d7a8cabb86bf019ee",
+      "method": "post",
+      "operation_id": "issues/add-blocked-by-dependency",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "c0962c2d5746002fa7cf1d8520d3fba7a4c59ea5f6fd7ef060833ff4e5995715",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "7a1d05a3b1f64cd9d6d191a995625795af065e38f9edfe13a6702d05dd5fa188",
+      "method": "post",
+      "operation_id": "issues/add-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "changed_operation_fields": [
+        "requestBody"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "d146c26b9b3caa9c8ece9b049e442aab2ab48af0dc762649613b318cd090f2ec",
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "family": "issues",
+      "historical_contract_sha256": "b9d59813622b1c645390c61a661625521e08fef4a399a593d4dd1d79c4b50d68",
+      "method": "post",
+      "operation_id": "issues/create",
+      "path": "/repos/{owner}/{repo}/issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9b3ad1167b2994933bb9bef0ef8919ab28b6b82ce39a2fe5c265cd347181b35a",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "a5a46e7bf34096a893cc1c82f2a2eb627ee760896ffe7ab35de2cbc39c921845",
+      "method": "get",
+      "operation_id": "issues/get",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "db08a3ec63319949b11613f4ac81aad282d325d49629b035e38821c66e877da1",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "3889dd1ee5d5c8b488323d708a5dfc64d6fb73eb9c908fed208b999a50c1e9f2",
+      "method": "get",
+      "operation_id": "issues/get-event",
+      "path": "/repos/{owner}/{repo}/issues/events/{event_id}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "a64f38e18ed7c26c2b037480f6d0aeb04adb184bfc4f3009c98cf6d432fa4093",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "8050d623a263d15385fd3fe936077a40dc860c1e7ad5f5e42dbbdab31166923c",
+      "method": "get",
+      "operation_id": "issues/get-parent",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/parent",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "c7ac031d46c5f35ec6c13fd63e5bd8ca3976b7d7b968189fa44371617c5c7cfc",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "26483aa97abe8a33cc4dcbeb09a8d952f489370cf51d6294a84f0a70e4b34a2a",
+      "method": "get",
+      "operation_id": "issues/list",
+      "path": "/issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "2bed30f8ce75bfeb83888e27c4fd7e55e03cbd77b051e1733e0ca133492d5798",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "d1403304a76339fc85912842cf40fd8da5d5cb8f33fa7f1be24d6255430428f8",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "7d51796e047b399b8864c19794655be988558e67adcce9d844a4ab603a7eabcc",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "2e53a46b908af82a1e07fcf3c8c6400a69ecf0308f212215a292986f03f36e3b",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocking",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocking",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "95a7fa294bdce599f1db9009e623c4acd570d7a610db9cdca34856130f259ff1",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "756572539835e8af52cd429d33be6fa7cc060e39935fff98aff1c0611f6db63e",
+      "method": "get",
+      "operation_id": "issues/list-events-for-repo",
+      "path": "/repos/{owner}/{repo}/issues/events",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "87e56b49aaf026e61668d5afdc2e0f6f2685119eac94f15d4a57942874a4cbf4",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "cc67428f83d1c515e65165b8dd645a565da6bc56d5fe97386ddf231b08f05484",
+      "method": "get",
+      "operation_id": "issues/list-events-for-timeline",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/timeline",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "89012f268781110725a9d82700cbcdd23cd5052b307bdeb5089171a0680853fa",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "befe1d80ebb7be5d40dd9b09d18cf05df8863a904e4c08812ae9a8e8907374ab",
+      "method": "get",
+      "operation_id": "issues/list-for-authenticated-user",
+      "path": "/user/issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "42b28a9b48d51a1a8bc2601f9225c97638e0ebd75ad1c04e95c1bbead17bf442",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "021157a2582f7f5b2057f2106074fbca624728f1689350b30898a507164000c7",
+      "method": "get",
+      "operation_id": "issues/list-for-org",
+      "path": "/orgs/{org}/issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "17bd59244b151c13a3ec88d1c9a3a986b1871a9b918e6ebaa2b2dc3d917d94bb",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "89933483237c15782ec9f4e53ab71fc959547fad4a12cf2f34aeb92c57268b14",
+      "method": "get",
+      "operation_id": "issues/list-for-repo",
+      "path": "/repos/{owner}/{repo}/issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "a7ae9f85ce37a50a52235e5037fe4428f68f86266836e15a0c82efa6b3a4285d",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "9f7289e6459462bc6bf5fec592c991c93b39718117a386b0f2d267d9a4ae87c6",
+      "method": "get",
+      "operation_id": "issues/list-sub-issues",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "7fb4e7034208e35b33a29261ddfa16d5abe679ecdf7424abc66b5c80b4392600",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "6856a8f4f98d573753f07b72f5e09ac6857cc632e234269568dfc3b5fcca77ea",
+      "method": "delete",
+      "operation_id": "issues/remove-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "51300083fac63956be791f33504b49d38e77b76f27ba2ffb7ec04009eda1ca7a",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "17dc6aa7026a7526e36fb1f6e6614a9b684a06ad3357f897b4ce1317d71f4b80",
+      "method": "delete",
+      "operation_id": "issues/remove-dependency-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by/{issue_id}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "ea443aebffd36782d55e4a7409e84e6dcfb632b8fbe1d36e57db3f42d2aa9c42",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "b2d4aa071092dae7018d95174bd9d2d103831b173a36a31e08394c2d11606fa2",
+      "method": "delete",
+      "operation_id": "issues/remove-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issue",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "b36f0e5870b20ba25f2b7086c24079fea09bc6576d80b2ccf9f00e4b9da41f59",
+      "direct_change_categories": [],
+      "family": "issues",
+      "historical_contract_sha256": "525c79dd2161d84c979d90360f19594b93b6cec506ee1d16af71e6f42d2d3349",
+      "method": "patch",
+      "operation_id": "issues/reprioritize-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "changed_operation_fields": [
+        "requestBody"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "4db5617ff6910e65463a7065891da3194e86a29dfcd83b60d13858993665bb03",
+      "direct_change_categories": [
+        "request_body"
+      ],
+      "family": "issues",
+      "historical_contract_sha256": "2f223586982b6dde51a9af808be27b1e9fb6035aab50c159234c243750f63058",
+      "method": "patch",
+      "operation_id": "issues/update",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "3a4d8dfde82a15b74786f8aa79c711b93b538f123778e064b86159d8b21c6b69",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "0ae87d47f7dcc3e7e521a72dfe10097564e12e8384475aad138cc9ae2d85c0ac",
+      "method": "post",
+      "operation_id": "pulls/create",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "299e604cfc3f55cc67583347595976c4dad72056f5ea572a0529e39e48b1f7dd",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "8724cd3463ba2ecb442971a90516afdc3946efd2a3e1e4670f35124687e6f2f4",
+      "method": "get",
+      "operation_id": "pulls/get",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "8541ade9885f492f80fdf2799429b502dd9e39694651105381ef7dddc4943682",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "d545c66da462167c2137fb9d050f7c7cbc8dab4bab6553a03df16f281959f73d",
+      "method": "get",
+      "operation_id": "pulls/list",
+      "path": "/repos/{owner}/{repo}/pulls",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "6c721b4b4b3bfbd6c7d7bb6c6ef1dfda668cb21f74b5139e223fa7aa35121bfe",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "30c6a3cf6486fc94a12fa5f2d5b900a69a0e141653e943bd18cef454f6feca85",
+      "method": "delete",
+      "operation_id": "pulls/remove-requested-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "d00c8a15429771d248c64e0e8b277f722122dba96b1b99be3d4bfa6d7aea7e35",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "a8660671b02dd102182c6b178748b4d7bc8d421fd47ef9cd6785e0295c86ad90",
+      "method": "post",
+      "operation_id": "pulls/request-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "25b016e0706c0ee6f29d93baf4b9d3041a43e2e4df51bfda66394fdc6012f840",
+      "direct_change_categories": [],
+      "family": "pull_requests",
+      "historical_contract_sha256": "d031f45e1c76162ea1f0ffb9db1b6e28ffc5303fd099a24a664567ad60c5350b",
+      "method": "patch",
+      "operation_id": "pulls/update",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "changed_operation_fields": [
+        "responses"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "360bbecf67dcd438795c1cd1469cc655121df0c9027bf8e56837b520137df984",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "012195725f0acaffe1f6fe1643ee43b85e766bc5107d16f4bef76b619aac3d5d",
+      "method": "patch",
+      "operation_id": "repos/accept-invitation-for-authenticated-user",
+      "path": "/user/repository_invitations/{invitation_id}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 0,
+          "component_class": "responses",
+          "current_only_count": 1,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 0,
+          "component_class": "schemas",
+          "current_only_count": 1,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9a1f3c512399f60d2607baf4ccad1c26d8a156e3c494936c00f077f24b929618",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "4e0c0ae72bcc280d39c52e321a9cb2378b3ded3b2658f84e4d86ea4e8b3fbe8f",
+      "method": "put",
+      "operation_id": "repos/add-collaborator",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "changed_operation_fields": [
+        "responses"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "53c33ad3e367e042efcd247bf81fc61a6cae08b1847bc4c3681fde3846d6c0de",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "c240c24ad06732709bf321c899ec126da07a219ebdc0902f4dd2fa7083a94f6c",
+      "method": "post",
+      "operation_id": "repos/create-for-authenticated-user",
+      "path": "/user/repos",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "87e33f0052a23e14ae8e7e01089fd6389fb713622f03b391e14e3f0395649ff5",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "7ed62aa26ff0ee33f5d36aa6fe77680ba6fcaece7c6fcc7f49cb8d629dc85f98",
+      "method": "post",
+      "operation_id": "repos/create-fork",
+      "path": "/repos/{owner}/{repo}/forks",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_and_referenced",
+      "changed_operation_fields": [
+        "responses"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "eda01a5d06c265e517a5dae3f846d9aa9f67cd32ec601cc4df16bba953e7ff44",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "140d8a1649bb71dab0064799d0f633330b1f878ea11d23d8869d71dd20b1f218",
+      "method": "post",
+      "operation_id": "repos/create-in-org",
+      "path": "/orgs/{org}/repos",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "5078d1d9f212d216d4ae4e57a384cf374f1678ed076a1c2d0f22972ee0420b88",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "f18426779b8f43a49741185b1d9ce0b86d9b00bbb9e01854fbadc84e5dd3ea2e",
+      "method": "post",
+      "operation_id": "repos/create-using-template",
+      "path": "/repos/{template_owner}/{template_repo}/generate",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "5d425cd0a97482d15c958c09ce6aa64c78003477d726fc9226d88bd04d428923",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "c8f1f7e1c325857464a431c1903b7a8512a4d92af19b4150b1bd343b944ff4ae",
+      "method": "get",
+      "operation_id": "repos/get",
+      "path": "/repos/{owner}/{repo}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "f0d953aa36ce5d7f86d6f0fa2147c0d264d062e0db84eba0a7cf31e6de1aef34",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "2b56ca005ebd747ec95d3ea93266672cd1857b9bdb38a4457f5c2fb1051e2851",
+      "method": "get",
+      "operation_id": "repos/get-combined-status-for-ref",
+      "path": "/repos/{owner}/{repo}/commits/{ref}/status",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "direct_only",
+      "changed_operation_fields": [
+        "description"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "077a811f50bad0d1dc495a39389465611b55d33740712b00d83c4b444cef4c16",
+      "direct_change_categories": [
+        "description_or_summary"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "adc59e52ac53fc517c11da812eb98a205ed8743e8763d8f3ef88112f9a4b3b3f",
+      "method": "get",
+      "operation_id": "repos/get-content",
+      "path": "/repos/{owner}/{repo}/contents/{path}",
+      "reference_change_summaries": []
+    },
+    {
+      "change_mode": "direct_only",
+      "changed_operation_fields": [
+        "responses"
+      ],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "8f1986cbe8f9521406c2959c892b7cc84cf71c5502d4f285b2468ad6d3d86cd1",
+      "direct_change_categories": [
+        "responses"
+      ],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "4359ce766b5dea8cf9e0ddb966a713b1da6655974fe4a47033207a9c318924e0",
+      "method": "get",
+      "operation_id": "repos/list-attestations",
+      "path": "/repos/{owner}/{repo}/attestations/{subject_digest}",
+      "reference_change_summaries": []
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "55ee8b0bcced789158525e91714037d56225d9ad1309f08771646e25d48bfe95",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "f4ffbb0b2a2863bd936cafa2a07e267112bc8b3f84eb7fd539763dc72fddc9b0",
+      "method": "get",
+      "operation_id": "repos/list-for-authenticated-user",
+      "path": "/user/repos",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "f80e5c5eadf3cae1d0d1beabf69f38053b3bf45e7cdf6a2080a4203777b27d12",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "909959a9a9467ce2a44395471a86043ef7d69a014b45176e9f853012dfe1fefc",
+      "method": "get",
+      "operation_id": "repos/list-for-org",
+      "path": "/orgs/{org}/repos",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "4e60c2669f2d88d9ade96030371bbe26a91bfaf9854dd4c2ed2a4193c3d367ed",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "9c0f01bac4966553db3f60960bc8261021aa17651c15c071f9c157c0f24bc36b",
+      "method": "get",
+      "operation_id": "repos/list-for-user",
+      "path": "/users/{username}/repos",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "1806fdba8305acf116a4d152692cf985693ceb7c463a3e4287ebb3cc1b1589b7",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "d0bb8dcf83daeb09e4587174f5f124e380ed59b95a0a34c74d4c8937bb7ec246",
+      "method": "get",
+      "operation_id": "repos/list-forks",
+      "path": "/repos/{owner}/{repo}/forks",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "59115037dd9a2baf99c2f3700897020573d6d5139eca1e7016547d390a09c24f",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "c473bfde9e7f8329103b4d251f72e3232efcd312cfba9d611b0b4c62b4254cef",
+      "method": "get",
+      "operation_id": "repos/list-invitations",
+      "path": "/repos/{owner}/{repo}/invitations",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "6b1ee5d2eb71b3a2ae71089ce6b70947a5b761abb497d14fea1169a4b1be1980",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "3beb1f24de0df35a61d6f8ed556c7c91dd175701a4d07aaa4acb9f7b21bc1666",
+      "method": "get",
+      "operation_id": "repos/list-invitations-for-authenticated-user",
+      "path": "/user/repository_invitations",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "146c99fd447cef78a08cb1ea02a6fd7a59d19d33e9db93ceb9af124a9b72cede",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "2515060c62314b5eef7f888f75f2db8fce500d66884a374c8205867200cd752f",
+      "method": "get",
+      "operation_id": "repos/list-public",
+      "path": "/repositories",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "8e41787aa90a147c670edbdb2917b0110526be2ac7033d0249f8869b40151574",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "83a97d538e39c986850532ae3a431f3071a4a8ec0ec1a742af40c401c7e48a9c",
+      "method": "get",
+      "operation_id": "repos/list-pull-requests-associated-with-commit",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/pulls",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 2,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "a261dd939e0dc1f02fb12037e64019d493e8680c485eb2531689370e74c2837e",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "8878ebdf8e845d0246d908bdedb8b6e6fcef1f09b33148dda96f3d9383a4c3da",
+      "method": "post",
+      "operation_id": "repos/transfer",
+      "path": "/repos/{owner}/{repo}/transfer",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "9feea339058967fedfee4ec0cc536ae215b735d0a36acd79d68e52c18d8e0bd7",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "3a9c717da09723597b649e40e0728bfd77f70e55d328d27d2b5948e1dba7c05a",
+      "method": "patch",
+      "operation_id": "repos/update",
+      "path": "/repos/{owner}/{repo}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "examples",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        },
+        {
+          "changed_shared_count": 3,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    },
+    {
+      "change_mode": "referenced_only",
+      "changed_operation_fields": [],
+      "changed_path_item_fields": [],
+      "current_contract_sha256": "7edf454273fb9fb9d0dd13b89ce1fc530b6fccf25f7a6dea70fb5b369c304bf5",
+      "direct_change_categories": [],
+      "family": "repositories_and_repository_webhooks",
+      "historical_contract_sha256": "b663f1e3d8869549258ef408a5fef9e6d7ac46c664a97209cf03b4dad33d92b5",
+      "method": "patch",
+      "operation_id": "repos/update-invitation",
+      "path": "/repos/{owner}/{repo}/invitations/{invitation_id}",
+      "reference_change_summaries": [
+        {
+          "changed_shared_count": 1,
+          "component_class": "schemas",
+          "current_only_count": 0,
+          "historical_only_count": 0
+        }
+      ]
+    }
+  ],
+  "review_status": "candidate_review",
+  "selection_status": "candidate_only",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_contract_delta_sha256": "8439c778a78d6475fc647e6e4f95a07cfbbeb221fbaad357df35e3bb477bb22f"
+}

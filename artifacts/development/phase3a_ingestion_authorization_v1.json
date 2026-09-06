@@ -1,0 +1,29 @@
+{
+  "authorization_scope": "phase3_corpus_ingestion_from_pinned_snapshot_only",
+  "family_counts": [
+    {
+      "family": "actions",
+      "operation_count": 5
+    },
+    {
+      "family": "issues",
+      "operation_count": 5
+    },
+    {
+      "family": "pull_requests",
+      "operation_count": 5
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "operation_count": 5
+    }
+  ],
+  "ingestion_authorized": true,
+  "operation_allowlist_sha256": "4458525018000b35f06f7d5ff3e3c7bfe61dc36550cf276789228d03db6f8b61",
+  "operation_count": 20,
+  "receipt_version": "phase3a-ingestion-authorization-v1",
+  "release_eligible": false,
+  "selection_status": "frozen_allowlist",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_shortlist_sha256": "26ca1daa07f469260c0912017c415f4df71b2518f9223ee396ad52144877b335"
+}
