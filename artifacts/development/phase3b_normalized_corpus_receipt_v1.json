@@ -1,0 +1,20 @@
+{
+  "authored_document_count": 10,
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "current_operation_document_count": 20,
+  "document_count": 50,
+  "file_identity_match_count": 50,
+  "full_ingestion_ready": false,
+  "historical_operation_document_count": 20,
+  "normalization_status": "complete",
+  "normalized_corpus_ready": true,
+  "normalized_manifest_sha256": "2c7c2105d23bc48c64e911fec9c4e6152caf1f0e705666cfc0557f9a79ff9e8b",
+  "operation_allowlist_sha256": "4458525018000b35f06f7d5ff3e3c7bfe61dc36550cf276789228d03db6f8b61",
+  "receipt_version": "phase3b-normalized-corpus-receipt-v1",
+  "retrieval_completed_at": "2026-09-06T19:27:20.066502Z",
+  "retrieval_started_at": "2026-09-06T19:26:00.640883Z",
+  "source_acquisition_receipt_sha256": "a1deb6580e10bdae3d21d1ca3abb81cc86241b0888e930ae153bfb99451eaae0",
+  "source_rendered_manifest_sha256": "974c3ce722e30d630d09360cf115ac4679b2bf09797aa89a8f8af6e5549f5e7f",
+  "source_selection_sha256": "26f4469b5639422b03828535786343a162b7b3113a1b30fafa79180cb0c2e950"
+}

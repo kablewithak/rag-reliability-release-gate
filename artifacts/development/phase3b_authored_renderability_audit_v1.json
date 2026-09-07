@@ -1,0 +1,267 @@
+{
+  "acquisition_receipt_sha256": "a1deb6580e10bdae3d21d1ca3abb81cc86241b0888e930ae153bfb99451eaae0",
+  "audit_version": "phase3b-authored-renderability-audit-v1",
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "document_count": 10,
+  "documents": [
+    {
+      "autotitle_count": 4,
+      "data_references": [
+        "reusables.rest-api.about-api-versions",
+        "reusables.rest-api.version-header",
+        "variables.product.github",
+        "variables.product.prodname_ghe_server",
+        "variables.release-phases.closing_down",
+        "variables.release-phases.retired"
+      ],
+      "liquid_tags": [
+        "assign",
+        "data",
+        "endfor",
+        "endif",
+        "for",
+        "ifversion"
+      ],
+      "path": "content/rest/about-the-rest-api/api-versions.md",
+      "source_id": "docs-api-versions",
+      "template_variables": [
+        "apiVersion",
+        "defaultRestApiVersion",
+        "versionData.end_of_support | default: \"Not yet scheduled\""
+      ],
+      "unresolved_directive_count": 33
+    },
+    {
+      "autotitle_count": 17,
+      "data_references": [
+        "reusables.getting-started.bearer-vs-token",
+        "reusables.user-settings.developer_settings",
+        "variables.location.product_location",
+        "variables.product.company_short",
+        "variables.product.pat_generic",
+        "variables.product.pat_generic_caps_plural",
+        "variables.product.pat_generic_plural",
+        "variables.product.pat_v1",
+        "variables.product.pat_v2",
+        "variables.product.pat_v2_caps",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_cli",
+        "variables.product.prodname_dotcom",
+        "variables.product.prodname_github_app",
+        "variables.product.prodname_github_apps",
+        "variables.product.prodname_oauth_app",
+        "variables.product.prodname_oauth_apps",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "data",
+        "else",
+        "endif",
+        "endraw",
+        "ifversion",
+        "raw"
+      ],
+      "path": "content/rest/authentication/authenticating-to-the-rest-api.md",
+      "source_id": "docs-authentication",
+      "template_variables": [
+        "allVersions[currentVersion].latestApiVersion",
+        "secrets.GITHUB_TOKEN"
+      ],
+      "unresolved_directive_count": 102
+    },
+    {
+      "autotitle_count": 6,
+      "data_references": [
+        "reusables.organizations.api-insights-learn-about",
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "data",
+        "else",
+        "endif",
+        "ifversion"
+      ],
+      "path": "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+      "source_id": "docs-best-practices",
+      "template_variables": [],
+      "unresolved_directive_count": 31
+    },
+    {
+      "autotitle_count": 1,
+      "data_references": [
+        "reusables.rest-api.about-api-versions",
+        "reusables.rest-api.breaking-changes-changelog"
+      ],
+      "liquid_tags": [
+        "data"
+      ],
+      "path": "content/rest/about-the-rest-api/breaking-changes.md",
+      "source_id": "docs-breaking-changes",
+      "template_variables": [],
+      "unresolved_directive_count": 3
+    },
+    {
+      "autotitle_count": 17,
+      "data_references": [
+        "reusables.user-settings.token_access_capabilities",
+        "variables.enterprise.data_residency",
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.pat_generic",
+        "variables.product.pat_v1_plural",
+        "variables.product.pat_v2",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_github_app"
+      ],
+      "liquid_tags": [
+        "data",
+        "endif",
+        "ifversion"
+      ],
+      "path": "content/rest/authentication/keeping-your-api-credentials-secure.md",
+      "source_id": "docs-credential-security",
+      "template_variables": [],
+      "unresolved_directive_count": 55
+    },
+    {
+      "autotitle_count": 13,
+      "data_references": [
+        "variables.enterprise.data_residency_api",
+        "variables.enterprise.data_residency_example_domain",
+        "variables.location.product_location",
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.pat_generic",
+        "variables.product.pat_v2",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_cli",
+        "variables.product.prodname_dotcom",
+        "variables.product.prodname_dotcom_the_website",
+        "variables.product.prodname_github_app",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "cli",
+        "curl",
+        "data",
+        "else",
+        "endcli",
+        "endcurl",
+        "endif",
+        "endjavascript",
+        "ifversion",
+        "javascript"
+      ],
+      "path": "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+      "source_id": "docs-getting-started",
+      "template_variables": [
+        "allVersions[currentVersion].latestApiVersion",
+        "defaultRestApiVersion"
+      ],
+      "unresolved_directive_count": 198
+    },
+    {
+      "autotitle_count": 3,
+      "data_references": [
+        "variables.product.company_short",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "data",
+        "endif",
+        "ifversion"
+      ],
+      "path": "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+      "source_id": "docs-pagination",
+      "template_variables": [
+        "allVersions[currentVersion].latestApiVersion"
+      ],
+      "unresolved_directive_count": 14
+    },
+    {
+      "autotitle_count": 10,
+      "data_references": [
+        "reusables.organizations.api-insights-learn-about",
+        "reusables.rest-api.primary-rate-limit-authenticated-users",
+        "reusables.rest-api.primary-rate-limit-github-app-installations",
+        "reusables.rest-api.primary-rate-limit-github-token-in-actions",
+        "reusables.rest-api.primary-rate-limit-oauth-apps",
+        "reusables.rest-api.primary-rate-limit-unauthenticated-users",
+        "reusables.rest-api.secondary-rate-limit-rest-graphql",
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.pat_generic",
+        "variables.product.pat_generic_plural",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_free_user",
+        "variables.product.prodname_ghe_cloud",
+        "variables.product.prodname_ghe_server",
+        "variables.product.prodname_github_app",
+        "variables.product.prodname_github_apps",
+        "variables.product.prodname_oauth_app",
+        "variables.product.prodname_oauth_apps",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "data",
+        "else",
+        "endif",
+        "ifversion"
+      ],
+      "path": "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+      "source_id": "docs-rate-limits",
+      "template_variables": [],
+      "unresolved_directive_count": 56
+    },
+    {
+      "autotitle_count": 2,
+      "data_references": [
+        "variables.product.github",
+        "variables.product.rest_url"
+      ],
+      "liquid_tags": [
+        "data"
+      ],
+      "path": "content/rest/using-the-rest-api/timezones-and-the-rest-api.md",
+      "source_id": "docs-timezones",
+      "template_variables": [],
+      "unresolved_directive_count": 4
+    },
+    {
+      "autotitle_count": 21,
+      "data_references": [
+        "reusables.organizations.api-insights-learn-about",
+        "reusables.rest-api.version-header",
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.pat_generic",
+        "variables.product.pat_v1",
+        "variables.product.pat_v2",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_free_team",
+        "variables.product.prodname_github_app",
+        "variables.product.prodname_oauth_app"
+      ],
+      "liquid_tags": [
+        "data",
+        "else",
+        "endif",
+        "ifversion"
+      ],
+      "path": "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+      "source_id": "docs-troubleshooting",
+      "template_variables": [],
+      "unresolved_directive_count": 62
+    }
+  ],
+  "full_ingestion_ready": false,
+  "release_eligible": false,
+  "render_dependency_freeze_required": true,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "total_unresolved_directive_count": 558,
+  "unique_data_reference_count": 41,
+  "unresolved_document_count": 10
+}

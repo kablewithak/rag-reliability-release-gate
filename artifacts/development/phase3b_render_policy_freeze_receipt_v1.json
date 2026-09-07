@@ -1,0 +1,20 @@
+{
+  "assignment_expression_count": 1,
+  "autotitle_target_count": 56,
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "conditional_expression_count": 13,
+  "freeze_status": "frozen",
+  "full_ingestion_ready": false,
+  "iteration_expression_count": 1,
+  "presentation_argument_count": 1,
+  "receipt_version": "phase3b-render-policy-freeze-receipt-v1",
+  "release_eligible": false,
+  "render_policy_manifest_sha256": "bad71a4e07f7f19ddbb9734c2ef7a822e890e36fa92e6336eb8b7ea9869b0d62",
+  "rendering_authorized": true,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_manifest_sha256": "508fdf53bde20072b142babd78b9d707c90b3d10eb039f3cd65cba1ebbf5a51c",
+  "source_render_context_review_sha256": "31ad31fa06987d85960de7627a38ca6d02bd9aa4c6fb18127106a2b26f7e7369",
+  "source_render_semantics_review_sha256": "25cae92b748ec1e40674c6813772c2c258b366e47f702da682b00dc0fd912368",
+  "variant_argument_count": 3
+}

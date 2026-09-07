@@ -1,0 +1,12 @@
+{
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "document_count": 10,
+  "freeze_status": "frozen",
+  "full_ingestion_ready": false,
+  "identity_match_count": 10,
+  "normalization_authorized": true,
+  "receipt_version": "phase3b-rendered-source-freeze-receipt-v1",
+  "rendered_source_manifest_sha256": "974c3ce722e30d630d09360cf115ac4679b2bf09797aa89a8f8af6e5549f5e7f",
+  "source_authored_render_candidate_sha256": "1b4464c00db84b7ad909f16be7c4d03d793d243913f833f547a37084e9372912"
+}

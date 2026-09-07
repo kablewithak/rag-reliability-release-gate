@@ -1,0 +1,106 @@
+{
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "document_count": 10,
+  "documents": [
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 5532,
+      "rendered_content_sha256": "c87d8451283cfadc0512d54cefac720c0a258c7e7f399006fa0a69f570891955",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-api-versions.md",
+      "source_content_sha256": "c680c9b1207d2d8bb39b410b8f9f78c59aad962a5783bdc677ddb67fdbcb0e22",
+      "source_id": "docs-api-versions",
+      "source_path": "content/rest/about-the-rest-api/api-versions.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 12301,
+      "rendered_content_sha256": "81055b628f2d3ae348ccbb6eecc16df7b4fa5180daf3166afcc8e82bb6cafbcb",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-authentication.md",
+      "source_content_sha256": "ac1aa6b580cd7986bab71b9e476eba73850b893f4a5552ceaa4b788e22dc46bb",
+      "source_id": "docs-authentication",
+      "source_path": "content/rest/authentication/authenticating-to-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 10358,
+      "rendered_content_sha256": "6412524ae8f0048ca20eb52e9c2475dff5cdee3ae2930c8ce3fe361dac5b7ed9",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-best-practices.md",
+      "source_content_sha256": "7e553b6f693b5e28abdde4c9634df5174edede713eb425d4b01f361867d8cc6e",
+      "source_id": "docs-best-practices",
+      "source_path": "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 30436,
+      "rendered_content_sha256": "26bbe28bad03b354d75a155c59fa4a000b9bdb49b3e5ae42c1b4cee85dba996e",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-breaking-changes.md",
+      "source_content_sha256": "98385e8e8a91f2f015bc024a8e40edaff81e97e98918886f83d0049c05aecfe3",
+      "source_id": "docs-breaking-changes",
+      "source_path": "content/rest/about-the-rest-api/breaking-changes.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 7979,
+      "rendered_content_sha256": "e2094fccc7253ceceb9e6c430d14566e3870c1f5e6b447bf89c3a055e95d9c05",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-credential-security.md",
+      "source_content_sha256": "77581a715030f637897827eb554c6eb9a80aa72dc35a9d3934a9f757bb334af7",
+      "source_id": "docs-credential-security",
+      "source_path": "content/rest/authentication/keeping-your-api-credentials-secure.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 39387,
+      "rendered_content_sha256": "2f3ea9a57ad5b58dc103800a4643f3ec7a17186379244afd73c51fbf2dafdec2",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-getting-started.md",
+      "source_content_sha256": "c062d213cc3c3afa755d9cfe6a79d33cdce833d7ea5af682d8dfe6786d91cb1e",
+      "source_id": "docs-getting-started",
+      "source_path": "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 9929,
+      "rendered_content_sha256": "73397c17264b0d32785fe0d17586c9f710cdfc7183aa7ac8698e168740c437b1",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-pagination.md",
+      "source_content_sha256": "418bdf281d74a89c7dabedc4af53a6f7b286f2416e7670d9cc71453db08d8640",
+      "source_id": "docs-pagination",
+      "source_path": "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 11802,
+      "rendered_content_sha256": "42b6842baaebef544ec6035468208dfe9b132c321d41f3766e7752415bf5cc6b",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-rate-limits.md",
+      "source_content_sha256": "74d4f0421323825f2f3649fc5fd9059efdc6ee4f853d5662f3d66f63ccf06efd",
+      "source_id": "docs-rate-limits",
+      "source_path": "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 2683,
+      "rendered_content_sha256": "1098fec781d02a7612836ebdc790b59ed31e2f5a1c09ed47cd93cac203ec3ed6",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-timezones.md",
+      "source_content_sha256": "cdcc0b13f46cbaafd4d301da9bccb86561459470b27a96d2ee96769cfa65e7bd",
+      "source_id": "docs-timezones",
+      "source_path": "content/rest/using-the-rest-api/timezones-and-the-rest-api.md"
+    },
+    {
+      "active_unresolved_directive_count": 0,
+      "rendered_byte_count": 16319,
+      "rendered_content_sha256": "69db71f26abf11f1ba9928fa6788de4e78e856b1fb953ff88097642bddcd076a",
+      "rendered_path": "datasets/source_documents/rendered/phase3b_authored_v1/docs-troubleshooting.md",
+      "source_content_sha256": "85a66b7042f699f898f33f24431ead2f8144add04103e07bd155884399671209",
+      "source_id": "docs-troubleshooting",
+      "source_path": "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+    }
+  ],
+  "freeze_status": "frozen",
+  "freeze_version": "phase3b-rendered-source-freeze-v1",
+  "full_ingestion_ready": false,
+  "identity_match_count": 10,
+  "normalization_authorized": true,
+  "release_eligible": false,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_authored_render_candidate_sha256": "1b4464c00db84b7ad909f16be7c4d03d793d243913f833f547a37084e9372912",
+  "unresolved_document_count": 0
+}

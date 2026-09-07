@@ -1,0 +1,370 @@
+{
+  "autotitle_occurrence_count": 96,
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "full_ingestion_ready": false,
+  "liquid_occurrence_count": 509,
+  "records": [
+    {
+      "construct_kind": "autotitle",
+      "construct_name": "[AUTOTITLE]",
+      "decision_class": "link_title_resolution",
+      "occurrence_count": 96,
+      "source_count": 12,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/about-the-rest-api/breaking-changes.md",
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/timezones-and-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/reusables/organizations/api-insights-learn-about.md",
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "assign",
+      "decision_class": "template_assignment",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "cli",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "curl",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 6,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "data",
+      "decision_class": "dependency_substitution",
+      "occurrence_count": 304,
+      "source_count": 16,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/about-the-rest-api/breaking-changes.md",
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/timezones-and-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/reusables/rest-api/about-api-versions.md",
+        "data/reusables/rest-api/primary-rate-limit-authenticated-users.md",
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md",
+        "data/reusables/rest-api/primary-rate-limit-github-token-in-actions.md",
+        "data/reusables/rest-api/primary-rate-limit-oauth-apps.md",
+        "data/reusables/rest-api/secondary-rate-limit-rest-graphql.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "else",
+      "decision_class": "conditional_control",
+      "occurrence_count": 22,
+      "source_count": 6,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "data/variables/location.yml#variables.location.product_location"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "elsif",
+      "decision_class": "conditional_control",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/variables/product.yml#variables.product.rest_url"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endcli",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endcurl",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 6,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endfor",
+      "decision_class": "iteration_control",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endif",
+      "decision_class": "conditional_control",
+      "occurrence_count": 71,
+      "source_count": 15,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/reusables/organizations/api-insights-learn-about.md",
+        "data/reusables/rest-api/breaking-changes-changelog.md",
+        "data/reusables/rest-api/primary-rate-limit-authenticated-users.md",
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md",
+        "data/reusables/rest-api/primary-rate-limit-github-token-in-actions.md",
+        "data/variables/location.yml#variables.location.product_location",
+        "data/variables/product.yml#variables.product.rest_url"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endjavascript",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "endraw",
+      "decision_class": "literal_block_control",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "for",
+      "decision_class": "iteration_control",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "if",
+      "decision_class": "conditional_control",
+      "occurrence_count": 6,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "ifversion",
+      "decision_class": "conditional_control",
+      "occurrence_count": 65,
+      "source_count": 15,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/reusables/organizations/api-insights-learn-about.md",
+        "data/reusables/rest-api/breaking-changes-changelog.md",
+        "data/reusables/rest-api/primary-rate-limit-authenticated-users.md",
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md",
+        "data/reusables/rest-api/primary-rate-limit-github-token-in-actions.md",
+        "data/variables/location.yml#variables.location.product_location",
+        "data/variables/product.yml#variables.product.rest_url"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "javascript",
+      "decision_class": "variant_block_control",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "octicon",
+      "decision_class": "presentation_substitution",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/user-settings/developer_settings.md"
+      ]
+    },
+    {
+      "construct_kind": "liquid_tag",
+      "construct_name": "raw",
+      "decision_class": "literal_block_control",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "allVersions[currentVersion].latestApiVersion",
+      "decision_class": "template_context_value",
+      "occurrence_count": 8,
+      "source_count": 4,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/reusables/rest-api/version-header.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "apiVersion",
+      "decision_class": "template_context_value",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "defaultRestApiVersion",
+      "decision_class": "template_context_value",
+      "occurrence_count": 6,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "initialRestVersioningReleaseDate",
+      "decision_class": "template_context_value",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/about-api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "initialRestVersioningReleaseDateLong",
+      "decision_class": "template_context_value",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/about-api-versions.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "secrets.GITHUB_TOKEN",
+      "decision_class": "template_context_value",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ]
+    },
+    {
+      "construct_kind": "template_variable",
+      "construct_name": "versionData.end_of_support | default: \"Not yet scheduled\"",
+      "decision_class": "template_context_value",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ]
+    }
+  ],
+  "release_eligible": false,
+  "render_context_freeze_required": true,
+  "rendering_authorized": false,
+  "required_liquid_tags": [
+    "assign",
+    "cli",
+    "curl",
+    "data",
+    "else",
+    "elsif",
+    "endcli",
+    "endcurl",
+    "endfor",
+    "endif",
+    "endjavascript",
+    "endraw",
+    "for",
+    "if",
+    "ifversion",
+    "javascript",
+    "octicon",
+    "raw"
+  ],
+  "required_template_variables": [
+    "allVersions[currentVersion].latestApiVersion",
+    "apiVersion",
+    "defaultRestApiVersion",
+    "initialRestVersioningReleaseDate",
+    "initialRestVersioningReleaseDateLong",
+    "secrets.GITHUB_TOKEN",
+    "versionData.end_of_support | default: \"Not yet scheduled\""
+  ],
+  "review_status": "candidate_only",
+  "review_version": "phase3b-render-context-review-v2",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_manifest_sha256": "508fdf53bde20072b142babd78b9d707c90b3d10eb039f3cd65cba1ebbf5a51c",
+  "source_render_audit_sha256": "7e5883d35e784a729974db4a05a582790efee4596269e5fa50bd8a7da79dd49e",
+  "template_variable_occurrence_count": 20
+}
