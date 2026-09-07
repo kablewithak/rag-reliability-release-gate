@@ -1,0 +1,297 @@
+{
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "dependency_files": [
+    {
+      "byte_count": 184,
+      "cache_path": "datasets/source_documents/_upstream_cache/609b9cbedaee29e37ef5a648fe68ff974fa149fe.md",
+      "content_sha256": "69966869fd4e74fc1e43b42ec6a7b16f04e1e0e170dea08f6ff46537292a35e4",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "609b9cbedaee29e37ef5a648fe68ff974fa149fe",
+      "path": "data/reusables/getting-started/bearer-vs-token.md",
+      "satisfied_references": [
+        "reusables.getting-started.bearer-vs-token"
+      ]
+    },
+    {
+      "byte_count": 274,
+      "cache_path": "datasets/source_documents/_upstream_cache/11de335d599a3b2d9df3d0011142807782891794.md",
+      "content_sha256": "226e7b83ac1171ceb316618840ad99c605c28258b2bfecaa2aad2e7dfba83cc6",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "11de335d599a3b2d9df3d0011142807782891794",
+      "path": "data/reusables/organizations/api-insights-learn-about.md",
+      "satisfied_references": [
+        "reusables.organizations.api-insights-learn-about"
+      ]
+    },
+    {
+      "byte_count": 1372,
+      "cache_path": "datasets/source_documents/_upstream_cache/729b78ec3bfc19c282960b2519aefa641dd6d2fd.md",
+      "content_sha256": "c161c0322695f39e9466b6ff59cc7e48ee56e48bda266ffb2bb38cdf5669fbf6",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "729b78ec3bfc19c282960b2519aefa641dd6d2fd",
+      "path": "data/reusables/rest-api/about-api-versions.md",
+      "satisfied_references": [
+        "reusables.rest-api.about-api-versions"
+      ]
+    },
+    {
+      "byte_count": 115913,
+      "cache_path": "datasets/source_documents/_upstream_cache/d445198ca3b114bdfd09627d7e8c812214515d2c.md",
+      "content_sha256": "c3ee3570d222d9d6e7accaa6064d13fa319650889fca78e3229daffeffcc159a",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "d445198ca3b114bdfd09627d7e8c812214515d2c",
+      "path": "data/reusables/rest-api/breaking-changes-changelog.md",
+      "satisfied_references": [
+        "reusables.rest-api.breaking-changes-changelog"
+      ]
+    },
+    {
+      "byte_count": 1304,
+      "cache_path": "datasets/source_documents/_upstream_cache/193c8872987398e389b1973097e79018f1007c19.md",
+      "content_sha256": "8e3667cc302378ba6a14eb75b783a55fbc73c414ab324223a8654391f22693f1",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "193c8872987398e389b1973097e79018f1007c19",
+      "path": "data/reusables/rest-api/primary-rate-limit-authenticated-users.md",
+      "satisfied_references": [
+        "reusables.rest-api.primary-rate-limit-authenticated-users"
+      ]
+    },
+    {
+      "byte_count": 1556,
+      "cache_path": "datasets/source_documents/_upstream_cache/52c3db33719f8d7c749547e30e2e58176f2fe1b6.md",
+      "content_sha256": "2a8bbebde84aa2d93603485ec2d6397059919e94f2d3a8e4b2ee969cba70d3c1",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "52c3db33719f8d7c749547e30e2e58176f2fe1b6",
+      "path": "data/reusables/rest-api/primary-rate-limit-github-app-installations.md",
+      "satisfied_references": [
+        "reusables.rest-api.primary-rate-limit-github-app-installations"
+      ]
+    },
+    {
+      "byte_count": 269,
+      "cache_path": "datasets/source_documents/_upstream_cache/af33f2efaa05cf870e6fc4310a7be46646c4336f.md",
+      "content_sha256": "7e67a43e7b5fd81596f0b598773abb852b7f9f5443077e3c9a261a01f68030b5",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "af33f2efaa05cf870e6fc4310a7be46646c4336f",
+      "path": "data/reusables/rest-api/primary-rate-limit-github-token-in-actions.md",
+      "satisfied_references": [
+        "reusables.rest-api.primary-rate-limit-github-token-in-actions"
+      ]
+    },
+    {
+      "byte_count": 246,
+      "cache_path": "datasets/source_documents/_upstream_cache/8b85734874d3fd373e1498880a23945b44da525a.md",
+      "content_sha256": "7553fe303ec32edfcd770487316795638f5115e9814c8e5c3f6c6460b7b576cc",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "8b85734874d3fd373e1498880a23945b44da525a",
+      "path": "data/reusables/rest-api/primary-rate-limit-oauth-apps.md",
+      "satisfied_references": [
+        "reusables.rest-api.primary-rate-limit-oauth-apps"
+      ]
+    },
+    {
+      "byte_count": 287,
+      "cache_path": "datasets/source_documents/_upstream_cache/110917f527966078d4e1c56a48d2f1a705b0ceed.md",
+      "content_sha256": "a3e4883bc151768968ee465149aadd1881bbb7d7f6efc6e54d9015c4a0ca312a",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "110917f527966078d4e1c56a48d2f1a705b0ceed",
+      "path": "data/reusables/rest-api/primary-rate-limit-unauthenticated-users.md",
+      "satisfied_references": [
+        "reusables.rest-api.primary-rate-limit-unauthenticated-users"
+      ]
+    },
+    {
+      "byte_count": 2518,
+      "cache_path": "datasets/source_documents/_upstream_cache/81bf3e084e75dd218a2f92823508e14d866cf04e.md",
+      "content_sha256": "f8688b2a99dfdc6b1ea6e027173c6891807f265de8a44ae00a0aae6e099190e7",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "81bf3e084e75dd218a2f92823508e14d866cf04e",
+      "path": "data/reusables/rest-api/secondary-rate-limit-rest-graphql.md",
+      "satisfied_references": [
+        "reusables.rest-api.secondary-rate-limit-rest-graphql"
+      ]
+    },
+    {
+      "byte_count": 83,
+      "cache_path": "datasets/source_documents/_upstream_cache/f1ef5513eba4389dfed3ceae09af992a0270a4a9.md",
+      "content_sha256": "2c8aa15f3f1c7409982ae5a1a57f3ca11f9875f5df964950bd5147a0a68af487",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "f1ef5513eba4389dfed3ceae09af992a0270a4a9",
+      "path": "data/reusables/rest-api/version-header.md",
+      "satisfied_references": [
+        "reusables.rest-api.version-header"
+      ]
+    },
+    {
+      "byte_count": 112,
+      "cache_path": "datasets/source_documents/_upstream_cache/fe39eba9a64d20a3f9392b7d48e918e690653b08.md",
+      "content_sha256": "212b014c9cad5f699b4f9ce9d018f3582838a23591149f3fd7e0df7acc943ebd",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "fe39eba9a64d20a3f9392b7d48e918e690653b08",
+      "path": "data/reusables/user-settings/developer_settings.md",
+      "satisfied_references": [
+        "reusables.user-settings.developer_settings"
+      ]
+    },
+    {
+      "byte_count": 263,
+      "cache_path": "datasets/source_documents/_upstream_cache/dcfa39a13a972c8badd31a70bc0d5b35c83d195d.md",
+      "content_sha256": "5e4d338f4016ebd6cd937e6261ba6dba7c5356f3329ea59d4e1bcb9aed830070",
+      "media_type": "markdown_reusable",
+      "observed_git_blob_sha1": "dcfa39a13a972c8badd31a70bc0d5b35c83d195d",
+      "path": "data/reusables/user-settings/token_access_capabilities.md",
+      "satisfied_references": [
+        "reusables.user-settings.token_access_capabilities"
+      ]
+    },
+    {
+      "byte_count": 2055,
+      "cache_path": "datasets/source_documents/_upstream_cache/5d2accc0aa985a985c8310df0b52e8fd572f8a16.yml",
+      "content_sha256": "eef85bf665e36d0ad03e580e3a8abf44845f587db12aa4146b004482e80acbec",
+      "media_type": "yaml_variables",
+      "observed_git_blob_sha1": "5d2accc0aa985a985c8310df0b52e8fd572f8a16",
+      "path": "data/variables/enterprise.yml",
+      "satisfied_references": [
+        "variables.enterprise.data_residency",
+        "variables.enterprise.data_residency_api",
+        "variables.enterprise.data_residency_example_domain"
+      ]
+    },
+    {
+      "byte_count": 501,
+      "cache_path": "datasets/source_documents/_upstream_cache/243f6b42c0a7fcf085f4480b88928c0a1ed0d96c.yml",
+      "content_sha256": "e265dafd8acd596f967d7a41da26f16844e890084ab018ffaf5a4273023fb97a",
+      "media_type": "yaml_variables",
+      "observed_git_blob_sha1": "243f6b42c0a7fcf085f4480b88928c0a1ed0d96c",
+      "path": "data/variables/location.yml",
+      "satisfied_references": [
+        "variables.location.product_location"
+      ]
+    },
+    {
+      "byte_count": 16255,
+      "cache_path": "datasets/source_documents/_upstream_cache/f10fb985f9ed9fd8a3eefae7ab8c144a1177765c.yml",
+      "content_sha256": "3f617243d2439c19ac633f92b1d8f6c111485bdd69f50645157e8b530b8e5149",
+      "media_type": "yaml_variables",
+      "observed_git_blob_sha1": "f10fb985f9ed9fd8a3eefae7ab8c144a1177765c",
+      "path": "data/variables/product.yml",
+      "satisfied_references": [
+        "variables.product.company_short",
+        "variables.product.github",
+        "variables.product.pat_generic",
+        "variables.product.pat_generic_caps_plural",
+        "variables.product.pat_generic_plural",
+        "variables.product.pat_v1",
+        "variables.product.pat_v1_plural",
+        "variables.product.pat_v2",
+        "variables.product.pat_v2_caps",
+        "variables.product.prodname_actions",
+        "variables.product.prodname_cli",
+        "variables.product.prodname_dotcom",
+        "variables.product.prodname_dotcom_the_website",
+        "variables.product.prodname_free_team",
+        "variables.product.prodname_free_user",
+        "variables.product.prodname_ghe_cloud",
+        "variables.product.prodname_ghe_server",
+        "variables.product.prodname_github_app",
+        "variables.product.prodname_github_apps",
+        "variables.product.prodname_oauth_app",
+        "variables.product.prodname_oauth_apps",
+        "variables.product.rest_url"
+      ]
+    },
+    {
+      "byte_count": 629,
+      "cache_path": "datasets/source_documents/_upstream_cache/8bc91f9b2a986ba50ecaa15b82198ef85c8b721f.yml",
+      "content_sha256": "bdb2e5aae5096ba5f22663ec179ccb0b3040d2393153c443139fc8dbce768cd8",
+      "media_type": "yaml_variables",
+      "observed_git_blob_sha1": "8bc91f9b2a986ba50ecaa15b82198ef85c8b721f",
+      "path": "data/variables/release-phases.yml",
+      "satisfied_references": [
+        "variables.release-phases.closing_down",
+        "variables.release-phases.retired"
+      ]
+    }
+  ],
+  "freeze_status": "frozen",
+  "freeze_version": "phase3b-render-dependency-freeze-v1",
+  "full_ingestion_ready": false,
+  "github_docs_commit_sha": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+  "release_eligible": false,
+  "render_context_review_required": true,
+  "rendering_authorized": false,
+  "required_liquid_tags": [
+    "cli",
+    "curl",
+    "data",
+    "else",
+    "elsif",
+    "endcli",
+    "endcurl",
+    "endif",
+    "endjavascript",
+    "endraw",
+    "if",
+    "ifversion",
+    "javascript",
+    "octicon",
+    "raw"
+  ],
+  "required_template_variables": [
+    "allVersions[currentVersion].latestApiVersion",
+    "apiVersion",
+    "defaultRestApiVersion",
+    "initialRestVersioningReleaseDate",
+    "initialRestVersioningReleaseDateLong",
+    "secrets.GITHUB_TOKEN",
+    "versionData.end_of_support | default: \"Not yet scheduled\""
+  ],
+  "resolved_data_references": [
+    "reusables.getting-started.bearer-vs-token",
+    "reusables.organizations.api-insights-learn-about",
+    "reusables.rest-api.about-api-versions",
+    "reusables.rest-api.breaking-changes-changelog",
+    "reusables.rest-api.primary-rate-limit-authenticated-users",
+    "reusables.rest-api.primary-rate-limit-github-app-installations",
+    "reusables.rest-api.primary-rate-limit-github-token-in-actions",
+    "reusables.rest-api.primary-rate-limit-oauth-apps",
+    "reusables.rest-api.primary-rate-limit-unauthenticated-users",
+    "reusables.rest-api.secondary-rate-limit-rest-graphql",
+    "reusables.rest-api.version-header",
+    "reusables.user-settings.developer_settings",
+    "reusables.user-settings.token_access_capabilities",
+    "variables.enterprise.data_residency",
+    "variables.enterprise.data_residency_api",
+    "variables.enterprise.data_residency_example_domain",
+    "variables.location.product_location",
+    "variables.product.company_short",
+    "variables.product.github",
+    "variables.product.pat_generic",
+    "variables.product.pat_generic_caps_plural",
+    "variables.product.pat_generic_plural",
+    "variables.product.pat_v1",
+    "variables.product.pat_v1_plural",
+    "variables.product.pat_v2",
+    "variables.product.pat_v2_caps",
+    "variables.product.prodname_actions",
+    "variables.product.prodname_cli",
+    "variables.product.prodname_dotcom",
+    "variables.product.prodname_dotcom_the_website",
+    "variables.product.prodname_free_team",
+    "variables.product.prodname_free_user",
+    "variables.product.prodname_ghe_cloud",
+    "variables.product.prodname_ghe_server",
+    "variables.product.prodname_github_app",
+    "variables.product.prodname_github_apps",
+    "variables.product.prodname_oauth_app",
+    "variables.product.prodname_oauth_apps",
+    "variables.product.rest_url",
+    "variables.release-phases.closing_down",
+    "variables.release-phases.retired"
+  ],
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_closure_sha256": "801f5cdd3a58abd370f9dac3d8768f12ac0dbae66fb415469e07cdb1b3c994a8",
+  "source_render_audit_sha256": "70427fd33f835e4036eac864d29e4742194980f3ac041f3f4ad354b26ef28955",
+  "transitive_reference_count": 0
+}

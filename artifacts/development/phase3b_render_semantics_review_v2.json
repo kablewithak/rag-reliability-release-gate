@@ -1,0 +1,807 @@
+{
+  "assignment_expression_count": 1,
+  "autotitle_target_count": 56,
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "conditional_expression_count": 13,
+  "full_ingestion_ready": false,
+  "iteration_expression_count": 1,
+  "presentation_argument_count": 1,
+  "records": [
+    {
+      "construct_kind": "assignment_expression",
+      "construct_name": "assign",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ],
+      "value": "versionData = tables.rest-api-versions.versions[apiVersion]"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstepsrun"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/actions/tutorials/authenticate-with-github_token"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/actions/tutorials/authenticate-with-github_token#modifying-the-permissions-for-the-github_token"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/admin/configuring-settings/configuring-user-applications-for-your-enterprise/configuring-rate-limits"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ],
+      "value": "/admin/release-notes"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 5,
+      "source_count": 3,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/apps/creating-github-apps/about-creating-github-apps/best-practices-for-creating-a-github-app"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/apps/creating-github-apps/authenticating-with-a-github-app/about-authentication-with-a-github-app"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/apps/creating-github-apps/authenticating-with-a-github-app/making-authenticated-api-requests-with-a-github-app-in-a-github-actions-workflow"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/apps/using-github-apps/approving-updated-permissions-for-a-github-app"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/authentication/authenticating-with-single-sign-on/authorizing-a-personal-access-token-for-use-with-single-sign-on"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 4,
+      "source_count": 3,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#keeping-your-personal-access-tokens-secure"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#types-of-personal-access-tokens"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 4,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/authentication/keeping-your-account-and-data-secure/token-expiration-and-revocation"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/code-security/concepts/secret-security/secret-scanning"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/free-pro-team@latest/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/free-pro-team@latest/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/graphql/overview/rate-limits-and-query-limits-for-the-graphql-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/organizations/api-insights-learn-about.md"
+      ],
+      "value": "/organizations/managing-programmatic-access-to-your-organization/viewing-api-insights-in-your-organization"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "/rest"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 3,
+      "source_locators": [
+        "content/rest/about-the-rest-api/breaking-changes.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/rest/about-the-rest-api/api-versions"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ],
+      "value": "/rest/about-the-rest-api/breaking-changes"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 4,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/rest/authentication/authenticating-to-the-rest-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "/rest/authentication/keeping-your-api-credentials-secure"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/authentication/keeping-your-api-credentials-secure?apiVersion=2022-11-28"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/authentication/permissions-required-for-fine-grained-personal-access-tokens"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/authentication/permissions-required-for-github-apps"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md"
+      ],
+      "value": "/rest/credentials/revoke#revoke-a-list-of-credentials"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/timezones-and-the-rest-api.md"
+      ],
+      "value": "/rest/git/commits#create-a-commit"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "/rest/guides/scripting-with-the-rest-api-and-javascript"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/guides/scripting-with-the-rest-api-and-javascript#authenticating-in-github-actions"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ],
+      "value": "/rest/meta/meta#get-all-api-versions"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "/rest/quickstart"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/rest/rate-limit/rate-limit"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "/rest/rate-limit/rate-limit#get-rate-limit-status-for-the-authenticated-user"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/timezones-and-the-rest-api.md"
+      ],
+      "value": "/rest/repos/contents"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/getting-started-with-the-rest-api#authentication"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/getting-started-with-the-rest-api#query-parameters"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=cli#path"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/getting-started-with-the-rest-api?tool=javascript"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 4,
+      "source_count": 4,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md"
+      ],
+      "value": "/rest/using-the-rest-api/rate-limits-for-the-rest-api#primary-rate-limit-for-authenticated-users"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/troubleshooting-the-rest-api#404-not-found-for-an-existing-resource"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 2,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/rest/using-the-rest-api/using-pagination-in-the-rest-api"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md"
+      ],
+      "value": "/webhooks"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md"
+      ],
+      "value": "/webhooks/testing-and-troubleshooting-webhooks/troubleshooting-webhooks"
+    },
+    {
+      "construct_kind": "autotitle_target",
+      "construct_name": "AUTOTITLE",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md"
+      ],
+      "value": "/webhooks/using-webhooks/best-practices-for-using-webhooks"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "elsif",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/variables/product.yml#variables.product.rest_url"
+      ],
+      "value": "ghes"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "if",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "query.apiVersion == nil or \"2022-11-28\" <= query.apiVersion"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "if",
+      "occurrence_count": 4,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "query.apiVersion == nil or \"2026-03-10\" <= query.apiVersion"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/organizations/api-insights-learn-about.md"
+      ],
+      "value": "api-insights"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/primary-rate-limit-github-app-installations.md"
+      ],
+      "value": "enterprise-installed-apps"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 3,
+      "source_count": 2,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "fpt"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 13,
+      "source_count": 7,
+      "source_locators": [
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/troubleshooting-the-rest-api.md",
+        "data/reusables/rest-api/primary-rate-limit-authenticated-users.md",
+        "data/reusables/rest-api/primary-rate-limit-github-token-in-actions.md",
+        "data/variables/product.yml#variables.product.rest_url"
+      ],
+      "value": "fpt or ghec"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 6,
+      "source_count": 4,
+      "source_locators": [
+        "content/rest/authentication/keeping-your-api-credentials-secure.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "ghec"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md"
+      ],
+      "value": "ghec or ghes"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 35,
+      "source_count": 7,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md",
+        "content/rest/authentication/authenticating-to-the-rest-api.md",
+        "content/rest/using-the-rest-api/best-practices-for-using-the-rest-api.md",
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+        "content/rest/using-the-rest-api/rate-limits-for-the-rest-api.md",
+        "content/rest/using-the-rest-api/using-pagination-in-the-rest-api.md",
+        "data/variables/location.yml#variables.location.product_location"
+      ],
+      "value": "ghes"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "ghes = 3.21"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/rest-api/breaking-changes-changelog.md"
+      ],
+      "value": "ghes = 3.22"
+    },
+    {
+      "construct_kind": "conditional_expression",
+      "construct_name": "ifversion",
+      "occurrence_count": 2,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "not fpt"
+    },
+    {
+      "construct_kind": "iteration_expression",
+      "construct_name": "for",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/about-the-rest-api/api-versions.md"
+      ],
+      "value": "apiVersion in allVersions[currentVersion].apiVersions"
+    },
+    {
+      "construct_kind": "presentation_argument",
+      "construct_name": "octicon",
+      "occurrence_count": 1,
+      "source_count": 1,
+      "source_locators": [
+        "data/reusables/user-settings/developer_settings.md"
+      ],
+      "value": "\"code\" aria-hidden=\"true\" aria-label=\"code\""
+    },
+    {
+      "construct_kind": "variant_argument",
+      "construct_name": "cli",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "<none>"
+    },
+    {
+      "construct_kind": "variant_argument",
+      "construct_name": "curl",
+      "occurrence_count": 6,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "<none>"
+    },
+    {
+      "construct_kind": "variant_argument",
+      "construct_name": "javascript",
+      "occurrence_count": 5,
+      "source_count": 1,
+      "source_locators": [
+        "content/rest/using-the-rest-api/getting-started-with-the-rest-api.md"
+      ],
+      "value": "<none>"
+    }
+  ],
+  "release_eligible": false,
+  "render_policy_freeze_required": true,
+  "rendering_authorized": false,
+  "review_status": "candidate_only",
+  "review_version": "phase3b-render-semantics-review-v2",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_manifest_sha256": "508fdf53bde20072b142babd78b9d707c90b3d10eb039f3cd65cba1ebbf5a51c",
+  "source_render_context_review_sha256": "31ad31fa06987d85960de7627a38ca6d02bd9aa4c6fb18127106a2b26f7e7369",
+  "supersedes_review_sha256": "e892bad04a1a8c58cac761c06b3c15015130b3ab53350c74ca2a97b159be6a20",
+  "supersedes_review_version": "phase3b-render-semantics-review-v1",
+  "supersession_reason": "liquid_trim_marker_parser_repair",
+  "variant_argument_count": 3
+}

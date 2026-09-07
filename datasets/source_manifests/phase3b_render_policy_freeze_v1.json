@@ -1,0 +1,138 @@
+{
+  "api_version_rows": [
+    {
+      "api_version": "2026-03-10",
+      "end_of_support": "Not yet scheduled"
+    },
+    {
+      "api_version": "2022-11-28",
+      "end_of_support": "March 10, 2028"
+    }
+  ],
+  "assignment_expression": "versionData = tables.rest-api-versions.versions[apiVersion]",
+  "autotitle_policy": "replace_autotitle_label_with_target_path_preserve_href",
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "conditional_decisions": [
+    {
+      "expression": "elsif:ghes",
+      "result": false
+    },
+    {
+      "expression": "if:query.apiVersion == nil or \"2022-11-28\" <= query.apiVersion",
+      "result": true
+    },
+    {
+      "expression": "if:query.apiVersion == nil or \"2026-03-10\" <= query.apiVersion",
+      "result": true
+    },
+    {
+      "expression": "ifversion:api-insights",
+      "result": false
+    },
+    {
+      "expression": "ifversion:enterprise-installed-apps",
+      "result": false
+    },
+    {
+      "expression": "ifversion:fpt",
+      "result": true
+    },
+    {
+      "expression": "ifversion:fpt or ghec",
+      "result": true
+    },
+    {
+      "expression": "ifversion:ghec",
+      "result": false
+    },
+    {
+      "expression": "ifversion:ghec or ghes",
+      "result": false
+    },
+    {
+      "expression": "ifversion:ghes",
+      "result": false
+    },
+    {
+      "expression": "ifversion:ghes = 3.21",
+      "result": false
+    },
+    {
+      "expression": "ifversion:ghes = 3.22",
+      "result": false
+    },
+    {
+      "expression": "ifversion:not fpt",
+      "result": false
+    }
+  ],
+  "current_version": "free-pro-team@latest",
+  "data_reference_policy": "substitute_exact_frozen_41_references_only",
+  "default_rest_api_version": "2022-11-28",
+  "freeze_status": "frozen",
+  "full_ingestion_ready": false,
+  "github_docs_commit_sha": "ec3629a841129ae28189d7bb2274a7b3d40c5095",
+  "initial_rest_versioning_release_date": "2026-03-10",
+  "initial_rest_versioning_release_date_long": "Tue, 10 Mar 2026",
+  "iteration_expression": "apiVersion in allVersions[currentVersion].apiVersions",
+  "latest_api_version": "2026-03-10",
+  "octicon_policy": "replace_exact_observed_icon_with_semantic_label_code",
+  "policy_version": "phase3b-render-policy-freeze-v1",
+  "query_api_version": null,
+  "raw_block_policy": "preserve_inner_content_literal_no_nested_evaluation",
+  "release_eligible": false,
+  "rendering_authorized": true,
+  "secret_resolution_policy": "forbidden",
+  "site_renderer_equivalence_claimed": false,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_manifest_sha256": "508fdf53bde20072b142babd78b9d707c90b3d10eb039f3cd65cba1ebbf5a51c",
+  "source_render_context_review_sha256": "31ad31fa06987d85960de7627a38ca6d02bd9aa4c6fb18127106a2b26f7e7369",
+  "source_render_semantics_review_sha256": "25cae92b748ec1e40674c6813772c2c258b366e47f702da682b00dc0fd912368",
+  "supported_api_versions": [
+    "2026-03-10",
+    "2022-11-28"
+  ],
+  "target_host": "api.github.com",
+  "template_bindings": [
+    {
+      "mode": "static",
+      "static_value": "2026-03-10",
+      "variable": "allVersions[currentVersion].latestApiVersion"
+    },
+    {
+      "mode": "loop_variable",
+      "static_value": null,
+      "variable": "apiVersion"
+    },
+    {
+      "mode": "static",
+      "static_value": "2022-11-28",
+      "variable": "defaultRestApiVersion"
+    },
+    {
+      "mode": "static",
+      "static_value": "2026-03-10",
+      "variable": "initialRestVersioningReleaseDate"
+    },
+    {
+      "mode": "static",
+      "static_value": "Tue, 10 Mar 2026",
+      "variable": "initialRestVersioningReleaseDateLong"
+    },
+    {
+      "mode": "raw_literal_only",
+      "static_value": null,
+      "variable": "secrets.GITHUB_TOKEN"
+    },
+    {
+      "mode": "loop_derived",
+      "static_value": null,
+      "variable": "versionData.end_of_support | default: \"Not yet scheduled\""
+    }
+  ],
+  "unknown_construct_policy": "fail_closed",
+  "unknown_expression_policy": "fail_closed",
+  "variant_block_policy": "preserve_inner_content_strip_wrapper_in_source_order",
+  "version_short_name": "fpt"
+}

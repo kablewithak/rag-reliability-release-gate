@@ -1,0 +1,18 @@
+{
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "dependency_file_count": 17,
+  "freeze_status": "frozen",
+  "frozen_manifest_sha256": "61a3a040361dbafd156eb2698321a30972649ef596846f6e302d983dc77a3d59",
+  "full_ingestion_ready": false,
+  "receipt_version": "phase3b-render-dependency-freeze-receipt-v1",
+  "release_eligible": false,
+  "render_context_review_required": true,
+  "rendering_authorized": false,
+  "resolved_reference_count": 41,
+  "reusable_file_count": 13,
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_dependency_closure_sha256": "801f5cdd3a58abd370f9dac3d8768f12ac0dbae66fb415469e07cdb1b3c994a8",
+  "transitive_reference_count": 0,
+  "variable_file_count": 4
+}
