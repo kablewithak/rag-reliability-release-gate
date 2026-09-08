@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/owner","value":{"description":"The account owner of the repository. The name is not case sensitive.","in":"path","name":"owner","required":true,"schema":{"type":"string"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/referenced-workflow","value":{"description":"A workflow referenced/reused by the initial caller workflow","properties":{"path":{"type":"string"},"ref":{"type":"string"},"sha":{"type":"string"}},"required":["path","sha"],"title":"Referenced workflow","type":"object"}}}]}

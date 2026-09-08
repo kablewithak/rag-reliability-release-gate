@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/per","value":{"description":"The time frame to display results for.","in":"query","name":"per","required":false,"schema":{"default":"day","enum":["day","week"],"type":"string"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/actions-default-workflow-permissions","value":{"summary":"Give read-only permission, and allow approving PRs.","value":{"can_approve_pull_request_reviews":true,"default_workflow_permissions":"read"}}}}]}

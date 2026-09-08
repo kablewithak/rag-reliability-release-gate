@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/username","value":{"description":"The handle for the GitHub user account.","in":"path","name":"username","required":true,"schema":{"type":"string"}}}}]}

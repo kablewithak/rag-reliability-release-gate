@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/repository-rule-deletion","value":{"description":"Only allow users with bypass permissions to delete matching refs.","properties":{"type":{"enum":["deletion"],"type":"string"}},"required":["type"],"title":"deletion","type":"object"}}}]}

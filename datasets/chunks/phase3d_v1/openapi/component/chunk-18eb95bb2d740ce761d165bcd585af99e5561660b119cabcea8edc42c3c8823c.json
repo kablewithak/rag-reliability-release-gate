@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/deployment-id","value":{"description":"deployment_id parameter","in":"path","name":"deployment_id","required":true,"schema":{"type":"integer"}}}}]}

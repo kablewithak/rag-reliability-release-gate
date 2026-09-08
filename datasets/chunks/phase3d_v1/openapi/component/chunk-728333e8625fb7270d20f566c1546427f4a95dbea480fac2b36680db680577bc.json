@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/issue-event-milestone","value":{"description":"Issue Event Milestone","properties":{"title":{"type":"string"}},"required":["title"],"title":"Issue Event Milestone","type":"object"}}}]}

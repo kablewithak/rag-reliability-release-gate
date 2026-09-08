@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/actions-hosted-runner-machine-spec","value":{"value":{"cpu_cores":4,"id":"4-core","memory_gb":16,"storage_gb":150}}}}]}

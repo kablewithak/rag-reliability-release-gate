@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/org","value":{"description":"The organization name. The name is not case sensitive.","in":"path","name":"org","required":true,"schema":{"type":"string"}}}}]}

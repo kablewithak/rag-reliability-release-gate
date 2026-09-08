@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/artifact-id","value":{"description":"The unique identifier of the artifact.","in":"path","name":"artifact_id","required":true,"schema":{"type":"integer"}}}}]}

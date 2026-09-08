@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/author-association","value":{"description":"How the author is associated with the repository.","enum":["COLLABORATOR","CONTRIBUTOR","FIRST_TIMER","FIRST_TIME_CONTRIBUTOR","MANNEQUIN","MEMBER","NONE","OWNER"],"example":"OWNER","title":"author_association","type":"string"}}}]}

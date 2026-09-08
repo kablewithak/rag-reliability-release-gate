@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/sha-pinning-required","value":{"description":"Whether actions must be pinned to a full-length commit SHA.","type":"boolean"}}}]}

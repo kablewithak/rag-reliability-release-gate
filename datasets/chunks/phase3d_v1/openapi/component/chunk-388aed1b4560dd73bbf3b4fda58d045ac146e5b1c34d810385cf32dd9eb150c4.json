@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/cache-id","value":{"description":"The unique identifier of the GitHub Actions cache.","in":"path","name":"cache_id","required":true,"schema":{"type":"integer"}}}}]}

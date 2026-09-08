@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/milestone-number","value":{"description":"The number that identifies the milestone.","in":"path","name":"milestone_number","required":true,"schema":{"type":"integer"}}}}]}

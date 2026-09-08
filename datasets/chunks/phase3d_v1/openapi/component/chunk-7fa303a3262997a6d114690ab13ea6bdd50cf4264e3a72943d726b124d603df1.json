@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/repository-rule-non-fast-forward","value":{"description":"Prevent users with push access from force pushing to refs.","properties":{"type":{"enum":["non_fast_forward"],"type":"string"}},"required":["type"],"title":"non_fast_forward","type":"object"}}}]}

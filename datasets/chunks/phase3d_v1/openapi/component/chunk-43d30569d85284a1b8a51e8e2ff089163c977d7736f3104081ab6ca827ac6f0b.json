@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/rule-suite-result","value":{"description":"The rule suite results to filter on. When specified, only suites with this result will be returned.","in":"query","name":"rule_suite_result","schema":{"default":"all","enum":["pass","fail","bypass","all"],"type":"string"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/topic","value":{"description":"A topic aggregates entities that are related to a subject.","properties":{"names":{"items":{"type":"string"},"type":"array"}},"required":["names"],"title":"Topic","type":"object"}}}]}

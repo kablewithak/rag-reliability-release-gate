@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/delivery-id","value":{"in":"path","name":"delivery_id","required":true,"schema":{"type":"integer"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/actions-custom-image-definition-id","value":{"description":"Image definition ID of custom image","in":"path","name":"image_definition_id","required":true,"schema":{"type":"integer"}}}}]}

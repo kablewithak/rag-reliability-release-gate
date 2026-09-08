@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/custom-property-values","value":{"value":[{"property_name":"environment","value":"production"},{"property_name":"service","value":"web"},{"property_name":"team","value":"octocat"}]}}}]}

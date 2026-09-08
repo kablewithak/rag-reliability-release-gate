@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/key-id","value":{"description":"The unique identifier of the key.","in":"path","name":"key_id","required":true,"schema":{"type":"integer"}}}}]}

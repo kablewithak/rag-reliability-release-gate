@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/temporary_redirect","value":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/basic-error"}}},"description":"Temporary Redirect"}}}]}

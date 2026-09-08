@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/repository-id","value":{"description":"The unique identifier of the repository.","in":"path","name":"repository_id","required":true,"schema":{"type":"integer"}}}}]}

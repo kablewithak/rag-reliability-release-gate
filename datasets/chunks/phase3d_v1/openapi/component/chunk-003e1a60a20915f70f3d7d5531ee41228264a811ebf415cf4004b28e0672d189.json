@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/enterprise","value":{"description":"The slug version of the enterprise name.","in":"path","name":"enterprise","required":true,"schema":{"type":"string"}}}}]}

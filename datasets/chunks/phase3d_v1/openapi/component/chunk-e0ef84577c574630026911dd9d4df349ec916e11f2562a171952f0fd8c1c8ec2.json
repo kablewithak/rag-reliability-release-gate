@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/repository-rule-creation","value":{"description":"Only allow users with bypass permission to create matching refs.","properties":{"type":{"enum":["creation"],"type":"string"}},"required":["type"],"title":"creation","type":"object"}}}]}

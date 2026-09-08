@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/merged-upstream","value":{"value":{"base_branch":"defunkt:main","merge_type":"fast-forward","message":"Successfully fetched and fast-forwarded from upstream defunkt:main"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/view-traffic","value":{"description":"View Traffic","properties":{"count":{"example":14850,"type":"integer"},"uniques":{"example":3782,"type":"integer"},"views":{"items":{"$ref":"#/components/schemas/traffic"},"type":"array"}},"required":["uniques","count","views"],"title":"View Traffic","type":"object"}}}]}

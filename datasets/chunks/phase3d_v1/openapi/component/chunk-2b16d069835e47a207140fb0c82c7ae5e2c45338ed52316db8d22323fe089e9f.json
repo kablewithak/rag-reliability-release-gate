@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/sub-issues-summary","value":{"properties":{"completed":{"type":"integer"},"percent_completed":{"type":"integer"},"total":{"type":"integer"}},"required":["total","completed","percent_completed"],"title":"Sub-issues Summary","type":"object"}}}]}

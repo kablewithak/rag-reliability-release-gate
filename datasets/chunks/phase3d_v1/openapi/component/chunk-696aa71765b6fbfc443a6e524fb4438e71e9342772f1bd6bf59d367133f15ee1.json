@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/exclude-pull-requests","value":{"description":"If `true` pull requests are omitted from the response (empty array).","in":"query","name":"exclude_pull_requests","required":false,"schema":{"default":false,"type":"boolean"}}}}]}

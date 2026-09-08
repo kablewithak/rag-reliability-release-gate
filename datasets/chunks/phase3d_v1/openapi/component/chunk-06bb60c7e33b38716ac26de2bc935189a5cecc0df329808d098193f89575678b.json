@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/bad_request","value":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/basic-error"}},"application/scim+json":{"schema":{"$ref":"#/components/schemas/scim-error"}}},"description":"Bad Request"}}}]}

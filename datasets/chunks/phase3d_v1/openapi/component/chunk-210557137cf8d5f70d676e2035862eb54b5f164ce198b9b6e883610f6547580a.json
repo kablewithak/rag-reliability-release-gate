@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/invitation-id","value":{"description":"The unique identifier of the invitation.","in":"path","name":"invitation_id","required":true,"schema":{"type":"integer"}}}}]}

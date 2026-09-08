@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/actions-hosted-runner-limits-default","value":{"value":{"public_ips":{"current_usage":17,"maximum":50}}}}}]}

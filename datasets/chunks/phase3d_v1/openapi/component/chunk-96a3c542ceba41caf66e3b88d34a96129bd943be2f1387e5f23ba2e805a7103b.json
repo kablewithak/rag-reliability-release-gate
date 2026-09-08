@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/participation-stats","value":{"properties":{"all":{"items":{"type":"integer"},"type":"array"},"owner":{"items":{"type":"integer"},"type":"array"}},"required":["all","owner"],"title":"Participation Stats","type":"object"}}}]}

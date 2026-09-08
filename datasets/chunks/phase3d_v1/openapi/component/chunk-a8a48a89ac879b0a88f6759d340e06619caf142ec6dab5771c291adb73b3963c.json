@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/asset-id","value":{"description":"The unique identifier of the asset.","in":"path","name":"asset_id","required":true,"schema":{"type":"integer"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/actions-hosted-runner-curated-image","value":{"value":{"display_name":"20.04","id":"ubuntu-20.04","platform":"linux-x64","size_gb":86,"source":"github"}}}}]}

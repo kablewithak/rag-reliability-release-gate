@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/link","value":{"description":"Hypermedia Link","properties":{"href":{"type":"string"}},"required":["href"],"title":"Link","type":"object"}}}]}

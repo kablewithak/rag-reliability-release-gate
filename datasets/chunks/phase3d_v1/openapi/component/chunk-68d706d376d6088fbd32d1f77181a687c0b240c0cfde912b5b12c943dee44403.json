@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/issue-event-rename","value":{"description":"Issue Event Rename","properties":{"from":{"type":"string"},"to":{"type":"string"}},"required":["from","to"],"title":"Issue Event Rename","type":"object"}}}]}

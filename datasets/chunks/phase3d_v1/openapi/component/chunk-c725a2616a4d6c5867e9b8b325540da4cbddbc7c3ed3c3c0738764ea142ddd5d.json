@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/referrer-traffic","value":{"description":"Referrer Traffic","properties":{"count":{"example":4,"type":"integer"},"referrer":{"example":"Google","type":"string"},"uniques":{"example":3,"type":"integer"}},"required":["referrer","uniques","count"],"title":"Referrer Traffic","type":"object"}}}]}

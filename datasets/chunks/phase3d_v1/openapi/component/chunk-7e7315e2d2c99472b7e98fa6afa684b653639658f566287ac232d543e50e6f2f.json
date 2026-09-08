@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/labels","value":{"description":"A list of comma separated label names. Example: `bug,ui,@high`","in":"query","name":"labels","required":false,"schema":{"type":"string"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/unacceptable","value":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/basic-error"}}},"description":"Unacceptable"}}}]}

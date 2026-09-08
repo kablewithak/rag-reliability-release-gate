@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/actions-custom-image-version","value":{"description":"Version of a custom image","in":"path","name":"version","required":true,"schema":{"pattern":"^\\d+\\.\\d+\\.\\d+$","type":"string"}}}}]}

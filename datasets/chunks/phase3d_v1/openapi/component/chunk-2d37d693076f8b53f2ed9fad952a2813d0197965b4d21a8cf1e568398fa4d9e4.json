@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/validation-error-simple","value":{"description":"Validation Error Simple","properties":{"documentation_url":{"type":"string"},"errors":{"items":{"type":"string"},"type":"array"},"message":{"type":"string"}},"required":["message","documentation_url"],"title":"Validation Error Simple","type":"object"}}}]}

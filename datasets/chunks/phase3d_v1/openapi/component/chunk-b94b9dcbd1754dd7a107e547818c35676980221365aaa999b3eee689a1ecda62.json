@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/merged-upstream","value":{"description":"Results of a successful merge upstream request","properties":{"base_branch":{"type":"string"},"merge_type":{"enum":["merge","fast-forward","none"],"type":"string"},"message":{"type":"string"}},"title":"Merged upstream","type":"object"}}}]}

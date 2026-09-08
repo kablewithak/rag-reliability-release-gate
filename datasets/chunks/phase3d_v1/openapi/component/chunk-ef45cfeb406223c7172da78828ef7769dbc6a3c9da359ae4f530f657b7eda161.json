@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/timeline-line-commented-event","value":{"description":"Timeline Line Commented Event","properties":{"comments":{"items":{"$ref":"#/components/schemas/pull-request-review-comment"},"type":"array"},"event":{"type":"string"},"node_id":{"type":"string"}},"title":"Timeline Line Commented Event","type":"object"}}}]}

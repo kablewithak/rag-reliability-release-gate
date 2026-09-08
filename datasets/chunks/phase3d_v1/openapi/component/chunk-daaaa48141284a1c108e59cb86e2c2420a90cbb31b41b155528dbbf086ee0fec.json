@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/traffic","value":{"properties":{"count":{"type":"integer"},"timestamp":{"format":"date-time","type":"string"},"uniques":{"type":"integer"}},"required":["timestamp","uniques","count"],"title":"Traffic","type":"object"}}}]}

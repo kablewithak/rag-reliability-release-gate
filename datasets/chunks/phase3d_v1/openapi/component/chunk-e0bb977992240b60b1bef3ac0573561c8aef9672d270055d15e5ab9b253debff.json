@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/nullable-community-health-file","value":{"nullable":true,"properties":{"html_url":{"format":"uri","type":"string"},"url":{"format":"uri","type":"string"}},"required":["url","html_url"],"title":"Community Health File","type":"object"}}}]}

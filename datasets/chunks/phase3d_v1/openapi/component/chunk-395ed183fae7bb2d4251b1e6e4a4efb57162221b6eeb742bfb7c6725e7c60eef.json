@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/runner-label-name","value":{"description":"The name of a self-hosted runner's custom label.","in":"path","name":"name","required":true,"schema":{"type":"string"}}}}]}
