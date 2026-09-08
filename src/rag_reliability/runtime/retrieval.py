@@ -46,12 +46,14 @@ class LexicalRetriever:
             score = overlap / len(query_tokens)
             scored.append((score, document))
 
-        scored.sort(key=lambda item: (-item[0], item[1].source_id))
+        scored.sort(key=lambda item: (-item[0], item[1].evidence_id))
         limit = min(request.top_k, self._config.top_k)
 
         items = tuple(
             RetrievedEvidence(
-                source_id=document.source_id,
+                evidence_id=document.evidence_id,
+                source_ids=document.source_ids,
+                document_ids=document.document_ids,
                 content=document.content,
                 rank=rank,
                 score=score,

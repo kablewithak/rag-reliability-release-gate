@@ -59,7 +59,9 @@ class ThinSliceSourceFixture(ContractModel):
 
     def to_indexed_document(self) -> IndexedDocument:
         return IndexedDocument(
-            source_id=self.manifest.source_id,
+            evidence_id=self.manifest.source_id,
+            source_ids=(self.manifest.source_id,),
+            document_ids=(),
             content=self.content,
             authority_level=self.manifest.authority_level,
             source_state=self.manifest.source_state,
@@ -153,11 +155,13 @@ class ThinSliceBundle(ContractModel):
             if case.expected_response_mode is not ResponseMode.ANSWER:
                 continue
             replay = replay_by_query[case.query]
-            if not set(case.required_source_ids).issubset(replay.cited_source_ids):
+            if not set(case.required_evidence_ids).issubset(
+                replay.cited_evidence_ids
+            ):
                 raise ValueError(
                     f"replay entry for {case.case_id} omits a required source citation"
                 )
-            if not set(replay.cited_source_ids).issubset(source_ids):
+            if not set(replay.cited_evidence_ids).issubset(source_ids):
                 raise ValueError(
                     f"replay entry for {case.case_id} cites an unknown source"
                 )
@@ -283,6 +287,19 @@ def _normalize(text: str) -> str:
     return _TOKEN_SPACE.sub(" ", text).strip().casefold()
 
 
+def _evidence_ids_for_stage(
+    execution: PipelineExecution,
+    stage: TraceStage,
+) -> tuple[str, ...]:
+    for event in execution.trace.events:
+        if event.stage is stage:
+            return tuple(
+                event.evidence_ids
+            )
+
+    return ()
+
+
 def _source_ids_for_stage(
     execution: PipelineExecution,
     stage: TraceStage,
@@ -359,9 +376,21 @@ def score_thin_slice_case(
     case: EvaluationCase,
     execution: PipelineExecution,
 ) -> ThinSliceCaseResult:
-    retrieval_ids = set(_source_ids_for_stage(execution, TraceStage.RETRIEVAL))
-    context_ids = set(_source_ids_for_stage(execution, TraceStage.CONTEXT_ASSEMBLY))
-    required_ids = set(case.required_source_ids)
+    retrieval_ids = set(
+        _evidence_ids_for_stage(
+            execution,
+            TraceStage.RETRIEVAL,
+        )
+    )
+    context_ids = set(
+        _evidence_ids_for_stage(
+            execution,
+            TraceStage.CONTEXT_ASSEMBLY,
+        )
+    )
+    required_ids = set(
+        case.required_evidence_ids
+    )
     trace_complete = _trace_complete(execution)
     outcome = execution.outcome
 
@@ -380,7 +409,7 @@ def score_thin_slice_case(
         if isinstance(outcome, AnswerOutcome):
             citation_pass = (
                 outcome.citation_validation.all_material_claims_supported
-                and required_ids.issubset(outcome.cited_source_ids)
+                and required_ids.issubset(outcome.cited_evidence_ids)
             )
             normalized_answer = _normalize(outcome.answer_text)
             fact_pass = all(

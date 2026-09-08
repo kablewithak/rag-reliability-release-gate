@@ -1,0 +1,15 @@
+{
+  "authoring_evidence_id_count": 68,
+  "baseline_authorized": false,
+  "canonical_case_count": 60,
+  "case_authoring_authorized": true,
+  "cluster_constitution_frozen": true,
+  "cluster_count": 30,
+  "constitution_sha256": "e2f1ca0985157ea43e7e648fa431e30c2b139cf9b3ea364d7356e8e11311816d",
+  "development_cluster_count": 12,
+  "held_out_cluster_count": 9,
+  "phase3d_chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "receipt_version": "phase4-evidence-cluster-receipt-v1",
+  "release_eligible": false,
+  "tuning_cluster_count": 9
+}
