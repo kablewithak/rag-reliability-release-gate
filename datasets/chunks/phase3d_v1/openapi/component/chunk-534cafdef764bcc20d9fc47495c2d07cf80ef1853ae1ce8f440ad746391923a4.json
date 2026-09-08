@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/artifact-name","value":{"description":"The name field of an artifact. When specified, only artifacts with this name will be returned.","in":"query","name":"name","required":false,"schema":{"type":"string"}}}}]}

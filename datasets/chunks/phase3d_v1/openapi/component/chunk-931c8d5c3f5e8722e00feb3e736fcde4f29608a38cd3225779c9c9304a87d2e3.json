@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/deployment-branch-policies-list","value":{"value":{"branch_policies":[{"id":361471,"name":"release/*","node_id":"MDE2OkdhdGVCcmFuY2hQb2xpY3kzNjE0NzE="},{"id":361472,"name":"main","node_id":"MDE2OkdhdGVCcmFuY2hQb2xpY3kzNjE0NzI="}],"total_count":2}}}}]}

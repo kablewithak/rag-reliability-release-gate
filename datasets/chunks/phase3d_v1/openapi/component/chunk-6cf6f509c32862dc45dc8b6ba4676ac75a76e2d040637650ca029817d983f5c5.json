@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/sort","value":{"description":"The property to sort the results by.","in":"query","name":"sort","required":false,"schema":{"default":"created","enum":["created","updated"],"type":"string"}}}}]}

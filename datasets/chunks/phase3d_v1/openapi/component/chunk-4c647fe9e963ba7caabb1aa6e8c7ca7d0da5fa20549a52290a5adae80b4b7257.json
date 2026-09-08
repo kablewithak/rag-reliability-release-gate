@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/protected-branch-admin-enforced-2","value":{"value":{"enabled":true,"url":"https://api.github.com/repos/octocat/Hello-World/branches/master/protection/enforce_admins"}}}}]}

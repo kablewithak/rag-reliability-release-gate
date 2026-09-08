@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/actions-hosted-runner-custom-image","value":{"value":{"id":1,"latest_version":"1.3.0","name":"CustomImage","platform":"linux-x64","source":"custom","state":"Ready","total_versions_size":200,"versions_count":4}}}}]}

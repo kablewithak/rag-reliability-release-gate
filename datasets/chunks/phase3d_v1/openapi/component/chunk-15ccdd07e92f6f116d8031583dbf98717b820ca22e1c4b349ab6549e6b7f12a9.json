@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/webhook-config-url","value":{"description":"The URL to which the payloads will be delivered.","example":"https://example.com/webhook","format":"uri","type":"string"}}}]}

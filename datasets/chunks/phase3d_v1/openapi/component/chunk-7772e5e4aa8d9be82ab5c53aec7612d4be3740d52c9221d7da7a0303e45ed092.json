@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/allowed-actions","value":{"description":"The permissions policy that controls the actions and reusable workflows that are allowed to run.","enum":["all","local_only","selected"],"type":"string"}}}]}

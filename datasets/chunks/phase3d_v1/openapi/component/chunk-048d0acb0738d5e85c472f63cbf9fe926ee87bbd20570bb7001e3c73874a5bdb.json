@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/before-repo-date","value":{"description":"Only show repositories updated before the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.","in":"query","name":"before","required":false,"schema":{"format":"date-time","type":"string"}}}}]}

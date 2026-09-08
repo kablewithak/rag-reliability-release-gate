@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/comment-id","value":{"description":"The unique identifier of the comment.","in":"path","name":"comment_id","required":true,"schema":{"format":"int64","type":"integer"}}}}]}

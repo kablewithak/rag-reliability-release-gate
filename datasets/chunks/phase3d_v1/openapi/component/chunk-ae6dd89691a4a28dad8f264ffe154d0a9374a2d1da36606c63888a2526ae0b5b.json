@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/hosted-runner-id","value":{"description":"Unique identifier of the GitHub-hosted runner.","in":"path","name":"hosted_runner_id","required":true,"schema":{"type":"integer"}}}}]}

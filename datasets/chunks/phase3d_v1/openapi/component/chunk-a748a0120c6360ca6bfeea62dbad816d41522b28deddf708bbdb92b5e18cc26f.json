@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/direction","value":{"description":"The direction to sort the results by.","in":"query","name":"direction","required":false,"schema":{"default":"desc","enum":["asc","desc"],"type":"string"}}}}]}

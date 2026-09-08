@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/actions-enabled","value":{"description":"Whether GitHub Actions is enabled on the repository.","type":"boolean"}}}]}

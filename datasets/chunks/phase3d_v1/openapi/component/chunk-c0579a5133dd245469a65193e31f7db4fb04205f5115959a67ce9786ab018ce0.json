@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/selected-actions","value":{"value":{"github_owned_allowed":true,"patterns_allowed":["monalisa/octocat@*","docker/*"],"verified_allowed":false}}}}]}

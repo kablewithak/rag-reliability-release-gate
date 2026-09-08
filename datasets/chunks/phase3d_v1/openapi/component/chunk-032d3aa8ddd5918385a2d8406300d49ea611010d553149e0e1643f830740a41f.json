@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/deployment-reviewer-type","value":{"description":"The type of reviewer.","enum":["User","Team"],"example":"User","type":"string"}}}]}

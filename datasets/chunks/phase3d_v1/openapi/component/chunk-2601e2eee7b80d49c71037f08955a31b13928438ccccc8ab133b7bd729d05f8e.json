@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/validation_failed_simple","value":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/validation-error-simple"}}},"description":"Validation failed, or the endpoint has been spammed."}}}]}

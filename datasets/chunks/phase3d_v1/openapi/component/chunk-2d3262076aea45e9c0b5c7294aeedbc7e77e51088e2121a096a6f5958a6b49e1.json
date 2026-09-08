@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/empty-object","value":{"additionalProperties":false,"description":"An object without any properties.","properties":{},"title":"Empty Object","type":"object"}}}]}

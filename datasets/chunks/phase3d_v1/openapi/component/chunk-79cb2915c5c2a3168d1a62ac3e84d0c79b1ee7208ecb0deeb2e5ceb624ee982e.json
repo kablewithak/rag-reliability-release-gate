@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/clone-traffic","value":{"description":"Clone Traffic","properties":{"clones":{"items":{"$ref":"#/components/schemas/traffic"},"type":"array"},"count":{"example":173,"type":"integer"},"uniques":{"example":128,"type":"integer"}},"required":["uniques","count","clones"],"title":"Clone Traffic","type":"object"}}}]}

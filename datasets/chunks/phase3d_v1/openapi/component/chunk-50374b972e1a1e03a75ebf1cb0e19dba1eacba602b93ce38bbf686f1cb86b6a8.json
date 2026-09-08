@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/issue-number","value":{"description":"The number that identifies the issue.","in":"path","name":"issue_number","required":true,"schema":{"type":"integer"}}}}]}

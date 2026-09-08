@@ -1,0 +1,21 @@
+{
+  "baseline_authorized": false,
+  "chunk_file_identity_match_count": 1333,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "chunked_corpus_ready": true,
+  "chunking_config_sha256": "5a76bbc64d4a10bada0d7efe7cc52eb7929dd8cd8ac1fb474aa2c63e775c0dda",
+  "chunking_status": "complete",
+  "component_chunk_count": 803,
+  "component_occurrence_count": 4884,
+  "duplicate_component_occurrence_count": 4137,
+  "input_document_count": 509,
+  "input_file_identity_match_count": 509,
+  "markdown_chunk_count": 26,
+  "operation_core_chunk_count": 504,
+  "phase3b_normalized_manifest_sha256": "2c7c2105d23bc48c64e911fec9c4e6152caf1f0e705666cfc0557f9a79ff9e8b",
+  "phase3c_normalized_manifest_sha256": "81abcd940f8bb72b38955d44f1a5d9544311c1790110052642b677bf54d88706",
+  "receipt_version": "phase3d-chunking-receipt-v1",
+  "release_eligible": false,
+  "total_chunk_count": 1333,
+  "unique_scoped_component_count": 747
+}

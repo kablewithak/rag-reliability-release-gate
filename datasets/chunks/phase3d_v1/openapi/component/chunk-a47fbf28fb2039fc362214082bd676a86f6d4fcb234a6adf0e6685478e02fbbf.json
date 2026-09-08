@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/accepted","value":{"content":{"application/json":{"examples":{"default":{"value":null}},"schema":{"type":"object"}}},"description":"Accepted"}}}]}

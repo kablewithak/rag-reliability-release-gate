@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/variable-name","value":{"description":"The name of the variable.","in":"path","name":"name","required":true,"schema":{"type":"string"}}}}]}

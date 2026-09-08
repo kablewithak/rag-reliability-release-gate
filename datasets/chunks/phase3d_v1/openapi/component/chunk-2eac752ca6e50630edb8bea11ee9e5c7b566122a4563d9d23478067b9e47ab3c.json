@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/secret-name","value":{"description":"The name of the secret.","in":"path","name":"secret_name","required":true,"schema":{"type":"string"}}}}]}

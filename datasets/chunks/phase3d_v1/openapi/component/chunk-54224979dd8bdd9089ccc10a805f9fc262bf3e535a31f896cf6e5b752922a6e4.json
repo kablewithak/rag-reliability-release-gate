@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/responses/no_content","value":{"description":"A header with no content is returned."}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/basic-error","value":{"description":"Basic Error","properties":{"documentation_url":{"type":"string"},"message":{"type":"string"},"status":{"type":"string"},"url":{"type":"string"}},"title":"Basic Error","type":"object"}}}]}

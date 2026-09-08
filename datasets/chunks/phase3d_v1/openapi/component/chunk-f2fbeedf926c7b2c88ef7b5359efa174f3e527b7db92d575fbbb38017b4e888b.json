@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/repository-rule-required-linear-history","value":{"description":"Prevent merge commits from being pushed to matching refs.","properties":{"type":{"enum":["required_linear_history"],"type":"string"}},"required":["type"],"title":"required_linear_history","type":"object"}}}]}

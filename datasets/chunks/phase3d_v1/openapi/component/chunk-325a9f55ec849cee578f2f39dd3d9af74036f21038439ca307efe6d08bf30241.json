@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/issue-event-label","value":{"description":"Issue Event Label","properties":{"color":{"nullable":true,"type":"string"},"name":{"nullable":true,"type":"string"}},"required":["name","color"],"title":"Issue Event Label","type":"object"}}}]}

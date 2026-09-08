@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/branch-policy-id","value":{"description":"The unique identifier of the branch policy.","in":"path","name":"branch_policy_id","required":true,"schema":{"type":"integer"}}}}]}

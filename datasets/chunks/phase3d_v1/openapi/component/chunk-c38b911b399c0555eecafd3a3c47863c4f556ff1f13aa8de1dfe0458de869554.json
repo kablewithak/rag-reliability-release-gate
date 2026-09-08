@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/visible-to-repository","value":{"description":"Only return runner groups that are allowed to be used by this repository.","in":"query","name":"visible_to_repository","required":false,"schema":{"type":"string"}}}}]}

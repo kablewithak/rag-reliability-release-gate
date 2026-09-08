@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/commit-sha","value":{"description":"The SHA of the commit.","in":"path","name":"commit_sha","required":true,"schema":{"type":"string"},"x-multi-segment":true}}}]}

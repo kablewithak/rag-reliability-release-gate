@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/enabled-repositories","value":{"description":"The policy that controls the repositories in the organization that are allowed to run GitHub Actions.","enum":["all","none","selected"],"type":"string"}}}]}

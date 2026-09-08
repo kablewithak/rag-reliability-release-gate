@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/pull-request-merge-result","value":{"description":"Pull Request Merge Result","properties":{"merged":{"type":"boolean"},"message":{"type":"string"},"sha":{"type":"string"}},"required":["merged","message","sha"],"title":"Pull Request Merge Result","type":"object"}}}]}

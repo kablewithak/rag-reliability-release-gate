@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/issue-field-id","value":{"description":"The unique identifier of the issue field.","in":"path","name":"issue_field_id","required":true,"schema":{"type":"integer"}}}}]}

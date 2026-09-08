@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/ruleset-version-with-state","value":{"allOf":[{"$ref":"#/components/schemas/ruleset-version"},{"properties":{"state":{"description":"The state of the ruleset version","type":"object"}},"required":["state"],"type":"object"}]}}}]}

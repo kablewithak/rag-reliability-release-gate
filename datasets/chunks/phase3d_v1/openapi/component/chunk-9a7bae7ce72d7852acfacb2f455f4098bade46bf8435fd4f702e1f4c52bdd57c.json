@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/protection-rule-id","value":{"description":"The unique identifier of the protection rule.","in":"path","name":"protection_rule_id","required":true,"schema":{"type":"integer"}}}}]}

@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/runner-labels-readonly","value":{"value":{"labels":[{"id":5,"name":"self-hosted","type":"read-only"},{"id":7,"name":"X64","type":"read-only"},{"id":20,"name":"macOS","type":"read-only"}],"total_count":3}}}}]}

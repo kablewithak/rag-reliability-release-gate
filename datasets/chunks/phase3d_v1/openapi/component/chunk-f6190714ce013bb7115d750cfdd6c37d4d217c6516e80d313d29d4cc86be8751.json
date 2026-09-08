@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/parameters/actor","value":{"description":"Returns someone's workflow runs. Use the login for the user who created the `push` associated with the check suite or workflow run.","in":"query","name":"actor","required":false,"schema":{"type":"string"}}}}]}

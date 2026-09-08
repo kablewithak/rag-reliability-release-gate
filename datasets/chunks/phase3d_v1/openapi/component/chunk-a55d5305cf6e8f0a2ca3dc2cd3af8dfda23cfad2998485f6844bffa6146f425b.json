@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/actions-default-workflow-permissions","value":{"description":"The default workflow permissions granted to the GITHUB_TOKEN when running workflows.","enum":["read","write"],"type":"string"}}}]}

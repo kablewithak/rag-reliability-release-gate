@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/examples/deployment-protection-rule","value":{"value":{"app":{"id":1,"integration_url":"https://api.github.com/apps/a-custom-app","node_id":"GHT58kRlcGxveW1lbnRTdTY!bbcy","slug":"a-custom-app"},"enabled":true,"id":3,"node_id":"IEH37kRlcGxveW1lbnRTdGF0ddiv"}}}}]}

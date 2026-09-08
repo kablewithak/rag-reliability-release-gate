@@ -1,0 +1,1 @@
+{"fragments":[{"path":[],"value":{"reference":"#/components/schemas/actions-can-approve-pull-request-reviews","value":{"description":"Whether GitHub Actions can approve pull requests. Enabling this can be a security risk.","type":"boolean"}}}]}
