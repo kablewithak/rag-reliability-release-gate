@@ -38,7 +38,9 @@ class CurrentGithubRestSourcePolicyFilter:
             else:
                 rejected.append(
                     RejectedEvidence(
-                        source_id=candidate.source_id,
+                        evidence_id=candidate.evidence_id,
+                        source_ids=candidate.source_ids,
+                        document_ids=candidate.document_ids,
                         reason_code=reason,
                     )
                 )

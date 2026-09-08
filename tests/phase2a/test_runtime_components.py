@@ -132,7 +132,7 @@ def test_context_builder_respects_budget_without_partial_truncation() -> None:
     )
 
     assert tuple(item.source_id for item in context.items) == ("a",)
-    assert context.assembled_context == "SOURCE: a\nissues labels"
+    assert context.assembled_context == "EVIDENCE: a\nissues labels"
 
 
 def test_exact_citation_validator_rejects_non_verbatim_support() -> None:

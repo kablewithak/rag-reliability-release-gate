@@ -24,10 +24,12 @@ from rag_reliability.contracts.runtime import (
     AnswerOutcome,
     CitationValidationRequest,
     ContextBuildRequest,
+    ContextItem,
     ErrorOutcome,
     ProviderRequest,
     RefusalOutcome,
     RetrievalRequest,
+    RetrievedEvidence,
     SourceFilterRequest,
 )
 from rag_reliability.contracts.tracing import TraceEvent, TraceRecord
@@ -102,7 +104,12 @@ class DeterministicRagPipeline:
                 TraceStage.RETRIEVAL,
                 TraceStatus.OK,
                 retrieval_start,
-                tuple(item.source_id for item in retrieval.items),
+                evidence_ids=self._evidence_ids(
+                    retrieval.items
+                ),
+                source_ids=self._source_ids(
+                    retrieval.items
+                ),
             )
         )
 
@@ -136,7 +143,12 @@ class DeterministicRagPipeline:
                 TraceStage.FILTERING,
                 TraceStatus.OK,
                 filtering_start,
-                tuple(item.source_id for item in filtered.eligible),
+                evidence_ids=self._evidence_ids(
+                    filtered.eligible
+                ),
+                source_ids=self._source_ids(
+                    filtered.eligible
+                ),
             )
         )
 
@@ -199,7 +211,12 @@ class DeterministicRagPipeline:
                 TraceStage.CONTEXT_ASSEMBLY,
                 TraceStatus.OK,
                 context_start,
-                tuple(item.source_id for item in context.items),
+                evidence_ids=self._evidence_ids(
+                    context.items
+                ),
+                source_ids=self._source_ids(
+                    context.items
+                ),
             )
         )
 
@@ -239,7 +256,11 @@ class DeterministicRagPipeline:
                 TraceStage.PROVIDER_GENERATION,
                 TraceStatus.OK,
                 provider_start,
-                provider_response.cited_source_ids,
+                evidence_ids=provider_response.cited_evidence_ids,
+                source_ids=self._source_ids_for_citations(
+                    context.items,
+                    provider_response.cited_evidence_ids,
+                ),
             )
         )
 
@@ -259,8 +280,12 @@ class DeterministicRagPipeline:
                     TraceStage.CITATION_VALIDATION,
                     TraceStatus.ERROR,
                     citation_start,
-                    provider_response.cited_source_ids,
-                    RuntimeErrorCode.CITATION_VALIDATION_ERROR.value,
+                    evidence_ids=provider_response.cited_evidence_ids,
+                    source_ids=self._source_ids_for_citations(
+                        context.items,
+                        provider_response.cited_evidence_ids,
+                    ),
+                    error_code=RuntimeErrorCode.CITATION_VALIDATION_ERROR.value,
                 )
             )
             error_outcome = ErrorOutcome(
@@ -282,7 +307,11 @@ class DeterministicRagPipeline:
                 TraceStage.CITATION_VALIDATION,
                 validation_status,
                 citation_start,
-                provider_response.cited_source_ids,
+                evidence_ids=provider_response.cited_evidence_ids,
+                source_ids=self._source_ids_for_citations(
+                    context.items,
+                    provider_response.cited_evidence_ids,
+                ),
             )
         )
 
@@ -304,10 +333,59 @@ class DeterministicRagPipeline:
 
         answer_outcome = AnswerOutcome(
             answer_text=provider_response.answer_text,
-            cited_source_ids=provider_response.cited_source_ids,
+            cited_evidence_ids=provider_response.cited_evidence_ids,
             citation_validation=validation,
         )
         return self._finish(case, started_at, events, answer_outcome, None)
+
+    @staticmethod
+    def _evidence_ids(
+        items: tuple[RetrievedEvidence, ...]
+        | tuple[ContextItem, ...],
+    ) -> tuple[str, ...]:
+        return tuple(
+            item.evidence_id
+            for item in items
+        )
+
+    @staticmethod
+    def _source_ids(
+        items: tuple[RetrievedEvidence, ...]
+        | tuple[ContextItem, ...],
+    ) -> tuple[str, ...]:
+        observed: set[str] = set()
+        ordered: list[str] = []
+
+        for item in items:
+            for source_id in item.source_ids:
+                if source_id in observed:
+                    continue
+
+                observed.add(source_id)
+                ordered.append(source_id)
+
+        return tuple(ordered)
+
+    @classmethod
+    def _source_ids_for_citations(
+        cls,
+        context_items: tuple[ContextItem, ...],
+        cited_evidence_ids: tuple[str, ...],
+    ) -> tuple[str, ...]:
+        context_by_id = {
+            item.evidence_id: item
+            for item in context_items
+        }
+
+        cited_items = tuple(
+            context_by_id[evidence_id]
+            for evidence_id in cited_evidence_ids
+            if evidence_id in context_by_id
+        )
+
+        return cls._source_ids(
+            cited_items
+        )
 
     def _validate_component_configuration(self) -> None:
         expected = {
@@ -362,6 +440,7 @@ class DeterministicRagPipeline:
         stage: TraceStage,
         status: TraceStatus,
         started: float,
+        evidence_ids: tuple[str, ...] = (),
         source_ids: tuple[str, ...] = (),
         error_code: str | None = None,
     ) -> TraceEvent:
@@ -371,6 +450,7 @@ class DeterministicRagPipeline:
             status=status,
             occurred_at=datetime.now(UTC),
             duration_ms=(perf_counter() - started) * 1000,
+            evidence_ids=evidence_ids,
             source_ids=source_ids,
             error_code=error_code,
         )

@@ -10,7 +10,9 @@ CONTRACTS_ROOT = REPO_ROOT / "src" / "rag_reliability" / "contracts"
 EVALUATOR_ONLY_NAMES = {
     "expected_response_mode",
     "required_fact_ids",
+    "required_evidence_ids",
     "required_source_ids",
+    "forbidden_evidence_ids",
     "forbidden_source_ids",
     "must_refuse_reason",
     "gold_fact_rubric",
@@ -54,5 +56,5 @@ def test_provider_boundary_fields_remain_provider_neutral() -> None:
     assert set(ProviderRequest.model_fields) == {"query", "context"}
     assert set(ProviderResponse.model_fields) == {
         "answer_text",
-        "cited_source_ids",
+        "cited_evidence_ids",
     }

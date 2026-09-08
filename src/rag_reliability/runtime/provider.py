@@ -33,5 +33,5 @@ class ReplayProvider:
 
         return ProviderResponse(
             answer_text=entry.answer_text,
-            cited_source_ids=entry.cited_source_ids,
+            cited_evidence_ids=entry.cited_evidence_ids,
         )

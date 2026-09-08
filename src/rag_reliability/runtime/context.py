@@ -26,7 +26,7 @@ class BoundedContextBuilder:
         blocks: list[str] = []
 
         for evidence in request.evidence[: self._config.max_evidence_items]:
-            block = f"SOURCE: {evidence.source_id}\n{evidence.content}"
+            block = f"EVIDENCE: {evidence.evidence_id}\n{evidence.content}"
             candidate_blocks = [*blocks, block]
             assembled = "\n\n".join(candidate_blocks)
 
@@ -36,7 +36,9 @@ class BoundedContextBuilder:
             blocks.append(block)
             selected.append(
                 ContextItem(
-                    source_id=evidence.source_id,
+                    evidence_id=evidence.evidence_id,
+                    source_ids=evidence.source_ids,
+                    document_ids=evidence.document_ids,
                     content=evidence.content,
                     position=len(selected) + 1,
                     authority_level=evidence.authority_level,
