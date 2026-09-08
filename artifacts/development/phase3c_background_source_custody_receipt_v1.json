@@ -1,0 +1,19 @@
+{
+  "background_selection_sha256": "d2cc4ade659534973915ad26b10daad8173a9eeba5eeaebc6de42b6d848708aa",
+  "custody_mode": "verified_phase3b_cache_reuse",
+  "phase3b_acquisition_receipt_sha256": "a1deb6580e10bdae3d21d1ca3abb81cc86241b0888e930ae153bfb99451eaae0",
+  "receipt_version": "phase3c-background-source-custody-receipt-v1",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source": {
+    "byte_count": 9750362,
+    "cache_path": "datasets/source_documents/_upstream_cache/a6c606f584dd8f7a17802a47ef8db8d167a44345.yaml",
+    "commit_sha": "3cef12e8a02d612ad032473d4fb87266f2befeae",
+    "content_sha256": "6ffbf0b998af0b35763ab2defb9eaef90029887dce23514c84dabe0f3a339b3d",
+    "expected_git_blob_sha1": "a6c606f584dd8f7a17802a47ef8db8d167a44345",
+    "observed_git_blob_sha1": "a6c606f584dd8f7a17802a47ef8db8d167a44345",
+    "path": "descriptions/api.github.com/api.github.com.2026-03-10.yaml",
+    "repository": "github/rest-api-description",
+    "source_id": "openapi-current-2026-03-10"
+  },
+  "source_selection_sha256": "26f4469b5639422b03828535786343a162b7b3113a1b30fafa79180cb0c2e950"
+}

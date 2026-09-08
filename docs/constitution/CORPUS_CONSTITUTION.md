@@ -91,7 +91,7 @@ Historical comparison:
 
 ```text
 descriptions/api.github.com/api.github.com.2022-11-28.yaml
-blob_sha=88a3cc7326d6fd3968042dde112d1c4c838af5bc
+blob_sha=88a3cc3fe7e4ddbfd1d2fdbd4e6dc9bbd8e3c9b8
 ```
 
 Do not use `descriptions-next` in V1. It is outside the frozen V1 contract.
