@@ -1,0 +1,40 @@
+{
+  "background_document_count": 459,
+  "background_file_identity_match_count": 459,
+  "background_normalized_ready": true,
+  "background_selection_sha256": "d2cc4ade659534973915ad26b10daad8173a9eeba5eeaebc6de42b6d848708aa",
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "family_counts": [
+    {
+      "family": "actions",
+      "selected_count": 184
+    },
+    {
+      "family": "issues",
+      "selected_count": 53
+    },
+    {
+      "family": "pull_requests",
+      "selected_count": 24
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "selected_count": 198
+    }
+  ],
+  "full_corpus_document_count": 509,
+  "full_corpus_file_identity_match_count": 509,
+  "full_ingestion_ready": true,
+  "normalization_status": "complete",
+  "normalized_manifest_sha256": "81abcd940f8bb72b38955d44f1a5d9544311c1790110052642b677bf54d88706",
+  "phase3b_normalized_manifest_sha256": "2c7c2105d23bc48c64e911fec9c4e6152caf1f0e705666cfc0557f9a79ff9e8b",
+  "phase3b_parent_document_count": 50,
+  "phase3b_parent_file_identity_match_count": 50,
+  "receipt_version": "phase3c-background-normalized-corpus-receipt-v1",
+  "release_eligible": false,
+  "retrieval_completed_at": "2026-09-08T12:50:34.843908Z",
+  "retrieval_started_at": "2026-09-08T12:50:34.807914Z",
+  "source_custody_receipt_sha256": "2f15138c7ea8c69e7143c40a7fb1ffc8bbc961870f665c810866257b8799bf04",
+  "source_selection_sha256": "26f4469b5639422b03828535786343a162b7b3113a1b30fafa79180cb0c2e950"
+}

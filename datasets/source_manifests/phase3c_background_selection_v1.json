@@ -1,0 +1,2794 @@
+{
+  "authority_level": "authoritative",
+  "baseline_authorized": false,
+  "chunking_authorized": false,
+  "data_role": "background_load_source",
+  "excluded_curated_operation_count": 20,
+  "family_counts": [
+    {
+      "family": "actions",
+      "selected_count": 184
+    },
+    {
+      "family": "issues",
+      "selected_count": 53
+    },
+    {
+      "family": "pull_requests",
+      "selected_count": 24
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "selected_count": 198
+    }
+  ],
+  "full_ingestion_ready": false,
+  "manifest_version": "phase3c-background-selection-v1",
+  "normalization_authorized": true,
+  "operation_allowlist_sha256": "4458525018000b35f06f7d5ff3e3c7bfe61dc36550cf276789228d03db6f8b61",
+  "operation_count": 459,
+  "operations": [
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/add-custom-labels-to-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/add-custom-labels-to-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/add-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/add-selected-repo-to-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/add-selected-repo-to-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/add-self-hosted-runner-to-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/approve-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/approve"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/cancel-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/cancel"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-environment-variable",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/create-or-update-environment-secret",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/create-or-update-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/create-or-update-repo-secret",
+      "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-org-variable",
+      "path": "/orgs/{org}/actions/variables"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-repo-variable",
+      "path": "/repos/{owner}/{repo}/actions/variables"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/create-self-hosted-runner-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-actions-cache-by-id",
+      "path": "/repos/{owner}/{repo}/actions/caches/{cache_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-actions-cache-by-key",
+      "path": "/repos/{owner}/{repo}/actions/caches"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-artifact",
+      "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-custom-image-from-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-custom-image-version-from-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-environment-secret",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-environment-variable",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-repo-secret",
+      "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-repo-variable",
+      "path": "/repos/{owner}/{repo}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-self-hosted-runner-from-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-self-hosted-runner-from-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-self-hosted-runner-group-from-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/delete-workflow-run-logs",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/logs"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/disable-selected-repository-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/disable-selected-repository-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/disable-workflow",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/disable"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/download-artifact",
+      "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}/{archive_format}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/download-job-logs-for-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/logs"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/download-workflow-run-attempt-logs",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/logs"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/download-workflow-run-logs",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/logs"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/enable-selected-repository-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/enable-selected-repository-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/enable-workflow",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/enable"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/force-cancel-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/force-cancel"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/generate-runner-jitconfig-for-org",
+      "path": "/orgs/{org}/actions/runners/generate-jitconfig"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/generate-runner-jitconfig-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/generate-jitconfig"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-list",
+      "path": "/repos/{owner}/{repo}/actions/caches"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-retention-limit-for-enterprise",
+      "path": "/enterprises/{enterprise}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-retention-limit-for-organization",
+      "path": "/organizations/{org}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-retention-limit-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-storage-limit-for-enterprise",
+      "path": "/enterprises/{enterprise}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-storage-limit-for-organization",
+      "path": "/organizations/{org}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-storage-limit-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-usage",
+      "path": "/repos/{owner}/{repo}/actions/cache/usage"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-usage-by-repo-for-org",
+      "path": "/orgs/{org}/actions/cache/usage-by-repository"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-actions-cache-usage-for-org",
+      "path": "/orgs/{org}/actions/cache/usage"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-allowed-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/selected-actions"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-allowed-actions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/selected-actions"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-artifact",
+      "path": "/repos/{owner}/{repo}/actions/artifacts/{artifact_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-artifact-and-log-retention-settings-organization",
+      "path": "/orgs/{org}/actions/permissions/artifact-and-log-retention"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-artifact-and-log-retention-settings-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/artifact-and-log-retention"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-concurrency-group-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/concurrency_groups/{concurrency_group_name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-custom-image-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-custom-image-version-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions/{version}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-custom-oidc-sub-claim-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/oidc/customization/sub"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-environment-public-key",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/public-key"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-environment-secret",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-environment-variable",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-fork-pr-contributor-approval-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/fork-pr-contributor-approval"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-fork-pr-contributor-approval-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/fork-pr-contributor-approval"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-github-actions-default-workflow-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/workflow"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-github-actions-default-workflow-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/workflow"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-github-actions-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-github-actions-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runners-github-owned-images-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/github-owned"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runners-limits-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/limits"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runners-machine-specs-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/machine-sizes"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runners-partner-images-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/partner"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-hosted-runners-platforms-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/platforms"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-job-for-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-org-public-key",
+      "path": "/orgs/{org}/actions/secrets/public-key"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-pending-deployments-for-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-private-repo-fork-pr-workflows-settings-organization",
+      "path": "/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-private-repo-fork-pr-workflows-settings-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/fork-pr-workflows-private-repos"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-repo-public-key",
+      "path": "/repos/{owner}/{repo}/actions/secrets/public-key"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-repo-secret",
+      "path": "/repos/{owner}/{repo}/actions/secrets/{secret_name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-repo-variable",
+      "path": "/repos/{owner}/{repo}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-reviews-for-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/approvals"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-runner-version-deprecation-for-org",
+      "path": "/orgs/{org}/actions/runners/deprecations/{version}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-runner-version-deprecation-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/deprecations/{version}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-self-hosted-runner-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-self-hosted-runners-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-access-to-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/access"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run-attempt",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-run-usage",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/timing"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/get-workflow-usage",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/timing"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-artifacts-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/artifacts"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-concurrency-groups-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/concurrency_groups"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-concurrency-groups-for-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/concurrency_groups"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-custom-image-versions-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom/{image_definition_id}/versions"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-custom-images-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/images/custom"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-environment-secrets",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/secrets"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-environment-variables",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-github-hosted-runners-in-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/hosted-runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-hosted-runners-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-jobs-for-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/jobs"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-jobs-for-workflow-run-attempt",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-labels-for-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-labels-for-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-org-secrets",
+      "path": "/orgs/{org}/actions/secrets"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-org-variables",
+      "path": "/orgs/{org}/actions/variables"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-organization-secrets",
+      "path": "/repos/{owner}/{repo}/actions/organization-secrets"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-organization-variables",
+      "path": "/repos/{owner}/{repo}/actions/organization-variables"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-secrets",
+      "path": "/repos/{owner}/{repo}/actions/secrets"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-variables",
+      "path": "/repos/{owner}/{repo}/actions/variables"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-repo-workflows",
+      "path": "/repos/{owner}/{repo}/actions/workflows"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-runner-applications-for-org",
+      "path": "/orgs/{org}/actions/runners/downloads"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-runner-applications-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/downloads"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repos-for-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-enabled-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-selected-repositories-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-self-hosted-runner-groups-for-org",
+      "path": "/orgs/{org}/actions/runner-groups"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-self-hosted-runners-for-org",
+      "path": "/orgs/{org}/actions/runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-self-hosted-runners-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-self-hosted-runners-in-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/runners"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-workflow-run-artifacts",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/artifacts"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs",
+      "path": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs"
+    },
+    {
+      "family": "actions",
+      "method": "get",
+      "operation_id": "actions/list-workflow-runs-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runs"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/re-run-job-for-workflow-run",
+      "path": "/repos/{owner}/{repo}/actions/jobs/{job_id}/rerun"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/re-run-workflow",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/rerun"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/re-run-workflow-failed-jobs",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/rerun-failed-jobs"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-all-custom-labels-from-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-all-custom-labels-from-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-custom-label-from-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}/labels/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-custom-label-from-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-selected-repo-from-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-selected-repo-from-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories/{repository_id}"
+    },
+    {
+      "family": "actions",
+      "method": "delete",
+      "operation_id": "actions/remove-self-hosted-runner-from-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/runners/{runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/review-custom-gates-for-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/deployment_protection_rule"
+    },
+    {
+      "family": "actions",
+      "method": "post",
+      "operation_id": "actions/review-pending-deployments-for-run",
+      "path": "/repos/{owner}/{repo}/actions/runs/{run_id}/pending_deployments"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-retention-limit-for-enterprise",
+      "path": "/enterprises/{enterprise}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-retention-limit-for-organization",
+      "path": "/organizations/{org}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-retention-limit-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/cache/retention-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-storage-limit-for-enterprise",
+      "path": "/enterprises/{enterprise}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-storage-limit-for-organization",
+      "path": "/organizations/{org}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-actions-cache-storage-limit-for-repository",
+      "path": "/repos/{owner}/{repo}/actions/cache/storage-limit"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-allowed-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/selected-actions"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-allowed-actions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/selected-actions"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-artifact-and-log-retention-settings-organization",
+      "path": "/orgs/{org}/actions/permissions/artifact-and-log-retention"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-artifact-and-log-retention-settings-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/artifact-and-log-retention"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-custom-labels-for-self-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-custom-labels-for-self-hosted-runner-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/runners/{runner_id}/labels"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-custom-oidc-sub-claim-for-repo",
+      "path": "/repos/{owner}/{repo}/actions/oidc/customization/sub"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-fork-pr-contributor-approval-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/fork-pr-contributor-approval"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-fork-pr-contributor-approval-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/fork-pr-contributor-approval"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-github-actions-default-workflow-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/workflow"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-github-actions-default-workflow-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/workflow"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-github-actions-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-github-actions-permissions-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-private-repo-fork-pr-workflows-settings-organization",
+      "path": "/orgs/{org}/actions/permissions/fork-pr-workflows-private-repos"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-private-repo-fork-pr-workflows-settings-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/fork-pr-workflows-private-repos"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-repo-access-to-self-hosted-runner-group-in-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-selected-repos-for-org-secret",
+      "path": "/orgs/{org}/actions/secrets/{secret_name}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-selected-repos-for-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-selected-repositories-enabled-github-actions-organization",
+      "path": "/orgs/{org}/actions/permissions/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-selected-repositories-self-hosted-runners-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners/repositories"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-self-hosted-runners-in-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}/runners"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-self-hosted-runners-permissions-organization",
+      "path": "/orgs/{org}/actions/permissions/self-hosted-runners"
+    },
+    {
+      "family": "actions",
+      "method": "put",
+      "operation_id": "actions/set-workflow-access-to-repository",
+      "path": "/repos/{owner}/{repo}/actions/permissions/access"
+    },
+    {
+      "family": "actions",
+      "method": "patch",
+      "operation_id": "actions/update-environment-variable",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "patch",
+      "operation_id": "actions/update-hosted-runner-for-org",
+      "path": "/orgs/{org}/actions/hosted-runners/{hosted_runner_id}"
+    },
+    {
+      "family": "actions",
+      "method": "patch",
+      "operation_id": "actions/update-org-variable",
+      "path": "/orgs/{org}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "patch",
+      "operation_id": "actions/update-repo-variable",
+      "path": "/repos/{owner}/{repo}/actions/variables/{name}"
+    },
+    {
+      "family": "actions",
+      "method": "patch",
+      "operation_id": "actions/update-self-hosted-runner-group-for-org",
+      "path": "/orgs/{org}/actions/runner-groups/{runner_group_id}"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-issue-field-values",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/add-labels",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/approve-suggestion",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/approve"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/check-user-can-be-assigned",
+      "path": "/repos/{owner}/{repo}/assignees/{assignee}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/check-user-can-be-assigned-to-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees/{assignee}"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/create-comment",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/comments"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/create-label",
+      "path": "/repos/{owner}/{repo}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/create-milestone",
+      "path": "/repos/{owner}/{repo}/milestones"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/delete-comment",
+      "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/delete-issue-field-value",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values/{issue_field_id}"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/delete-label",
+      "path": "/repos/{owner}/{repo}/labels/{name}"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/delete-milestone",
+      "path": "/repos/{owner}/{repo}/milestones/{milestone_number}"
+    },
+    {
+      "family": "issues",
+      "method": "post",
+      "operation_id": "issues/dismiss-suggestion",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions/{suggestion_id}/dismiss"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-comment",
+      "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-event",
+      "path": "/repos/{owner}/{repo}/issues/events/{event_id}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-label",
+      "path": "/repos/{owner}/{repo}/labels/{name}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-milestone",
+      "path": "/repos/{owner}/{repo}/milestones/{milestone_number}"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/get-parent",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/parent"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list",
+      "path": "/issues"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-assignees",
+      "path": "/repos/{owner}/{repo}/assignees"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-comments",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/comments"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-comments-for-repo",
+      "path": "/repos/{owner}/{repo}/issues/comments"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-dependencies-blocking",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocking"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-events",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/events"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-events-for-repo",
+      "path": "/repos/{owner}/{repo}/issues/events"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-events-for-timeline",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/timeline"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-authenticated-user",
+      "path": "/user/issues"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-org",
+      "path": "/orgs/{org}/issues"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-for-repo",
+      "path": "/repos/{owner}/{repo}/issues"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-issue-field-values-for-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-labels-for-milestone",
+      "path": "/repos/{owner}/{repo}/milestones/{milestone_number}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-labels-for-repo",
+      "path": "/repos/{owner}/{repo}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-labels-on-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-milestones",
+      "path": "/repos/{owner}/{repo}/milestones"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-sub-issues",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues"
+    },
+    {
+      "family": "issues",
+      "method": "get",
+      "operation_id": "issues/list-suggestions",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/suggestions"
+    },
+    {
+      "family": "issues",
+      "method": "put",
+      "operation_id": "issues/lock",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/lock"
+    },
+    {
+      "family": "issues",
+      "method": "put",
+      "operation_id": "issues/pin-comment",
+      "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}/pin"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-all-labels",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-assignees",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/assignees"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-dependency-blocked-by",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by/{issue_id}"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-label",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels/{name}"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/remove-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issue"
+    },
+    {
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/reprioritize-sub-issue",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/sub_issues/priority"
+    },
+    {
+      "family": "issues",
+      "method": "put",
+      "operation_id": "issues/set-issue-field-values",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/issue-field-values"
+    },
+    {
+      "family": "issues",
+      "method": "put",
+      "operation_id": "issues/set-labels",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/labels"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/unlock",
+      "path": "/repos/{owner}/{repo}/issues/{issue_number}/lock"
+    },
+    {
+      "family": "issues",
+      "method": "delete",
+      "operation_id": "issues/unpin-comment",
+      "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}/pin"
+    },
+    {
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/update-comment",
+      "path": "/repos/{owner}/{repo}/issues/comments/{comment_id}"
+    },
+    {
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/update-label",
+      "path": "/repos/{owner}/{repo}/labels/{name}"
+    },
+    {
+      "family": "issues",
+      "method": "patch",
+      "operation_id": "issues/update-milestone",
+      "path": "/repos/{owner}/{repo}/milestones/{milestone_number}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/check-if-merged",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge"
+    },
+    {
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/create-reply-for-review-comment",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments/{comment_id}/replies"
+    },
+    {
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/create-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews"
+    },
+    {
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/create-review-comment",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments"
+    },
+    {
+      "family": "pull_requests",
+      "method": "delete",
+      "operation_id": "pulls/delete-pending-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "delete",
+      "operation_id": "pulls/delete-review-comment",
+      "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "put",
+      "operation_id": "pulls/dismiss-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/dismissals"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/get-merge-async-result",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge-async/{uuid}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/get-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/get-review-comment",
+      "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-comments-for-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-commits",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/commits"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-files",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/files"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-requested-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-review-comments",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/comments"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-review-comments-for-repo",
+      "path": "/repos/{owner}/{repo}/pulls/comments"
+    },
+    {
+      "family": "pull_requests",
+      "method": "get",
+      "operation_id": "pulls/list-reviews",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews"
+    },
+    {
+      "family": "pull_requests",
+      "method": "put",
+      "operation_id": "pulls/merge",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge"
+    },
+    {
+      "family": "pull_requests",
+      "method": "put",
+      "operation_id": "pulls/merge-async",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/merge-async"
+    },
+    {
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/request-reviewers",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers"
+    },
+    {
+      "family": "pull_requests",
+      "method": "post",
+      "operation_id": "pulls/submit-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/events"
+    },
+    {
+      "family": "pull_requests",
+      "method": "put",
+      "operation_id": "pulls/update-branch",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/update-branch"
+    },
+    {
+      "family": "pull_requests",
+      "method": "put",
+      "operation_id": "pulls/update-review",
+      "path": "/repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}"
+    },
+    {
+      "family": "pull_requests",
+      "method": "patch",
+      "operation_id": "pulls/update-review-comment",
+      "path": "/repos/{owner}/{repo}/pulls/comments/{comment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/add-app-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/add-collaborator",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/add-status-check-contexts",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/add-team-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/add-user-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/cancel-pages-deployment",
+      "path": "/repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/check-automated-security-fixes",
+      "path": "/repos/{owner}/{repo}/automated-security-fixes"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/check-collaborator",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/check-immutable-releases",
+      "path": "/repos/{owner}/{repo}/immutable-releases"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/check-private-vulnerability-reporting",
+      "path": "/repos/{owner}/{repo}/private-vulnerability-reporting"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/check-vulnerability-alerts",
+      "path": "/repos/{owner}/{repo}/vulnerability-alerts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/codeowners-errors",
+      "path": "/repos/{owner}/{repo}/codeowners/errors"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/compare-commits",
+      "path": "/repos/{owner}/{repo}/compare/{basehead}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-attestation",
+      "path": "/repos/{owner}/{repo}/attestations"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-autolink",
+      "path": "/repos/{owner}/{repo}/autolinks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-commit-comment",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/comments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-commit-signature-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-commit-status",
+      "path": "/repos/{owner}/{repo}/statuses/{sha}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-deploy-key",
+      "path": "/repos/{owner}/{repo}/keys"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-deployment",
+      "path": "/repos/{owner}/{repo}/deployments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-deployment-branch-policy",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-deployment-protection-rule",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-deployment-status",
+      "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-dispatch-event",
+      "path": "/repos/{owner}/{repo}/dispatches"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-fork",
+      "path": "/repos/{owner}/{repo}/forks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/create-or-update-environment",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/create-or-update-file-contents",
+      "path": "/repos/{owner}/{repo}/contents/{path}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-org-ruleset",
+      "path": "/orgs/{org}/rulesets"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-pages-deployment",
+      "path": "/repos/{owner}/{repo}/pages/deployments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-pages-site",
+      "path": "/repos/{owner}/{repo}/pages"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-release",
+      "path": "/repos/{owner}/{repo}/releases"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-repo-ruleset",
+      "path": "/repos/{owner}/{repo}/rulesets"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-using-template",
+      "path": "/repos/{template_owner}/{template_repo}/generate"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/create-webhook",
+      "path": "/repos/{owner}/{repo}/hooks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/custom-properties-for-repos-create-or-update-repository-values",
+      "path": "/repos/{owner}/{repo}/properties/values"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/custom-properties-for-repos-get-repository-values",
+      "path": "/repos/{owner}/{repo}/properties/values"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/decline-invitation-for-authenticated-user",
+      "path": "/user/repository_invitations/{invitation_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete",
+      "path": "/repos/{owner}/{repo}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-admin-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-an-environment",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-autolink",
+      "path": "/repos/{owner}/{repo}/autolinks/{autolink_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-commit-comment",
+      "path": "/repos/{owner}/{repo}/comments/{comment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-commit-signature-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-deploy-key",
+      "path": "/repos/{owner}/{repo}/keys/{key_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-deployment",
+      "path": "/repos/{owner}/{repo}/deployments/{deployment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-deployment-branch-policy",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-file",
+      "path": "/repos/{owner}/{repo}/contents/{path}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-invitation",
+      "path": "/repos/{owner}/{repo}/invitations/{invitation_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-org-ruleset",
+      "path": "/orgs/{org}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-pages-site",
+      "path": "/repos/{owner}/{repo}/pages"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-pull-request-review-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-release",
+      "path": "/repos/{owner}/{repo}/releases/{release_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-release-asset",
+      "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-repo-ruleset",
+      "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/delete-webhook",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/disable-automated-security-fixes",
+      "path": "/repos/{owner}/{repo}/automated-security-fixes"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/disable-deployment-protection-rule",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/disable-immutable-releases",
+      "path": "/repos/{owner}/{repo}/immutable-releases"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/disable-private-vulnerability-reporting",
+      "path": "/repos/{owner}/{repo}/private-vulnerability-reporting"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/disable-vulnerability-alerts",
+      "path": "/repos/{owner}/{repo}/vulnerability-alerts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/download-tarball-archive",
+      "path": "/repos/{owner}/{repo}/tarball/{ref}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/download-zipball-archive",
+      "path": "/repos/{owner}/{repo}/zipball/{ref}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/enable-automated-security-fixes",
+      "path": "/repos/{owner}/{repo}/automated-security-fixes"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/enable-immutable-releases",
+      "path": "/repos/{owner}/{repo}/immutable-releases"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/enable-private-vulnerability-reporting",
+      "path": "/repos/{owner}/{repo}/private-vulnerability-reporting"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/enable-vulnerability-alerts",
+      "path": "/repos/{owner}/{repo}/vulnerability-alerts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/generate-release-notes",
+      "path": "/repos/{owner}/{repo}/releases/generate-notes"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get",
+      "path": "/repos/{owner}/{repo}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-admin-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-all-deployment-protection-rules",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-all-environments",
+      "path": "/repos/{owner}/{repo}/environments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-all-status-check-contexts",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-all-topics",
+      "path": "/repos/{owner}/{repo}/topics"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-apps-with-access-to-protected-branch",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-autolink",
+      "path": "/repos/{owner}/{repo}/autolinks/{autolink_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-branch",
+      "path": "/repos/{owner}/{repo}/branches/{branch}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-branch-rules",
+      "path": "/repos/{owner}/{repo}/rules/branches/{branch}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-clones",
+      "path": "/repos/{owner}/{repo}/traffic/clones"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-code-frequency-stats",
+      "path": "/repos/{owner}/{repo}/stats/code_frequency"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-collaborator-permission-level",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}/permission"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-combined-status-for-ref",
+      "path": "/repos/{owner}/{repo}/commits/{ref}/status"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-commit",
+      "path": "/repos/{owner}/{repo}/commits/{ref}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-commit-activity-stats",
+      "path": "/repos/{owner}/{repo}/stats/commit_activity"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-commit-comment",
+      "path": "/repos/{owner}/{repo}/comments/{comment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-commit-signature-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_signatures"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-community-profile-metrics",
+      "path": "/repos/{owner}/{repo}/community/profile"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-contributors-stats",
+      "path": "/repos/{owner}/{repo}/stats/contributors"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-custom-deployment-protection-rule",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/{protection_rule_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-deploy-key",
+      "path": "/repos/{owner}/{repo}/keys/{key_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-deployment",
+      "path": "/repos/{owner}/{repo}/deployments/{deployment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-deployment-branch-policy",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-deployment-status",
+      "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-environment",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-hash-algorithm",
+      "path": "/repos/{owner}/{repo}/hash-algorithm"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-latest-pages-build",
+      "path": "/repos/{owner}/{repo}/pages/builds/latest"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-latest-release",
+      "path": "/repos/{owner}/{repo}/releases/latest"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-org-rule-suite",
+      "path": "/orgs/{org}/rulesets/rule-suites/{rule_suite_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-org-rule-suites",
+      "path": "/orgs/{org}/rulesets/rule-suites"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-org-ruleset",
+      "path": "/orgs/{org}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-org-rulesets",
+      "path": "/orgs/{org}/rulesets"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-pages",
+      "path": "/repos/{owner}/{repo}/pages"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-pages-build",
+      "path": "/repos/{owner}/{repo}/pages/builds/{build_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-pages-deployment",
+      "path": "/repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-pages-health-check",
+      "path": "/repos/{owner}/{repo}/pages/health"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-participation-stats",
+      "path": "/repos/{owner}/{repo}/stats/participation"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-pull-request-review-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-punch-card-stats",
+      "path": "/repos/{owner}/{repo}/stats/punch_card"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-readme",
+      "path": "/repos/{owner}/{repo}/readme"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-readme-in-directory",
+      "path": "/repos/{owner}/{repo}/readme/{dir}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-release",
+      "path": "/repos/{owner}/{repo}/releases/{release_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-release-asset",
+      "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-release-by-tag",
+      "path": "/repos/{owner}/{repo}/releases/tags/{tag}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-rule-suite",
+      "path": "/repos/{owner}/{repo}/rulesets/rule-suites/{rule_suite_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-rule-suites",
+      "path": "/repos/{owner}/{repo}/rulesets/rule-suites"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-ruleset",
+      "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-ruleset-history",
+      "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}/history"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-ruleset-version",
+      "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}/history/{version_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-repo-rulesets",
+      "path": "/repos/{owner}/{repo}/rulesets"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-status-checks-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-teams-with-access-to-protected-branch",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-top-paths",
+      "path": "/repos/{owner}/{repo}/traffic/popular/paths"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-top-referrers",
+      "path": "/repos/{owner}/{repo}/traffic/popular/referrers"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-users-with-access-to-protected-branch",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-views",
+      "path": "/repos/{owner}/{repo}/traffic/views"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-webhook",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-webhook-config-for-repo",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/config"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/get-webhook-delivery",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-activities",
+      "path": "/repos/{owner}/{repo}/activity"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-autolinks",
+      "path": "/repos/{owner}/{repo}/autolinks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-branches",
+      "path": "/repos/{owner}/{repo}/branches"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-branches-for-head-commit",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-collaborators",
+      "path": "/repos/{owner}/{repo}/collaborators"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-comments-for-commit",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/comments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-commit-comments-for-repo",
+      "path": "/repos/{owner}/{repo}/comments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-commit-statuses-for-ref",
+      "path": "/repos/{owner}/{repo}/commits/{ref}/statuses"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-commits",
+      "path": "/repos/{owner}/{repo}/commits"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-contributors",
+      "path": "/repos/{owner}/{repo}/contributors"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-custom-deployment-rule-integrations",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment_protection_rules/apps"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-deploy-keys",
+      "path": "/repos/{owner}/{repo}/keys"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-deployment-branch-policies",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-deployment-statuses",
+      "path": "/repos/{owner}/{repo}/deployments/{deployment_id}/statuses"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-deployments",
+      "path": "/repos/{owner}/{repo}/deployments"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-authenticated-user",
+      "path": "/user/repos"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-org",
+      "path": "/orgs/{org}/repos"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-for-user",
+      "path": "/users/{username}/repos"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-forks",
+      "path": "/repos/{owner}/{repo}/forks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-invitations",
+      "path": "/repos/{owner}/{repo}/invitations"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-invitations-for-authenticated-user",
+      "path": "/user/repository_invitations"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-issue-types",
+      "path": "/repos/{owner}/{repo}/issue-types"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-languages",
+      "path": "/repos/{owner}/{repo}/languages"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-pages-builds",
+      "path": "/repos/{owner}/{repo}/pages/builds"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-public",
+      "path": "/repositories"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-pull-requests-associated-with-commit",
+      "path": "/repos/{owner}/{repo}/commits/{commit_sha}/pulls"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-release-assets",
+      "path": "/repos/{owner}/{repo}/releases/{release_id}/assets"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-releases",
+      "path": "/repos/{owner}/{repo}/releases"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-tags",
+      "path": "/repos/{owner}/{repo}/tags"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-teams",
+      "path": "/repos/{owner}/{repo}/teams"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-webhook-deliveries",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "get",
+      "operation_id": "repos/list-webhooks",
+      "path": "/repos/{owner}/{repo}/hooks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/merge",
+      "path": "/repos/{owner}/{repo}/merges"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/merge-upstream",
+      "path": "/repos/{owner}/{repo}/merge-upstream"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/ping-webhook",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/pings"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/redeliver-webhook-delivery",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-app-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-collaborator",
+      "path": "/repos/{owner}/{repo}/collaborators/{username}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-status-check-contexts",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-status-check-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-team-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "delete",
+      "operation_id": "repos/remove-user-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/rename-branch",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/rename"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/replace-all-topics",
+      "path": "/repos/{owner}/{repo}/topics"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/request-pages-build",
+      "path": "/repos/{owner}/{repo}/pages/builds"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/set-admin-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/set-app-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/set-status-check-contexts",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/set-team-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/set-user-access-restrictions",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/test-push-webhook",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/tests"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/transfer",
+      "path": "/repos/{owner}/{repo}/transfer"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update",
+      "path": "/repos/{owner}/{repo}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/update-branch-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-commit-comment",
+      "path": "/repos/{owner}/{repo}/comments/{comment_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/update-deployment-branch-policy",
+      "path": "/repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/update-information-about-pages-site",
+      "path": "/repos/{owner}/{repo}/pages"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-invitation",
+      "path": "/repos/{owner}/{repo}/invitations/{invitation_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/update-org-ruleset",
+      "path": "/orgs/{org}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-pull-request-review-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-release",
+      "path": "/repos/{owner}/{repo}/releases/{release_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-release-asset",
+      "path": "/repos/{owner}/{repo}/releases/assets/{asset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "put",
+      "operation_id": "repos/update-repo-ruleset",
+      "path": "/repos/{owner}/{repo}/rulesets/{ruleset_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-status-check-protection",
+      "path": "/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-webhook",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "patch",
+      "operation_id": "repos/update-webhook-config-for-repo",
+      "path": "/repos/{owner}/{repo}/hooks/{hook_id}/config"
+    },
+    {
+      "family": "repositories_and_repository_webhooks",
+      "method": "post",
+      "operation_id": "repos/upload-release-asset",
+      "path": "/repos/{owner}/{repo}/releases/{release_id}/assets"
+    }
+  ],
+  "release_eligible": false,
+  "selection_policy": "all_current_operations_except_phase3b_curated_allowlist",
+  "selection_status": "frozen_background_selection",
+  "snapshot_id": "github_rest_v1_2026_09_05",
+  "source_api_version": "2026-03-10",
+  "source_catalog_sha256": "d16fe4774dedef38e96cb021e4ebe03b50e4d8eda9b1fcc679318f6425251fe0",
+  "source_current_operation_count": 479,
+  "source_state": "current"
+}
