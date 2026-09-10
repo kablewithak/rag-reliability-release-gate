@@ -1,0 +1,801 @@
+{
+  "authoring_dossier_sha256": "2abaf81b719905c22cca26030b757756c405fed345aeaec2a1e3514e77f58118",
+  "authority_scope_count": 2,
+  "baseline_authorized": false,
+  "case_count": 18,
+  "cluster_count": 9,
+  "current_multi_evidence_count": 4,
+  "current_single_source_count": 5,
+  "held_out_case_authoring_complete": true,
+  "held_out_outcomes_exposed": false,
+  "held_out_suite_frozen": false,
+  "must_refuse_count": 3,
+  "records": [
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31",
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "case_id": "phase4-heldout-best-practices-poll-cache",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "When polling is unavoidable, poll only as often as needed on a fixed schedule.",
+          "If x-poll-interval is returned, wait at least that many seconds before polling the same endpoint again.",
+          "Correctly authorized conditional requests that return HTTP 304 do not count against the primary rate limit.",
+          "Request only the data needed and keep the request stable and specific so unchanged data is more likely to return HTTP 304.",
+          "Repeated polls of the same data should use the same parameters, because changing page size, page number, or filters produces a different response and etag."
+        ],
+        "must_refuse_reason": null,
+        "query": "An integration cannot use webhooks and must poll the GitHub REST API. Under the frozen current best-practices guidance, how should it control polling frequency and x-poll-interval, use conditional authenticated requests, and keep requests stable so unchanged resources are more likely to return HTTP 304 without consuming primary rate-limit budget?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31",
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-best-practices-poll-cache:fact-01",
+          "phase4-heldout-best-practices-poll-cache:fact-02",
+          "phase4-heldout-best-practices-poll-cache:fact-03",
+          "phase4-heldout-best-practices-poll-cache:fact-04",
+          "phase4-heldout-best-practices-poll-cache:fact-05"
+        ],
+        "required_source_ids": [
+          "docs-best-practices"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-best-practices"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31",
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "case_id": "phase4-heldout-best-practices-repeated-errors",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "A 404 does not always mean the resource is absent, because GitHub may return 404 instead of 403 for some private resources when credentials lack access.",
+          "The integration should first verify that the 404 is not caused by authentication or authorization.",
+          "After credentials are confirmed, the integration should wait much longer before checking again or retry only when there is reason to believe the resource exists.",
+          "Repeatedly requesting a missing resource wastes rate limit and can trigger a secondary rate limit."
+        ],
+        "must_refuse_reason": null,
+        "query": "A polling integration repeatedly receives HTTP 404 from a resource that the operator believes exists. What does the frozen current best-practices guidance say about the possible authorization meaning of 404 and how the integration should behave instead of continually retrying?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-best-practices-repeated-errors:fact-01",
+          "phase4-heldout-best-practices-repeated-errors:fact-02",
+          "phase4-heldout-best-practices-repeated-errors:fact-03",
+          "phase4-heldout-best-practices-repeated-errors:fact-04"
+        ],
+        "required_source_ids": [
+          "docs-best-practices"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-best-practices"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-016bb9166542c2ba4bbd33a1aeb8d10d0cc889e5a0c2276d00dc5a5e88f4cb07",
+          "chunk-26153d3a142bbfb1e096af76f089d6e3d16a83f63644c3f0cc7134f9fd6487ac",
+          "chunk-26b602928020bab70748654dd84106df4188f1d8bd4ce038b8dab607c8201215",
+          "chunk-3c499f1990ac0c066d520f07851659dcd0fdb7821fde7a966223a22b8038e1fd",
+          "chunk-a18a4454d3420e3b5e0048ccde681face338278d04f270a1882bb6d483f289fb",
+          "chunk-f62c569b11e1f8f3e5f767abb6c1aee7161d6090ea5eb37948ea2c59cee855e9"
+        ],
+        "case_id": "phase4-heldout-getting-started-request-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Every REST API request includes an HTTP method and a path.",
+          "Path parameters modify the endpoint path and are required where the endpoint defines them.",
+          "Body parameters send additional data and may be optional or required depending on the endpoint.",
+          "Query parameters control what data is returned and are usually optional.",
+          "The X-GitHub-Api-Version header specifies the REST API version for the request.",
+          "Most REST endpoints recommend Accept: application/vnd.github+json."
+        ],
+        "must_refuse_reason": null,
+        "query": "A developer is constructing a REST request from the current GitHub guidance. Which request elements are always present, how do path, body, and query parameters differ, and which version and media-type headers does the guidance describe?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-016bb9166542c2ba4bbd33a1aeb8d10d0cc889e5a0c2276d00dc5a5e88f4cb07",
+          "chunk-3c499f1990ac0c066d520f07851659dcd0fdb7821fde7a966223a22b8038e1fd"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-getting-started-request-contract:fact-01",
+          "phase4-heldout-getting-started-request-contract:fact-02",
+          "phase4-heldout-getting-started-request-contract:fact-03",
+          "phase4-heldout-getting-started-request-contract:fact-04",
+          "phase4-heldout-getting-started-request-contract:fact-05",
+          "phase4-heldout-getting-started-request-contract:fact-06"
+        ],
+        "required_source_ids": [
+          "docs-getting-started"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-getting-started"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-016bb9166542c2ba4bbd33a1aeb8d10d0cc889e5a0c2276d00dc5a5e88f4cb07",
+          "chunk-26153d3a142bbfb1e096af76f089d6e3d16a83f63644c3f0cc7134f9fd6487ac",
+          "chunk-26b602928020bab70748654dd84106df4188f1d8bd4ce038b8dab607c8201215",
+          "chunk-3c499f1990ac0c066d520f07851659dcd0fdb7821fde7a966223a22b8038e1fd",
+          "chunk-a18a4454d3420e3b5e0048ccde681face338278d04f270a1882bb6d483f289fb",
+          "chunk-f62c569b11e1f8f3e5f767abb6c1aee7161d6090ea5eb37948ea2c59cee855e9"
+        ],
+        "case_id": "phase4-heldout-getting-started-request-inspection",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "GitHub CLI uses the api subcommand and allows the HTTP method to be supplied with --method.",
+          "The examples send Accept and X-GitHub-Api-Version headers.",
+          "For curl, the request method can be supplied with --request or -X and the full API URL with --url.",
+          "An authenticated curl request sends the access token in the Authorization header.",
+          "The --include or --i option can be used to display the response status code and headers."
+        ],
+        "must_refuse_reason": null,
+        "query": "Using the frozen getting-started guidance, explain the key method/header controls for making requests with GitHub CLI or curl and how a caller can inspect the returned HTTP status code and headers.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-26b602928020bab70748654dd84106df4188f1d8bd4ce038b8dab607c8201215",
+          "chunk-f62c569b11e1f8f3e5f767abb6c1aee7161d6090ea5eb37948ea2c59cee855e9"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-getting-started-request-inspection:fact-01",
+          "phase4-heldout-getting-started-request-inspection:fact-02",
+          "phase4-heldout-getting-started-request-inspection:fact-03",
+          "phase4-heldout-getting-started-request-inspection:fact-04",
+          "phase4-heldout-getting-started-request-inspection:fact-05"
+        ],
+        "required_source_ids": [
+          "docs-getting-started"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-getting-started"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "case_id": "phase4-heldout-timezones-current-precedence",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "An explicitly supplied ISO 8601 timestamp with timezone information has highest priority.",
+          "If an explicit timestamp does not determine it, a Time-Zone header can provide the timezone.",
+          "Without a Time-Zone header, an authenticated request uses the authenticated user's last known timezone.",
+          "UTC is the fallback when no other timezone information is available."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy runbook says GitHub always generates request timestamps in UTC unless the timestamp itself contains an offset. Under the frozen current timezone guidance, what precedence is actually used for applicable API calls when determining timezone information?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-timezones-current-precedence:fact-01",
+          "phase4-heldout-timezones-current-precedence:fact-02",
+          "phase4-heldout-timezones-current-precedence:fact-03",
+          "phase4-heldout-timezones-current-precedence:fact-04"
+        ],
+        "required_source_ids": [
+          "docs-timezones"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-timezones"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "case_id": "phase4-heldout-timezones-last-known-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "No Time-Zone header or explicit timezone was provided, and I have no observed user state. What exact last-known timezone will GitHub use for this authenticated user?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: Without observed user state, the authenticated user's last-known timezone cannot be inferred.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-timezones"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70",
+          "chunk-09395c668574eee2a6ff7ffdcd2707bca8b112970827d4273cdebd817a308b6f"
+        ],
+        "case_id": "phase4-heldout-actions-remove-token-authority",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The authenticated user must have admin access to the organization.",
+          "OAuth tokens and classic personal access tokens need the admin:org scope."
+        ],
+        "must_refuse_reason": null,
+        "query": "Under the current organization self-hosted-runner remove-token operation, what organization authority must the authenticated user have and what organization scope is required for OAuth tokens or classic personal access tokens?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-actions-remove-token-authority:fact-01",
+          "phase4-heldout-actions-remove-token-authority:fact-02"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-remove-token-for-org"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-remove-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70",
+          "chunk-09395c668574eee2a6ff7ffdcd2707bca8b112970827d4273cdebd817a308b6f"
+        ],
+        "case_id": "phase4-heldout-actions-remove-token-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation uses POST /orgs/{org}/actions/runners/remove-token.",
+          "The token expires after one hour.",
+          "The successful response status is HTTP 201."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current GitHub REST operation that creates a self-hosted-runner remove token for an organization, what HTTP method and endpoint are used, how long is the token valid, and what successful status is documented?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-actions-remove-token-contract:fact-01",
+          "phase4-heldout-actions-remove-token-contract:fact-02",
+          "phase4-heldout-actions-remove-token-contract:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-remove-token-for-org"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-remove-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124",
+          "chunk-4b5aeb1527d8e5bf06d0b49a1ffe5ddb97b1f8c467cf4e2db9f2a9e1f4b89f00"
+        ],
+        "case_id": "phase4-heldout-blocked-by-404-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "An Add blocked-by dependency request returns HTTP 404, but I have no further request, resource, credential, or response details. Which exact resource or access condition caused this particular failure?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: A 404 response from adding a blocked-by dependency does not by itself identify which relevant resource or access condition caused the request to fail.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-blocked-by-dependency"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124",
+          "chunk-4b5aeb1527d8e5bf06d0b49a1ffe5ddb97b1f8c467cf4e2db9f2a9e1f4b89f00"
+        ],
+        "case_id": "phase4-heldout-blocked-by-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation uses POST /repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by.",
+          "The request body requires issue_id.",
+          "issue_id identifies the issue that blocks the current issue.",
+          "The successful response status is HTTP 201."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Add blocked-by dependency operation, what method and endpoint are used, which request-body field is required, what does that field identify, and what successful response status is documented?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-blocked-by-contract:fact-01",
+          "phase4-heldout-blocked-by-contract:fact-02",
+          "phase4-heldout-blocked-by-contract:fact-03",
+          "phase4-heldout-blocked-by-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/add-blocked-by-dependency"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-blocked-by-dependency"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d",
+          "chunk-a1a6a71a7bf60ff978907f1339ae3ce7cc900759a29c6114fdff63e37a492421",
+          "chunk-db4f7149fb4f7e84d0de4a79830ed8a35e793d967bbf7c60f5d4f35fad88f118"
+        ],
+        "case_id": "phase4-heldout-issues-update-assignee-freshness",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [
+          "chunk-a1a6a71a7bf60ff978907f1339ae3ce7cc900759a29c6114fdff63e37a492421",
+          "chunk-db4f7149fb4f7e84d0de4a79830ed8a35e793d967bbf7c60f5d4f35fad88f118"
+        ],
+        "forbidden_source_ids": [
+          "openapi-historical-2022-11-28:issues/update"
+        ],
+        "gold_fact_rubric": [
+          "The current request schema does not contain the legacy singular assignee field.",
+          "The current request schema contains the plural assignees field.",
+          "Passing one or more logins to assignees replaces the set of assignees.",
+          "Passing an empty assignees array clears all assignees."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy Update issue request schema contains a singular assignee field marked as closing down. Under the frozen current 2026-03-10 request contract, is that singular assignee field still present, and what plural field is available for replacing or clearing assignees?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-issues-update-assignee-freshness:fact-01",
+          "phase4-heldout-issues-update-assignee-freshness:fact-02",
+          "phase4-heldout-issues-update-assignee-freshness:fact-03",
+          "phase4-heldout-issues-update-assignee-freshness:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/update"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice. Historical comparison evidence is explicitly forbidden as final support because the query asks for the current 2026-03-10 contract.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d",
+          "chunk-a1a6a71a7bf60ff978907f1339ae3ce7cc900759a29c6114fdff63e37a492421",
+          "chunk-db4f7149fb4f7e84d0de4a79830ed8a35e793d967bbf7c60f5d4f35fad88f118"
+        ],
+        "case_id": "phase4-heldout-issues-update-suggestions",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Issue owners and users with push access or the Triage role can edit an issue.",
+          "Suggestible request fields can carry metadata such as confidence, rationale, and suggest.",
+          "When suggest is true, the requested change is stored as a pending suggestion for human review rather than being applied directly.",
+          "The response suggestions object reports pending suggestions for suggestible fields touched by the request.",
+          "Items marked ignored echo request inputs that were not persisted as pending suggestions."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Update issue contract, who may edit an issue, and how do request-side suggestion metadata and the response-side suggestions object represent proposed or ignored changes?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-issues-update-suggestions:fact-01",
+          "phase4-heldout-issues-update-suggestions:fact-02",
+          "phase4-heldout-issues-update-suggestions:fact-03",
+          "phase4-heldout-issues-update-suggestions:fact-04",
+          "phase4-heldout-issues-update-suggestions:fact-05"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/update"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3",
+          "chunk-d6f84e700ca07621d49f9acf93a7b400c99920d86bb9400a2284f79570f46e41"
+        ],
+        "case_id": "phase4-heldout-pulls-list-422-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "A List pull requests call returns HTTP 422, but I have no request parameters or response body. Which exact query parameter or validation condition caused this failure?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: A 422 response from listing pull requests does not by itself establish the exact validation cause.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/list"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3",
+          "chunk-d6f84e700ca07621d49f9acf93a7b400c99920d86bb9400a2284f79570f46e41"
+        ],
+        "case_id": "phase4-heldout-pulls-list-filters",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The state filter accepts open, closed, or all and defaults to open.",
+          "The head filter uses the form user:ref-name or organization:ref-name.",
+          "The base filter identifies the base branch name.",
+          "The sort parameter defaults to created.",
+          "Direction defaults to desc when sort is created or unspecified, and otherwise defaults to asc."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current List pull requests operation, what is the default state filter, how is the head filter formatted, what does the base filter identify, and what are the documented sort and direction defaults?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-pulls-list-filters:fact-01",
+          "phase4-heldout-pulls-list-filters:fact-02",
+          "phase4-heldout-pulls-list-filters:fact-03",
+          "phase4-heldout-pulls-list-filters:fact-04",
+          "phase4-heldout-pulls-list-filters:fact-05"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/list"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/list"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a",
+          "chunk-24feb9ae2816561bfb66d549dd480b574ec3cf2cc2ff6950630ff7a883b7ec56"
+        ],
+        "case_id": "phase4-heldout-create-user-repo-451-freshness",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [
+          "chunk-24feb9ae2816561bfb66d549dd480b574ec3cf2cc2ff6950630ff7a883b7ec56"
+        ],
+        "forbidden_source_ids": [
+          "openapi-historical-2022-11-28:repos/create-for-authenticated-user"
+        ],
+        "gold_fact_rubric": [
+          "The current operation documents HTTP 451.",
+          "The HTTP 451 response references the shared validation_failed response contract."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy Create a repository for the authenticated user contract does not list HTTP 451. Under the frozen current 2026-03-10 operation contract, is HTTP 451 documented and how is that response represented?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-create-user-repo-451-freshness:fact-01",
+          "phase4-heldout-create-user-repo-451-freshness:fact-02"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/create-for-authenticated-user"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice. Historical comparison evidence is explicitly forbidden as final support because the query asks for the current 2026-03-10 contract.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-for-authenticated-user"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a",
+          "chunk-24feb9ae2816561bfb66d549dd480b574ec3cf2cc2ff6950630ff7a883b7ec56"
+        ],
+        "case_id": "phase4-heldout-create-user-repo-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation uses POST /user/repos.",
+          "The request body requires name.",
+          "The private field defaults to false.",
+          "OAuth app tokens and classic personal access tokens need public_repo or repo scope to create a public repository.",
+          "The repo scope is required to create a private repository."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Create a repository for the authenticated user operation, what method and endpoint are used, which request field is required, what is the default privacy setting, and what classic token scopes are described for public versus private repositories?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-create-user-repo-contract:fact-01",
+          "phase4-heldout-create-user-repo-contract:fact-02",
+          "phase4-heldout-create-user-repo-contract:fact-03",
+          "phase4-heldout-create-user-repo-contract:fact-04",
+          "phase4-heldout-create-user-repo-contract:fact-05"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/create-for-authenticated-user"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-for-authenticated-user"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b",
+          "chunk-c85c8bef9f92d7e2fe88eef66094a668f65db06cd9086f31f562d3dcb2cce665"
+        ],
+        "case_id": "phase4-heldout-attestations-bundle-freshness",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [
+          "chunk-c85c8bef9f92d7e2fe88eef66094a668f65db06cd9086f31f562d3dcb2cce665"
+        ],
+        "forbidden_source_ids": [
+          "openapi-historical-2022-11-28:repos/list-attestations"
+        ],
+        "gold_fact_rubric": [
+          "The current attestation item schema does not define the historical embedded bundle property.",
+          "The current attestation item schema defines bundle_url.",
+          "The current attestation item schema defines initiator.",
+          "The current attestation item schema defines repository_id."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy List attestations response schema embeds a bundle object inside each attestation. Under the frozen current 2026-03-10 operation contract, is that embedded bundle still defined, and which fields does the current attestation item schema define?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-attestations-bundle-freshness:fact-01",
+          "phase4-heldout-attestations-bundle-freshness:fact-02",
+          "phase4-heldout-attestations-bundle-freshness:fact-03",
+          "phase4-heldout-attestations-bundle-freshness:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/list-attestations"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice. Historical comparison evidence is explicitly forbidden as final support because the query asks for the current 2026-03-10 contract.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/list-attestations"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b",
+          "chunk-c85c8bef9f92d7e2fe88eef66094a668f65db06cd9086f31f562d3dcb2cce665"
+        ],
+        "case_id": "phase4-heldout-attestations-authority",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "held_out_release_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The authenticated user must have read access to the repository.",
+          "A fine-grained access token requires the attestations:read permission.",
+          "The attestation signature and timestamps must be cryptographically verified.",
+          "The identity of the attestation signer must be validated."
+        ],
+        "must_refuse_reason": null,
+        "query": "Under the current List attestations operation, what repository access and fine-grained token permission are required, and what verification requirements does the operation identify as necessary for meaningful security benefits?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b"
+        ],
+        "required_fact_ids": [
+          "phase4-heldout-attestations-authority:fact-01",
+          "phase4-heldout-attestations-authority:fact-02",
+          "phase4-heldout-attestations-authority:fact-03",
+          "phase4-heldout-attestations-authority:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/list-attestations"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/list-attestations"
+    }
+  ],
+  "refusal_semantic_review_sha256": "c9060d48fcd6373125fa8dadb91705adf4fa23678e31fa640a1a35b9745a524f",
+  "release_eligible": false,
+  "review_markdown_sha256": "701f23b4877c9193bfd34fb33f7f5ac3e67432073b495e5b0058b30599965749",
+  "suite_version": "phase4c-held-out-cases-v1",
+  "version_freshness_count": 4
+}
