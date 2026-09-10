@@ -1,0 +1,768 @@
+{
+  "authoring_dossier_sha256": "2abaf81b719905c22cca26030b757756c405fed345aeaec2a1e3514e77f58118",
+  "authority_scope_count": 3,
+  "baseline_authorized": false,
+  "case_count": 18,
+  "cluster_count": 9,
+  "current_multi_evidence_count": 3,
+  "current_single_source_count": 6,
+  "must_refuse_count": 3,
+  "records": [
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0"
+        ],
+        "case_id": "phase4-tuning-auth-username-password-current",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Authentication with a GitHub username and password is not supported.",
+          "Attempting username-and-password authentication returns a 4xx error."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy runbook tells users to authenticate to the GitHub REST API with their GitHub username and password. Under the frozen current authentication guidance, is username-and-password authentication supported, and what response class should be expected if it is attempted?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-auth-username-password-current:fact-01",
+          "phase4-tuning-auth-username-password-current:fact-02"
+        ],
+        "required_source_ids": [
+          "docs-authentication"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-authentication"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0"
+        ],
+        "case_id": "phase4-tuning-auth-saml-actions",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "A classic personal access token must be authorized after creation for an organization that enforces SAML SSO.",
+          "A fine-grained personal access token is authorized during token creation before organization access is granted.",
+          "Inside a GitHub Actions workflow, GitHub recommends using the built-in GITHUB_TOKEN instead of creating another token.",
+          "Permissions for GITHUB_TOKEN can be granted with the workflow permissions key."
+        ],
+        "must_refuse_reason": null,
+        "query": "A team accesses an organization that enforces SAML SSO and is also moving API work into a GitHub Actions workflow. How does SAML authorization differ for a classic personal access token versus a fine-grained personal access token, and for the workflow itself what credential does GitHub recommend and how are its permissions granted?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-auth-saml-actions:fact-01",
+          "phase4-tuning-auth-saml-actions:fact-02",
+          "phase4-tuning-auth-saml-actions:fact-03",
+          "phase4-tuning-auth-saml-actions:fact-04"
+        ],
+        "required_source_ids": [
+          "docs-authentication"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-authentication"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb"
+        ],
+        "case_id": "phase4-tuning-credential-method-scope",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "For personal API use, the guidance recommends a personal access token.",
+          "For API use on behalf of an organization or another user, the guidance recommends a GitHub App.",
+          "For API use in a GitHub Actions workflow, the guidance recommends the built-in GITHUB_TOKEN.",
+          "Credentials should receive only the minimum scopes or permissions required for the task."
+        ],
+        "must_refuse_reason": null,
+        "query": "Choose the credential type that the current GitHub guidance recommends for three different principals: personal API use, API use on behalf of an organization or another user, and API use inside GitHub Actions. What least-privilege rule should be applied to the credential's scopes or permissions?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-credential-method-scope:fact-01",
+          "phase4-tuning-credential-method-scope:fact-02",
+          "phase4-tuning-credential-method-scope:fact-03",
+          "phase4-tuning-credential-method-scope:fact-04"
+        ],
+        "required_source_ids": [
+          "docs-credential-security"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-credential-security"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb"
+        ],
+        "case_id": "phase4-tuning-credential-remediation",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Generate a new credential.",
+          "Replace the old credential with the new credential everywhere it is stored or accessed.",
+          "Delete the old compromised credential."
+        ],
+        "must_refuse_reason": null,
+        "query": "The team discovers that an API credential has leaked. According to the current credential-security guidance, what three remediation actions should the team take?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-credential-remediation:fact-01",
+          "phase4-tuning-credential-remediation:fact-02",
+          "phase4-tuning-credential-remediation:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-credential-security"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-credential-security"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5"
+        ],
+        "case_id": "phase4-tuning-rate-primary-status",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+          "Unauthenticated requests are associated with the originating IP address.",
+          "Primary rate-limit status can be inspected using rate-limit response headers.",
+          "GET /rate_limit can also check rate-limit status and does not count against the primary rate limit, although it can count against the secondary rate limit.",
+          "There is no way to directly check the status of the secondary rate limit."
+        ],
+        "must_refuse_reason": null,
+        "query": "For unauthenticated requests that fetch public data, what is the primary REST API rate limit and what identity is it associated with? Explain how primary-rate-limit status can be inspected through response headers and GET /rate_limit, including how that endpoint affects the primary and secondary limits, and whether secondary-rate-limit status can be queried directly.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-rate-primary-status:fact-01",
+          "phase4-tuning-rate-primary-status:fact-02",
+          "phase4-tuning-rate-primary-status:fact-03",
+          "phase4-tuning-rate-primary-status:fact-04",
+          "phase4-tuning-rate-primary-status:fact-05"
+        ],
+        "required_source_ids": [
+          "docs-rate-limits"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-rate-limits"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5"
+        ],
+        "case_id": "phase4-tuning-rate-actions-secondary-retry",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "GITHUB_TOKEN has a primary rate limit of 1,000 requests per hour per repository.",
+          "For resources belonging to a GitHub Enterprise Cloud account, the GITHUB_TOKEN limit is 15,000 requests per hour per repository.",
+          "A secondary-rate-limit failure may return HTTP 403 or 429.",
+          "If retry-after is present, the client should wait that many seconds before retrying.",
+          "If x-ratelimit-remaining is zero, the client should wait until x-ratelimit-reset.",
+          "Otherwise the client should wait at least one minute, use exponentially increasing waits if failures continue, and stop after a bounded number of retries."
+        ],
+        "must_refuse_reason": null,
+        "query": "A GitHub Actions workflow uses GITHUB_TOKEN and later receives a secondary-rate-limit failure. What primary hourly budget applies to GITHUB_TOKEN, including the Enterprise Cloud case, and what retry sequence should the client follow for the secondary-limit response?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-rate-actions-secondary-retry:fact-01",
+          "phase4-tuning-rate-actions-secondary-retry:fact-02",
+          "phase4-tuning-rate-actions-secondary-retry:fact-03",
+          "phase4-tuning-rate-actions-secondary-retry:fact-04",
+          "phase4-tuning-rate-actions-secondary-retry:fact-05",
+          "phase4-tuning-rate-actions-secondary-retry:fact-06"
+        ],
+        "required_source_ids": [
+          "docs-rate-limits"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-rate-limits"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "chunk-dbf49b9a0cd3eb7fd414d8701ab14b0e6a56839678579efed80e04af3f61f4d5"
+        ],
+        "case_id": "phase4-tuning-actions-repo-registration-scope",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The authenticated user must have admin access to the repository.",
+          "OAuth tokens and classic personal access tokens need the repo scope."
+        ],
+        "must_refuse_reason": null,
+        "query": "Under the current repository self-hosted-runner registration-token operation, what repository authority must the authenticated user have, and what scope is required for OAuth tokens or classic personal access tokens?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-actions-repo-registration-scope:fact-01",
+          "phase4-tuning-actions-repo-registration-scope:fact-02"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-registration-token-for-repo"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-repo"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "chunk-dbf49b9a0cd3eb7fd414d8701ab14b0e6a56839678579efed80e04af3f61f4d5"
+        ],
+        "case_id": "phase4-tuning-actions-repo-registration-token",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation uses POST /repos/{owner}/{repo}/actions/runners/registration-token.",
+          "The registration token expires after one hour.",
+          "The successful response status is HTTP 201."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current GitHub REST contract, which method and endpoint create a self-hosted runner registration token for a repository, how long does that token remain valid, and what successful status is documented?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-actions-repo-registration-token:fact-01",
+          "phase4-tuning-actions-repo-registration-token:fact-02",
+          "phase4-tuning-actions-repo-registration-token:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-registration-token-for-repo"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-repo"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "chunk-c2692e000e203199b6dd7a3e5eb7bbc5bbadf87ebb479fa451652f20c83ebc52"
+        ],
+        "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [
+          "chunk-c2692e000e203199b6dd7a3e5eb7bbc5bbadf87ebb479fa451652f20c83ebc52"
+        ],
+        "forbidden_source_ids": [
+          "openapi-historical-2022-11-28:actions/create-workflow-dispatch"
+        ],
+        "gold_fact_rubric": [
+          "The current request schema does not contain the return_run_details property.",
+          "The current operation documents HTTP 200 as the successful response.",
+          "The HTTP 200 response includes the workflow run ID and URLs.",
+          "The current operation does not document the historical HTTP 204 response."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy client sends return_run_details=false when creating a workflow dispatch and expects HTTP 204. Under the frozen current 2026-03-10 operation contract, is return_run_details part of the request schema, and what successful response is documented instead?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-workflow-dispatch-current-contract:fact-01",
+          "phase4-tuning-workflow-dispatch-current-contract:fact-02",
+          "phase4-tuning-workflow-dispatch-current-contract:fact-03",
+          "phase4-tuning-workflow-dispatch-current-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-workflow-dispatch"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice. Historical comparison evidence is explicitly forbidden as final support because the query asks for the current 2026-03-10 contract.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-workflow-dispatch"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "chunk-c2692e000e203199b6dd7a3e5eb7bbc5bbadf87ebb479fa451652f20c83ebc52"
+        ],
+        "case_id": "phase4-tuning-workflow-dispatch-requirements",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The workflow must be configured to run when the workflow_dispatch event occurs.",
+          "The request body requires the ref field.",
+          "The ref may be a branch or tag name.",
+          "The inputs object may contain at most 25 properties.",
+          "Defaults configured in the workflow file are used when corresponding inputs are omitted."
+        ],
+        "must_refuse_reason": null,
+        "query": "What must be configured before the workflow-dispatch REST endpoint can manually trigger a workflow, what required request field identifies the git reference, what forms may that reference take, how many input properties may be supplied, and what happens to configured default input properties when inputs are omitted?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-workflow-dispatch-requirements:fact-01",
+          "phase4-tuning-workflow-dispatch-requirements:fact-02",
+          "phase4-tuning-workflow-dispatch-requirements:fact-03",
+          "phase4-tuning-workflow-dispatch-requirements:fact-04",
+          "phase4-tuning-workflow-dispatch-requirements:fact-05"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-workflow-dispatch"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-workflow-dispatch"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "chunk-b89980229e1c8d141c4d35d0701e5158e706010316939034baa54354b28e701e"
+        ],
+        "case_id": "phase4-tuning-sub-issue-request-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation uses POST /repos/{owner}/{repo}/issues/{issue_number}/sub_issues.",
+          "The request body requires sub_issue_id.",
+          "The sub-issue must belong to the same repository owner as the parent issue.",
+          "replace_parent=true instructs the operation to replace the sub-issue's current parent issue."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Add sub-issue operation, what HTTP method and endpoint are used, which request-body field is required, what ownership constraint applies to the sub-issue, and what does replace_parent=true mean?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-sub-issue-request-contract:fact-01",
+          "phase4-tuning-sub-issue-request-contract:fact-02",
+          "phase4-tuning-sub-issue-request-contract:fact-03",
+          "phase4-tuning-sub-issue-request-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/add-sub-issue"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-sub-issue"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "chunk-b89980229e1c8d141c4d35d0701e5158e706010316939034baa54354b28e701e"
+        ],
+        "case_id": "phase4-tuning-sub-issue-media-response",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The successful response status is HTTP 201.",
+          "application/vnd.github.raw+json is the default and returns the raw Markdown body in body.",
+          "application/vnd.github.full+json includes body, body_text, and body_html."
+        ],
+        "must_refuse_reason": null,
+        "query": "For Add sub-issue, what status indicates success, what body representation is returned by the default raw media type, and what body representations are included by the full media type?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-sub-issue-media-response:fact-01",
+          "phase4-tuning-sub-issue-media-response:fact-02",
+          "phase4-tuning-sub-issue-media-response:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/add-sub-issue"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-sub-issue"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "chunk-ded348a713590dacd422877d3fd903bf33666202b0b1128840cad1d1971792cd"
+        ],
+        "case_id": "phase4-tuning-pull-mergeable-null-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "A Get pull request response contains mergeable=null. Using only that observed value, tell me definitively whether this pull request is mergeable or unmergeable.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: mergeable=null does not establish whether the pull request is mergeable because computation may still be pending.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/get"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "chunk-ded348a713590dacd422877d3fd903bf33666202b0b1128840cad1d1971792cd"
+        ],
+        "case_id": "phase4-tuning-pull-merge-commit-semantics",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Before merging, merge_commit_sha holds the SHA of the test merge commit.",
+          "If the pull request is merged with a merge commit, merge_commit_sha becomes the SHA of that merge commit.",
+          "If squash merged, merge_commit_sha represents the squashed commit on the base branch.",
+          "If rebased, merge_commit_sha represents the commit that the base branch was updated to."
+        ],
+        "must_refuse_reason": null,
+        "query": "Explain how merge_commit_sha should be interpreted for Get pull request before the pull request is merged and after merge-commit, squash, or rebase merging.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-pull-merge-commit-semantics:fact-01",
+          "phase4-tuning-pull-merge-commit-semantics:fact-02",
+          "phase4-tuning-pull-merge-commit-semantics:fact-03",
+          "phase4-tuning-pull-merge-commit-semantics:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/get"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/get"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "chunk-39b03b894e1f89fc54ff1bcdd8fa4d9173d2c040436a2ae1f2daa1ecf7449406"
+        ],
+        "case_id": "phase4-tuning-update-pull-422-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "An Update pull request request returns HTTP 422, but I have no response body or request-field details. Which exact field or validation condition caused this particular failure?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: A 422 response from updating a pull request does not by itself establish the exact validation cause.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "chunk-39b03b894e1f89fc54ff1bcdd8fa4d9173d2c040436a2ae1f2daa1ecf7449406"
+        ],
+        "case_id": "phase4-tuning-update-pull-scope",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Updating a pull request in a public repository requires write access to the head or source branch.",
+          "For an organization-owned repository, the user must be a member of the organization that owns the repository.",
+          "A new base value must name an existing branch in the current repository.",
+          "The base branch cannot be changed to point to another repository."
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Update pull request operation, what access is required to update a pull request in a public repository, what additional membership condition applies to an organization-owned repository, and what restrictions apply when changing the base branch?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-update-pull-scope:fact-01",
+          "phase4-tuning-update-pull-scope:fact-02",
+          "phase4-tuning-update-pull-scope:fact-03",
+          "phase4-tuning-update-pull-scope:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/update"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "chunk-9415dcdaefed1c781040a1a24f82567f5cd9976d4b6936bfe2b187819aebba7d"
+        ],
+        "case_id": "phase4-tuning-create-in-org-451-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "A Create an organization repository request returns HTTP 451. With only that status and no response details, what exact condition triggered this particular 451?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Expected runtime behaviour is insufficient-evidence refusal. The evaluator must not reward an unsupported answer that exceeds the reviewed evidence boundary. Reviewed refusal boundary: A 451 response from creating an organization repository does not by itself establish the exact triggering cause.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-in-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "chunk-9415dcdaefed1c781040a1a24f82567f5cd9976d4b6936bfe2b187819aebba7d"
+        ],
+        "case_id": "phase4-tuning-create-in-org-current-451",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "intervention_tuning_case",
+        "expected_response_mode": "qualified_answer",
+        "forbidden_evidence_ids": [
+          "chunk-9415dcdaefed1c781040a1a24f82567f5cd9976d4b6936bfe2b187819aebba7d"
+        ],
+        "forbidden_source_ids": [
+          "openapi-historical-2022-11-28:repos/create-in-org"
+        ],
+        "gold_fact_rubric": [
+          "The current Create an organization repository contract documents HTTP 451.",
+          "The HTTP 451 response references the shared validation_failed response contract."
+        ],
+        "must_refuse_reason": null,
+        "query": "A legacy contract for Create an organization repository does not list HTTP 451. Under the frozen current 2026-03-10 operation contract, is HTTP 451 now a documented response, and how is that response represented?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136"
+        ],
+        "required_fact_ids": [
+          "phase4-tuning-create-in-org-current-451:fact-01",
+          "phase4-tuning-create-in-org-current-451:fact-02"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/create-in-org"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Partial-credit denominators and failure precedence are not frozen in this authoring slice. Historical comparison evidence is explicitly forbidden as final support because the query asks for the current 2026-03-10 contract.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-in-org"
+    }
+  ],
+  "refusal_semantic_review_sha256": "c9060d48fcd6373125fa8dadb91705adf4fa23678e31fa640a1a35b9745a524f",
+  "release_eligible": false,
+  "review_markdown_sha256": "1e51fe7eda8b804c92696c8ce9434721ff9355436cfc67f2483a1471edf86b7a",
+  "suite_version": "phase4c-tuning-cases-v1",
+  "tuning_case_authoring_complete": true,
+  "tuning_suite_frozen": false,
+  "version_freshness_count": 3
+}
