@@ -1,0 +1,30 @@
+{
+  "affected_artifact": "artifacts/development/phase4c_tuning_cases_v1.md",
+  "affected_markdown_sha256": "1e51fe7eda8b804c92696c8ce9434721ff9355436cfc67f2483a1471edf86b7a",
+  "authoritative_corrected_header": {
+    "authority_scope_count": 3,
+    "case_count": 18,
+    "cluster_count": 9,
+    "current_multi_evidence_count": 3,
+    "current_single_source_count": 6,
+    "must_refuse_count": 3,
+    "version_freshness_count": 3
+  },
+  "baseline_authorized": false,
+  "canonical_case_data_affected": false,
+  "canonical_json_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28",
+  "held_out_outcomes_exposed": false,
+  "observed_incorrect_header": {
+    "authority_scope_count": 3,
+    "case_count": 24,
+    "cluster_count": 12,
+    "current_multi_evidence_count": 5,
+    "current_single_source_count": 7,
+    "must_refuse_count": 4,
+    "version_freshness_count": 5
+  },
+  "receipt_version": "phase4c-tuning-markdown-erratum-v1",
+  "release_eligible": false,
+  "runtime_projection_affected": false,
+  "tuning_suite_frozen": true
+}
