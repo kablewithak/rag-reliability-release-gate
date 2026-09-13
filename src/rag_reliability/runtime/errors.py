@@ -21,5 +21,13 @@ class ReplayResponseNotFoundError(RuntimeError):
     """Raised when the fake/replay provider has no response for a query."""
 
 
+class ProviderTimeoutError(RuntimeError):
+    """Raised when a semantic provider request exceeds its timeout."""
+
+
+class ProviderMalformedResponseError(RuntimeError):
+    """Raised when a semantic provider returns an unusable response."""
+
+
 class CitationValidationExecutionError(RuntimeError):
     """Raised when citation validation cannot complete."""
