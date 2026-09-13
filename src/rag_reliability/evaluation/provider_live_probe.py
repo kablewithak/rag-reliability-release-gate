@@ -1,4 +1,4 @@
-﻿"""One-call-at-a-time live semantic-provider qualification."""
+"""One-call-at-a-time live semantic-provider qualification."""
 
 from __future__ import annotations
 
@@ -7,8 +7,6 @@ import asyncio
 from pathlib import Path
 from typing import Literal
 
-from rag_reliability.config.identity import ProviderConfig
-from rag_reliability.config.provider_binding import SemanticProviderBinding
 from rag_reliability.contracts.base import ContractModel, Sha256
 from rag_reliability.contracts.enums import (
     AuthorityLevel,
@@ -23,18 +21,14 @@ from rag_reliability.contracts.runtime import (
     ProviderResponse,
 )
 from rag_reliability.corpus.render_audit import write_json_with_sha256
+from rag_reliability.evaluation.semantic_provider_profile import (
+    build_phase5_semantic_provider_binding,
+    build_phase5_semantic_provider_config,
+)
 from rag_reliability.runtime.http_transport import StdlibJsonTransport
 from rag_reliability.runtime.semantic_provider import (
     OpenAICompatibleSemanticProvider,
 )
-
-_ENDPOINT = (
-    "https://api-ap-southeast-1.modelarts-maas.com/"
-    "openai/v1/chat/completions"
-)
-
-_MODEL_ID = "glm-5.2"
-_API_KEY_ENV_VAR = "HUAWEI_MAAS_API_KEY"
 
 ProbeId = Literal[
     "context-a",
@@ -88,23 +82,6 @@ class LiveProbeReceipt(ContractModel):
     held_out_outcomes_exposed: Literal[
         False
     ] = False
-
-
-def _binding() -> SemanticProviderBinding:
-    return SemanticProviderBinding(
-        model_id=_MODEL_ID,
-        endpoint_url=_ENDPOINT,
-        api_key_env_var=_API_KEY_ENV_VAR,
-    )
-
-
-def _config() -> ProviderConfig:
-    return ProviderConfig(
-        adapter_id="openai-compatible-json-v1",
-        model_id=_MODEL_ID,
-        timeout_ms=30000,
-        max_retries=0,
-    )
 
 
 def _context(
@@ -288,8 +265,8 @@ async def _run(
     probe_id: ProbeId,
 ) -> LiveProbeReceipt:
     provider = OpenAICompatibleSemanticProvider(
-        config=_config(),
-        binding=_binding(),
+        config=build_phase5_semantic_provider_config(),
+        binding=build_phase5_semantic_provider_binding(),
         transport=StdlibJsonTransport(),
     )
 

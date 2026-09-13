@@ -1,0 +1,19 @@
+{
+  "baseline_execution_authorized": false,
+  "binding_configuration_id": "c282fa342cfa59479a21692688dfbadc73126006874560b0cca02b3ddca6101a",
+  "credential_value_persisted": false,
+  "held_out_outcomes_exposed": false,
+  "live_probe_source_sha256": "428209d8fe22522a6a3647273420b92bc49d64045755026b9a1fd7b099425f74",
+  "live_qualification_required": true,
+  "live_qualification_satisfied": false,
+  "profile_frozen": true,
+  "profile_sha256": "4239db3367ef962ccd4eff57cf4eb37fc770cda37f665e0bbbfdb1d0a7acf8e3",
+  "profile_source_sha256": "cf77b119ea37371dd43914c5c196fa8c84b75b7e474723ace54e3c631b8a3a6e",
+  "profile_version": "phase5-semantic-provider-profile-v1",
+  "provider_binding_source_sha256": "8815c802e7165fb71b0afce7c289b9ed19dca5ccaf0378f9d4b945ac07db7410",
+  "provider_configuration_id": "dc040ed1d29b45436dba18db524594202cdee2cff1ba1da7c5c9b239b40c3fee",
+  "raw_provider_payload_persisted": false,
+  "receipt_version": "phase5-semantic-provider-profile-freeze-v1",
+  "release_eligible": false,
+  "semantic_provider_source_sha256": "5ea8be30cb4ee386c119d45152d57ebdbee8f01464ad17507edc9b482139837f"
+}

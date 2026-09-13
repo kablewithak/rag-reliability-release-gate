@@ -1,0 +1,710 @@
+{
+  "answerable_case_count": 15,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "bm25_experiment_sha256": "ef58106aef6087f7e4761df6afbe1e0c3819ffa8304c7b11c4c446faa6437370",
+  "bm25_top_k_curve": [
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.6666666666666666,
+      "micro_gold_recall": 0.7222222222222222,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 11,
+      "full_gold_case_rate": 0.7333333333333333,
+      "micro_gold_recall": 0.7777777777777778,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 14,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 12,
+      "full_gold_case_rate": 0.8,
+      "micro_gold_recall": 0.8333333333333334,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 15,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 13,
+      "full_gold_case_rate": 0.8666666666666667,
+      "micro_gold_recall": 0.8888888888888888,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 16,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.9333333333333333,
+      "micro_gold_recall": 0.9444444444444444,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 17,
+      "top_k": 20
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 50
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 100
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 200
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 500
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 1333
+    }
+  ],
+  "candidate_config": {
+    "bm25_weight": 1,
+    "candidate_version": "phase5-rrf-hybrid-candidate-v1",
+    "characterization_top_k": 1333,
+    "fusion_constant": 60,
+    "lexical_weight": 1,
+    "parameter_sweep_used": false,
+    "retriever_id": "lexical-bm25-rrf-evaluation-candidate-v1",
+    "tuning_parameter_optimization_used": false
+  },
+  "candidate_configuration_id": "a0e7a941887e1b4d5dd11ccb4645a47f58b062f3e86b06b676dddfedc7680291",
+  "case_comparisons": [
+    {
+      "bm25_context_prefix_characters": 4679,
+      "bm25_minimum_eligible_items": 3,
+      "bm25_minimum_raw_top_k": 5,
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 16611,
+      "hybrid_minimum_eligible_items": 7,
+      "hybrid_minimum_raw_top_k": 9,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 7,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "raw_rank": 9,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 42995,
+      "lexical_minimum_eligible_items": 18,
+      "lexical_minimum_raw_top_k": 20,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 3077,
+      "bm25_minimum_eligible_items": 2,
+      "bm25_minimum_raw_top_k": 3,
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 4679,
+      "hybrid_minimum_eligible_items": 3,
+      "hybrid_minimum_raw_top_k": 5,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 3,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "raw_rank": 5,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 21192,
+      "lexical_minimum_eligible_items": 7,
+      "lexical_minimum_raw_top_k": 9,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 41649,
+      "bm25_minimum_eligible_items": 6,
+      "bm25_minimum_raw_top_k": 6,
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 35053,
+      "hybrid_minimum_eligible_items": 5,
+      "hybrid_minimum_raw_top_k": 5,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 5,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "raw_rank": 5,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 42171,
+      "lexical_minimum_eligible_items": 6,
+      "lexical_minimum_raw_top_k": 6,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 2
+    },
+    {
+      "bm25_context_prefix_characters": 5534,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 22127,
+      "hybrid_minimum_eligible_items": 4,
+      "hybrid_minimum_raw_top_k": 4,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 4,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "raw_rank": 4,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 82709,
+      "lexical_minimum_eligible_items": 14,
+      "lexical_minimum_raw_top_k": 15,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 162882,
+      "bm25_minimum_eligible_items": 39,
+      "bm25_minimum_raw_top_k": 40,
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 102463,
+      "hybrid_minimum_eligible_items": 21,
+      "hybrid_minimum_raw_top_k": 23,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 21,
+          "evidence_id": "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "raw_rank": 23,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 84322,
+      "lexical_minimum_eligible_items": 15,
+      "lexical_minimum_raw_top_k": 17,
+      "lexical_rank_outcome": "regressed",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 8059,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-credential-method-scope",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 8059,
+      "hybrid_minimum_eligible_items": 1,
+      "hybrid_minimum_raw_top_k": 1,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 8059,
+      "lexical_minimum_eligible_items": 1,
+      "lexical_minimum_raw_top_k": 1,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 8059,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-credential-remediation",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 8059,
+      "hybrid_minimum_eligible_items": 1,
+      "hybrid_minimum_raw_top_k": 1,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 8059,
+      "lexical_minimum_eligible_items": 1,
+      "lexical_minimum_raw_top_k": 1,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 4964,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 4964,
+      "hybrid_minimum_eligible_items": 1,
+      "hybrid_minimum_raw_top_k": 2,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 4964,
+      "lexical_minimum_eligible_items": 1,
+      "lexical_minimum_raw_top_k": 2,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 11957,
+      "bm25_minimum_eligible_items": 2,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 11957,
+      "hybrid_minimum_eligible_items": 2,
+      "hybrid_minimum_raw_top_k": 2,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 11957,
+      "lexical_minimum_eligible_items": 2,
+      "lexical_minimum_raw_top_k": 2,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 2
+    },
+    {
+      "bm25_context_prefix_characters": 11957,
+      "bm25_minimum_eligible_items": 2,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-rate-primary-status",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 11957,
+      "hybrid_minimum_eligible_items": 2,
+      "hybrid_minimum_raw_top_k": 2,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 11957,
+      "lexical_minimum_eligible_items": 2,
+      "lexical_minimum_raw_top_k": 2,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 2
+    },
+    {
+      "bm25_context_prefix_characters": 2940,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 18532,
+      "hybrid_minimum_eligible_items": 5,
+      "hybrid_minimum_raw_top_k": 7,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 5,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "raw_rank": 7,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 50202,
+      "lexical_minimum_eligible_items": 13,
+      "lexical_minimum_raw_top_k": 18,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 2940,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 20317,
+      "hybrid_minimum_eligible_items": 4,
+      "hybrid_minimum_raw_top_k": 5,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 4,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "raw_rank": 5,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 32491,
+      "lexical_minimum_eligible_items": 6,
+      "lexical_minimum_raw_top_k": 9,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 3393,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-update-pull-scope",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 3393,
+      "hybrid_minimum_eligible_items": 1,
+      "hybrid_minimum_raw_top_k": 2,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 3393,
+      "lexical_minimum_eligible_items": 1,
+      "lexical_minimum_raw_top_k": 2,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 50128,
+      "bm25_minimum_eligible_items": 11,
+      "bm25_minimum_raw_top_k": 12,
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 69663,
+      "hybrid_minimum_eligible_items": 15,
+      "hybrid_minimum_raw_top_k": 16,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 15,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "raw_rank": 16,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 133880,
+      "lexical_minimum_eligible_items": 26,
+      "lexical_minimum_raw_top_k": 31,
+      "lexical_rank_outcome": "improved",
+      "required_evidence_count": 1
+    },
+    {
+      "bm25_context_prefix_characters": 2407,
+      "bm25_minimum_eligible_items": 1,
+      "bm25_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "hybrid_context_prefix_characters": 2407,
+      "hybrid_minimum_eligible_items": 1,
+      "hybrid_minimum_raw_top_k": 1,
+      "hybrid_required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ],
+      "lexical_context_prefix_characters": 2407,
+      "lexical_minimum_eligible_items": 1,
+      "lexical_minimum_raw_top_k": 1,
+      "lexical_rank_outcome": "unchanged",
+      "required_evidence_count": 1
+    }
+  ],
+  "development_gold_used": false,
+  "evidence_class": "intervention_tuning_only",
+  "filter_ineligible_case_count": 0,
+  "held_out_outcomes_exposed": false,
+  "hybrid_maximum_context_prefix_characters": 102463,
+  "hybrid_maximum_minimum_eligible_items": 21,
+  "hybrid_maximum_minimum_raw_top_k": 23,
+  "hybrid_top_k_curve": [
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 11,
+      "full_gold_case_rate": 0.7333333333333333,
+      "micro_gold_recall": 0.7777777777777778,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 14,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 13,
+      "full_gold_case_rate": 0.8666666666666667,
+      "micro_gold_recall": 0.8888888888888888,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 16,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.9333333333333333,
+      "micro_gold_recall": 0.9444444444444444,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 17,
+      "top_k": 20
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 50
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 100
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 200
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 500
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 1333
+    }
+  ],
+  "improved_vs_lexical_case_count": 7,
+  "lexical_baseline_sha256": "c641483467147836b6cfcc80fc97022ac32cc7d4d7fac87e5428000d0010428e",
+  "lexical_top_k_curve": [
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.6666666666666666,
+      "micro_gold_recall": 0.7222222222222222,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.9333333333333333,
+      "micro_gold_recall": 0.9444444444444444,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 17,
+      "top_k": 20
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 50
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 100
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 200
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 500
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 1333
+    }
+  ],
+  "promotion_gate": {
+    "filter_ineligible_cases_allowed": 0,
+    "full_gold_cases_at_k20_required": 15,
+    "maximum_context_prefix_characters_exclusive": 133880,
+    "maximum_eligible_items_allowed": 20,
+    "maximum_raw_top_k_allowed": 20,
+    "micro_gold_recall_at_k20_required": "1.0",
+    "unretrievable_cases_allowed": 0
+  },
+  "promotion_gate_failures": [
+    "full_gold_cases_at_k20_below_15",
+    "micro_gold_recall_at_k20_below_1",
+    "maximum_raw_top_k_above_20",
+    "maximum_eligible_items_above_20"
+  ],
+  "promotion_gate_passed": false,
+  "provider_invoked": false,
+  "refusal_case_count": 3,
+  "regressed_vs_lexical_case_count": 1,
+  "release_eligible": false,
+  "report_version": "phase5-rrf-hybrid-candidate-experiment-v1",
+  "required_evidence_reference_count": 18,
+  "retrieval_configuration_selected": false,
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_selected": false,
+  "tuning_case_count": 18,
+  "unchanged_vs_lexical_case_count": 7,
+  "unretrievable_case_count": 0
+}
