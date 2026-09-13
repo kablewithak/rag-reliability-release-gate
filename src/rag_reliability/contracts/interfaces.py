@@ -7,8 +7,8 @@ from rag_reliability.contracts.runtime import (
     CitationValidationResult,
     ContextBuildRequest,
     ContextBundle,
+    ProviderDecision,
     ProviderRequest,
-    ProviderResponse,
     RerankRequest,
     RerankResult,
     RetrievalRequest,
@@ -60,7 +60,7 @@ class ContextBuilder(ConfigBoundComponent, Protocol):
 
 @runtime_checkable
 class ProviderAdapter(ConfigBoundComponent, Protocol):
-    async def generate(self, request: ProviderRequest) -> ProviderResponse:
+    async def generate(self, request: ProviderRequest) -> ProviderDecision:
         """Generate through a provider-neutral adapter boundary."""
 
         ...

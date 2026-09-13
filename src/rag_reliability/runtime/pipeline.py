@@ -26,6 +26,7 @@ from rag_reliability.contracts.runtime import (
     ContextBuildRequest,
     ContextItem,
     ErrorOutcome,
+    ProviderRefusalDecision,
     ProviderRequest,
     RefusalOutcome,
     RetrievalRequest,
@@ -247,6 +248,42 @@ class DeterministicRagPipeline:
                 events,
                 error_outcome,
                 FailureLabel.PROVIDER_MALFORMED_RESPONSE,
+            )
+
+        if isinstance(
+            provider_response,
+            ProviderRefusalDecision,
+        ):
+            events.append(
+                self._event(
+                    case.case_id,
+                    len(events) + 1,
+                    TraceStage.PROVIDER_GENERATION,
+                    TraceStatus.REFUSED,
+                    provider_start,
+                )
+            )
+
+            events.append(
+                self._instant_event(
+                    case.case_id,
+                    len(events) + 1,
+                    TraceStage.REFUSAL_FALLBACK,
+                    TraceStatus.REFUSED,
+                )
+            )
+
+            refusal_outcome = RefusalOutcome(
+                reason=provider_response.reason,
+                message=provider_response.message,
+            )
+
+            return self._finish(
+                case,
+                started_at,
+                events,
+                refusal_outcome,
+                None,
             )
 
         events.append(

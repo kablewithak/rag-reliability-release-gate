@@ -466,6 +466,33 @@ class ProviderResponse(ContractModel):
         return self.cited_evidence_ids
 
 
+class ProviderRefusalDecision(ContractModel):
+    """Semantic provider decision to refuse instead of inventing an answer."""
+
+    reason: RefusalReason
+    message: NonEmptyStr
+
+    @model_validator(mode="after")
+    def validate_semantic_refusal_reason(
+        self,
+    ) -> "ProviderRefusalDecision":
+        allowed_reasons = {
+            RefusalReason.INSUFFICIENT_EVIDENCE,
+            RefusalReason.CONFLICTING_EVIDENCE,
+        }
+
+        if self.reason not in allowed_reasons:
+            raise ValueError(
+                "provider refusal reason must be "
+                "insufficient_evidence or conflicting_evidence"
+            )
+
+        return self
+
+
+ProviderDecision = ProviderResponse | ProviderRefusalDecision
+
+
 class CitationValidationRequest(ContractModel):
     provider_response: ProviderResponse
     context: ContextBundle
