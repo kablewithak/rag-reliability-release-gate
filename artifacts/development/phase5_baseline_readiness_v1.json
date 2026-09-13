@@ -1,0 +1,19 @@
+{
+  "baseline_execution_authorized": false,
+  "blockers": [
+    "semantic_provider_adapter_unbound",
+    "semantic_provider_configuration_unfrozen",
+    "semantic_provider_smoke_test_missing"
+  ],
+  "control_lane_available": true,
+  "held_out_outcomes_exposed": false,
+  "protocol_freeze_receipt_sha256": "a92845181c9fcd3c69b84a191f1288f4391431cae8f82fe6c520b0b2a07bf434",
+  "protocol_frozen": true,
+  "protocol_sha256": "20637e8eaa598224c33fe83d223fcc5d031d2bfa577299c8cdff4ccfceb6cc19",
+  "receipt_version": "phase5-baseline-readiness-v1",
+  "release_eligible": false,
+  "semantic_metrics_authorized": false,
+  "semantic_provider_adapter_bound": false,
+  "semantic_provider_configuration_frozen": false,
+  "semantic_provider_smoke_test_passed": false
+}

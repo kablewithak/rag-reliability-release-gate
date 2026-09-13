@@ -1,0 +1,20 @@
+{
+  "baseline_execution_authorized": false,
+  "chaos_authorized": false,
+  "development_freeze_receipt_sha256": "6deecc31195f3acefb0a6a47a650bf20e4f7606bac9131ff882126504dfbc1bc",
+  "development_included": true,
+  "evidence_lane": "deterministic_replay_control",
+  "held_out_freeze_receipt_sha256": "00428ea72206b7e80b65ff80ed85e100aa0e40de208e03fc5741398e1fb0465c",
+  "held_out_included": false,
+  "held_out_outcomes_exposed": false,
+  "included_case_count": 42,
+  "included_cluster_count": 21,
+  "intervention_authorized": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "20637e8eaa598224c33fe83d223fcc5d031d2bfa577299c8cdff4ccfceb6cc19",
+  "protocol_version": "phase5-baseline-protocol-v1",
+  "receipt_version": "phase5-baseline-protocol-freeze-v1",
+  "release_eligible": false,
+  "tuning_freeze_receipt_sha256": "ef0edfee6a71a7f294c22dcc17d9ecb657b200a100175a7ccd2c709a1e3f97f6",
+  "tuning_included": true
+}

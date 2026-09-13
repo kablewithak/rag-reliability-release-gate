@@ -1,0 +1,90 @@
+{
+  "baseline_execution_authorized": false,
+  "chaos_authorized": false,
+  "execution": {
+    "deterministic_replication_count_per_case": 1,
+    "evidence_lane": "deterministic_replay_control",
+    "generation_is_context_sensitive": false,
+    "maximum_total_case_executions": 84,
+    "primary_execution_count_per_case": 1,
+    "prohibited_claim_ids": [
+      "context_sensitive_generation_improvement",
+      "real_provider_robustness",
+      "release_readiness"
+    ],
+    "provider_semantics": "query_keyed_scripted_response",
+    "same_stage_failure_stop_count": 2,
+    "supported_claim_ids": [
+      "retrieval_behavior",
+      "filtering_behavior",
+      "context_selection_behavior",
+      "citation_validation_behavior",
+      "refusal_control_flow",
+      "trace_accounting"
+    ]
+  },
+  "held_out_outcomes_exposed": false,
+  "included_case_count": 42,
+  "included_cluster_count": 21,
+  "intervention_authorized": false,
+  "measurement": {
+    "configuration_identity_mismatch_tolerance": 0,
+    "evaluator_leakage_tolerance": 0,
+    "failure_assignment_rule": "earliest_supported_failure",
+    "failure_taxonomy_contract": "reuse_existing_failure_label_enum",
+    "quality_threshold_is_baseline_validity_gate": false,
+    "required_metric_ids": [
+      "strict_answer_success",
+      "required_fact_satisfaction",
+      "gold_recall_at_k",
+      "required_evidence_context_inclusion",
+      "claim_support",
+      "citation_precision",
+      "citation_recall",
+      "correct_refusal",
+      "over_refusal",
+      "critical_failure_count",
+      "trace_completeness",
+      "latency_ms",
+      "provider_attempt_count"
+    ],
+    "terminal_record_percent_required": 100,
+    "trace_completeness_percent_required": 100,
+    "unauthorized_role_execution_tolerance": 0,
+    "unresolved_failure_policy": "diagnosis_required_before_valid_receipt"
+  },
+  "phase4_evaluation_suite_frozen": true,
+  "protocol_status": "draft_unfrozen",
+  "protocol_version": "phase5-baseline-protocol-v1",
+  "release_eligible": false,
+  "role_bindings": [
+    {
+      "case_count": 24,
+      "cluster_count": 12,
+      "freeze_receipt_sha256": "6deecc31195f3acefb0a6a47a650bf20e4f7606bac9131ff882126504dfbc1bc",
+      "included_in_baseline": true,
+      "role": "evaluation_development_case",
+      "suite_json_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835"
+    },
+    {
+      "case_count": 18,
+      "cluster_count": 9,
+      "freeze_receipt_sha256": "ef0edfee6a71a7f294c22dcc17d9ecb657b200a100175a7ccd2c709a1e3f97f6",
+      "included_in_baseline": true,
+      "role": "intervention_tuning_case",
+      "suite_json_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+    },
+    {
+      "case_count": 18,
+      "cluster_count": 9,
+      "freeze_receipt_sha256": "00428ea72206b7e80b65ff80ed85e100aa0e40de208e03fc5741398e1fb0465c",
+      "included_in_baseline": false,
+      "role": "held_out_release_case",
+      "suite_json_sha256": "32eb820989c35a372266ec293aa43efd4651147e833f68aeab8c896282f047f8"
+    }
+  ],
+  "runtime_projection_fields": [
+    "case_id",
+    "query"
+  ]
+}
