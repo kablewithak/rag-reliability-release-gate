@@ -1,0 +1,484 @@
+{
+  "all_answerable_full_gold_filter_eligible": true,
+  "all_answerable_full_gold_retrievable": true,
+  "all_chunk_content_hashes_verified": true,
+  "all_required_evidence_present_in_corpus": true,
+  "answerable_case_count": 15,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "case_results": [
+    {
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "context_prefix_characters_for_full_gold": 82709,
+      "eligible_candidate_count": 1049,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 14,
+      "minimum_raw_top_k_for_full_gold": 15,
+      "raw_candidate_count": 1143,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 14,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "raw_rank": 15,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "context_prefix_characters_for_full_gold": 42171,
+      "eligible_candidate_count": 1068,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 6,
+      "minimum_raw_top_k_for_full_gold": 6,
+      "raw_candidate_count": 1161,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 6,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "raw_rank": 6,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-credential-method-scope",
+      "context_prefix_characters_for_full_gold": 8059,
+      "eligible_candidate_count": 1165,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "raw_candidate_count": 1269,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-credential-remediation",
+      "context_prefix_characters_for_full_gold": 8059,
+      "eligible_candidate_count": 1050,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "raw_candidate_count": 1140,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-rate-primary-status",
+      "context_prefix_characters_for_full_gold": 11957,
+      "eligible_candidate_count": 1039,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "raw_candidate_count": 1129,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "context_prefix_characters_for_full_gold": 11957,
+      "eligible_candidate_count": 1071,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "raw_candidate_count": 1162,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        },
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "context_prefix_characters_for_full_gold": 42995,
+      "eligible_candidate_count": 1096,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 18,
+      "minimum_raw_top_k_for_full_gold": 20,
+      "raw_candidate_count": 1197,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 18,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "raw_rank": 20,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "context_prefix_characters_for_full_gold": 21192,
+      "eligible_candidate_count": 1073,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 7,
+      "minimum_raw_top_k_for_full_gold": 9,
+      "raw_candidate_count": 1172,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 7,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "raw_rank": 9,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "context_prefix_characters_for_full_gold": 133880,
+      "eligible_candidate_count": 1036,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 26,
+      "minimum_raw_top_k_for_full_gold": 31,
+      "raw_candidate_count": 1136,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 26,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "raw_rank": 31,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "context_prefix_characters_for_full_gold": 2407,
+      "eligible_candidate_count": 1214,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "raw_candidate_count": 1331,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "raw_rank": 1,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "context_prefix_characters_for_full_gold": 32491,
+      "eligible_candidate_count": 1095,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 6,
+      "minimum_raw_top_k_for_full_gold": 9,
+      "raw_candidate_count": 1195,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 6,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "raw_rank": 9,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "context_prefix_characters_for_full_gold": 50202,
+      "eligible_candidate_count": 1113,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 13,
+      "minimum_raw_top_k_for_full_gold": 18,
+      "raw_candidate_count": 1215,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 13,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "raw_rank": 18,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-pull-mergeable-null-refusal",
+      "context_prefix_characters_for_full_gold": null,
+      "eligible_candidate_count": 1216,
+      "expected_response_mode": "refuse",
+      "full_gold_filter_eligible": null,
+      "full_gold_retrievable": null,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": null,
+      "raw_candidate_count": 1333,
+      "required_evidence_count": 0,
+      "required_evidence_ranks": []
+    },
+    {
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "context_prefix_characters_for_full_gold": 4964,
+      "eligible_candidate_count": 934,
+      "expected_response_mode": "answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "raw_candidate_count": 1016,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-update-pull-422-refusal",
+      "context_prefix_characters_for_full_gold": null,
+      "eligible_candidate_count": 848,
+      "expected_response_mode": "refuse",
+      "full_gold_filter_eligible": null,
+      "full_gold_retrievable": null,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": null,
+      "raw_candidate_count": 925,
+      "required_evidence_count": 0,
+      "required_evidence_ranks": []
+    },
+    {
+      "case_id": "phase4-tuning-update-pull-scope",
+      "context_prefix_characters_for_full_gold": 3393,
+      "eligible_candidate_count": 1092,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "raw_candidate_count": 1191,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "raw_rank": 2,
+          "survived_source_filter": true
+        }
+      ]
+    },
+    {
+      "case_id": "phase4-tuning-create-in-org-451-refusal",
+      "context_prefix_characters_for_full_gold": null,
+      "eligible_candidate_count": 964,
+      "expected_response_mode": "refuse",
+      "full_gold_filter_eligible": null,
+      "full_gold_retrievable": null,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": null,
+      "raw_candidate_count": 1052,
+      "required_evidence_count": 0,
+      "required_evidence_ranks": []
+    },
+    {
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "context_prefix_characters_for_full_gold": 84322,
+      "eligible_candidate_count": 967,
+      "expected_response_mode": "qualified_answer",
+      "full_gold_filter_eligible": true,
+      "full_gold_retrievable": true,
+      "minimum_eligible_items_for_full_gold": 15,
+      "minimum_raw_top_k_for_full_gold": 17,
+      "raw_candidate_count": 1049,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 15,
+          "evidence_id": "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "raw_rank": 17,
+          "survived_source_filter": true
+        }
+      ]
+    }
+  ],
+  "characterization_top_k": 1333,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "corpus_chunk_count": 1333,
+  "development_gold_used_for_characterization": false,
+  "evidence_class": "intervention_tuning_only",
+  "held_out_outcomes_exposed": false,
+  "maximum_context_prefix_characters_for_full_gold": 133880,
+  "maximum_minimum_eligible_items_for_full_gold": 26,
+  "maximum_minimum_raw_top_k_for_full_gold": 31,
+  "provider_invoked": false,
+  "refusal_case_count": 3,
+  "release_eligible": false,
+  "report_version": "phase5-tuning-retrieval-characterization-v1",
+  "required_evidence_reference_count": 18,
+  "retrieval_configuration_selected": false,
+  "retriever_configuration_id": "2e67b189fe5cd541d94048e6a148313a8f835aecbeb388ed293d7dc4c0a2b013",
+  "retriever_id": "lexical-v1",
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "source_policy_configuration_id": "1e8e7fa2667306a9bd4eb0a525c35b44404ffdbdac9d723cd3922fc16b4d53ea",
+  "source_policy_id": "github-rest-current-v1",
+  "top_k_curve": [
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 7,
+      "full_gold_case_rate": 0.4666666666666667,
+      "micro_gold_recall": 0.5555555555555556,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 10,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.6666666666666666,
+      "micro_gold_recall": 0.7222222222222222,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.9333333333333333,
+      "micro_gold_recall": 0.9444444444444444,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 17,
+      "top_k": 20
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 50
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 100
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 200
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 500
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 1333
+    }
+  ],
+  "tuning_case_count": 18,
+  "tuning_suite_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28",
+  "unique_required_evidence_count": 11
+}
