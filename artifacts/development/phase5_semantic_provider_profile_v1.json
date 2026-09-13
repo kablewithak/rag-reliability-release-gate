@@ -1,0 +1,33 @@
+{
+  "baseline_execution_authorized": false,
+  "binding": {
+    "adapter_id": "openai-compatible-json-v1",
+    "api_key_env_var": "HUAWEI_MAAS_API_KEY",
+    "binding_version": "semantic-provider-binding-v1",
+    "endpoint_url": "https://api-ap-southeast-1.modelarts-maas.com/openai/v1/chat/completions",
+    "max_output_tokens": 768,
+    "model_id": "glm-5.2",
+    "prompt_version": "rag-grounded-provider-v1",
+    "response_contract_version": "provider-decision-json-v1",
+    "temperature": 0
+  },
+  "binding_configuration_id": "c282fa342cfa59479a21692688dfbadc73126006874560b0cca02b3ddca6101a",
+  "credential_value_persisted": false,
+  "generation_is_context_sensitive": true,
+  "held_out_outcomes_exposed": false,
+  "profile_version": "phase5-semantic-provider-profile-v1",
+  "provider_config": {
+    "adapter_id": "openai-compatible-json-v1",
+    "max_retries": 0,
+    "model_id": "glm-5.2",
+    "timeout_ms": 30000
+  },
+  "provider_configuration_id": "dc040ed1d29b45436dba18db524594202cdee2cff1ba1da7c5c9b239b40c3fee",
+  "raw_provider_payload_persisted": false,
+  "release_eligible": false,
+  "required_live_probe_ids": [
+    "context-a",
+    "context-b",
+    "refusal"
+  ]
+}

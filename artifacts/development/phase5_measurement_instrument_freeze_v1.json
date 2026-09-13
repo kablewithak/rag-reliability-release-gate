@@ -1,0 +1,18 @@
+{
+  "baseline_execution_authorized": false,
+  "baseline_protocol_freeze_receipt_sha256": "a92845181c9fcd3c69b84a191f1288f4391431cae8f82fe6c520b0b2a07bf434",
+  "baseline_protocol_sha256": "20637e8eaa598224c33fe83d223fcc5d031d2bfa577299c8cdff4ccfceb6cc19",
+  "fact_scoring_method_id": "evaluator_owned_fact_verdict_v1",
+  "held_out_outcomes_exposed": false,
+  "instrument_frozen": true,
+  "instrument_sha256": "2c86cf8e200b7cf5a918139100758c60271bd82d3f2c200ea697d7b717d4341a",
+  "instrument_version": "phase5-measurement-instrument-v1",
+  "measurement_aggregation_source_sha256": "62fce6d52291ec123be9880ae9145b2fff8408ac53c9b912d011b005102a6927",
+  "measurement_instrument_source_sha256": "ee762d1efc9ebb8a0845d51e9795e65675ae4a202821a1f20c1db37dbe20f342",
+  "measurement_scoring_source_sha256": "0e0e6a334bf1b904fcf67db0852fd23c3cf57f0fd01f53c3e538763a2f59281d",
+  "metric_count": 13,
+  "phase2_substring_fact_scoring_reused": false,
+  "protocol_version": "phase5-baseline-protocol-v1",
+  "receipt_version": "phase5-measurement-instrument-freeze-v1",
+  "release_eligible": false
+}

@@ -1,0 +1,124 @@
+{
+  "baseline_execution_authorized": false,
+  "fact_scoring": {
+    "deterministic_score_rule": "satisfied_verdict_count_divided_by_required_fact_count",
+    "lexical_substring_matching_allowed": false,
+    "method_id": "evaluator_owned_fact_verdict_v1",
+    "not_satisfied_verdict_requires_rationale": true,
+    "runtime_gold_access_allowed": false,
+    "satisfied_verdict_requires_answer_span": true,
+    "unresolved_verdict_allowed": false,
+    "verdict_required_for_every_required_fact_id": true
+  },
+  "held_out_outcomes_exposed": false,
+  "instrument_status": "draft_unfrozen",
+  "instrument_version": "phase5-measurement-instrument-v1",
+  "metric_definitions": [
+    {
+      "aggregation": "binary_case_rate",
+      "denominator_rule": "all answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "strict_answer_success",
+      "numerator_rule": "answer cases with an answer outcome and every required answer correctness check passing",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "micro_rate",
+      "denominator_rule": "all required fact IDs across answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "required_fact_satisfaction",
+      "numerator_rule": "required fact IDs with evaluator-owned verdict satisfied",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "micro_rate",
+      "denominator_rule": "all required evidence IDs across answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "gold_recall_at_k",
+      "numerator_rule": "required evidence IDs present in retrieval results within configured top_k",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "micro_rate",
+      "denominator_rule": "all required evidence IDs across answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "required_evidence_context_inclusion",
+      "numerator_rule": "required evidence IDs present in assembled context",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "denominator_rule": "all answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "claim_support",
+      "numerator_rule": "answer cases whose citation validation reports all material claims supported",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "macro_ratio",
+      "denominator_rule": "per case, all cited evidence IDs; zero citations yields case precision 0.0; macro mean across answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "citation_precision",
+      "numerator_rule": "per case, cited evidence IDs with supported citation-validation status",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "macro_ratio",
+      "denominator_rule": "per case, required evidence IDs; macro mean across answer cases",
+      "direction": "higher_is_better",
+      "metric_id": "citation_recall",
+      "numerator_rule": "per case, required evidence IDs also present in cited evidence IDs",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "denominator_rule": "all refusal cases",
+      "direction": "higher_is_better",
+      "metric_id": "correct_refusal",
+      "numerator_rule": "refusal cases ending in refusal with the expected must_refuse_reason",
+      "scope": "refusal_cases"
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "denominator_rule": "all answer cases",
+      "direction": "lower_is_better",
+      "metric_id": "over_refusal",
+      "numerator_rule": "answer cases ending in refusal",
+      "scope": "answer_cases"
+    },
+    {
+      "aggregation": "count",
+      "denominator_rule": "not_applicable",
+      "direction": "lower_is_better",
+      "metric_id": "critical_failure_count",
+      "numerator_rule": "critical cases with any required correctness or integrity check failing",
+      "scope": "all_cases"
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "denominator_rule": "all executed cases",
+      "direction": "higher_is_better",
+      "metric_id": "trace_completeness",
+      "numerator_rule": "cases whose required terminal trace is complete",
+      "scope": "all_cases"
+    },
+    {
+      "aggregation": "mean",
+      "denominator_rule": "all executed cases",
+      "direction": "descriptive",
+      "metric_id": "latency_ms",
+      "numerator_rule": "sum of terminal trace elapsed milliseconds",
+      "scope": "all_cases"
+    },
+    {
+      "aggregation": "mean",
+      "denominator_rule": "all executed cases",
+      "direction": "descriptive",
+      "metric_id": "provider_attempt_count",
+      "numerator_rule": "sum of recorded provider-generation attempts",
+      "scope": "all_cases"
+    }
+  ],
+  "phase2_substring_fact_scoring_reused": false,
+  "protocol_version": "phase5-baseline-protocol-v1"
+}
