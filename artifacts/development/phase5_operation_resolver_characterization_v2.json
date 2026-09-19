@@ -1,0 +1,149 @@
+{
+  "acceptance_failures": [],
+  "acceptance_passed": true,
+  "ambiguous_fixture_count": 2,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "catalog_operation_count": 20,
+  "catalog_source": "frozen_phase3d_current_authoritative_operation_core_chunks",
+  "deterministic_repeat_count": 3,
+  "development_gold_used": false,
+  "evaluator_fields_passed_to_resolver": false,
+  "evidence_class": "runtime_boundary_characterization",
+  "expectation_mismatch_count": 0,
+  "false_confident_resolution_count": 0,
+  "fixture_count": 10,
+  "held_out_outcomes_exposed": false,
+  "nondeterministic_fixture_count": 0,
+  "observations": [
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "issues/create",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-create-issue",
+      "observed_operation_ids": [
+        "issues/create"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-exact-operation-id",
+      "observed_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-generic-create-repository",
+      "observed_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "observed_status": "ambiguous"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-hard-create-in-org-451",
+      "observed_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "pulls/list",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-list-pull-requests",
+      "observed_operation_ids": [
+        "pulls/list"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/list-attestations",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-list-repository-attestations",
+      "observed_operation_ids": [
+        "repos/list-attestations"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-method-path",
+      "observed_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "observed_status": "resolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-multi-operation-compare",
+      "observed_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "observed_status": "ambiguous"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-operation-free-guidance",
+      "observed_operation_ids": [],
+      "observed_status": "unresolved"
+    },
+    {
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-status-only",
+      "observed_operation_ids": [],
+      "observed_status": "unresolved"
+    }
+  ],
+  "protocol_freeze_receipt_sha256": "1f5b8e7d1cc4f2d577dbb7c580e6992a66be459be988be3b5ac90f25012a5df1",
+  "protocol_sha256": "38b23aafe7a505480de774d70e4da9c5e6e3c34c9be2dddff2eb3a137dc2cb0f",
+  "provider_invoked": false,
+  "release_eligible": false,
+  "report_version": "phase5-operation-resolver-characterization-v2",
+  "resolution_coverage": 0.6,
+  "resolved_fixture_count": 6,
+  "retrieval_configuration_selected": false,
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_frozen": false,
+  "unresolved_fixture_count": 2
+}
