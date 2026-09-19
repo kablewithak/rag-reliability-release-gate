@@ -110,12 +110,8 @@ class OperationResolverAcceptanceContract(ContractModel):
     retrieval_promotion_authorized: Literal[False] = False
 
 
-class Phase5OperationResolverProtocolV1(ContractModel):
+class Phase5OperationResolverProtocolBase(ContractModel):
     """Frozen-intent protocol preceding operation-resolver implementation."""
-
-    protocol_version: Literal[
-        "phase5-operation-resolver-protocol-v1"
-    ] = "phase5-operation-resolver-protocol-v1"
 
     protocol_status: Literal[
         "draft_unfrozen"
@@ -223,6 +219,15 @@ class Phase5OperationResolverProtocolV1(ContractModel):
             )
 
         return self
+
+
+
+class Phase5OperationResolverProtocolV1(Phase5OperationResolverProtocolBase):
+    """Frozen-intent v1 protocol preceding operation-resolver implementation."""
+
+    protocol_version: Literal[
+        "phase5-operation-resolver-protocol-v1"
+    ] = "phase5-operation-resolver-protocol-v1"
 
 
 def build_phase5_operation_resolver_protocol_v1() -> Phase5OperationResolverProtocolV1:
