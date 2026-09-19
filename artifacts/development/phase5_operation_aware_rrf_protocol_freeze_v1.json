@@ -1,0 +1,15 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_count": 1,
+  "held_out_outcomes_exposed": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "d1ddc3cf8920f72612dbddef410d17260ca3b07e9a5d7d380bb8f4cfa3f7cb95",
+  "protocol_version": "phase5-operation-aware-rrf-protocol-v1",
+  "provider_invoked": false,
+  "receipt_version": "phase5-operation-aware-rrf-protocol-freeze-v1",
+  "release_eligible": false,
+  "runtime_retriever_changed": false,
+  "semantic_runtime_capacity_gate_satisfied": false,
+  "semantic_runtime_configuration_frozen": false
+}

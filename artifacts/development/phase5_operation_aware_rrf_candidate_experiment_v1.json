@@ -1,0 +1,562 @@
+{
+  "ambiguous_case_count": 1,
+  "answerable_case_count": 15,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_id": "phase5-operation-aware-rrf-stable-partition-v1",
+  "candidate_maximum_context_prefix_characters": 69663,
+  "candidate_maximum_minimum_eligible_items": 15,
+  "candidate_maximum_minimum_raw_top_k": 16,
+  "candidate_top_k_curve": [
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.6666666666666666,
+      "micro_gold_recall": 0.7222222222222222,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.6666666666666666,
+      "micro_gold_recall": 0.7222222222222222,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 13,
+      "full_gold_case_rate": 0.8666666666666667,
+      "micro_gold_recall": 0.8888888888888888,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 16,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.9333333333333333,
+      "micro_gold_recall": 0.9444444444444444,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 17,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 20
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 50
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 100
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 200
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 500
+    },
+    {
+      "applicable_case_count": 15,
+      "full_gold_case_count": 15,
+      "full_gold_case_rate": 1.0,
+      "micro_gold_recall": 1.0,
+      "required_evidence_reference_count": 18,
+      "retrieved_required_evidence_count": 18,
+      "top_k": 1333
+    }
+  ],
+  "case_comparisons": [
+    {
+      "candidate_context_prefix_characters": 16611,
+      "candidate_minimum_eligible_items": 7,
+      "candidate_minimum_raw_top_k": 9,
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 16611,
+      "incumbent_minimum_eligible_items": 7,
+      "incumbent_minimum_raw_top_k": 9,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 7,
+          "candidate_raw_rank": 9,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "incumbent_raw_rank": 9
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 4679,
+      "candidate_minimum_eligible_items": 3,
+      "candidate_minimum_raw_top_k": 5,
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 4679,
+      "incumbent_minimum_eligible_items": 3,
+      "incumbent_minimum_raw_top_k": 5,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 3,
+          "candidate_raw_rank": 5,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "incumbent_raw_rank": 5
+        }
+      ],
+      "resolution_status": "ambiguous",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 35053,
+      "candidate_minimum_eligible_items": 5,
+      "candidate_minimum_raw_top_k": 5,
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 35053,
+      "incumbent_minimum_eligible_items": 5,
+      "incumbent_minimum_raw_top_k": 5,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "incumbent_raw_rank": 1
+        },
+        {
+          "candidate_eligible_rank": 5,
+          "candidate_raw_rank": 5,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "incumbent_raw_rank": 5
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 22127,
+      "candidate_minimum_eligible_items": 4,
+      "candidate_minimum_raw_top_k": 4,
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 22127,
+      "incumbent_minimum_eligible_items": 4,
+      "incumbent_minimum_raw_top_k": 4,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 4,
+          "candidate_raw_rank": 4,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "incumbent_raw_rank": 4
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 6804,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 102463,
+      "incumbent_minimum_eligible_items": 21,
+      "incumbent_minimum_raw_top_k": 23,
+      "promoted_item_count": 28,
+      "rank_outcome_vs_incumbent": "improved",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "incumbent_raw_rank": 23
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "repos/create-in-org"
+    },
+    {
+      "candidate_context_prefix_characters": 8059,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-credential-method-scope",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 8059,
+      "incumbent_minimum_eligible_items": 1,
+      "incumbent_minimum_raw_top_k": 1,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "incumbent_raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 8059,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-credential-remediation",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 8059,
+      "incumbent_minimum_eligible_items": 1,
+      "incumbent_minimum_raw_top_k": 1,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "incumbent_raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 4964,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 4964,
+      "incumbent_minimum_eligible_items": 1,
+      "incumbent_minimum_raw_top_k": 2,
+      "promoted_item_count": 32,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "incumbent_raw_rank": 2
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "pulls/get"
+    },
+    {
+      "candidate_context_prefix_characters": 11957,
+      "candidate_minimum_eligible_items": 2,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 11957,
+      "incumbent_minimum_eligible_items": 2,
+      "incumbent_minimum_raw_top_k": 2,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "incumbent_raw_rank": 1
+        },
+        {
+          "candidate_eligible_rank": 2,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "incumbent_raw_rank": 2
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 11957,
+      "candidate_minimum_eligible_items": 2,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-rate-primary-status",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 11957,
+      "incumbent_minimum_eligible_items": 2,
+      "incumbent_minimum_raw_top_k": 2,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "incumbent_raw_rank": 1
+        },
+        {
+          "candidate_eligible_rank": 2,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "incumbent_raw_rank": 2
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 2940,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 18532,
+      "incumbent_minimum_eligible_items": 5,
+      "incumbent_minimum_raw_top_k": 7,
+      "promoted_item_count": 53,
+      "rank_outcome_vs_incumbent": "improved",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "incumbent_raw_rank": 7
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "issues/add-sub-issue"
+    },
+    {
+      "candidate_context_prefix_characters": 2940,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 20317,
+      "incumbent_minimum_eligible_items": 4,
+      "incumbent_minimum_raw_top_k": 5,
+      "promoted_item_count": 51,
+      "rank_outcome_vs_incumbent": "improved",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "incumbent_raw_rank": 5
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "issues/add-sub-issue"
+    },
+    {
+      "candidate_context_prefix_characters": 3393,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 2,
+      "case_id": "phase4-tuning-update-pull-scope",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 3393,
+      "incumbent_minimum_eligible_items": 1,
+      "incumbent_minimum_raw_top_k": 2,
+      "promoted_item_count": 45,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 2,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "incumbent_raw_rank": 2
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "pulls/update"
+    },
+    {
+      "candidate_context_prefix_characters": 69663,
+      "candidate_minimum_eligible_items": 15,
+      "candidate_minimum_raw_top_k": 16,
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 69663,
+      "incumbent_minimum_eligible_items": 15,
+      "incumbent_minimum_raw_top_k": 16,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 15,
+          "candidate_raw_rank": 16,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "incumbent_raw_rank": 16
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "candidate_context_prefix_characters": 2407,
+      "candidate_minimum_eligible_items": 1,
+      "candidate_minimum_raw_top_k": 1,
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible": true,
+      "full_gold_k20_regression": false,
+      "full_gold_retrievable": true,
+      "incumbent_context_prefix_characters": 2407,
+      "incumbent_minimum_eligible_items": 1,
+      "incumbent_minimum_raw_top_k": 1,
+      "promoted_item_count": 0,
+      "rank_outcome_vs_incumbent": "unchanged",
+      "required_evidence_ranks": [
+        {
+          "candidate_eligible_rank": 1,
+          "candidate_raw_rank": 1,
+          "candidate_survived_source_filter": true,
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "incumbent_raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    }
+  ],
+  "deterministic_repeat_count": 3,
+  "development_gold_used": false,
+  "evaluator_fields_passed_to_candidate": false,
+  "evidence_class": "intervention_tuning_only",
+  "experiment_decision": "PROMOTE",
+  "fallback_order_mismatch_count": 0,
+  "filter_ineligible_case_count": 0,
+  "full_gold_k20_regression_count": 0,
+  "held_out_outcomes_exposed": false,
+  "improved_vs_incumbent_case_count": 3,
+  "incumbent_rrf_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "nondeterministic_case_count": 0,
+  "promotion_gate_failures": [],
+  "promotion_gate_passed": true,
+  "protocol_freeze_receipt_sha256": "47fcbeacc808168bfd94f399b59b54c88aa4e16d3a7eaa55e8dc6ae4487caa98",
+  "protocol_sha256": "d1ddc3cf8920f72612dbddef410d17260ca3b07e9a5d7d380bb8f4cfa3f7cb95",
+  "provider_invoked": false,
+  "regressed_vs_incumbent_case_count": 0,
+  "release_eligible": false,
+  "report_version": "phase5-operation-aware-rrf-candidate-experiment-v1",
+  "required_evidence_reference_count": 18,
+  "resolved_case_count": 5,
+  "resolver_characterization_sha256": "8b342a210bf535bb0284e3611935d6e4b6e907e6000329c2c47021791648d7cc",
+  "retrieval_configuration_selected": false,
+  "runtime_retriever_changed": false,
+  "semantic_runtime_capacity_gate_satisfied": false,
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "semantic_runtime_promotion_authorized": false,
+  "unchanged_vs_incumbent_case_count": 12,
+  "unresolved_case_count": 9,
+  "unretrievable_case_count": 0
+}
