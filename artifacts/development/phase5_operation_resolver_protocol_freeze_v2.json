@@ -1,0 +1,18 @@
+{
+  "baseline_execution_authorized": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "correction_applied": true,
+  "fixture_count": 10,
+  "held_out_outcomes_exposed": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "38b23aafe7a505480de774d70e4da9c5e6e3c34c9be2dddff2eb3a137dc2cb0f",
+  "protocol_version": "phase5-operation-resolver-protocol-v2",
+  "provider_invoked": false,
+  "receipt_version": "phase5-operation-resolver-protocol-freeze-v2",
+  "release_eligible": false,
+  "resolver_implementation_present_in_protocol": false,
+  "retrieval_ranking_changed": false,
+  "rrf_incumbent_artifact_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "runtime_catalog_operation_count": 20,
+  "supersedes_protocol_sha256": "373fc8abb9a6bc20c04b788ce1a67c26b468cd2d7f662ddd27d938d1084cf61e"
+}

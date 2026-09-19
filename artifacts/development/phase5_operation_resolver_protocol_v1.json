@@ -1,0 +1,141 @@
+{
+  "acceptance": {
+    "ambiguous_runtime_behavior": "retain_generic_rrf_path",
+    "deterministic_repeat_count": 3,
+    "evaluator_leakage_tolerance": 0,
+    "false_confident_resolution_tolerance": 0,
+    "minimum_resolved_fixture_count": 5,
+    "nondeterministic_fixture_tolerance": 0,
+    "one_hundred_percent_resolution_required": false,
+    "resolution_coverage_is_descriptive": true,
+    "retrieval_promotion_authorized": false,
+    "stop_if_safe_resolution_not_demonstrated": true,
+    "unresolved_runtime_behavior": "retain_generic_rrf_path"
+  },
+  "allowed_corpus_fields": [
+    "chunk_kind",
+    "linked_operation_ids",
+    "semantic_families",
+    "evidence_scope.source_state",
+    "evidence_scope.authority_level",
+    "evidence_scope.data_role",
+    "operation_core.content.method",
+    "operation_core.content.path",
+    "operation_core.content.operation.operationId",
+    "operation_core.content.operation.summary"
+  ],
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "case_id_used_for_semantic_resolution": false,
+  "catalog_source": "frozen_phase3d_current_authoritative_operation_core_chunks",
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "development_gold_used": false,
+  "fixtures": [
+    {
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-hard-create-in-org-451",
+      "origin": "frozen_tuning_diagnostic",
+      "purpose": "known hard case without exposing evaluator evidence IDs to runtime",
+      "query": "A legacy contract for Create an organization repository does not list HTTP 451. Under the frozen current 2026-03-10 operation contract, is HTTP 451 now a documented response, and how is that response represented?"
+    },
+    {
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-exact-operation-id",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "exact operation identifier should resolve deterministically",
+      "query": "For repos/create-in-org, which REST route is used?"
+    },
+    {
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-method-path",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "method and route are runtime-visible structural identifiers",
+      "query": "Which operation corresponds to POST /orgs/{org}/repos?"
+    },
+    {
+      "expected_operation_id": "issues/create",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-create-issue",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "clear natural-language operation outside the hard-case operation",
+      "query": "How do I create an issue for a repository?"
+    },
+    {
+      "expected_operation_id": "repos/list-for-org",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-list-org-repositories",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "same resource family with a different action must remain distinguishable",
+      "query": "How do I list repositories for an organization?"
+    },
+    {
+      "expected_operation_id": "repos/create-webhook",
+      "expected_status": "resolved",
+      "fixture_id": "resolver-create-repository-webhook",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "operation phrase must discriminate a repository subresource",
+      "query": "How do I create a repository webhook?"
+    },
+    {
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "fixture_id": "resolver-generic-create-repository",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "generic repository creation must not force one scope",
+      "query": "How do I create a repository?"
+    },
+    {
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "fixture_id": "resolver-multi-operation-compare",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "multi-operation queries must not collapse to one confident operation",
+      "query": "Compare creating a repository in an organization with creating one for the authenticated user."
+    },
+    {
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "fixture_id": "resolver-status-only",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "status-code rarity alone must not select an operation",
+      "query": "Is HTTP 451 documented?"
+    },
+    {
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "fixture_id": "resolver-operation-free-guidance",
+      "origin": "engineering_boundary_fixture",
+      "purpose": "operation-free guidance must retain generic retrieval",
+      "query": "What authentication headers are required for GitHub REST API requests?"
+    }
+  ],
+  "forbidden_evaluator_fields": [
+    "required_source_ids",
+    "required_evidence_ids",
+    "gold_facts",
+    "expected_response_mode",
+    "evaluation_role_as_retrieval_truth",
+    "gold_operation_id",
+    "scoring_labels",
+    "held_out_outcomes",
+    "post_run_evaluator_annotations"
+  ],
+  "held_out_outcomes_exposed": false,
+  "parameter_sweep_allowed": false,
+  "protocol_status": "draft_unfrozen",
+  "protocol_version": "phase5-operation-resolver-protocol-v1",
+  "provider_calls_allowed": false,
+  "question": "Can operation identity be derived legally and deterministically from runtime-visible information?",
+  "release_eligible": false,
+  "retrieval_configuration_selected": false,
+  "rrf_incumbent_artifact_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_input_fields": [
+    "query"
+  ],
+  "tuning_suite_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+}
