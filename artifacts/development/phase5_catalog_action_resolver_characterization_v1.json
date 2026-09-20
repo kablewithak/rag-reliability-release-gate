@@ -1,0 +1,564 @@
+{
+  "b0_executed": false,
+  "baseline_resolver_characterization_sha256": "8b342a210bf535bb0284e3611935d6e4b6e907e6000329c2c47021791648d7cc",
+  "baseline_resolver_protocol_sha256": "38b23aafe7a505480de774d70e4da9c5e6e3c34c9be2dddff2eb3a137dc2cb0f",
+  "candidate_action_source": "first_normalized_operation_token_after_namespace_from_runtime_catalog",
+  "candidate_id": "phase5-catalog-derived-action-resolver-v3",
+  "catalog_operation_count": 20,
+  "characterization_failures": [
+    "invitation_target_cases_not_both_correctly_resolved"
+  ],
+  "characterization_passed": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "companion_candidate_executed": false,
+  "composed_candidate_executed": false,
+  "design_freeze_sha256": "5596e5f561f5bf19e2583666e9260feaa3ed00eef4a9ca5b2937042c318c2322",
+  "design_protocol_sha256": "f5a607f0051fe14b417ce41e6d01359d9c686e3f754711a917293369a22f44b8",
+  "deterministic_repeat_count": 3,
+  "development_answerable_case_count": 20,
+  "development_changed_case_count": 3,
+  "development_false_confident_count": 0,
+  "development_new_correct_resolution_count": 1,
+  "development_nondeterministic_count": 0,
+  "development_observations": [
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "actions/create-registration-token-for-org"
+      ],
+      "invitation_target_case": false,
+      "query": "Who is authorized to create an organization self-hosted runner registration token, and which classic personal access token or OAuth scope is required?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "actions/create-registration-token-for-org"
+      ],
+      "invitation_target_case": false,
+      "query": "For the current GitHub REST contract, which endpoint creates a self-hosted runner registration token for an organization, how long is the token valid, and what is the successful response status?"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "baseline_status": "ambiguous",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "candidate_status": "ambiguous",
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "actions/create-remove-token-for-repo"
+      ],
+      "invitation_target_case": false,
+      "query": "What access level is required to create a self-hosted runner removal token for a repository, and which classic personal access token or OAuth scope is required?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "candidate_status": "ambiguous",
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "changed_vs_baseline": true,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "actions/create-remove-token-for-repo"
+      ],
+      "invitation_target_case": false,
+      "query": "Which current GitHub REST endpoint creates a removal token for a repository self-hosted runner, how long does that token remain valid, and what success status does the operation return?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-api-version-current-contract",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "A legacy runbook says 2022-11-28 is still the newest GitHub REST API version. Under the frozen current docs, what newer supported version is listed, what version do requests without X-GitHub-Api-Version default to, and what happens if a specified version is no longer supported?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "A legacy integration expects a SARIF response requested with Accept: application/sarif+json to come back with Content-Type application/json+sarif. Under the 2026-03-10 breaking-change guidance, what Content-Type should the response use instead?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-breaking-version-migration",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "Compare the current breaking-change guidance for 2022-11-28 and 2026-03-10: did 2022-11-28 introduce breaking changes, and how should an integration migrate away from the deprecated rate property in the rate-limit endpoint?"
+    },
+    {
+      "baseline_operation_ids": [
+        "issues/add-assignees"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "issues/add-assignees"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-issues-add-assignees",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "issues/add-assignees"
+      ],
+      "invitation_target_case": false,
+      "query": "Under the current Add assignees to an issue contract, how many assignees may be added, what happens to existing assignees, and what happens when the caller lacks push access?"
+    },
+    {
+      "baseline_operation_ids": [
+        "issues/create"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "issues/create"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "issues/create"
+      ],
+      "invitation_target_case": false,
+      "query": "A 2022 integration still sends the singular assignee property when creating an issue. Under the current 2026-03-10 operation contract, is that singular field still part of the request schema?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "A paginated endpoint can return items inside an object, and a request can also return no data. Compare octokit.paginate() with a custom paginator: what result shape does the helper provide, and what normalization must custom code perform before accumulating items?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "I am implementing GitHub REST pagination without a built-in pagination helper. How does the link header tell me whether another page exists, and how should the manual collection loop know when to stop?"
+    },
+    {
+      "baseline_operation_ids": [
+        "pulls/create",
+        "repos/create-in-org"
+      ],
+      "baseline_status": "ambiguous",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "pulls/create",
+        "repos/create-in-org"
+      ],
+      "candidate_status": "ambiguous",
+      "case_id": "phase4-dev-pulls-create-authority",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "pulls/create"
+      ],
+      "invitation_target_case": false,
+      "query": "What repository access and organization-membership conditions apply when creating a pull request from its head or source branch?"
+    },
+    {
+      "baseline_operation_ids": [
+        "pulls/create"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "pulls/create"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-pulls-create-contract",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "pulls/create"
+      ],
+      "invitation_target_case": false,
+      "query": "For the current Create a pull request operation, which base and head information must be supplied, how may a head branch be qualified with an owner, and when is head_repo required?"
+    },
+    {
+      "baseline_operation_ids": [
+        "pulls/remove-requested-reviewers"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "pulls/remove-requested-reviewers"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "pulls/remove-requested-reviewers"
+      ],
+      "invitation_target_case": false,
+      "query": "For Remove requested reviewers from a pull request, which HTTP method and endpoint are used, what does the required reviewers field contain, and how are teams identified?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user",
+        "repos/list-attestations"
+      ],
+      "candidate_status": "ambiguous",
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "changed_vs_baseline": true,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user"
+      ],
+      "invitation_target_case": true,
+      "query": "An older 2022 contract for accepting a repository invitation did not list HTTP 451. Under the current 2026-03-10 operation contract, is 451 now a documented response?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "changed_vs_baseline": true,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user"
+      ],
+      "invitation_target_case": true,
+      "query": "For the current Accept a repository invitation operation, which HTTP method and endpoint are used, and what status indicates success?"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/get-content"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/get-content"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "repos/get-content"
+      ],
+      "invitation_target_case": false,
+      "query": "A legacy integration expects submodules returned in a repository directory listing to have type file. Under the current 2026-03-10 Get repository content contract, what type should a submodule have?"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/get-content"
+      ],
+      "baseline_status": "resolved",
+      "candidate_correct_confident_resolution": true,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [
+        "repos/get-content"
+      ],
+      "candidate_status": "resolved",
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [
+        "repos/get-content"
+      ],
+      "invitation_target_case": false,
+      "query": "For Get repository content, what happens when ref is omitted, and what restrictions apply to files between 1 MB and 100 MB and to files larger than 100 MB?"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "A GitHub REST request first returns 404 because the client used an unsupported HTTP method, and repeated requests later hit a 403 or 429 rate-limit response. Explain both behaviours and the safe retry sequence."
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_correct_confident_resolution": false,
+      "candidate_false_confident_resolution": false,
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "gold_operation_ids": [],
+      "invitation_target_case": false,
+      "query": "One request to a private resource that is known to exist returns 404 Not Found, while another request specifies an API version that does not exist and returns 400 Bad Request. What should the client infer and check in each case?"
+    }
+  ],
+  "development_role": "diagnostic_only_spent_for_future_confirmation",
+  "development_suite_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835",
+  "evaluator_fields_passed_to_candidate": false,
+  "evidence_class": "spent_development_diagnostic_and_fixed_fixture_characterization",
+  "fixed_fixture_count": 10,
+  "fixed_fixture_expectation_mismatch_count": 0,
+  "fixed_fixture_false_confident_count": 0,
+  "fixed_fixture_nondeterministic_count": 0,
+  "fixture_observations": [
+    {
+      "baseline_operation_ids": [
+        "issues/create"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "issues/create"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "issues/create",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-create-issue"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-exact-operation-id"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "baseline_status": "ambiguous",
+      "candidate_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "candidate_status": "ambiguous",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-generic-create-repository"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-hard-create-in-org-451"
+    },
+    {
+      "baseline_operation_ids": [
+        "pulls/list"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "pulls/list"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "pulls/list",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-list-pull-requests"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/list-attestations"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "repos/list-attestations"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/list-attestations",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-list-repository-attestations"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "baseline_status": "resolved",
+      "candidate_operation_ids": [
+        "repos/create-in-org"
+      ],
+      "candidate_status": "resolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": "repos/create-in-org",
+      "expected_status": "resolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-method-path"
+    },
+    {
+      "baseline_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "baseline_status": "ambiguous",
+      "candidate_operation_ids": [
+        "repos/create-for-authenticated-user",
+        "repos/create-in-org"
+      ],
+      "candidate_status": "ambiguous",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "ambiguous",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-multi-operation-compare"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-operation-free-guidance"
+    },
+    {
+      "baseline_operation_ids": [],
+      "baseline_status": "unresolved",
+      "candidate_operation_ids": [],
+      "candidate_status": "unresolved",
+      "changed_vs_baseline": false,
+      "deterministic_across_repeats": true,
+      "expectation_matched": true,
+      "expected_operation_id": null,
+      "expected_status": "unresolved",
+      "false_confident_resolution": false,
+      "fixture_id": "resolver-status-only"
+    }
+  ],
+  "fresh_confirmation_executed": false,
+  "hard_coded_accept_token_used": false,
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "invitation_correct_resolution_count": 1,
+  "invitation_target_case_count": 2,
+  "provider_invoked": false,
+  "release_eligible": false,
+  "report_version": "phase5-catalog-action-resolver-characterization-v1",
+  "retrieval_configuration_selected": false,
+  "runtime_resolver_changed": false,
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_selected": false
+}
