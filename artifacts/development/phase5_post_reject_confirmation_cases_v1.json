@@ -1,0 +1,1108 @@
+{
+  "answerable_case_count": 20,
+  "b0_executed": false,
+  "case_count": 24,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "cluster_count": 12,
+  "data_role": "post_reject_confirmation_case",
+  "development_spent_for_future_confirmation": false,
+  "exact_development_query_reuse_count": 0,
+  "exact_tuning_query_reuse_count": 0,
+  "failure_localization_started": false,
+  "failure_specific_development_evidence_opened": false,
+  "fresh_confirmation_frozen": false,
+  "fresh_confirmation_materialized": true,
+  "held_out_case_content_read": false,
+  "intervention_specific_behavior_used_for_authoring": false,
+  "post_reject_protocol_freeze_sha256": "76035d9dd68c7f02198fcfba1481ab9bb705a116a03ec57588d5772fb7811288",
+  "post_reject_protocol_sha256": "4723c854f32d114958633203d9db0b9e629a38aea8242cc958f25f1d5eddbfed",
+  "provider_invoked": false,
+  "records": [
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31",
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "case_id": "phase5-postreject-best-practices-conditional-cache",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Conditional GET requests can use saved etag or last-modified values.",
+          "A correctly authorized conditional request that returns 304 Not Modified does not count against the primary rate limit.",
+          "Stable, specific requests and consistent parameters make 304 Not Modified responses more likely when polling."
+        ],
+        "grounding_terms": [
+          "304 Not Modified",
+          "does not count against your primary rate limit",
+          "Use the same parameters every time"
+        ],
+        "must_refuse_reason": null,
+        "query": "A polling integration wants unchanged GitHub REST responses to avoid consuming primary rate limit. Which conditional-request behavior makes that possible, and what request-shape practices make 304 responses more likely?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-4822abf057b571cf16b0e79561614b306b380042a4e8f09996404099bc026e31",
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-best-practices-conditional-cache:fact-01",
+          "phase5-postreject-best-practices-conditional-cache:fact-02",
+          "phase5-postreject-best-practices-conditional-cache:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-best-practices"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-best-practices"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "case_id": "phase5-postreject-best-practices-redirect-url",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "For 301 redirects, repeat the request at the Location URL and update future requests to use that URL.",
+          "For 302 or 307 redirects, follow the Location URL but do not replace the URL used for future requests.",
+          "Clients should not parse or predict API URL structure because future URL changes can break the integration."
+        ],
+        "grounding_terms": [
+          "301",
+          "302",
+          "307",
+          "Do not manually parse URLs"
+        ],
+        "must_refuse_reason": null,
+        "query": "How should a GitHub REST client handle permanent versus temporary redirects, and why should it avoid manually parsing API URLs?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-ae6500530a333bc9c4e22391d66658e15a22d8b95500170cbc0ae422fb2cf66f"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-best-practices-redirect-url:fact-01",
+          "phase5-postreject-best-practices-redirect-url:fact-02",
+          "phase5-postreject-best-practices-redirect-url:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-best-practices"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-best-practices"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-a981d6e38d9441e15e23523d1c41a137f0222d21b4a47e67fc322b3edd4489be"
+        ],
+        "case_id": "phase5-postreject-breaking-classification-support",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Removing or renaming a parameter or response field is an example of a breaking change.",
+          "Adding an optional parameter, response field, response header, or enum value is additive rather than breaking.",
+          "The previous REST API version remains supported for at least 24 months after the new version is released."
+        ],
+        "grounding_terms": [
+          "Removing or renaming a parameter",
+          "Adding an optional parameter",
+          "at least 24 more months"
+        ],
+        "must_refuse_reason": null,
+        "query": "Under GitHub REST versioning guidance, contrast a breaking change with an additive change and state how long the previous API version remains supported after a new version is released.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-a981d6e38d9441e15e23523d1c41a137f0222d21b4a47e67fc322b3edd4489be"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-breaking-classification-support:fact-01",
+          "phase5-postreject-breaking-classification-support:fact-02",
+          "phase5-postreject-breaking-classification-support:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-breaking-changes"
+        ],
+        "scenario_class": "version_freshness_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-breaking-changes"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-a981d6e38d9441e15e23523d1c41a137f0222d21b4a47e67fc322b3edd4489be"
+        ],
+        "case_id": "phase5-postreject-breaking-upgrade-process",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Read the section for the new API version to understand its breaking changes before upgrading.",
+          "Update the X-GitHub-Api-Version header and make any integration changes required by the new version.",
+          "Test the integration after updating it to the new API version."
+        ],
+        "grounding_terms": [
+          "Before upgrading",
+          "X-GitHub-Api-Version",
+          "test your integration"
+        ],
+        "must_refuse_reason": null,
+        "query": "What sequence does the current breaking-change guidance recommend before and after moving an integration to a newer REST API version?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-a981d6e38d9441e15e23523d1c41a137f0222d21b4a47e67fc322b3edd4489be"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-breaking-upgrade-process:fact-01",
+          "phase5-postreject-breaking-upgrade-process:fact-02",
+          "phase5-postreject-breaking-upgrade-process:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-breaking-changes"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-breaking-changes"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-3c499f1990ac0c066d520f07851659dcd0fdb7821fde7a966223a22b8038e1fd"
+        ],
+        "case_id": "phase5-postreject-getting-started-methods-headers",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "GET retrieves resources and POST creates resources.",
+          "PATCH updates properties, PUT replaces resources, and DELETE deletes resources.",
+          "X-GitHub-Api-Version specifies the REST API version.",
+          "Every request needs a valid User-Agent; requests without one are rejected."
+        ],
+        "grounding_terms": [
+          "GET",
+          "POST",
+          "PATCH",
+          "X-GitHub-Api-Version",
+          "Requests with no `User-Agent` header will be rejected"
+        ],
+        "must_refuse_reason": null,
+        "query": "For a basic GitHub REST client, what actions do GET, POST, PATCH, PUT, and DELETE represent, and which version and client-identity headers should the request consider?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-3c499f1990ac0c066d520f07851659dcd0fdb7821fde7a966223a22b8038e1fd"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-getting-started-methods-headers:fact-01",
+          "phase5-postreject-getting-started-methods-headers:fact-02",
+          "phase5-postreject-getting-started-methods-headers:fact-03",
+          "phase5-postreject-getting-started-methods-headers:fact-04"
+        ],
+        "required_source_ids": [
+          "docs-getting-started"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-getting-started"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-f62c569b11e1f8f3e5f767abb6c1aee7161d6090ea5eb37948ea2c59cee855e9"
+        ],
+        "case_id": "phase5-postreject-getting-started-response-inspection",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The --include or -i option displays the response status code and headers.",
+          "x-ratelimit-remaining and x-ratelimit-reset describe remaining requests and the rate-limit reset time.",
+          "On success Octokit exposes status and headers on the result; error handling can inspect error status and response headers."
+        ],
+        "grounding_terms": [
+          "--include",
+          "x-ratelimit-remaining",
+          "x-ratelimit-reset",
+          "result.status"
+        ],
+        "must_refuse_reason": null,
+        "query": "How can a client inspect GitHub REST response status and headers, what do x-ratelimit-remaining and x-ratelimit-reset convey, and where does Octokit expose status and headers on success versus error?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-f62c569b11e1f8f3e5f767abb6c1aee7161d6090ea5eb37948ea2c59cee855e9"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-getting-started-response-inspection:fact-01",
+          "phase5-postreject-getting-started-response-inspection:fact-02",
+          "phase5-postreject-getting-started-response-inspection:fact-03"
+        ],
+        "required_source_ids": [
+          "docs-getting-started"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-getting-started"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "case_id": "phase5-postreject-timezones-priority-returned",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Timezone priority is explicit ISO 8601 timestamp, then Time-Zone header, then the authenticated user's last known timezone, then UTC.",
+          "Timestamps returned by the API are in UTC and ISO 8601 format."
+        ],
+        "grounding_terms": [
+          "Explicitly providing an ISO 8601 timestamp",
+          "Using the `Time-Zone` header",
+          "last known timezone",
+          "Defaulting to UTC",
+          "returned by the API are in UTC time, ISO 8601 format"
+        ],
+        "must_refuse_reason": null,
+        "query": "For an applicable GitHub REST call that can generate or accept a timestamp, what is the timezone priority order, and in what timezone and format are timestamps returned by the API?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-timezones-priority-returned:fact-01",
+          "phase5-postreject-timezones-priority-returned:fact-02"
+        ],
+        "required_source_ids": [
+          "docs-timezones"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-timezones"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-cd0e87ca852080c49fd723c0efd6e0225afeae8be7ed5ec25df339ed1e8807bb"
+        ],
+        "case_id": "phase5-postreject-timezones-instance-refusal",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "grounding_terms": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "A timestamped request was already made, but I have no explicit timestamp, Time-Zone header, authenticated-user timezone history, or request trace. Tell me the exact timezone GitHub used for it.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Full credit requires an insufficient-evidence refusal. Do not reward invented instance-specific facts.",
+        "source_family": "cross_cutting_rest_guidance"
+      },
+      "cluster_id": "guidance:docs-timezones"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7"
+        ],
+        "case_id": "phase5-postreject-actions-registration-org-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation is POST /orgs/{org}/actions/runners/registration-token.",
+          "The registration token expires after one hour.",
+          "The success response status is 201."
+        ],
+        "grounding_terms": [
+          "\"method\":\"post\"",
+          "/orgs/{org}/actions/runners/registration-token",
+          "expires after one hour",
+          "\"201\""
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current organization self-hosted runner registration-token operation, give the HTTP method and path, token lifetime, and success status.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-actions-registration-org-contract:fact-01",
+          "phase5-postreject-actions-registration-org-contract:fact-02",
+          "phase5-postreject-actions-registration-org-contract:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-registration-token-for-org"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7"
+        ],
+        "case_id": "phase5-postreject-actions-registration-org-auth",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The authenticated user must have admin access to the organization.",
+          "OAuth and classic personal access tokens need admin:org.",
+          "If the repository is private, those token types also need the repo scope."
+        ],
+        "grounding_terms": [
+          "admin access to the organization",
+          "admin:org",
+          "repo"
+        ],
+        "must_refuse_reason": null,
+        "query": "What access and classic OAuth or personal-access-token scopes does the organization runner registration-token operation require?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-actions-registration-org-auth:fact-01",
+          "phase5-postreject-actions-registration-org-auth:fact-02",
+          "phase5-postreject-actions-registration-org-auth:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-registration-token-for-org"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "case_id": "phase5-postreject-actions-remove-org-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation is POST /orgs/{org}/actions/runners/remove-token.",
+          "The token can be passed to ./config.sh remove --token TOKEN.",
+          "The remove token expires after one hour.",
+          "The success response status is 201."
+        ],
+        "grounding_terms": [
+          "/orgs/{org}/actions/runners/remove-token",
+          "./config.sh remove --token TOKEN",
+          "expires after one hour",
+          "\"201\""
+        ],
+        "must_refuse_reason": null,
+        "query": "For removing an organization self-hosted runner, which current REST operation creates the remove token, how is the token used, how long does it last, and what status indicates success?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-actions-remove-org-contract:fact-01",
+          "phase5-postreject-actions-remove-org-contract:fact-02",
+          "phase5-postreject-actions-remove-org-contract:fact-03",
+          "phase5-postreject-actions-remove-org-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-remove-token-for-org"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-remove-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "case_id": "phase5-postreject-actions-remove-org-auth",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The authenticated user must have admin access to the organization.",
+          "OAuth and classic personal access tokens need admin:org.",
+          "If the repository is private, those token types also need the repo scope."
+        ],
+        "grounding_terms": [
+          "admin access to the organization",
+          "admin:org",
+          "repo"
+        ],
+        "must_refuse_reason": null,
+        "query": "Who may create an organization self-hosted runner remove token, and what classic OAuth or personal-access-token scopes are required?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-8cf27b1c1eb50de277026c4b7e29b3c23eb562dd3a0659630cea4fe56bf9ed70"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-actions-remove-org-auth:fact-01",
+          "phase5-postreject-actions-remove-org-auth:fact-02",
+          "phase5-postreject-actions-remove-org-auth:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:actions/create-remove-token-for-org"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "actions"
+      },
+      "cluster_id": "openapi-pair:actions/create-remove-token-for-org"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124"
+        ],
+        "case_id": "phase5-postreject-issues-blocked-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation is POST /repos/{owner}/{repo}/issues/{issue_number}/dependencies/blocked_by.",
+          "The request body requires issue_id.",
+          "issue_id identifies the issue that blocks the current issue.",
+          "The success response status is 201."
+        ],
+        "grounding_terms": [
+          "\"method\":\"post\"",
+          "/dependencies/blocked_by",
+          "\"issue_id\"",
+          "blocks the current issue",
+          "\"201\""
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Add blocked-by dependency operation, what method and path are used, which request-body field is required and what does it identify, and what success status is returned?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-issues-blocked-contract:fact-01",
+          "phase5-postreject-issues-blocked-contract:fact-02",
+          "phase5-postreject-issues-blocked-contract:fact-03",
+          "phase5-postreject-issues-blocked-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/add-blocked-by-dependency"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-blocked-by-dependency"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124"
+        ],
+        "case_id": "phase5-postreject-issues-blocked-response-behavior",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Declared non-success statuses include 301, 403, 404, 410, and 422.",
+          "Creating content too quickly with this endpoint may trigger secondary rate limiting."
+        ],
+        "grounding_terms": [
+          "\"301\"",
+          "\"403\"",
+          "\"404\"",
+          "\"410\"",
+          "\"422\"",
+          "secondary rate limiting"
+        ],
+        "must_refuse_reason": null,
+        "query": "What non-success statuses are declared for adding a blocked-by dependency, and what operational warning does the contract give about creating this content too quickly?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-54218cead5dc4d96ffc452ff1dbd07d9b0f4dab0236c0d3ab315168d9f0d4124"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-issues-blocked-response-behavior:fact-01",
+          "phase5-postreject-issues-blocked-response-behavior:fact-02"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/add-blocked-by-dependency"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/add-blocked-by-dependency"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d"
+        ],
+        "case_id": "phase5-postreject-issues-update-permission-replacement",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "Issue owners and users with push access or Triage role can edit an issue.",
+          "Provided assignee and label arrays replace the existing sets.",
+          "An empty assignees or labels array clears that set.",
+          "Without push access, assignee and label changes are silently dropped."
+        ],
+        "grounding_terms": [
+          "Triage role",
+          "_replace_ the set of assignees",
+          "clear all assignees",
+          "_replace_ the set of labels",
+          "silently dropped"
+        ],
+        "must_refuse_reason": null,
+        "query": "For the current Update an issue operation, who may edit an issue, and how do assignees and labels behave when arrays are provided, cleared, or changed without push access?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-issues-update-permission-replacement:fact-01",
+          "phase5-postreject-issues-update-permission-replacement:fact-02",
+          "phase5-postreject-issues-update-permission-replacement:fact-03",
+          "phase5-postreject-issues-update-permission-replacement:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:issues/update"
+        ],
+        "scenario_class": "current_multi_evidence_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-2a1b7e2dd72157f835c63422ef3416992ea7a3c25b55460ada39cd66ca0d6f3f",
+          "chunk-cd375411d841104feb9b2825d17e637b92b9d817f6f22d1c52d0fbce134f328d"
+        ],
+        "case_id": "phase5-postreject-issues-update-instance-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "grounding_terms": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "An issue update returned 200, but I do not have the request body, response suggestions, caller identity, or permission state. Tell me the exact assignee or label input that was silently dropped.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Full credit requires an insufficient-evidence refusal. Do not reward invented instance-specific facts.",
+        "source_family": "issues"
+      },
+      "cluster_id": "openapi-pair:issues/update"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3"
+        ],
+        "case_id": "phase5-postreject-pulls-list-filter-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "state accepts open, closed, or all and defaults to open.",
+          "head uses user-or-organization plus branch in the form user:ref-name or organization:ref-name.",
+          "base filters by base branch name."
+        ],
+        "grounding_terms": [
+          "\"open\",\"closed\",\"all\"",
+          "\"default\":\"open\"",
+          "user:ref-name",
+          "base branch name"
+        ],
+        "must_refuse_reason": null,
+        "query": "When listing pull requests, what values can the state filter take, what is its default, and how are head and base filters expressed?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-pulls-list-filter-contract:fact-01",
+          "phase5-postreject-pulls-list-filter-contract:fact-02",
+          "phase5-postreject-pulls-list-filter-contract:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/list"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/list"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3"
+        ],
+        "case_id": "phase5-postreject-pulls-list-sort-direction",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "popularity sorts by number of comments.",
+          "long-running sorts by creation date and limits results to pull requests open for more than a month with recent activity.",
+          "Direction defaults to desc for created or unspecified sort, and otherwise defaults to asc."
+        ],
+        "grounding_terms": [
+          "number of comments",
+          "long-running",
+          "Default: `desc`",
+          "otherwise `asc`"
+        ],
+        "must_refuse_reason": null,
+        "query": "For the pull-request list endpoint, what do popularity and long-running sorting mean, and how does the default sort direction depend on the selected sort?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0d1569942ce3eb27dd225f5c465d8d55795c6773041393e19ff2e8ff40b9e5b3"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-pulls-list-sort-direction:fact-01",
+          "phase5-postreject-pulls-list-sort-direction:fact-02",
+          "phase5-postreject-pulls-list-sort-direction:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/list"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/list"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-dfd55afaa0a00a80b6074c48a0605b597cb4aabe4060b7d06eb3020d245a0dcb"
+        ],
+        "case_id": "phase5-postreject-pulls-remove-reviewers-contract",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation is DELETE /repos/{owner}/{repo}/pulls/{pull_number}/requested_reviewers.",
+          "The reviewers array is required and contains user logins to remove.",
+          "team_reviewers is an optional array of team slugs to remove.",
+          "The success response status is 200."
+        ],
+        "grounding_terms": [
+          "\"method\":\"delete\"",
+          "/requested_reviewers",
+          "\"required\":[\"reviewers\"]",
+          "team_reviewers",
+          "\"200\""
+        ],
+        "must_refuse_reason": null,
+        "query": "For removing requested reviewers from a pull request, what method and path are used, which request array is required, which team array is optional, and what status indicates success?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-dfd55afaa0a00a80b6074c48a0605b597cb4aabe4060b7d06eb3020d245a0dcb"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-pulls-remove-reviewers-contract:fact-01",
+          "phase5-postreject-pulls-remove-reviewers-contract:fact-02",
+          "phase5-postreject-pulls-remove-reviewers-contract:fact-03",
+          "phase5-postreject-pulls-remove-reviewers-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:pulls/remove-requested-reviewers"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/remove-requested-reviewers"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-dfd55afaa0a00a80b6074c48a0605b597cb4aabe4060b7d06eb3020d245a0dcb"
+        ],
+        "case_id": "phase5-postreject-pulls-remove-reviewers-instance-refusal",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "grounding_terms": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "A reviewer-removal request succeeded, but I have no request body or response body. Identify the exact user logins and team slugs that were removed from that pull request.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Full credit requires an insufficient-evidence refusal. Do not reward invented instance-specific facts.",
+        "source_family": "pull_requests"
+      },
+      "cluster_id": "openapi-pair:pulls/remove-requested-reviewers"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "case_id": "phase5-postreject-repos-create-user-scopes",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The operation is POST /user/repos.",
+          "Creating a public repository needs public_repo or repo for OAuth and classic personal access tokens.",
+          "Creating a private repository needs repo."
+        ],
+        "grounding_terms": [
+          "\"path\":\"/user/repos\"",
+          "public_repo",
+          "private repository",
+          "`repo` scope"
+        ],
+        "must_refuse_reason": null,
+        "query": "For Create a repository for the authenticated user, which endpoint is used and what classic OAuth or personal-access-token scopes are needed for public versus private repositories?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-repos-create-user-scopes:fact-01",
+          "phase5-postreject-repos-create-user-scopes:fact-02",
+          "phase5-postreject-repos-create-user-scopes:fact-03"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/create-for-authenticated-user"
+        ],
+        "scenario_class": "authority_scope_disambiguation",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-for-authenticated-user"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "case_id": "phase5-postreject-repos-create-user-request-response",
+        "case_version": "1.0",
+        "criticality": "noncritical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "The repository name field is required.",
+          "private defaults to false and auto_init defaults to false.",
+          "A successful creation returns 201.",
+          "The successful response includes a Location header."
+        ],
+        "grounding_terms": [
+          "\"required\":[\"name\"]",
+          "\"private\":{\"default\":false",
+          "\"auto_init\":{\"default\":false",
+          "\"201\"",
+          "\"Location\""
+        ],
+        "must_refuse_reason": null,
+        "query": "What request field is required when creating a repository for the authenticated user, what are the defaults for private and auto_init, and what does a successful response return?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-0a98ac5e1a4daa0e51e91dc08bb8787b274704ce635586deb431fb9ebf7c4a5a"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-repos-create-user-request-response:fact-01",
+          "phase5-postreject-repos-create-user-request-response:fact-02",
+          "phase5-postreject-repos-create-user-request-response:fact-03",
+          "phase5-postreject-repos-create-user-request-response:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/create-for-authenticated-user"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/create-for-authenticated-user"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b"
+        ],
+        "case_id": "phase5-postreject-repos-attestations-contract",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "answer",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [
+          "subject_digest must use the form sha256:HEX_DIGEST.",
+          "predicate_type can filter by provenance, sbom, release, or freeform custom predicate text.",
+          "The caller must have read access to the repository.",
+          "Fine-grained access tokens require attestations:read."
+        ],
+        "grounding_terms": [
+          "sha256:HEX_DIGEST",
+          "predicate_type",
+          "provenance",
+          "read access to the repository",
+          "attestations:read"
+        ],
+        "must_refuse_reason": null,
+        "query": "For listing repository artifact attestations, what path parameter format is required for the subject digest, what optional predicate filter is supported, and what repository access or fine-grained permission is required?",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b"
+        ],
+        "required_fact_ids": [
+          "phase5-postreject-repos-attestations-contract:fact-01",
+          "phase5-postreject-repos-attestations-contract:fact-02",
+          "phase5-postreject-repos-attestations-contract:fact-03",
+          "phase5-postreject-repos-attestations-contract:fact-04"
+        ],
+        "required_source_ids": [
+          "openapi-current-2026-03-10:repos/list-attestations"
+        ],
+        "scenario_class": "current_single_source_answerable",
+        "scoring_notes": "Full credit requires every gold fact and support from the required evidence IDs. Evaluator gold is forbidden from runtime.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/list-attestations"
+    },
+    {
+      "case": {
+        "allowed_source_states": [
+          "current"
+        ],
+        "authoring_evidence": [
+          "chunk-86c17157604102e82f7090de928de56d4222dae94608aed1a989cfab92eac54b"
+        ],
+        "case_id": "phase5-postreject-repos-attestations-instance-refusal",
+        "case_version": "1.0",
+        "criticality": "critical",
+        "data_role": "post_reject_confirmation_case",
+        "expected_response_mode": "refuse",
+        "forbidden_evidence_ids": [],
+        "forbidden_source_ids": [],
+        "gold_fact_rubric": [],
+        "grounding_terms": [],
+        "must_refuse_reason": "insufficient_evidence",
+        "query": "I only know that an attestation exists for a repository digest; I do not have the attestation bundle or verification output. Tell me the exact signer identity and whether its signature is valid.",
+        "required_api_version": "2026-03-10",
+        "required_authority_level": "authoritative",
+        "required_evidence_ids": [],
+        "required_fact_ids": [],
+        "required_source_ids": [],
+        "scenario_class": "must_refuse_insufficient_or_conflicting_evidence",
+        "scoring_notes": "Full credit requires an insufficient-evidence refusal. Do not reward invented instance-specific facts.",
+        "source_family": "repositories_and_repository_webhooks"
+      },
+      "cluster_id": "openapi-pair:repos/list-attestations"
+    }
+  ],
+  "refusal_case_count": 4,
+  "release_eligible": false,
+  "runtime_projection_fields": [
+    "case_id",
+    "query"
+  ],
+  "suite_version": "phase5-post-reject-confirmation-v1"
+}
