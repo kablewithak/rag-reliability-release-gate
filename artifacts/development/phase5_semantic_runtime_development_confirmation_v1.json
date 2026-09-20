@@ -1,0 +1,617 @@
+{
+  "ambiguous_answerable_case_count": 2,
+  "answerable_case_count": 20,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_context_max_budget": 69663,
+  "candidate_context_max_evidence_items": 15,
+  "candidate_retrieval_top_k": 20,
+  "case_results": [
+    {
+      "assembled_context_characters": 39541,
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "context_item_count": 15,
+      "context_prefix_characters_for_full_gold": 3181,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 4,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7",
+          "included_in_context": true,
+          "raw_rank": 4
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 36761,
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "context_item_count": 15,
+      "context_prefix_characters_for_full_gold": 3181,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 4,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7",
+          "included_in_context": true,
+          "raw_rank": 4
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 30688,
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "context_item_count": 15,
+      "context_prefix_characters_for_full_gold": 18131,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 7,
+      "minimum_raw_top_k_for_full_gold": 9,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 7,
+          "evidence_id": "chunk-9367992c420cc80d42b78e7129457783f233c67f35787f35c04d1096f8f5f99b",
+          "included_in_context": true,
+          "raw_rank": 9
+        }
+      ],
+      "resolution_status": "ambiguous",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 52882,
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "context_item_count": 15,
+      "context_prefix_characters_for_full_gold": 4436,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-9367992c420cc80d42b78e7129457783f233c67f35787f35c04d1096f8f5f99b",
+          "included_in_context": true,
+          "raw_rank": 2
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 69479,
+      "case_id": "phase4-dev-api-version-current-contract",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": 5608,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-983a0027263f77cae71fe270dd205876fd7df230c10e5b64d2d069352dc1e97d",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 69513,
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": 6323,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-099035e853588f6d8e3d3e13466602b62f7366fe77f3f99d48f8a53c0fd435ce",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 68915,
+      "case_id": "phase4-dev-breaking-version-migration",
+      "context_item_count": 12,
+      "context_prefix_characters_for_full_gold": null,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": false,
+      "full_gold_in_bounded_context": false,
+      "full_gold_retrievable_within_top20": false,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": 37,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-099035e853588f6d8e3d3e13466602b62f7366fe77f3f99d48f8a53c0fd435ce",
+          "included_in_context": true,
+          "raw_rank": 2
+        },
+        {
+          "eligible_rank": null,
+          "evidence_id": "chunk-cf790cc8a7edd6efb9809f062aa0c37c593a47c61d41148a5ff769aecdc1d919",
+          "included_in_context": false,
+          "raw_rank": 37
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 30488,
+      "case_id": "phase4-dev-issues-add-assignees",
+      "context_item_count": 10,
+      "context_prefix_characters_for_full_gold": 1923,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-db26bf1f3b7de296c0851a148250427f380b5c18b32e5662922d579b158be8bb",
+          "included_in_context": true,
+          "raw_rank": 2
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "issues/add-assignees"
+    },
+    {
+      "assembled_context_characters": 34712,
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "context_item_count": 9,
+      "context_prefix_characters_for_full_gold": 9579,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 4,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-818a2d7af95a38d5ffd8d96869fbd8198cb399d3e2e8c55900c85770cf07a1d9",
+          "included_in_context": true,
+          "raw_rank": 4
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "issues/create"
+    },
+    {
+      "assembled_context_characters": 67919,
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "context_item_count": 11,
+      "context_prefix_characters_for_full_gold": 10090,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 2,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 2,
+          "evidence_id": "chunk-181c3fb39ae34ec7ece304c0896c9e1c80ebe919cb47ee0beb7d43a1795e9e12",
+          "included_in_context": true,
+          "raw_rank": 2
+        },
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-b549d8c7ee35b3cadf0a2abfd4e82db27c7d4de5876a2a6f401ac5fc469da40b",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 68279,
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "context_item_count": 15,
+      "context_prefix_characters_for_full_gold": 23941,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 4,
+      "minimum_raw_top_k_for_full_gold": 4,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 4,
+          "evidence_id": "chunk-181c3fb39ae34ec7ece304c0896c9e1c80ebe919cb47ee0beb7d43a1795e9e12",
+          "included_in_context": true,
+          "raw_rank": 4
+        },
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-b549d8c7ee35b3cadf0a2abfd4e82db27c7d4de5876a2a6f401ac5fc469da40b",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 68100,
+      "case_id": "phase4-dev-pulls-create-authority",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": 21076,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 4,
+      "minimum_raw_top_k_for_full_gold": 7,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 4,
+          "evidence_id": "chunk-e8fc96fbaa45f2c119f5c6ebb463aa1f2185ef34a62d159f349d65c167f4caca",
+          "included_in_context": true,
+          "raw_rank": 7
+        }
+      ],
+      "resolution_status": "ambiguous",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 40558,
+      "case_id": "phase4-dev-pulls-create-contract",
+      "context_item_count": 10,
+      "context_prefix_characters_for_full_gold": 5034,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-e8fc96fbaa45f2c119f5c6ebb463aa1f2185ef34a62d159f349d65c167f4caca",
+          "included_in_context": true,
+          "raw_rank": 2
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "pulls/create"
+    },
+    {
+      "assembled_context_characters": 30557,
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "context_item_count": 10,
+      "context_prefix_characters_for_full_gold": 1654,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-dfd55afaa0a00a80b6074c48a0605b597cb4aabe4060b7d06eb3020d245a0dcb",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "pulls/remove-requested-reviewers"
+    },
+    {
+      "assembled_context_characters": 68788,
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": null,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": false,
+      "full_gold_in_bounded_context": false,
+      "full_gold_retrievable_within_top20": false,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": 45,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": null,
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "included_in_context": false,
+          "raw_rank": 45
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 69243,
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": null,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": false,
+      "full_gold_in_bounded_context": false,
+      "full_gold_retrievable_within_top20": false,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": 49,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": null,
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "included_in_context": false,
+          "raw_rank": 49
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 18252,
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "context_item_count": 10,
+      "context_prefix_characters_for_full_gold": 5913,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 2,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-04e27893cade7a2cb64b06cc387db4cefb1c887db971ddfdc6082b8c136a206b",
+          "included_in_context": true,
+          "raw_rank": 2
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "repos/get-content"
+    },
+    {
+      "assembled_context_characters": 15884,
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "context_item_count": 10,
+      "context_prefix_characters_for_full_gold": 5913,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": null,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 1,
+      "minimum_raw_top_k_for_full_gold": 1,
+      "required_evidence_count": 1,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-04e27893cade7a2cb64b06cc387db4cefb1c887db971ddfdc6082b8c136a206b",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "resolved",
+      "resolved_operation_id": "repos/get-content"
+    },
+    {
+      "assembled_context_characters": 68908,
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": null,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": false,
+      "full_gold_in_bounded_context": false,
+      "full_gold_retrievable_within_top20": false,
+      "minimum_eligible_items_for_full_gold": null,
+      "minimum_raw_top_k_for_full_gold": 27,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": null,
+          "evidence_id": "chunk-6fc744dee58c1b47dfa67cf1f3c95bc4e791320346e08158a29f8be891afc752",
+          "included_in_context": false,
+          "raw_rank": 27
+        },
+        {
+          "eligible_rank": 5,
+          "evidence_id": "chunk-c302e7937061f7efe865d21345a74967955cdd60c1d86e84e99966fca1bd9440",
+          "included_in_context": true,
+          "raw_rank": 5
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    },
+    {
+      "assembled_context_characters": 67664,
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "context_item_count": 13,
+      "context_prefix_characters_for_full_gold": 18172,
+      "deterministic_across_repeats": true,
+      "fallback_order_preserved": true,
+      "full_gold_filter_eligible_within_15": true,
+      "full_gold_in_bounded_context": true,
+      "full_gold_retrievable_within_top20": true,
+      "minimum_eligible_items_for_full_gold": 3,
+      "minimum_raw_top_k_for_full_gold": 3,
+      "required_evidence_count": 2,
+      "required_evidence_ranks": [
+        {
+          "eligible_rank": 3,
+          "evidence_id": "chunk-6fc744dee58c1b47dfa67cf1f3c95bc4e791320346e08158a29f8be891afc752",
+          "included_in_context": true,
+          "raw_rank": 3
+        },
+        {
+          "eligible_rank": 1,
+          "evidence_id": "chunk-8dd06f9776710075a0304ff05e06d9c104a0eea6e99e20b7be4e1ac5187d4f27",
+          "included_in_context": true,
+          "raw_rank": 1
+        }
+      ],
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null
+    }
+  ],
+  "confirmation_decision": "REJECT",
+  "confirmation_gate_failures": [
+    "full_gold_answerable_cases_below_20",
+    "full_gold_cases_at_k20_below_20",
+    "micro_gold_recall_at_k20_below_1",
+    "maximum_raw_top_k_above_20",
+    "maximum_eligible_items_above_15",
+    "maximum_context_prefix_above_69663",
+    "bounded_context_incomplete",
+    "unretrievable_gold_present",
+    "filter_ineligible_gold_present",
+    "context_exclusion_present"
+  ],
+  "confirmation_gate_passed": false,
+  "context_complete_answerable_case_count": 16,
+  "context_exclusion_case_count": 4,
+  "deterministic_repeat_count": 3,
+  "development_case_count": 24,
+  "development_gold_used_for_confirmation_only": true,
+  "development_gold_used_for_tuning": false,
+  "development_suite_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835",
+  "evaluator_fields_passed_to_candidate": false,
+  "evidence_class": "development_confirmation_only",
+  "fallback_order_mismatch_count": 0,
+  "filter_ineligible_case_count": 4,
+  "full_gold_answerable_case_count": 16,
+  "held_out_outcomes_exposed": false,
+  "maximum_assembled_context_characters": 69513,
+  "maximum_context_prefix_characters": null,
+  "maximum_minimum_eligible_items": null,
+  "maximum_minimum_raw_top_k": 49,
+  "nondeterministic_case_count": 0,
+  "promoted_retrieval_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "protocol_freeze_sha256": "b3401a81900d63cc612fb7855b52a13c9af376efc47a97c1aebda6a17cd273a0",
+  "protocol_sha256": "b36813907d2f581e6cfd559b96978bb93cc00855655c2204905a0e33126e6931",
+  "provider_invoked": false,
+  "refusal_case_count": 4,
+  "release_eligible": false,
+  "report_version": "phase5-semantic-runtime-development-confirmation-v1",
+  "required_evidence_reference_count": 25,
+  "resolved_answerable_case_count": 6,
+  "runtime_configuration_materialized": false,
+  "runtime_retriever_integrated": false,
+  "semantic_runtime_capacity_gate_satisfied": false,
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "top_k_curve": [
+    {
+      "applicable_case_count": 20,
+      "full_gold_case_count": 9,
+      "full_gold_case_rate": 0.45,
+      "micro_gold_recall": 0.52,
+      "required_evidence_reference_count": 25,
+      "retrieved_required_evidence_count": 13,
+      "top_k": 2
+    },
+    {
+      "applicable_case_count": 20,
+      "full_gold_case_count": 10,
+      "full_gold_case_rate": 0.5,
+      "micro_gold_recall": 0.56,
+      "required_evidence_reference_count": 25,
+      "retrieved_required_evidence_count": 14,
+      "top_k": 3
+    },
+    {
+      "applicable_case_count": 20,
+      "full_gold_case_count": 14,
+      "full_gold_case_rate": 0.7,
+      "micro_gold_recall": 0.76,
+      "required_evidence_reference_count": 25,
+      "retrieved_required_evidence_count": 19,
+      "top_k": 5
+    },
+    {
+      "applicable_case_count": 20,
+      "full_gold_case_count": 16,
+      "full_gold_case_rate": 0.8,
+      "micro_gold_recall": 0.84,
+      "required_evidence_reference_count": 25,
+      "retrieved_required_evidence_count": 21,
+      "top_k": 10
+    },
+    {
+      "applicable_case_count": 20,
+      "full_gold_case_count": 16,
+      "full_gold_case_rate": 0.8,
+      "micro_gold_recall": 0.84,
+      "required_evidence_reference_count": 25,
+      "retrieved_required_evidence_count": 21,
+      "top_k": 20
+    }
+  ],
+  "tuning_parameters_changed": false,
+  "unresolved_answerable_case_count": 12,
+  "unretrievable_case_count": 4
+}
