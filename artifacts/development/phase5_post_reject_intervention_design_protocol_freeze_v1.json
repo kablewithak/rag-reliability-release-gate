@@ -1,0 +1,12 @@
+{
+  "b0_executed": false,
+  "companion_candidate_executed": false,
+  "composed_candidate_executed": false,
+  "fresh_confirmation_executed": false,
+  "held_out_outcomes_exposed": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "f5a607f0051fe14b417ce41e6d01359d9c686e3f754711a917293369a22f44b8",
+  "provider_invoked": false,
+  "receipt_version": "phase5-post-reject-intervention-design-freeze-v1",
+  "resolver_candidate_executed": false
+}
