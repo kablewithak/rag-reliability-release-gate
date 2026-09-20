@@ -1,0 +1,20 @@
+{
+  "answerable_case_count": 20,
+  "b0_executed": false,
+  "case_count": 24,
+  "cluster_count": 12,
+  "development_spent_for_future_confirmation": false,
+  "failure_localization_activation_condition_satisfied": true,
+  "failure_localization_started": false,
+  "failure_specific_development_evidence_opened": false,
+  "fresh_confirmation_frozen": true,
+  "fresh_confirmation_materialized": true,
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "provider_invoked": false,
+  "receipt_version": "phase5-post-reject-confirmation-freeze-v1",
+  "refusal_case_count": 4,
+  "release_eligible": false,
+  "suite_sha256": "fde5b7005d9fa52dffff488b26224ebf90b7fcaaa6b443a55e136e01f397053c",
+  "suite_version": "phase5-post-reject-confirmation-v1"
+}

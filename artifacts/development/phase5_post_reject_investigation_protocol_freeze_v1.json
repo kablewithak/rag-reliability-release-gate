@@ -1,0 +1,14 @@
+{
+  "b0_executed": false,
+  "development_spent_for_future_confirmation": false,
+  "failure_specific_development_evidence_opened": false,
+  "fresh_confirmation_frozen": false,
+  "fresh_confirmation_materialized": false,
+  "held_out_outcomes_exposed": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "4723c854f32d114958633203d9db0b9e629a38aea8242cc958f25f1d5eddbfed",
+  "protocol_version": "phase5-post-reject-investigation-protocol-v1",
+  "provider_invoked": false,
+  "receipt_version": "phase5-post-reject-investigation-protocol-freeze-v1",
+  "release_eligible": false
+}

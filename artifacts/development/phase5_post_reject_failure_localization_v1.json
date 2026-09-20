@@ -1,0 +1,210 @@
+{
+  "activation_sha256": "37ddd7d8659bd1e6542c5e4c15e1fdd9b626eb8e316b0a784866089df9192613",
+  "b0_executed": false,
+  "candidate_retuning_performed": false,
+  "case_diagnostics": [
+    {
+      "case_id": "phase4-dev-breaking-version-migration",
+      "evidence": [
+        {
+          "bm25_rank": 3,
+          "bm25_score": 42.88124086629382,
+          "byte_count": 6244,
+          "candidate_rank": 2,
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-099035e853588f6d8e3d3e13466602b62f7366fe77f3f99d48f8a53c0fd435ce",
+          "generic_rrf_rank": 2,
+          "generic_rrf_score": 0.03200204813108039,
+          "lexical_rank": 2,
+          "lexical_score": 0.5666666666666667,
+          "linked_operation_ids": [],
+          "missed_top20": false,
+          "required": true,
+          "source_ids": [
+            "docs-breaking-changes"
+          ]
+        },
+        {
+          "bm25_rank": 4,
+          "bm25_score": 38.473235215711846,
+          "byte_count": 201,
+          "candidate_rank": 37,
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-cf790cc8a7edd6efb9809f062aa0c37c593a47c61d41148a5ff769aecdc1d919",
+          "generic_rrf_rank": 37,
+          "generic_rrf_score": 0.019516050583657588,
+          "lexical_rank": 197,
+          "lexical_score": 0.2,
+          "linked_operation_ids": [],
+          "missed_top20": true,
+          "required": true,
+          "source_ids": [
+            "docs-breaking-changes"
+          ]
+        }
+      ],
+      "failure_class": "cross_cutting_companion_evidence_miss",
+      "generic_fallback_exact": true,
+      "gold_operation_ids": [],
+      "gold_operation_in_runtime_catalog": false,
+      "missed_required_evidence_count": 1,
+      "query": "Compare the current breaking-change guidance for 2022-11-28 and 2026-03-10: did 2022-11-28 introduce breaking changes, and how should an integration migrate away from the deprecated rate property in the rate-limit endpoint?",
+      "required_evidence_count": 2,
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null,
+      "scenario_class": "current_multi_evidence_answerable",
+      "source_family": "cross_cutting_rest_guidance"
+    },
+    {
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "evidence": [
+        {
+          "bm25_rank": 6,
+          "bm25_score": 21.77292148748295,
+          "byte_count": 927,
+          "candidate_rank": 45,
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "generic_rrf_rank": 45,
+          "generic_rrf_score": 0.01776931619863557,
+          "lexical_rank": 322,
+          "lexical_score": 0.28,
+          "linked_operation_ids": [
+            "repos/accept-invitation-for-authenticated-user"
+          ],
+          "missed_top20": true,
+          "required": true,
+          "source_ids": [
+            "openapi-current-2026-03-10:repos/accept-invitation-for-authenticated-user"
+          ]
+        }
+      ],
+      "failure_class": "operation_core_unresolved_fallback_miss",
+      "generic_fallback_exact": true,
+      "gold_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user"
+      ],
+      "gold_operation_in_runtime_catalog": true,
+      "missed_required_evidence_count": 1,
+      "query": "An older 2022 contract for accepting a repository invitation did not list HTTP 451. Under the current 2026-03-10 operation contract, is 451 now a documented response?",
+      "required_evidence_count": 1,
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null,
+      "scenario_class": "version_freshness_disambiguation",
+      "source_family": "repositories_and_repository_webhooks"
+    },
+    {
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "evidence": [
+        {
+          "bm25_rank": 8,
+          "bm25_score": 22.755492566515436,
+          "byte_count": 927,
+          "candidate_rank": 49,
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "generic_rrf_rank": 49,
+          "generic_rrf_score": 0.016884531590413945,
+          "lexical_rank": 399,
+          "lexical_score": 0.3684210526315789,
+          "linked_operation_ids": [
+            "repos/accept-invitation-for-authenticated-user"
+          ],
+          "missed_top20": true,
+          "required": true,
+          "source_ids": [
+            "openapi-current-2026-03-10:repos/accept-invitation-for-authenticated-user"
+          ]
+        }
+      ],
+      "failure_class": "operation_core_unresolved_fallback_miss",
+      "generic_fallback_exact": true,
+      "gold_operation_ids": [
+        "repos/accept-invitation-for-authenticated-user"
+      ],
+      "gold_operation_in_runtime_catalog": true,
+      "missed_required_evidence_count": 1,
+      "query": "For the current Accept a repository invitation operation, which HTTP method and endpoint are used, and what status indicates success?",
+      "required_evidence_count": 1,
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null,
+      "scenario_class": "current_single_source_answerable",
+      "source_family": "repositories_and_repository_webhooks"
+    },
+    {
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "evidence": [
+        {
+          "bm25_rank": 31,
+          "bm25_score": 21.870272896466226,
+          "byte_count": 7475,
+          "candidate_rank": 27,
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-6fc744dee58c1b47dfa67cf1f3c95bc4e791320346e08158a29f8be891afc752",
+          "generic_rrf_rank": 27,
+          "generic_rrf_score": 0.022893772893772896,
+          "lexical_rank": 24,
+          "lexical_score": 0.4375,
+          "linked_operation_ids": [],
+          "missed_top20": true,
+          "required": true,
+          "source_ids": [
+            "docs-troubleshooting"
+          ]
+        },
+        {
+          "bm25_rank": 2,
+          "bm25_score": 48.37104242886945,
+          "byte_count": 1952,
+          "candidate_rank": 5,
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-c302e7937061f7efe865d21345a74967955cdd60c1d86e84e99966fca1bd9440",
+          "generic_rrf_rank": 5,
+          "generic_rrf_score": 0.02946236559139785,
+          "lexical_rank": 15,
+          "lexical_score": 0.46875,
+          "linked_operation_ids": [],
+          "missed_top20": false,
+          "required": true,
+          "source_ids": [
+            "docs-troubleshooting"
+          ]
+        }
+      ],
+      "failure_class": "cross_cutting_companion_evidence_miss",
+      "generic_fallback_exact": true,
+      "gold_operation_ids": [],
+      "gold_operation_in_runtime_catalog": false,
+      "missed_required_evidence_count": 1,
+      "query": "A GitHub REST request first returns 404 because the client used an unsupported HTTP method, and repeated requests later hit a 403 or 429 rate-limit response. Explain both behaviours and the safe retry sequence.",
+      "required_evidence_count": 2,
+      "resolution_status": "unresolved",
+      "resolved_operation_id": null,
+      "scenario_class": "current_multi_evidence_answerable",
+      "source_family": "cross_cutting_rest_guidance"
+    }
+  ],
+  "cross_cutting_failure_case_count": 2,
+  "development_rejection_sha256": "21dd3c0e3c824c22232724bf52b5cc420eb41dff61ecc6833c164db24bf0441a",
+  "development_spent_for_future_confirmation": true,
+  "evidence_role": "development_diagnostic_only_spent_for_future_confirmation",
+  "failure_case_count": 4,
+  "failure_specific_case_ids_opened": true,
+  "failure_specific_development_evidence_opened": true,
+  "failure_specific_gold_opened": true,
+  "fresh_confirmation_freeze_sha256": "3eece77dd80a5ebfac8c91c486db5c4444fa87224f46bf644ddc9bd9d5275ce2",
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "new_candidate_executed": false,
+  "next_intervention_selected": false,
+  "operation_core_failure_case_count": 2,
+  "parameter_sweep_performed": false,
+  "provider_invoked": false,
+  "release_eligible": false,
+  "repeated_missing_evidence_case_count": 2,
+  "report_version": "phase5-post-reject-failure-localization-v1",
+  "resolved_failure_case_count": 0,
+  "semantic_runtime_configuration_selected": false,
+  "unique_missing_evidence_count": 3,
+  "unresolved_failure_case_count": 4
+}
