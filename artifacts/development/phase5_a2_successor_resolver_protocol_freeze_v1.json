@@ -1,0 +1,14 @@
+{
+  "b0_executed": false,
+  "candidate_executed": false,
+  "candidate_implemented": false,
+  "chaos_executed": false,
+  "held_out_outcomes_exposed": false,
+  "load_executed": false,
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_inspected": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "37af55f372cf3bc34c10c63ef1d215265f077fea0114b61059a508e0c99ad293",
+  "provider_invoked": false,
+  "receipt_version": "phase5-a2-successor-resolver-protocol-freeze-v1"
+}

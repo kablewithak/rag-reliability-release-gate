@@ -1,0 +1,112 @@
+{
+  "b0_executed": false,
+  "candidate_count": 1,
+  "candidate_executed": false,
+  "candidate_execution_authorized_at_protocol_freeze": false,
+  "candidate_implemented": false,
+  "chaos_executed": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "derivation": {
+    "action_derivation": "first_normalized_operation_token_after_namespace_from_runtime_catalog",
+    "action_morphology": "reuse_a1_catalog_action_inflection_normalization",
+    "activation_states": [
+      "ambiguous",
+      "unresolved"
+    ],
+    "already_resolved_baseline_result_preserved": true,
+    "exact_operation_match_preserved": true,
+    "full_signature_match_preserved": true,
+    "method_path_match_preserved": true,
+    "multiple_supported_operations_result": "ambiguous",
+    "namespace_derivation": "operation_id_prefix_before_slash",
+    "object_subresource_derivation": "remaining_normalized_operation_id_tokens_after_action_plus_literal_path_segments",
+    "object_subresource_normalization": "lowercase_separator_folding_without_semantic_synonym_expansion",
+    "partial_resolution_requires_action_evidence": true,
+    "partial_resolution_requires_namespace_evidence": true,
+    "partial_resolution_requires_object_or_subresource_evidence": true,
+    "path_parameter_placeholders_contribute_object_evidence": false,
+    "runtime_catalog_source": "frozen_phase3d_current_authoritative_openapi_operation_core_chunks",
+    "tie_break_by_rank_allowed": false,
+    "unique_supported_operation_required_for_resolution": true,
+    "zero_supported_operations_result": "unresolved"
+  },
+  "development_role": "diagnostic_only_spent_for_future_confirmation",
+  "development_suite_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835",
+  "experiment_id": "phase5-a2-object-subresource-resolver-v1",
+  "gate": {
+    "automatic_a3_authorized": false,
+    "baseline_readiness_review_required_after_a2": true,
+    "characterization_scope": [
+      "existing_resolver_fixed_fixtures",
+      "spent_development_answerable_cases"
+    ],
+    "development_false_confident_resolutions_allowed": 0,
+    "development_nondeterministic_resolutions_allowed": 0,
+    "fixed_fixture_expectation_mismatches_allowed": 0,
+    "fixed_fixture_false_confident_resolutions_allowed": 0,
+    "fixed_fixture_nondeterministic_resolutions_allowed": 0,
+    "invitation_target_case_count": 2,
+    "invitation_target_cases_required_correctly_resolved": 2,
+    "parameter_sweep_allowed": false,
+    "provider_calls_allowed": 0,
+    "run_validity_states": [
+      "VALID",
+      "INVALID"
+    ],
+    "scientific_disposition_states": [
+      "PASS",
+      "REJECT",
+      "INCONCLUSIVE"
+    ],
+    "stop_after_single_bounded_characterization": true
+  },
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "held_out_role": "sealed_final_release_evidence",
+  "held_out_suite_sha256": "32eb820989c35a372266ec293aa43efd4651147e833f68aeab8c896282f047f8",
+  "hypothesis": "namespace_action_and_generic_object_subresource_evidence_can_safely_disambiguate_operation_identity",
+  "load_executed": false,
+  "parent_a1_rejection_sha256": "2ad66ffeb2b86c2348789cdf8c19d55492bd8a0001871e0a2566d5829e92de88",
+  "parent_intervention_design_freeze_sha256": "5596e5f561f5bf19e2583666e9260feaa3ed00eef4a9ca5b2937042c318c2322",
+  "parent_intervention_design_protocol_sha256": "f5a607f0051fe14b417ce41e6d01359d9c686e3f754711a917293369a22f44b8",
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_freeze_sha256": "3eece77dd80a5ebfac8c91c486db5c4444fa87224f46bf644ddc9bd9d5275ce2",
+  "post_reject_confirmation_inspected": false,
+  "post_reject_confirmation_role": "sealed_independent_confirmation_not_authorized_for_a2_characterization",
+  "post_reject_confirmation_suite_sha256": "fde5b7005d9fa52dffff488b26224ebf90b7fcaaa6b443a55e136e01f397053c",
+  "protocol_version": "phase5-a2-successor-resolver-protocol-v1",
+  "provider_invoked": false,
+  "release_eligible": false,
+  "resolver_characterization_sha256": "8b342a210bf535bb0284e3611935d6e4b6e907e6000329c2c47021791648d7cc",
+  "retrieval_configuration_selected": false,
+  "runtime_evidence": {
+    "allowed_catalog_fields": [
+      "operation_id",
+      "path",
+      "method",
+      "summary",
+      "semantic_family"
+    ],
+    "forbidden_evaluator_fields": [
+      "gold_operation_id",
+      "required_evidence_ids",
+      "required_source_ids",
+      "expected_answer",
+      "case_role_as_truth",
+      "scoring_labels"
+    ],
+    "gold_operation_ids_allowed": false,
+    "hard_coded_invitation_target_allowed": false,
+    "held_out_content_allowed": false,
+    "post_reject_confirmation_content_allowed": false,
+    "query_specific_exceptions_allowed": false,
+    "runtime_input_fields": [
+      "query",
+      "runtime_operation_catalog"
+    ]
+  },
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "tuning_role": "intervention_tuning_and_regression_only",
+  "tuning_suite_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+}
