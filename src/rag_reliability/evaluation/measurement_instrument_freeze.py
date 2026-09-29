@@ -156,6 +156,35 @@ def _verified_sha256(path: Path) -> str:
     return digest
 
 
+def _assert_historical_v1_source_binding_is_still_valid(
+    repo_root: Path,
+) -> None:
+    """Fail closed before v1 can overwrite a historically frozen receipt."""
+
+    receipt_path = repo_root / _FREEZE_RECEIPT_PATH
+    _verified_sha256(receipt_path)
+
+    receipt = (
+        Phase5MeasurementInstrumentFreezeReceipt
+        .model_validate_json(
+            receipt_path.read_bytes()
+        )
+    )
+
+    current_source_sha256 = _sha256_file(
+        repo_root / _INSTRUMENT_SOURCE_PATH
+    )
+
+    if (
+        receipt.measurement_instrument_source_sha256
+        != current_source_sha256
+    ):
+        raise ValueError(
+            "historical v1 measurement freeze source binding mismatch; "
+            "preserve v1 and use the v2 source-binding correction"
+        )
+
+
 def materialize_phase5_measurement_instrument_freeze(
     repo_root: Path,
 ) -> tuple[
@@ -164,7 +193,11 @@ def materialize_phase5_measurement_instrument_freeze(
     Phase5MeasurementInstrumentFreezeReceipt,
     str,
 ]:
-    """Materialize exact instrument bytes and an external freeze receipt."""
+    """Materialize v1 only when its historical source binding still matches."""
+
+    _assert_historical_v1_source_binding_is_still_valid(
+        repo_root
+    )
 
     baseline_freeze_path = (
         repo_root
