@@ -1,0 +1,93 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_executed": false,
+  "candidate_execution_authorized_at_protocol_freeze": false,
+  "candidate_implemented": false,
+  "chaos_executed": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "composed_candidate_executed": false,
+  "composition_authorized": false,
+  "derivation": {
+    "activation_resolution_states": [
+      "ambiguous",
+      "unresolved"
+    ],
+    "anchor_selection": "highest_ranked_current_authoritative_authored_chunk_in_anchor_window",
+    "anchor_window": 5,
+    "base_ranking": "current_operation_aware_rrf_candidate",
+    "candidate_count": 1,
+    "maximum_anchor_sources": 1,
+    "ordering": "prefix_before_anchor_then_anchor_then_same_source_siblings_in_existing_order_then_rest",
+    "parameter_sweep_allowed": false,
+    "rescue_scope": "same_source_current_authoritative_authored_chunks_only",
+    "resolved_operation_ranking_unchanged": true,
+    "scores_unchanged": true
+  },
+  "development_suite_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835",
+  "experiment_id": "phase5-authored-source-companion-rescue-v1",
+  "gate": {
+    "automatic_composition_authorized": false,
+    "automatic_successor_experiment_authorized": false,
+    "baseline_readiness_review_required_after_companion": true,
+    "characterization_scope": [
+      "spent_development_answerable_cases",
+      "tuning_answerable_cases"
+    ],
+    "evaluator_leakage_tolerance": 0,
+    "fallback_nondeterminism_allowed": 0,
+    "previously_passing_development_k20_regressions_allowed": 0,
+    "provider_calls_allowed": 0,
+    "stop_after_single_bounded_characterization": true,
+    "target_case_ids": [
+      "phase4-dev-breaking-version-migration",
+      "phase4-dev-troubleshooting-method-and-rate-limit"
+    ],
+    "targeted_cross_cutting_failure_cases_required_k20": 2,
+    "tuning_k20_regressions_allowed": 0
+  },
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "held_out_suite_sha256": "32eb820989c35a372266ec293aa43efd4651147e833f68aeab8c896282f047f8",
+  "hypothesis": "multi_evidence_guidance_queries_need_bounded_same_source_companion_recall",
+  "load_executed": false,
+  "parent_a1_rejection_sha256": "2ad66ffeb2b86c2348789cdf8c19d55492bd8a0001871e0a2566d5829e92de88",
+  "parent_a2_rejection_sha256": "3a113bc0ac59820e36dc46e9028ace60bdef5f307f6ba76633d36cf25e4f7d13",
+  "parent_development_rejection_sha256": "21dd3c0e3c824c22232724bf52b5cc420eb41dff61ecc6833c164db24bf0441a",
+  "parent_failure_localization_sha256": "5ac9f4b6f7e117a1adf699496ae4d8f3a4e0de7874d597f90c75d8a282cc61d6",
+  "parent_intervention_design_protocol_sha256": "f5a607f0051fe14b417ce41e6d01359d9c686e3f754711a917293369a22f44b8",
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_freeze_sha256": "3eece77dd80a5ebfac8c91c486db5c4444fa87224f46bf644ddc9bd9d5275ce2",
+  "post_reject_confirmation_inspected": false,
+  "post_reject_confirmation_suite_sha256": "fde5b7005d9fa52dffff488b26224ebf90b7fcaaa6b443a55e136e01f397053c",
+  "promoted_retrieval_evidence_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "protocol_version": "phase5-source-companion-rescue-protocol-v1",
+  "provider_invoked": false,
+  "release_eligible": false,
+  "rrf_incumbent_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "runtime_boundary": {
+    "development_gold_available_to_candidate": false,
+    "forbidden_evaluator_fields": [
+      "required_source_ids",
+      "required_evidence_ids",
+      "gold_facts",
+      "expected_response_mode",
+      "gold_operation_id",
+      "scoring_labels",
+      "case_id_as_truth",
+      "post_run_evaluator_annotations"
+    ],
+    "held_out_content_allowed": false,
+    "post_reject_confirmation_content_allowed": false,
+    "runtime_input_fields": [
+      "query",
+      "current_ranked_retrieval",
+      "frozen_chunk_metadata"
+    ],
+    "target_case_ids_available_to_candidate": false,
+    "tuning_gold_available_to_candidate": false
+  },
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "tuning_suite_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+}
