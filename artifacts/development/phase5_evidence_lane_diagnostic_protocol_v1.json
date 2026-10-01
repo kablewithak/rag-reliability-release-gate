@@ -1,0 +1,117 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "boundary": {
+    "case_ids_used_for_runtime_routing": false,
+    "development_gold_used_for_diagnostic_scoring_only": true,
+    "diagnostic_query_inputs": [
+      "query",
+      "frozen_chunk_corpus",
+      "frozen_chunk_metadata"
+    ],
+    "evaluator_fields_allowed_only_after_all_lane_rankings_exist": [
+      "required_evidence_ids",
+      "expected_response_mode",
+      "case_id",
+      "data_role"
+    ],
+    "evaluator_fields_passed_to_lane_retrievers": false,
+    "held_out_content_allowed": false,
+    "lane_partition_field": "chunk_kind",
+    "lane_selected_from_gold": false,
+    "lanes_executed_for_every_query": [
+      "authored_section",
+      "openapi_operation_core",
+      "openapi_component"
+    ],
+    "post_reject_confirmation_content_allowed": false,
+    "required_evidence_ids_used_for_runtime_routing": false,
+    "retrieval_algorithm": "existing_phase5_bm25_candidate_scoring",
+    "tuning_gold_used_for_diagnostic_scoring_only": true
+  },
+  "candidate_executed": false,
+  "candidate_implemented": false,
+  "chaos_executed": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "chunking_policy_changed": false,
+  "composition_authorized": false,
+  "corpus_mutated": false,
+  "decision_fork": {
+    "authored_failure_case_ids": [
+      "phase4-dev-breaking-version-migration",
+      "phase4-dev-troubleshooting-method-and-rate-limit"
+    ],
+    "authored_granularity_review_supported_when": "one_or_more_authored_failure_cases_remain_outside_native_lane_top20",
+    "baseline_readiness_review_required_after_diagnostic": true,
+    "diagnostic_may_authorize_candidate_implementation": false,
+    "diagnostic_may_select_runtime_configuration": false,
+    "failed_development_case_ids": [
+      "phase4-dev-breaking-version-migration",
+      "phase4-dev-repos-accept-invitation-current",
+      "phase4-dev-repos-accept-invitation-success",
+      "phase4-dev-troubleshooting-method-and-rate-limit"
+    ],
+    "operation_core_failure_case_ids": [
+      "phase4-dev-repos-accept-invitation-current",
+      "phase4-dev-repos-accept-invitation-success"
+    ],
+    "operation_representation_review_supported_when": "one_or_more_operation_core_failure_cases_remain_outside_native_lane_top20",
+    "stratified_retrieval_candidate_hypothesis_supported_when": "all_four_failed_development_cases_are_full_gold_within_native_lane_top20"
+  },
+  "development_suite_sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835",
+  "diagnostic_executed": false,
+  "diagnostic_id": "phase5-evidence-lane-native-bm25-diagnostic-v1",
+  "diagnostic_implemented": false,
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "held_out_suite_sha256": "32eb820989c35a372266ec293aa43efd4651147e833f68aeab8c896282f047f8",
+  "hypothesis": "cross_evidence_class_competition_contributes_to_remaining_retrieval_misses",
+  "load_executed": false,
+  "measurement": {
+    "candidate_ranking_emitted": false,
+    "characterization_scope": [
+      "spent_development_answerable_cases",
+      "tuning_answerable_cases"
+    ],
+    "compare_rank_surfaces": [
+      "global_bm25",
+      "global_operation_aware_rrf_incumbent",
+      "native_lane_bm25"
+    ],
+    "deterministic_repeat_count": 3,
+    "lane_fusion_emitted": false,
+    "lane_quota_emitted": false,
+    "native_lane_top_k_threshold": 20,
+    "parameter_sweep_allowed": false,
+    "required_per_case_measurements": [
+      "full_gold_global_incumbent_k20",
+      "full_gold_native_lane_k20"
+    ],
+    "required_per_evidence_measurements": [
+      "chunk_kind",
+      "global_bm25_rank",
+      "global_incumbent_rank",
+      "native_lane_bm25_rank",
+      "global_to_native_lane_rank_delta"
+    ]
+  },
+  "parent_a1_rejection_sha256": "2ad66ffeb2b86c2348789cdf8c19d55492bd8a0001871e0a2566d5829e92de88",
+  "parent_a2_rejection_sha256": "3a113bc0ac59820e36dc46e9028ace60bdef5f307f6ba76633d36cf25e4f7d13",
+  "parent_companion_rejection_sha256": "4997bb745e018ed69b24daad0062ccdb00b218bf66eabf33c1610a39f94e8f1b",
+  "parent_development_rejection_sha256": "21dd3c0e3c824c22232724bf52b5cc420eb41dff61ecc6833c164db24bf0441a",
+  "parent_failure_localization_sha256": "5ac9f4b6f7e117a1adf699496ae4d8f3a4e0de7874d597f90c75d8a282cc61d6",
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_freeze_sha256": "3eece77dd80a5ebfac8c91c486db5c4444fa87224f46bf644ddc9bd9d5275ce2",
+  "post_reject_confirmation_inspected": false,
+  "post_reject_confirmation_suite_sha256": "fde5b7005d9fa52dffff488b26224ebf90b7fcaaa6b443a55e136e01f397053c",
+  "promoted_retrieval_evidence_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "protocol_version": "phase5-evidence-lane-diagnostic-protocol-v1",
+  "provider_invoked": false,
+  "release_eligible": false,
+  "retrieval_configuration_selected": false,
+  "rrf_incumbent_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "tuning_suite_sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+}

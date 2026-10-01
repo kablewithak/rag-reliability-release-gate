@@ -1,0 +1,19 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_executed": false,
+  "candidate_implemented": false,
+  "chunking_policy_changed": false,
+  "composition_authorized": false,
+  "corpus_mutated": false,
+  "diagnostic_executed": false,
+  "diagnostic_implemented": false,
+  "held_out_outcomes_exposed": false,
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_inspected": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "b7b82810e224af452eaa9d8c23b4db8330857c2b1acc01eedbecc429bc458992",
+  "provider_invoked": false,
+  "receipt_version": "phase5-evidence-lane-diagnostic-protocol-freeze-v1",
+  "runtime_retriever_changed": false
+}
