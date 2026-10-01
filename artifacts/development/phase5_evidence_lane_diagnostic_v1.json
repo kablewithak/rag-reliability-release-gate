@@ -1,0 +1,743 @@
+{
+  "authored_failure_native_lane_recovered_count": 2,
+  "authored_granularity_review_supported": false,
+  "authored_lane_chunk_count": 26,
+  "automatic_candidate_implementation_authorized": false,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "baseline_readiness_review_required": true,
+  "candidate_executed": false,
+  "candidate_implemented": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "chunking_policy_changed": false,
+  "component_lane_chunk_count": 803,
+  "composition_authorized": false,
+  "corpus_mutated": false,
+  "deterministic_repeat_count": 3,
+  "development_answerable_case_count": 20,
+  "development_rejection_sha256": "21dd3c0e3c824c22232724bf52b5cc420eb41dff61ecc6833c164db24bf0441a",
+  "diagnostic_executed": true,
+  "diagnostic_implemented": true,
+  "evidence_class": "diagnostic_only",
+  "failed_development_case_count": 4,
+  "failed_development_native_lane_recovered_count": 4,
+  "failure_localization_sha256": "5ac9f4b6f7e117a1adf699496ae4d8f3a4e0de7874d597f90c75d8a282cc61d6",
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "nondeterministic_case_count": 0,
+  "observations": [
+    {
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 4,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-d694c138d0b2408b36c58947d94949887320b133b604f83157627a3d458410c7",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 4,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-9367992c420cc80d42b78e7129457783f233c67f35787f35c04d1096f8f5f99b",
+          "global_bm25_rank": 6,
+          "global_incumbent_rank": 9,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 6
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-9367992c420cc80d42b78e7129457783f233c67f35787f35c04d1096f8f5f99b",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-api-version-current-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-983a0027263f77cae71fe270dd205876fd7df230c10e5b64d2d069352dc1e97d",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-099035e853588f6d8e3d3e13466602b62f7366fe77f3f99d48f8a53c0fd435ce",
+          "global_bm25_rank": 3,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 2,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-breaking-version-migration",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-099035e853588f6d8e3d3e13466602b62f7366fe77f3f99d48f8a53c0fd435ce",
+          "global_bm25_rank": 3,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 1,
+          "native_lane_bm25_rank": 2
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-cf790cc8a7edd6efb9809f062aa0c37c593a47c61d41148a5ff769aecdc1d919",
+          "global_bm25_rank": 4,
+          "global_incumbent_rank": 37,
+          "global_to_native_lane_rank_delta": -2,
+          "native_lane_bm25_rank": 6
+        }
+      ],
+      "full_gold_global_incumbent_k20": false,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": true,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-issues-add-assignees",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-db26bf1f3b7de296c0851a148250427f380b5c18b32e5662922d579b158be8bb",
+          "global_bm25_rank": 7,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 4,
+          "native_lane_bm25_rank": 3
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-818a2d7af95a38d5ffd8d96869fbd8198cb399d3e2e8c55900c85770cf07a1d9",
+          "global_bm25_rank": 43,
+          "global_incumbent_rank": 4,
+          "global_to_native_lane_rank_delta": 22,
+          "native_lane_bm25_rank": 21
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": false,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-181c3fb39ae34ec7ece304c0896c9e1c80ebe919cb47ee0beb7d43a1795e9e12",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": -1,
+          "native_lane_bm25_rank": 2
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-b549d8c7ee35b3cadf0a2abfd4e82db27c7d4de5876a2a6f401ac5fc469da40b",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 1,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-181c3fb39ae34ec7ece304c0896c9e1c80ebe919cb47ee0beb7d43a1795e9e12",
+          "global_bm25_rank": 3,
+          "global_incumbent_rank": 4,
+          "global_to_native_lane_rank_delta": 2,
+          "native_lane_bm25_rank": 1
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-b549d8c7ee35b3cadf0a2abfd4e82db27c7d4de5876a2a6f401ac5fc469da40b",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": -1,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-pulls-create-authority",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-e8fc96fbaa45f2c119f5c6ebb463aa1f2185ef34a62d159f349d65c167f4caca",
+          "global_bm25_rank": 6,
+          "global_incumbent_rank": 7,
+          "global_to_native_lane_rank_delta": 2,
+          "native_lane_bm25_rank": 4
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-pulls-create-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-e8fc96fbaa45f2c119f5c6ebb463aa1f2185ef34a62d159f349d65c167f4caca",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-dfd55afaa0a00a80b6074c48a0605b597cb4aabe4060b7d06eb3020d245a0dcb",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "global_bm25_rank": 6,
+          "global_incumbent_rank": 45,
+          "global_to_native_lane_rank_delta": 5,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": false,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": true,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-ede821e5fd4be2c5bc48ef65d813c5b920a05a004a017e5efbe55fde9b584d89",
+          "global_bm25_rank": 8,
+          "global_incumbent_rank": 49,
+          "global_to_native_lane_rank_delta": 4,
+          "native_lane_bm25_rank": 4
+        }
+      ],
+      "full_gold_global_incumbent_k20": false,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": true,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-04e27893cade7a2cb64b06cc387db4cefb1c887db971ddfdc6082b8c136a206b",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-04e27893cade7a2cb64b06cc387db4cefb1c887db971ddfdc6082b8c136a206b",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-6fc744dee58c1b47dfa67cf1f3c95bc4e791320346e08158a29f8be891afc752",
+          "global_bm25_rank": 31,
+          "global_incumbent_rank": 27,
+          "global_to_native_lane_rank_delta": 24,
+          "native_lane_bm25_rank": 7
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-c302e7937061f7efe865d21345a74967955cdd60c1d86e84e99966fca1bd9440",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 5,
+          "global_to_native_lane_rank_delta": -2,
+          "native_lane_bm25_rank": 4
+        }
+      ],
+      "full_gold_global_incumbent_k20": false,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": true,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-6fc744dee58c1b47dfa67cf1f3c95bc4e791320346e08158a29f8be891afc752",
+          "global_bm25_rank": 3,
+          "global_incumbent_rank": 3,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 3
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-8dd06f9776710075a0304ff05e06d9c104a0eea6e99e20b7be4e1ac5187d4f27",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "development"
+    },
+    {
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "global_bm25_rank": 5,
+          "global_incumbent_rank": 9,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 5
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-c17c181dc4ea53ab06b9afd42b1371e4c84991ee1e799c7cd8fd0a8f071f3fa6",
+          "global_bm25_rank": 3,
+          "global_incumbent_rank": 5,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 3
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-5d04e2ccdfe8bd57d67d12bda6baf3a623435b28c003f2661238c6998b696dda",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "global_bm25_rank": 6,
+          "global_incumbent_rank": 5,
+          "global_to_native_lane_rank_delta": 1,
+          "native_lane_bm25_rank": 5
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-9acc16505e9259b57c6bbb30df45d6a4cbcf321495bf593087e573552ce437d0",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 4,
+          "global_to_native_lane_rank_delta": -1,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-0866e576fcc08a7d8b93d77a2710ca186b1b7ab008a0c3332a53230283b04136",
+          "global_bm25_rank": 40,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 24,
+          "native_lane_bm25_rank": 16
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-credential-method-scope",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-credential-remediation",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-e2c15dc4625f251c70f2cdb31eec44532a56c5300292d61dddc6f3010184a0fb",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-f195cc3e0ba24c3ae8273d49e92e001fac39dcfd9fa3a7eafad7a7f95ff85781",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-rate-primary-status",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-90aa40f5585c27ad415f5b18364968bc333a802224510c4f5a464ae4eb591f3e",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": -1,
+          "native_lane_bm25_rank": 2
+        },
+        {
+          "chunk_kind": "authored_section",
+          "evidence_id": "chunk-98db24aebd4add7d628a9b2f602393c6db25f6ab0d6ed8a467964b0bb2dcdcf5",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 1,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-dce9a384052fb0b5e660fcf172f8457b8e00d415535f2f845a4cda06dbca9afb",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-update-pull-scope",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-3b49054d748e4cfbf79ad140015fe2c6d73db66c9185f434fbced3a37c84d285",
+          "global_bm25_rank": 2,
+          "global_incumbent_rank": 2,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 2
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "global_bm25_rank": 12,
+          "global_incumbent_rank": 16,
+          "global_to_native_lane_rank_delta": 8,
+          "native_lane_bm25_rank": 4
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    },
+    {
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "deterministic_across_repeats": true,
+      "evidence": [
+        {
+          "chunk_kind": "openapi_operation_core",
+          "evidence_id": "chunk-2662bbb46cac69cfc201f58fa703962df5571ff6ac684e765137368268f351f5",
+          "global_bm25_rank": 1,
+          "global_incumbent_rank": 1,
+          "global_to_native_lane_rank_delta": 0,
+          "native_lane_bm25_rank": 1
+        }
+      ],
+      "full_gold_global_incumbent_k20": true,
+      "full_gold_native_lane_k20": true,
+      "previously_failed_development_case": false,
+      "role": "tuning"
+    }
+  ],
+  "operation_core_failure_native_lane_recovered_count": 2,
+  "operation_core_lane_chunk_count": 504,
+  "operation_representation_review_supported": false,
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_inspected": false,
+  "promoted_retrieval_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "protocol_freeze_sha256": "80a1fd5fa970d3bd1d8a8ada8d77eed1f25349c95769d7f1932d81d47c237081",
+  "protocol_sha256": "b7b82810e224af452eaa9d8c23b4db8330857c2b1acc01eedbecc429bc458992",
+  "provider_invoked": false,
+  "release_eligible": false,
+  "report_version": "phase5-evidence-lane-diagnostic-v1",
+  "retrieval_configuration_selected": false,
+  "rrf_incumbent_sha256": "b9fe4f071d77e6ff56c0066c16f4f79f8da149f55cf82850e98549d6dd034179",
+  "run_validity": "VALID",
+  "runtime_retriever_changed": false,
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "stratified_retrieval_candidate_hypothesis_supported": true,
+  "tuning_answerable_case_count": 15
+}
