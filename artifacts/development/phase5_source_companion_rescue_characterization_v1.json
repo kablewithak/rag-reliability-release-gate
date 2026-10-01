@@ -1,0 +1,659 @@
+{
+  "automatic_composition_authorized": false,
+  "automatic_successor_experiment_authorized": false,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "baseline_readiness_review_required": true,
+  "candidate_executed": true,
+  "candidate_implemented": true,
+  "changed_case_count": 11,
+  "characterization_failures": [
+    "targeted_cross_cutting_cases_not_both_recovered_at_k20"
+  ],
+  "characterization_passed": false,
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "composed_candidate_executed": false,
+  "composition_authorized": false,
+  "deterministic_repeat_count": 3,
+  "development_answerable_case_count": 20,
+  "development_k20_regression_count": 0,
+  "development_rejection_sha256": "21dd3c0e3c824c22232724bf52b5cc420eb41dff61ecc6833c164db24bf0441a",
+  "evaluator_leakage_count": 0,
+  "failure_localization_sha256": "5ac9f4b6f7e117a1adf699496ae4d8f3a4e0de7874d597f90c75d8a282cc61d6",
+  "held_out_case_content_read": false,
+  "held_out_outcomes_exposed": false,
+  "nondeterministic_case_count": 0,
+  "observations": [
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        4
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        4
+      ],
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        4
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        4
+      ],
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        9
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        9
+      ],
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "ambiguous",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-dev-api-version-current-contract",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": false,
+      "baseline_required_evidence_ranks": [
+        2,
+        37
+      ],
+      "candidate_full_gold_k20": false,
+      "candidate_required_evidence_ranks": [
+        2,
+        37
+      ],
+      "case_id": "phase4-dev-breaking-version-migration",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": true
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-dev-issues-add-assignees",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        4
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        4
+      ],
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2,
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2,
+        1
+      ],
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        4,
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2,
+        1
+      ],
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        7
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        7
+      ],
+      "case_id": "phase4-dev-pulls-create-authority",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "ambiguous",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-dev-pulls-create-contract",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": false,
+      "baseline_required_evidence_ranks": [
+        45
+      ],
+      "candidate_full_gold_k20": false,
+      "candidate_required_evidence_ranks": [
+        45
+      ],
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": false,
+      "baseline_required_evidence_ranks": [
+        49
+      ],
+      "candidate_full_gold_k20": false,
+      "candidate_required_evidence_ranks": [
+        49
+      ],
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": false,
+      "baseline_required_evidence_ranks": [
+        27,
+        5
+      ],
+      "candidate_full_gold_k20": false,
+      "candidate_required_evidence_ranks": [
+        27,
+        5
+      ],
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": true
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        3,
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2,
+        1
+      ],
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "development",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        9
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        9
+      ],
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        5
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        5
+      ],
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "ambiguous",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1,
+        5
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1,
+        2
+      ],
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        4
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        6
+      ],
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-tuning-credential-method-scope",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-tuning-credential-remediation",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1,
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1,
+        2
+      ],
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1,
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1,
+        2
+      ],
+      "case_id": "phase4-tuning-rate-primary-status",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        2
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        2
+      ],
+      "case_id": "phase4-tuning-update-pull-scope",
+      "changed_vs_incumbent": false,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "resolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        16
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        18
+      ],
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    },
+    {
+      "baseline_full_gold_k20": true,
+      "baseline_required_evidence_ranks": [
+        1
+      ],
+      "candidate_full_gold_k20": true,
+      "candidate_required_evidence_ranks": [
+        1
+      ],
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "changed_vs_incumbent": true,
+      "deterministic_across_repeats": true,
+      "regressed_at_k20": false,
+      "resolution_status": "unresolved",
+      "role": "tuning",
+      "target_cross_cutting_case": false
+    }
+  ],
+  "post_reject_confirmation_executed": false,
+  "post_reject_confirmation_inspected": false,
+  "previously_passing_development_case_count": 16,
+  "promoted_retrieval_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "protocol_freeze_sha256": "72a9c461e0df2f2a8a72c3561d425bd2c434b3614baf79eecd2e3ade0b3eb90f",
+  "protocol_sha256": "885bb5727ecd9e3efd5fa19d520a2545715ddfb45c5d93012779e7fad90b6882",
+  "provider_call_count": 0,
+  "provider_invoked": false,
+  "release_eligible": false,
+  "report_version": "phase5-source-companion-rescue-characterization-v1",
+  "retrieval_configuration_selected": false,
+  "run_validity": "VALID",
+  "runtime_retriever_changed": false,
+  "scientific_disposition": "REJECT",
+  "semantic_runtime_configuration_frozen": false,
+  "semantic_runtime_configuration_selected": false,
+  "targeted_cross_cutting_case_count": 2,
+  "targeted_cross_cutting_cases_recovered_k20": 0,
+  "tuning_answerable_case_count": 15,
+  "tuning_k20_regression_count": 0
+}
