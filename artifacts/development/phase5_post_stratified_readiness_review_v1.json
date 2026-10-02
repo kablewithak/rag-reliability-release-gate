@@ -1,0 +1,65 @@
+{
+  "advance_to_g5k_runtime_provider_qualification": true,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "candidate_context_inclusion_regression_count": 0,
+  "candidate_failed_development_recovered_count": 1,
+  "candidate_full_gold_k20_case_count": 32,
+  "candidate_k20_regression_count": 0,
+  "candidate_micro_gold_recall_at_k20": "0.930233",
+  "candidate_nondeterministic_case_count": 0,
+  "candidate_refusal_or_fallback_regression_count": 0,
+  "candidate_required_evidence_reference_count": 43,
+  "candidate_retrieved_required_evidence_at_k20": 40,
+  "candidate_source_filter_regression_count": 0,
+  "causal_finding": "native_lane_recoverability_did_not_translate_to_sufficient_merged_rank_gain_under_equal_weight_rrf",
+  "causal_interpretation": "the_diagnostic_established_within_lane_signal_but_not_that_equal_weight_fusion_would_cross_the_runtime_top20_boundary",
+  "characterization_decision": "REJECT",
+  "characterization_sha256": "a7287440000c313ba305a08c8ac860605511345c6539d9c3a21df8c6fb7dd1ac",
+  "characterization_valid": true,
+  "diagnostic_failed_development_native_lane_recovered_count": 4,
+  "diagnostic_sha256": "bd3aa5893b7447fb91cf586dd2f2568e18fe6915d162bf2f04e43fad2c433b8e",
+  "failed_case_observations": [
+    {
+      "best_native_lane_rank": 6,
+      "candidate_full_gold_k20": false,
+      "candidate_minimum_raw_top_k": 27,
+      "case_id": "phase4-dev-breaking-version-migration",
+      "incumbent_minimum_raw_top_k": 37
+    },
+    {
+      "best_native_lane_rank": 1,
+      "candidate_full_gold_k20": true,
+      "candidate_minimum_raw_top_k": 17,
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "incumbent_minimum_raw_top_k": 45
+    },
+    {
+      "best_native_lane_rank": 4,
+      "candidate_full_gold_k20": false,
+      "candidate_minimum_raw_top_k": 25,
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "incumbent_minimum_raw_top_k": 49
+    },
+    {
+      "best_native_lane_rank": 7,
+      "candidate_full_gold_k20": false,
+      "candidate_minimum_raw_top_k": 21,
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "incumbent_minimum_raw_top_k": 27
+    }
+  ],
+  "further_retrieval_candidate_authorized": false,
+  "held_out_outcomes_exposed": false,
+  "incumbent_retained": true,
+  "post_reject_confirmation_inspected": false,
+  "protected_confirmation_authorized": false,
+  "provider_live_qualification_required": true,
+  "provider_live_qualification_satisfied": false,
+  "provider_profile_freeze_sha256": "2467146329874ddc02ba6740da90f52a0b53b5d945979fa3e7270c64021d445e",
+  "readiness_review_complete": true,
+  "rejected_candidate_selected": false,
+  "release_eligible": false,
+  "retrieval_optimization_status": "PAUSED_UNTIL_NEW_EVIDENCE",
+  "review_version": "phase5-post-stratified-readiness-review-v1"
+}
