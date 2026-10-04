@@ -1,0 +1,13 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "held_out_outcomes_exposed": false,
+  "implementation_started": false,
+  "protected_confirmation_authorized": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "8581d5a7382ef41c1dcd3cb9e2ca7b9951b79afa175b83327c7df6b20d762724",
+  "protocol_version": "phase5-g5k-runtime-qualification-protocol-v1",
+  "qualification_executed": false,
+  "receipt_version": "phase5-g5k-runtime-qualification-protocol-freeze-v1",
+  "release_eligible": false
+}
