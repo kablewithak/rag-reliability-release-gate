@@ -38,5 +38,5 @@ jobs:
       - name: Run Ruff
         run: python -m ruff check src tests
 
-      - name: Run mypy
-        run: python -m mypy src
+      - name: Run mypy for frozen Windows runtime
+        run: python -m mypy --platform win32 src
