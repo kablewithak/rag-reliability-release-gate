@@ -1,0 +1,283 @@
+{
+  "authorization_source_branch": "feat/phase5-g5m-b0-specimen-authorization-v1",
+  "authorization_source_commit_sha": "279fd7cf7180f603140d2eed5fe675d466c5937f",
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "case_ids_in_execution_order": [
+    "phase4-dev-api-version-current-contract",
+    "phase4-dev-api-version-future-unknown",
+    "phase4-dev-breaking-sarif-content-type-current",
+    "phase4-dev-breaking-version-migration",
+    "phase4-dev-pagination-manual-link-loop",
+    "phase4-dev-pagination-helper-vs-manual",
+    "phase4-dev-troubleshooting-method-and-rate-limit",
+    "phase4-dev-troubleshooting-private-resource-and-version",
+    "phase4-dev-actions-org-registration-token",
+    "phase4-dev-actions-org-registration-scope",
+    "phase4-dev-actions-repo-remove-token",
+    "phase4-dev-actions-repo-remove-scope",
+    "phase4-dev-issues-add-assignees",
+    "phase4-dev-issues-add-assignees-instance-refusal",
+    "phase4-dev-issues-create-current-assignees",
+    "phase4-dev-issues-create-instance-refusal",
+    "phase4-dev-pulls-create-contract",
+    "phase4-dev-pulls-create-authority",
+    "phase4-dev-pulls-remove-reviewers-contract",
+    "phase4-dev-pulls-remove-reviewers-422-refusal",
+    "phase4-dev-repos-accept-invitation-current",
+    "phase4-dev-repos-accept-invitation-success",
+    "phase4-dev-repos-get-content-current-submodule",
+    "phase4-dev-repos-get-content-size-contract",
+    "phase4-tuning-auth-username-password-current",
+    "phase4-tuning-auth-saml-actions",
+    "phase4-tuning-credential-method-scope",
+    "phase4-tuning-credential-remediation",
+    "phase4-tuning-rate-primary-status",
+    "phase4-tuning-rate-actions-secondary-retry",
+    "phase4-tuning-actions-repo-registration-scope",
+    "phase4-tuning-actions-repo-registration-token",
+    "phase4-tuning-workflow-dispatch-current-contract",
+    "phase4-tuning-workflow-dispatch-requirements",
+    "phase4-tuning-sub-issue-request-contract",
+    "phase4-tuning-sub-issue-media-response",
+    "phase4-tuning-pull-mergeable-null-refusal",
+    "phase4-tuning-pull-merge-commit-semantics",
+    "phase4-tuning-update-pull-422-refusal",
+    "phase4-tuning-update-pull-scope",
+    "phase4-tuning-create-in-org-451-refusal",
+    "phase4-tuning-create-in-org-current-451"
+  ],
+  "chaos_authorized": false,
+  "citation_validator_id": "exact-citation-v1",
+  "context_builder_id": "bounded-context-v1",
+  "context_max_characters": 69663,
+  "context_max_evidence_items": 15,
+  "development_case_count": 24,
+  "environment": {
+    "cache_warmup_policy": "runtime_initialized_once_per_batch_no_between_case_reset",
+    "environment_version": "phase5-b0-environment-reference-v1",
+    "execution_process_model": "fresh_process_per_batch_single_worker_sequential_cases",
+    "live_provider_calls_authorized": 0,
+    "live_provider_credentials_required": false,
+    "logical_cpu_count": 8,
+    "machine_architecture": "AMD64",
+    "os_release": "11",
+    "os_system": "Windows",
+    "os_version": "10.0.26100",
+    "perf_counter_implementation": "QueryPerformanceCounter()",
+    "perf_counter_monotonic": true,
+    "perf_counter_resolution_seconds": 1e-07,
+    "processor_identifier": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "python_build": [
+      "tags/v3.12.10:0cc8128",
+      "Apr  8 2025 12:21:36"
+    ],
+    "python_implementation": "CPython",
+    "python_version": "3.12.10",
+    "runtime_packages": [
+      {
+        "distribution": "pydantic",
+        "version": "2.13.5"
+      },
+      {
+        "distribution": "PyYAML",
+        "version": "6.0.3"
+      }
+    ],
+    "secrets_captured": false,
+    "total_physical_memory_bytes": 16922705920
+  },
+  "environment_sha256": "ef296bb60d581b5e71b5ba8b0ae26539d98c6dd86be03ce1a17e1130bec4e78d",
+  "evaluator_source_bindings": [
+    {
+      "path": "src/rag_reliability/evaluation/measurement_instrument.py",
+      "sha256": "72a718ef8b282c1c2d3e4e1d143222addcca777bd8ee159f51013a8a231a9a45"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/measurement_scoring.py",
+      "sha256": "0e0e6a334bf1b904fcf67db0852fd23c3cf57f0fd01f53c3e538763a2f59281d"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/measurement_aggregation.py",
+      "sha256": "62fce6d52291ec123be9880ae9145b2fff8408ac53c9b912d011b005102a6927"
+    }
+  ],
+  "fact_scoring_method_id": "evaluator_owned_fact_verdict_v1",
+  "fallback_policy_id": "safe-refusal-v1",
+  "fixture_coverage_sha256": "7a1c1de6b848e040cd64d9ffa59aadac6053554514bb97892c7c8aff8328d944",
+  "generation_is_context_sensitive": false,
+  "governance_artifact_bindings": [
+    {
+      "path": "artifacts/development/phase5_baseline_protocol_v1.json",
+      "sha256": "20637e8eaa598224c33fe83d223fcc5d031d2bfa577299c8cdff4ccfceb6cc19"
+    },
+    {
+      "path": "artifacts/development/phase5_baseline_protocol_freeze_v1.json",
+      "sha256": "a92845181c9fcd3c69b84a191f1288f4391431cae8f82fe6c520b0b2a07bf434"
+    },
+    {
+      "path": "artifacts/development/phase5_b0_replay_fixture_protocol_v1.json",
+      "sha256": "c39ddce45a8c1204e596740061943c5f1da370897f8522a0b1f30b75b17a200b"
+    },
+    {
+      "path": "artifacts/development/phase5_b0_replay_fixture_protocol_freeze_v1.json",
+      "sha256": "91f5bff1a1fe23308c26d00db0ba23d3146d9f1098361f40e688dc707e0008f3"
+    },
+    {
+      "path": "artifacts/development/phase5_b0_replay_fixture_coverage_v1.json",
+      "sha256": "7a1c1de6b848e040cd64d9ffa59aadac6053554514bb97892c7c8aff8328d944"
+    },
+    {
+      "path": "artifacts/development/phase5_g5k_runtime_qualification_v1.json",
+      "sha256": "678dcb0d6453e11cd8e2b9c71153ed8337d5b8a26fcd36d732d6e8eb05dcbe71"
+    },
+    {
+      "path": "artifacts/development/phase5_baseline_readiness_v1.json",
+      "sha256": "23e8957bb8aad66d6a2bdfcaeac9332ca609c2b293927dbc2fbaddd05bb2d38a"
+    },
+    {
+      "path": "artifacts/development/phase5_measurement_instrument_freeze_v2.json",
+      "sha256": "6249eb30e9c5986bba55b8d5adba22e62ae4df712c08b4e950b544962a19c932"
+    },
+    {
+      "path": "datasets/chunk_manifests/phase3d_chunk_manifest_v1.json",
+      "sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd"
+    },
+    {
+      "path": "artifacts/development/phase4c_development_cases_v1.json",
+      "sha256": "53f10fc7e74f5205e15efba28d76a0926901959115e3ef59a4987b1ff60ce835"
+    },
+    {
+      "path": "artifacts/development/phase4c_development_case_freeze_v1.json",
+      "sha256": "6deecc31195f3acefb0a6a47a650bf20e4f7606bac9131ff882126504dfbc1bc"
+    },
+    {
+      "path": "artifacts/development/phase4c_tuning_cases_v1.json",
+      "sha256": "82d91724499138b53924531aaaa344af4473a463cfa326f7795379d682af9c28"
+    },
+    {
+      "path": "artifacts/development/phase4c_tuning_case_freeze_v1.json",
+      "sha256": "ef0edfee6a71a7f294c22dcc17d9ecb657b200a100175a7ccd2c709a1e3f97f6"
+    }
+  ],
+  "held_out_included": false,
+  "intervention_authorized": false,
+  "orchestration_source_bindings": [
+    {
+      "path": "src/rag_reliability/evaluation/b0_authorization_models.py",
+      "sha256": "3304ee6f8c662db919f803d6eb35cbba8123a2c9e1a58fe685cf7d3b82725767"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/b0_execution_preflight.py",
+      "sha256": "a8e7bb45400866df88b87fcd15dd50e38562bc664ea9c5bbe4108302c151b2d1"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/b0_replay_fixture_materializer.py",
+      "sha256": "0d1d4386c365d8699070cee90ff7c7ac1e5f7a081b231c776e723b118369c45e"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/b0_runtime_projection.py",
+      "sha256": "a0d32098f6b8ca986e611fdbea866f89a23f826a8f782541bcd8c77e67c28851"
+    },
+    {
+      "path": "src/rag_reliability/evaluation/b0_specimen_authorization.py",
+      "sha256": "639fdc83212493a7d074f03bc94eeb946dcba953289ac18ddfae0cd06007f582"
+    }
+  ],
+  "output_custody_policy": "raw_execution_internal_evidence_vault_public_metadata_safe_derivatives_only",
+  "post_reject_confirmation_included": false,
+  "protected_outcomes_exposed": false,
+  "provider_mode": "query_keyed_scripted_response",
+  "provider_reaching_case_count": 42,
+  "release_eligible": false,
+  "replay_fixture_entry_count": 42,
+  "replay_fixture_sha256": "6755a24c0a859e43b70b4c8b0ec5fbc08540321db14989ab4ba330003d6da69a",
+  "retrieval_top_k": 20,
+  "runtime_configuration_id": "7399c9ef7cd6612eb8fc363602e9c45c74ca691acde257aa40d07cc4135642a2",
+  "runtime_source_bindings": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "05e0166bb62c171f5ae2a5e5d5976d7e2dd1cdec476b076f12e45a2f848f42a8"
+    },
+    {
+      "path": "src/rag_reliability/config/identity.py",
+      "sha256": "334be7341a527995c986d31ccd80a638c48b5755fa3c58dbdacd0c7ccb3f8d22"
+    },
+    {
+      "path": "src/rag_reliability/contracts/interfaces.py",
+      "sha256": "c5d3dc82faf60335262a7310b8dba7c4e4c2fec4b62b512ab8a3bfd242d2c5c0"
+    },
+    {
+      "path": "src/rag_reliability/contracts/runtime.py",
+      "sha256": "274acc4ace6009731dcd150b7f3f6ecf76489af2721f7486d13d9ccb8210f3e8"
+    },
+    {
+      "path": "src/rag_reliability/contracts/tracing.py",
+      "sha256": "f8c1f5e2a652741732e0f58c71cc464f8db9539df0bfe37e99500273e050272d"
+    },
+    {
+      "path": "src/rag_reliability/corpus/chunked.py",
+      "sha256": "de2fefb39f943f4b80f24d731155607c506d0f40800090c58c5ca48b9b315b7d"
+    },
+    {
+      "path": "src/rag_reliability/corpus/chunking.py",
+      "sha256": "2f700a1671193a158200dcbabf491531d295525bf8a28caf5ddbbab246bcd844"
+    },
+    {
+      "path": "src/rag_reliability/corpus/models.py",
+      "sha256": "e0377f74fbbc01250ed131067c1025951e7f5f87d2167938ac8dc5d152adf48d"
+    },
+    {
+      "path": "src/rag_reliability/runtime/citations.py",
+      "sha256": "8e6a82a7bd6806a05956fc75a3a1a5247c44a8ef81669986ec3110ed0259bd89"
+    },
+    {
+      "path": "src/rag_reliability/runtime/context.py",
+      "sha256": "629c187d777483fced4d2446d787ff2f56cbf7117168d7a2c3b1f411e4eb502d"
+    },
+    {
+      "path": "src/rag_reliability/runtime/errors.py",
+      "sha256": "979d27ced43612ec4e9cfa22b688e9c4254164c598b548568845eba0b91471c8"
+    },
+    {
+      "path": "src/rag_reliability/runtime/filtering.py",
+      "sha256": "b80aa9d62587b183f71bedd5ce96ac3de223418bf6a7ab38f7c7d994668fa95d"
+    },
+    {
+      "path": "src/rag_reliability/runtime/models.py",
+      "sha256": "f8f5418630afcf71ea8a0afa5f81fa93d64d1ebb58f11b86c5270585aa5cd6a0"
+    },
+    {
+      "path": "src/rag_reliability/runtime/operation_aware_ranking.py",
+      "sha256": "33b5c18f8e307732d876766b1afdfadf55977c2525b861691251fbdf72cae873"
+    },
+    {
+      "path": "src/rag_reliability/runtime/operation_aware_rrf_retriever.py",
+      "sha256": "05d6b025e4425400ddf0c1566f7c27f784522346c4f3133f2904cb53f0248a33"
+    },
+    {
+      "path": "src/rag_reliability/runtime/operation_catalog.py",
+      "sha256": "9c1cc325487477e76ce45772c5720949350acb5f5a73b179099db59e30fb1c2e"
+    },
+    {
+      "path": "src/rag_reliability/runtime/operation_resolution.py",
+      "sha256": "403b5c5276f0185a76b8802b57e7355daa7afa65e0f4b3901adca542c471fb46"
+    },
+    {
+      "path": "src/rag_reliability/runtime/pipeline.py",
+      "sha256": "dcaa34b80261a537711b5fb0599d48013ee9bc914ef470aa8afe60c582325063"
+    },
+    {
+      "path": "src/rag_reliability/runtime/provider.py",
+      "sha256": "d713aeea783406c91e474655b99dea5fc1e1ecb86a65ea17ca965c3e5bc22bdc"
+    },
+    {
+      "path": "src/rag_reliability/runtime/retrieval.py",
+      "sha256": "7eeb182958b2a5eba2c01d80233c282e6f0aa10b2d11b3c9e9401999a66ca6fb"
+    }
+  ],
+  "selected_retrieval_id": "phase5-operation-aware-rrf-stable-partition-v1",
+  "source_policy_id": "github-rest-current-v1",
+  "specimen_version": "phase5-b0-specimen-v1",
+  "tuning_case_count": 18
+}
