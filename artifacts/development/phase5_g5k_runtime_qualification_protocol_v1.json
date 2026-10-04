@@ -1,0 +1,78 @@
+{
+  "authorized_implementation_changes": [
+    "runtime_operation_aware_rrf_retriever_v1",
+    "pipeline_provider_timeout_terminalization",
+    "pipeline_provider_malformed_response_terminalization"
+  ],
+  "automatic_retry_tolerance": 0,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "baseline_protocol_freeze_sha256": "a92845181c9fcd3c69b84a191f1288f4391431cae8f82fe6c520b0b2a07bf434",
+  "chunk_manifest_sha256": "1b9f8dfa1c62b8e29592e7e2c85d4996e11ef57140e0ba96cd9d8ef930a263fd",
+  "context_budget_unit_id": "characters",
+  "context_builder_id": "bounded-context-v1",
+  "context_max_budget": 69663,
+  "context_max_evidence_items": 15,
+  "control_failure_tolerance": 0,
+  "evaluator_leakage_tolerance": 0,
+  "forbidden_runtime_evaluator_fields": [
+    "required_source_ids",
+    "required_evidence_ids",
+    "gold_facts",
+    "expected_response_mode_as_runtime_signal",
+    "gold_operation_id",
+    "scoring_labels",
+    "held_out_outcomes",
+    "post_run_evaluator_annotations"
+  ],
+  "held_out_outcomes_exposed": false,
+  "lane_a_generation_is_context_sensitive": false,
+  "lane_a_prohibited_claim_ids": [
+    "context_sensitive_generation",
+    "learned_model_reasoning_quality",
+    "glm_5_2_robustness_under_load",
+    "release_readiness"
+  ],
+  "lane_a_provider_mode": "query_keyed_scripted_response",
+  "lane_a_supported_claim_ids": [
+    "retrieval_behavior",
+    "filtering_behavior",
+    "context_selection_behavior",
+    "citation_validation_behavior",
+    "refusal_control_flow",
+    "trace_accounting"
+  ],
+  "lane_b_live_qualification_satisfied": true,
+  "lane_b_new_live_calls_authorized": 0,
+  "lane_b_provider_adapter_id": "openai-compatible-json-v1",
+  "lane_b_provider_model_id": "glm-5.2",
+  "measurement_freeze_v2_sha256": "6249eb30e9c5986bba55b8d5adba22e62ae4df712c08b4e950b544962a19c932",
+  "measurement_metric_count": 13,
+  "post_stratified_readiness_sha256": "2b7c316d532f27c852706944121ffa8bd35a45f6a395dd148094c65f265c18e9",
+  "protected_confirmation_authorized": false,
+  "protocol_status": "draft_unfrozen",
+  "protocol_version": "phase5-g5k-runtime-qualification-protocol-v1",
+  "query_only_parity_scope": "development_and_tuning_case_id_query_projection",
+  "release_eligible": false,
+  "required_control_checks": [
+    "selected_retriever_reference_parity_on_development_and_tuning_queries",
+    "supported_answer_full_path",
+    "source_policy_refusal_full_path",
+    "unsupported_citation_safe_refusal",
+    "provider_timeout_terminal_error",
+    "provider_malformed_response_terminal_error"
+  ],
+  "reranker_enabled": false,
+  "retrieval_parity_mismatch_tolerance": 0,
+  "runtime_projection_fields": [
+    "case_id",
+    "query"
+  ],
+  "scorer_applicability_matrix_required": true,
+  "selected_retrieval_evidence_sha256": "7888a6d79839b06b49aaa7e38878d4b19199bff973f806e53b05b15e1e011115",
+  "selected_retrieval_id": "phase5-operation-aware-rrf-stable-partition-v1",
+  "selected_retrieval_top_k": 20,
+  "semantic_provider_live_qualification_sha256": "44b115c8ad7d079daa224485e0a9ec73cf6b9f59312cc7493aaad0075d156963",
+  "semantic_provider_profile_freeze_sha256": "2467146329874ddc02ba6740da90f52a0b53b5d945979fa3e7270c64021d445e",
+  "source_policy_id": "github-rest-current-v1"
+}
