@@ -1,0 +1,790 @@
+{
+  "authorization_scope": "g5n_primary_then_g5o_replication_subject_to_valid_primary_custody",
+  "authorized_case_count": 42,
+  "b0_executed": false,
+  "baseline_execution_authorized": true,
+  "chaos_authorized": false,
+  "fixture_coverage_sha256": "7a1c1de6b848e040cd64d9ffa59aadac6053554514bb97892c7c8aff8328d944",
+  "held_out_outcomes_exposed": false,
+  "intervention_authorized": false,
+  "live_provider_calls_authorized": 0,
+  "maximum_total_case_starts": 84,
+  "post_merge_preflight_requires_clean_worktree": true,
+  "post_merge_preflight_requires_component_hash_match": true,
+  "post_merge_preflight_requires_environment_match": true,
+  "post_merge_preflight_requires_fixture_match": true,
+  "post_merge_preflight_requires_main": true,
+  "post_reject_confirmation_inspected": false,
+  "primary_must_complete_before_replication": true,
+  "primary_slot_count": 42,
+  "protected_case_execution_authorized": false,
+  "receipt_version": "phase5-b0-execution-authorization-v1",
+  "release_eligible": false,
+  "replacement_start_authorized": false,
+  "replay_fixture_sha256": "6755a24c0a859e43b70b4c8b0ec5fbc08540321db14989ab4ba330003d6da69a",
+  "replication_slot_count": 42,
+  "runtime_configuration_id": "7399c9ef7cd6612eb8fc363602e9c45c74ca691acde257aa40d07cc4135642a2",
+  "same_stage_failure_stop_count": 2,
+  "selective_rerun_authorized": false,
+  "slot_consumed_on_start": true,
+  "slots": [
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-api-version-current-contract",
+      "fixture_key_sha256": "cbdcbc4e8716745a2a9a64ccaed551e1e1c0548bb64c107030b5eaeebeade495",
+      "ordinal": 1,
+      "query_sha256": "cbdcbc4e8716745a2a9a64ccaed551e1e1c0548bb64c107030b5eaeebeade495",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-api-version-current-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-api-version-future-unknown",
+      "fixture_key_sha256": "d2937a59abc7740e5f7fd058e89ceb2806ff1b553a87768f8ef911e16a5520c3",
+      "ordinal": 2,
+      "query_sha256": "d2937a59abc7740e5f7fd058e89ceb2806ff1b553a87768f8ef911e16a5520c3",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-api-version-future-unknown"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "fixture_key_sha256": "e4c143ee353450e079ace66dfa6bd7c265c960e7ea9c8be92ce8fc1babfaaedd",
+      "ordinal": 3,
+      "query_sha256": "e4c143ee353450e079ace66dfa6bd7c265c960e7ea9c8be92ce8fc1babfaaedd",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-breaking-sarif-content-type-current"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-breaking-version-migration",
+      "fixture_key_sha256": "0867b9c053a8c7575285a3155cecfa5c181421cf80cd5cd6b414da7ab77a6071",
+      "ordinal": 4,
+      "query_sha256": "0867b9c053a8c7575285a3155cecfa5c181421cf80cd5cd6b414da7ab77a6071",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-breaking-version-migration"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "fixture_key_sha256": "f093860d2b2e5ca5df9f860bd6e161cd0651c53be7dc671dbedbff981daf86ac",
+      "ordinal": 5,
+      "query_sha256": "f093860d2b2e5ca5df9f860bd6e161cd0651c53be7dc671dbedbff981daf86ac",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pagination-manual-link-loop"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "fixture_key_sha256": "22ac4863c7c86751f436625a1fefef67ee44e974715544e9475e46038115b514",
+      "ordinal": 6,
+      "query_sha256": "22ac4863c7c86751f436625a1fefef67ee44e974715544e9475e46038115b514",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pagination-helper-vs-manual"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "fixture_key_sha256": "f54151a1c16449175593d03fac53fc1baac039f402781fa6a47750c0b92201bf",
+      "ordinal": 7,
+      "query_sha256": "f54151a1c16449175593d03fac53fc1baac039f402781fa6a47750c0b92201bf",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-troubleshooting-method-and-rate-limit"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "fixture_key_sha256": "f780838840588bd75f5ff24ae92f0ab4d903786c88a0f8c473a5addc085d02c1",
+      "ordinal": 8,
+      "query_sha256": "f780838840588bd75f5ff24ae92f0ab4d903786c88a0f8c473a5addc085d02c1",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-troubleshooting-private-resource-and-version"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "fixture_key_sha256": "672d2951c2095083e82ed24d8df8e514c14d617cb2c80435d70c856050cead5e",
+      "ordinal": 9,
+      "query_sha256": "672d2951c2095083e82ed24d8df8e514c14d617cb2c80435d70c856050cead5e",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-actions-org-registration-token"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "fixture_key_sha256": "a5426640bd767611837f2b020a4a15fa8e6d535039ee9cdc13a3d6e3f056df35",
+      "ordinal": 10,
+      "query_sha256": "a5426640bd767611837f2b020a4a15fa8e6d535039ee9cdc13a3d6e3f056df35",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-actions-org-registration-scope"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "fixture_key_sha256": "d138fd8b00dfc1a36061403b99047a4f99db4facf2de5274aee576dfacd7a9fd",
+      "ordinal": 11,
+      "query_sha256": "d138fd8b00dfc1a36061403b99047a4f99db4facf2de5274aee576dfacd7a9fd",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-actions-repo-remove-token"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "fixture_key_sha256": "12bc0523f0224841fc2c78501c1f112620bf5d7ccdee58fea46a1ec491514f26",
+      "ordinal": 12,
+      "query_sha256": "12bc0523f0224841fc2c78501c1f112620bf5d7ccdee58fea46a1ec491514f26",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-actions-repo-remove-scope"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-issues-add-assignees",
+      "fixture_key_sha256": "86ca2f320a7fdbba87fd8dad6c49ffa916dd9c15452a9c7c4d3c7f5ad90d7b2d",
+      "ordinal": 13,
+      "query_sha256": "86ca2f320a7fdbba87fd8dad6c49ffa916dd9c15452a9c7c4d3c7f5ad90d7b2d",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-issues-add-assignees"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-issues-add-assignees-instance-refusal",
+      "fixture_key_sha256": "3db51f9661c184b1054819c00369008901f24522f24e64ae32b0f3ec05f57c89",
+      "ordinal": 14,
+      "query_sha256": "3db51f9661c184b1054819c00369008901f24522f24e64ae32b0f3ec05f57c89",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-issues-add-assignees-instance-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "fixture_key_sha256": "c1423d5a7efd9b253db604a3c64f84607bfec91189fe599cfbd04791d6024254",
+      "ordinal": 15,
+      "query_sha256": "c1423d5a7efd9b253db604a3c64f84607bfec91189fe599cfbd04791d6024254",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-issues-create-current-assignees"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-issues-create-instance-refusal",
+      "fixture_key_sha256": "2394be845a4ae2958b253e5113fa9bc781ab025f54fbfbbc39784ac1e96a182d",
+      "ordinal": 16,
+      "query_sha256": "2394be845a4ae2958b253e5113fa9bc781ab025f54fbfbbc39784ac1e96a182d",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-issues-create-instance-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pulls-create-contract",
+      "fixture_key_sha256": "f7129e102c6d2d0d27ca9600aea4126ff0b085e252b6272b8eebf4feacf6828b",
+      "ordinal": 17,
+      "query_sha256": "f7129e102c6d2d0d27ca9600aea4126ff0b085e252b6272b8eebf4feacf6828b",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pulls-create-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pulls-create-authority",
+      "fixture_key_sha256": "0f997c3804c412e0e01e84ab5848b2a403a3477a9a99ad1716ed517e758753b8",
+      "ordinal": 18,
+      "query_sha256": "0f997c3804c412e0e01e84ab5848b2a403a3477a9a99ad1716ed517e758753b8",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pulls-create-authority"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "fixture_key_sha256": "13104111e941ca6d3514eaa19d7964c52322e2b9514908902eab263013281197",
+      "ordinal": 19,
+      "query_sha256": "13104111e941ca6d3514eaa19d7964c52322e2b9514908902eab263013281197",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pulls-remove-reviewers-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-pulls-remove-reviewers-422-refusal",
+      "fixture_key_sha256": "e268d6fe3734599860f60ef6e0d6e9cbcc1b8f16578c964f9ad7c2e551d4a60f",
+      "ordinal": 20,
+      "query_sha256": "e268d6fe3734599860f60ef6e0d6e9cbcc1b8f16578c964f9ad7c2e551d4a60f",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-pulls-remove-reviewers-422-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "fixture_key_sha256": "d35f1ccf1a4b411bac07eb6619dd40971e2fba5cfc3b7300aa3e6aa7813f5ce6",
+      "ordinal": 21,
+      "query_sha256": "d35f1ccf1a4b411bac07eb6619dd40971e2fba5cfc3b7300aa3e6aa7813f5ce6",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-repos-accept-invitation-current"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "fixture_key_sha256": "d47fdab31d46afe2ae30ac10577c33a2db9ebea90b6e4fb141182bfcb824baea",
+      "ordinal": 22,
+      "query_sha256": "d47fdab31d46afe2ae30ac10577c33a2db9ebea90b6e4fb141182bfcb824baea",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-repos-accept-invitation-success"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "fixture_key_sha256": "b97e5db291453089ea42891def19296c20500718de7593ca813b7d6553b04e85",
+      "ordinal": 23,
+      "query_sha256": "b97e5db291453089ea42891def19296c20500718de7593ca813b7d6553b04e85",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-repos-get-content-current-submodule"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "fixture_key_sha256": "2596fbd2ced29474795c5b390cea55579e79aeb29d02eef95e896a95d35ec0ba",
+      "ordinal": 24,
+      "query_sha256": "2596fbd2ced29474795c5b390cea55579e79aeb29d02eef95e896a95d35ec0ba",
+      "role": "evaluation_development_case",
+      "slot_id": "primary:phase4-dev-repos-get-content-size-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "fixture_key_sha256": "777930a729863339fba32c7762d85a90176094ede014b0a671db31da48266f24",
+      "ordinal": 25,
+      "query_sha256": "777930a729863339fba32c7762d85a90176094ede014b0a671db31da48266f24",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-auth-username-password-current"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "fixture_key_sha256": "1ad3dbab8e22b83d2308b4215327723ccd8e287becbe2fc3fac71eab041a59da",
+      "ordinal": 26,
+      "query_sha256": "1ad3dbab8e22b83d2308b4215327723ccd8e287becbe2fc3fac71eab041a59da",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-auth-saml-actions"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-credential-method-scope",
+      "fixture_key_sha256": "d9678f5b9e987c6e29c91ef8288c1ca4a6ecba9ea64615a52ade490fc0c6b8d7",
+      "ordinal": 27,
+      "query_sha256": "d9678f5b9e987c6e29c91ef8288c1ca4a6ecba9ea64615a52ade490fc0c6b8d7",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-credential-method-scope"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-credential-remediation",
+      "fixture_key_sha256": "3fdd05e01642c5145065ad256c57e8e080eebcc9324d095f3b5826f9be15bc49",
+      "ordinal": 28,
+      "query_sha256": "3fdd05e01642c5145065ad256c57e8e080eebcc9324d095f3b5826f9be15bc49",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-credential-remediation"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-rate-primary-status",
+      "fixture_key_sha256": "56034c8007ed13ce90c7ce17f60c96094458a3f10a98b50d6c0f302bf59b26e4",
+      "ordinal": 29,
+      "query_sha256": "56034c8007ed13ce90c7ce17f60c96094458a3f10a98b50d6c0f302bf59b26e4",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-rate-primary-status"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "fixture_key_sha256": "014b8164e9ddee0fd32d2f4403e4b71159e2b116d276bad57d6c72a0169c829a",
+      "ordinal": 30,
+      "query_sha256": "014b8164e9ddee0fd32d2f4403e4b71159e2b116d276bad57d6c72a0169c829a",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-rate-actions-secondary-retry"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "fixture_key_sha256": "72d3067ff9dba8c0193b8da2efd12566bcd749432daf895236e24a9a9a6b78cb",
+      "ordinal": 31,
+      "query_sha256": "72d3067ff9dba8c0193b8da2efd12566bcd749432daf895236e24a9a9a6b78cb",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-actions-repo-registration-scope"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "fixture_key_sha256": "53a8c74a07f583d736970f56671a25cbd368c841779e86791bac73a4504f5daa",
+      "ordinal": 32,
+      "query_sha256": "53a8c74a07f583d736970f56671a25cbd368c841779e86791bac73a4504f5daa",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-actions-repo-registration-token"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "fixture_key_sha256": "2458bdc5d1547b2d3140a53bcd3e2d34a7d007cc13af59bb69babfb35aef54cb",
+      "ordinal": 33,
+      "query_sha256": "2458bdc5d1547b2d3140a53bcd3e2d34a7d007cc13af59bb69babfb35aef54cb",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-workflow-dispatch-current-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "fixture_key_sha256": "401165098ef665f6f7f3e0d110ba331023ab4287be0e79271f3484b67e7c5fa7",
+      "ordinal": 34,
+      "query_sha256": "401165098ef665f6f7f3e0d110ba331023ab4287be0e79271f3484b67e7c5fa7",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-workflow-dispatch-requirements"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "fixture_key_sha256": "f93ff47593497337642c1a0ce7d6bf4ea4f5268d8f3dda4906ad5cd79079d3f6",
+      "ordinal": 35,
+      "query_sha256": "f93ff47593497337642c1a0ce7d6bf4ea4f5268d8f3dda4906ad5cd79079d3f6",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-sub-issue-request-contract"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "fixture_key_sha256": "e10efd107927635e59f21b996a7c0afde5ea08deaa204e46f42f3adabc5a038f",
+      "ordinal": 36,
+      "query_sha256": "e10efd107927635e59f21b996a7c0afde5ea08deaa204e46f42f3adabc5a038f",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-sub-issue-media-response"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-pull-mergeable-null-refusal",
+      "fixture_key_sha256": "d75e6864750b7497a6adf25f0a5fae29282d785e96f39f96bdbfbe34f7451323",
+      "ordinal": 37,
+      "query_sha256": "d75e6864750b7497a6adf25f0a5fae29282d785e96f39f96bdbfbe34f7451323",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-pull-mergeable-null-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "fixture_key_sha256": "67db06134382c48f80f1ca2252c237822a4512a1ce3914505eba64223ebe8e20",
+      "ordinal": 38,
+      "query_sha256": "67db06134382c48f80f1ca2252c237822a4512a1ce3914505eba64223ebe8e20",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-pull-merge-commit-semantics"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-update-pull-422-refusal",
+      "fixture_key_sha256": "6304fbaf3d3f2f9a68e108890e70bd8ff40630dfa9ed78e8d272aeb77f591880",
+      "ordinal": 39,
+      "query_sha256": "6304fbaf3d3f2f9a68e108890e70bd8ff40630dfa9ed78e8d272aeb77f591880",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-update-pull-422-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-update-pull-scope",
+      "fixture_key_sha256": "a2aeac333a4d663f8bdd4ee9ccd2e36fc3b54d359f6567f32ca82eaa0ee2bbbc",
+      "ordinal": 40,
+      "query_sha256": "a2aeac333a4d663f8bdd4ee9ccd2e36fc3b54d359f6567f32ca82eaa0ee2bbbc",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-update-pull-scope"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-create-in-org-451-refusal",
+      "fixture_key_sha256": "701a828aa1364681ab729378d9141d1e0ecde847a4e55da23aae722bc17c86f6",
+      "ordinal": 41,
+      "query_sha256": "701a828aa1364681ab729378d9141d1e0ecde847a4e55da23aae722bc17c86f6",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-create-in-org-451-refusal"
+    },
+    {
+      "arm": "primary",
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "fixture_key_sha256": "97489588d71c3ea19369ed09c1e52e4238344caadcfd4497fee675524dc2210d",
+      "ordinal": 42,
+      "query_sha256": "97489588d71c3ea19369ed09c1e52e4238344caadcfd4497fee675524dc2210d",
+      "role": "intervention_tuning_case",
+      "slot_id": "primary:phase4-tuning-create-in-org-current-451"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-api-version-current-contract",
+      "fixture_key_sha256": "cbdcbc4e8716745a2a9a64ccaed551e1e1c0548bb64c107030b5eaeebeade495",
+      "ordinal": 1,
+      "query_sha256": "cbdcbc4e8716745a2a9a64ccaed551e1e1c0548bb64c107030b5eaeebeade495",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-api-version-current-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-api-version-future-unknown",
+      "fixture_key_sha256": "d2937a59abc7740e5f7fd058e89ceb2806ff1b553a87768f8ef911e16a5520c3",
+      "ordinal": 2,
+      "query_sha256": "d2937a59abc7740e5f7fd058e89ceb2806ff1b553a87768f8ef911e16a5520c3",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-api-version-future-unknown"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-breaking-sarif-content-type-current",
+      "fixture_key_sha256": "e4c143ee353450e079ace66dfa6bd7c265c960e7ea9c8be92ce8fc1babfaaedd",
+      "ordinal": 3,
+      "query_sha256": "e4c143ee353450e079ace66dfa6bd7c265c960e7ea9c8be92ce8fc1babfaaedd",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-breaking-sarif-content-type-current"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-breaking-version-migration",
+      "fixture_key_sha256": "0867b9c053a8c7575285a3155cecfa5c181421cf80cd5cd6b414da7ab77a6071",
+      "ordinal": 4,
+      "query_sha256": "0867b9c053a8c7575285a3155cecfa5c181421cf80cd5cd6b414da7ab77a6071",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-breaking-version-migration"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pagination-manual-link-loop",
+      "fixture_key_sha256": "f093860d2b2e5ca5df9f860bd6e161cd0651c53be7dc671dbedbff981daf86ac",
+      "ordinal": 5,
+      "query_sha256": "f093860d2b2e5ca5df9f860bd6e161cd0651c53be7dc671dbedbff981daf86ac",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pagination-manual-link-loop"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pagination-helper-vs-manual",
+      "fixture_key_sha256": "22ac4863c7c86751f436625a1fefef67ee44e974715544e9475e46038115b514",
+      "ordinal": 6,
+      "query_sha256": "22ac4863c7c86751f436625a1fefef67ee44e974715544e9475e46038115b514",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pagination-helper-vs-manual"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-troubleshooting-method-and-rate-limit",
+      "fixture_key_sha256": "f54151a1c16449175593d03fac53fc1baac039f402781fa6a47750c0b92201bf",
+      "ordinal": 7,
+      "query_sha256": "f54151a1c16449175593d03fac53fc1baac039f402781fa6a47750c0b92201bf",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-troubleshooting-method-and-rate-limit"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-troubleshooting-private-resource-and-version",
+      "fixture_key_sha256": "f780838840588bd75f5ff24ae92f0ab4d903786c88a0f8c473a5addc085d02c1",
+      "ordinal": 8,
+      "query_sha256": "f780838840588bd75f5ff24ae92f0ab4d903786c88a0f8c473a5addc085d02c1",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-troubleshooting-private-resource-and-version"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-actions-org-registration-token",
+      "fixture_key_sha256": "672d2951c2095083e82ed24d8df8e514c14d617cb2c80435d70c856050cead5e",
+      "ordinal": 9,
+      "query_sha256": "672d2951c2095083e82ed24d8df8e514c14d617cb2c80435d70c856050cead5e",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-actions-org-registration-token"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-actions-org-registration-scope",
+      "fixture_key_sha256": "a5426640bd767611837f2b020a4a15fa8e6d535039ee9cdc13a3d6e3f056df35",
+      "ordinal": 10,
+      "query_sha256": "a5426640bd767611837f2b020a4a15fa8e6d535039ee9cdc13a3d6e3f056df35",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-actions-org-registration-scope"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-actions-repo-remove-token",
+      "fixture_key_sha256": "d138fd8b00dfc1a36061403b99047a4f99db4facf2de5274aee576dfacd7a9fd",
+      "ordinal": 11,
+      "query_sha256": "d138fd8b00dfc1a36061403b99047a4f99db4facf2de5274aee576dfacd7a9fd",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-actions-repo-remove-token"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-actions-repo-remove-scope",
+      "fixture_key_sha256": "12bc0523f0224841fc2c78501c1f112620bf5d7ccdee58fea46a1ec491514f26",
+      "ordinal": 12,
+      "query_sha256": "12bc0523f0224841fc2c78501c1f112620bf5d7ccdee58fea46a1ec491514f26",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-actions-repo-remove-scope"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-issues-add-assignees",
+      "fixture_key_sha256": "86ca2f320a7fdbba87fd8dad6c49ffa916dd9c15452a9c7c4d3c7f5ad90d7b2d",
+      "ordinal": 13,
+      "query_sha256": "86ca2f320a7fdbba87fd8dad6c49ffa916dd9c15452a9c7c4d3c7f5ad90d7b2d",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-issues-add-assignees"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-issues-add-assignees-instance-refusal",
+      "fixture_key_sha256": "3db51f9661c184b1054819c00369008901f24522f24e64ae32b0f3ec05f57c89",
+      "ordinal": 14,
+      "query_sha256": "3db51f9661c184b1054819c00369008901f24522f24e64ae32b0f3ec05f57c89",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-issues-add-assignees-instance-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-issues-create-current-assignees",
+      "fixture_key_sha256": "c1423d5a7efd9b253db604a3c64f84607bfec91189fe599cfbd04791d6024254",
+      "ordinal": 15,
+      "query_sha256": "c1423d5a7efd9b253db604a3c64f84607bfec91189fe599cfbd04791d6024254",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-issues-create-current-assignees"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-issues-create-instance-refusal",
+      "fixture_key_sha256": "2394be845a4ae2958b253e5113fa9bc781ab025f54fbfbbc39784ac1e96a182d",
+      "ordinal": 16,
+      "query_sha256": "2394be845a4ae2958b253e5113fa9bc781ab025f54fbfbbc39784ac1e96a182d",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-issues-create-instance-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pulls-create-contract",
+      "fixture_key_sha256": "f7129e102c6d2d0d27ca9600aea4126ff0b085e252b6272b8eebf4feacf6828b",
+      "ordinal": 17,
+      "query_sha256": "f7129e102c6d2d0d27ca9600aea4126ff0b085e252b6272b8eebf4feacf6828b",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pulls-create-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pulls-create-authority",
+      "fixture_key_sha256": "0f997c3804c412e0e01e84ab5848b2a403a3477a9a99ad1716ed517e758753b8",
+      "ordinal": 18,
+      "query_sha256": "0f997c3804c412e0e01e84ab5848b2a403a3477a9a99ad1716ed517e758753b8",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pulls-create-authority"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pulls-remove-reviewers-contract",
+      "fixture_key_sha256": "13104111e941ca6d3514eaa19d7964c52322e2b9514908902eab263013281197",
+      "ordinal": 19,
+      "query_sha256": "13104111e941ca6d3514eaa19d7964c52322e2b9514908902eab263013281197",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pulls-remove-reviewers-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-pulls-remove-reviewers-422-refusal",
+      "fixture_key_sha256": "e268d6fe3734599860f60ef6e0d6e9cbcc1b8f16578c964f9ad7c2e551d4a60f",
+      "ordinal": 20,
+      "query_sha256": "e268d6fe3734599860f60ef6e0d6e9cbcc1b8f16578c964f9ad7c2e551d4a60f",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-pulls-remove-reviewers-422-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-repos-accept-invitation-current",
+      "fixture_key_sha256": "d35f1ccf1a4b411bac07eb6619dd40971e2fba5cfc3b7300aa3e6aa7813f5ce6",
+      "ordinal": 21,
+      "query_sha256": "d35f1ccf1a4b411bac07eb6619dd40971e2fba5cfc3b7300aa3e6aa7813f5ce6",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-repos-accept-invitation-current"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-repos-accept-invitation-success",
+      "fixture_key_sha256": "d47fdab31d46afe2ae30ac10577c33a2db9ebea90b6e4fb141182bfcb824baea",
+      "ordinal": 22,
+      "query_sha256": "d47fdab31d46afe2ae30ac10577c33a2db9ebea90b6e4fb141182bfcb824baea",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-repos-accept-invitation-success"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-repos-get-content-current-submodule",
+      "fixture_key_sha256": "b97e5db291453089ea42891def19296c20500718de7593ca813b7d6553b04e85",
+      "ordinal": 23,
+      "query_sha256": "b97e5db291453089ea42891def19296c20500718de7593ca813b7d6553b04e85",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-repos-get-content-current-submodule"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-dev-repos-get-content-size-contract",
+      "fixture_key_sha256": "2596fbd2ced29474795c5b390cea55579e79aeb29d02eef95e896a95d35ec0ba",
+      "ordinal": 24,
+      "query_sha256": "2596fbd2ced29474795c5b390cea55579e79aeb29d02eef95e896a95d35ec0ba",
+      "role": "evaluation_development_case",
+      "slot_id": "replication:phase4-dev-repos-get-content-size-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-auth-username-password-current",
+      "fixture_key_sha256": "777930a729863339fba32c7762d85a90176094ede014b0a671db31da48266f24",
+      "ordinal": 25,
+      "query_sha256": "777930a729863339fba32c7762d85a90176094ede014b0a671db31da48266f24",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-auth-username-password-current"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-auth-saml-actions",
+      "fixture_key_sha256": "1ad3dbab8e22b83d2308b4215327723ccd8e287becbe2fc3fac71eab041a59da",
+      "ordinal": 26,
+      "query_sha256": "1ad3dbab8e22b83d2308b4215327723ccd8e287becbe2fc3fac71eab041a59da",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-auth-saml-actions"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-credential-method-scope",
+      "fixture_key_sha256": "d9678f5b9e987c6e29c91ef8288c1ca4a6ecba9ea64615a52ade490fc0c6b8d7",
+      "ordinal": 27,
+      "query_sha256": "d9678f5b9e987c6e29c91ef8288c1ca4a6ecba9ea64615a52ade490fc0c6b8d7",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-credential-method-scope"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-credential-remediation",
+      "fixture_key_sha256": "3fdd05e01642c5145065ad256c57e8e080eebcc9324d095f3b5826f9be15bc49",
+      "ordinal": 28,
+      "query_sha256": "3fdd05e01642c5145065ad256c57e8e080eebcc9324d095f3b5826f9be15bc49",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-credential-remediation"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-rate-primary-status",
+      "fixture_key_sha256": "56034c8007ed13ce90c7ce17f60c96094458a3f10a98b50d6c0f302bf59b26e4",
+      "ordinal": 29,
+      "query_sha256": "56034c8007ed13ce90c7ce17f60c96094458a3f10a98b50d6c0f302bf59b26e4",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-rate-primary-status"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-rate-actions-secondary-retry",
+      "fixture_key_sha256": "014b8164e9ddee0fd32d2f4403e4b71159e2b116d276bad57d6c72a0169c829a",
+      "ordinal": 30,
+      "query_sha256": "014b8164e9ddee0fd32d2f4403e4b71159e2b116d276bad57d6c72a0169c829a",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-rate-actions-secondary-retry"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-actions-repo-registration-scope",
+      "fixture_key_sha256": "72d3067ff9dba8c0193b8da2efd12566bcd749432daf895236e24a9a9a6b78cb",
+      "ordinal": 31,
+      "query_sha256": "72d3067ff9dba8c0193b8da2efd12566bcd749432daf895236e24a9a9a6b78cb",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-actions-repo-registration-scope"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-actions-repo-registration-token",
+      "fixture_key_sha256": "53a8c74a07f583d736970f56671a25cbd368c841779e86791bac73a4504f5daa",
+      "ordinal": 32,
+      "query_sha256": "53a8c74a07f583d736970f56671a25cbd368c841779e86791bac73a4504f5daa",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-actions-repo-registration-token"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-workflow-dispatch-current-contract",
+      "fixture_key_sha256": "2458bdc5d1547b2d3140a53bcd3e2d34a7d007cc13af59bb69babfb35aef54cb",
+      "ordinal": 33,
+      "query_sha256": "2458bdc5d1547b2d3140a53bcd3e2d34a7d007cc13af59bb69babfb35aef54cb",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-workflow-dispatch-current-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-workflow-dispatch-requirements",
+      "fixture_key_sha256": "401165098ef665f6f7f3e0d110ba331023ab4287be0e79271f3484b67e7c5fa7",
+      "ordinal": 34,
+      "query_sha256": "401165098ef665f6f7f3e0d110ba331023ab4287be0e79271f3484b67e7c5fa7",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-workflow-dispatch-requirements"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-sub-issue-request-contract",
+      "fixture_key_sha256": "f93ff47593497337642c1a0ce7d6bf4ea4f5268d8f3dda4906ad5cd79079d3f6",
+      "ordinal": 35,
+      "query_sha256": "f93ff47593497337642c1a0ce7d6bf4ea4f5268d8f3dda4906ad5cd79079d3f6",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-sub-issue-request-contract"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-sub-issue-media-response",
+      "fixture_key_sha256": "e10efd107927635e59f21b996a7c0afde5ea08deaa204e46f42f3adabc5a038f",
+      "ordinal": 36,
+      "query_sha256": "e10efd107927635e59f21b996a7c0afde5ea08deaa204e46f42f3adabc5a038f",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-sub-issue-media-response"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-pull-mergeable-null-refusal",
+      "fixture_key_sha256": "d75e6864750b7497a6adf25f0a5fae29282d785e96f39f96bdbfbe34f7451323",
+      "ordinal": 37,
+      "query_sha256": "d75e6864750b7497a6adf25f0a5fae29282d785e96f39f96bdbfbe34f7451323",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-pull-mergeable-null-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-pull-merge-commit-semantics",
+      "fixture_key_sha256": "67db06134382c48f80f1ca2252c237822a4512a1ce3914505eba64223ebe8e20",
+      "ordinal": 38,
+      "query_sha256": "67db06134382c48f80f1ca2252c237822a4512a1ce3914505eba64223ebe8e20",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-pull-merge-commit-semantics"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-update-pull-422-refusal",
+      "fixture_key_sha256": "6304fbaf3d3f2f9a68e108890e70bd8ff40630dfa9ed78e8d272aeb77f591880",
+      "ordinal": 39,
+      "query_sha256": "6304fbaf3d3f2f9a68e108890e70bd8ff40630dfa9ed78e8d272aeb77f591880",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-update-pull-422-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-update-pull-scope",
+      "fixture_key_sha256": "a2aeac333a4d663f8bdd4ee9ccd2e36fc3b54d359f6567f32ca82eaa0ee2bbbc",
+      "ordinal": 40,
+      "query_sha256": "a2aeac333a4d663f8bdd4ee9ccd2e36fc3b54d359f6567f32ca82eaa0ee2bbbc",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-update-pull-scope"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-create-in-org-451-refusal",
+      "fixture_key_sha256": "701a828aa1364681ab729378d9141d1e0ecde847a4e55da23aae722bc17c86f6",
+      "ordinal": 41,
+      "query_sha256": "701a828aa1364681ab729378d9141d1e0ecde847a4e55da23aae722bc17c86f6",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-create-in-org-451-refusal"
+    },
+    {
+      "arm": "replication",
+      "case_id": "phase4-tuning-create-in-org-current-451",
+      "fixture_key_sha256": "97489588d71c3ea19369ed09c1e52e4238344caadcfd4497fee675524dc2210d",
+      "ordinal": 42,
+      "query_sha256": "97489588d71c3ea19369ed09c1e52e4238344caadcfd4497fee675524dc2210d",
+      "role": "intervention_tuning_case",
+      "slot_id": "replication:phase4-tuning-create-in-org-current-451"
+    }
+  ],
+  "specimen_sha256": "5ce922230e8a09041c7ea6248ee0f4acf412182ee062c6a16a15b65668485986",
+  "supersedes_baseline_readiness_v1_sha256": "23e8957bb8aad66d6a2bdfcaeac9332ca609c2b293927dbc2fbaddd05bb2d38a"
+}
