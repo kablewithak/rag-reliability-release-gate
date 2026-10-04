@@ -1,0 +1,120 @@
+{
+  "advance_to_g5m_b0_selection": true,
+  "automatic_retries_added": false,
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "control_checks": [
+    {
+      "control_id": "selected_retriever_reference_parity_on_development_and_tuning_queries",
+      "passed": true
+    },
+    {
+      "control_id": "supported_answer_full_path",
+      "passed": true
+    },
+    {
+      "control_id": "source_policy_refusal_full_path",
+      "passed": true
+    },
+    {
+      "control_id": "unsupported_citation_safe_refusal",
+      "passed": true
+    },
+    {
+      "control_id": "provider_timeout_terminal_error",
+      "passed": true
+    },
+    {
+      "control_id": "provider_malformed_response_terminal_error",
+      "passed": true
+    }
+  ],
+  "development_query_count": 24,
+  "held_out_outcomes_exposed": false,
+  "lane_a_complete_runtime_qualified": true,
+  "lane_a_generation_is_context_sensitive": false,
+  "lane_a_provider_mode": "query_keyed_scripted_response",
+  "lane_b_live_qualification_bound": true,
+  "lane_b_model_id": "glm-5.2",
+  "lane_b_new_live_calls_executed": 0,
+  "post_reject_confirmation_deferred": true,
+  "protected_confirmation_authorized": false,
+  "protocol_freeze_sha256": "d0d89d485e53e0e115b4254c47b399b81a8c415c44bcd77fb28b0b93b087f185",
+  "protocol_sha256": "8581d5a7382ef41c1dcd3cb9e2ca7b9951b79afa175b83327c7df6b20d762724",
+  "qualification_decision": "PASS",
+  "receipt_version": "phase5-g5k-runtime-qualification-v1",
+  "release_eligible": false,
+  "retrieval_parity_case_count": 42,
+  "retrieval_parity_mismatch_count": 0,
+  "runtime_configuration_id": "7399c9ef7cd6612eb8fc363602e9c45c74ca691acde257aa40d07cc4135642a2",
+  "runtime_evaluator_separation_preserved": true,
+  "scorer_applicability": [
+    {
+      "applicable": true,
+      "interpretation": "Applicable to Lane A outputs with evaluator-owned correctness checks; not evidence of learned-model reasoning.",
+      "metric_id": "strict_answer_success"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable only through evaluator-owned post-run fact verdicts; the replay table is not an independent correctness scorer.",
+      "metric_id": "required_fact_satisfaction"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable post-run to retrieval output; gold evidence never enters runtime routing.",
+      "metric_id": "gold_recall_at_k"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable post-run to assembled context; evaluator truth remains outside runtime.",
+      "metric_id": "required_evidence_context_inclusion"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable to the declared exact-support citation validator and must not be generalized to semantic entailment.",
+      "metric_id": "claim_support"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable post-run against evaluator-owned required evidence.",
+      "metric_id": "citation_precision"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable post-run against evaluator-owned required evidence.",
+      "metric_id": "citation_recall"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable to deterministic refusal control flow.",
+      "metric_id": "correct_refusal"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable descriptively to Lane A answerable cases.",
+      "metric_id": "over_refusal"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable using the frozen failure taxonomy and earliest-supported failure rule.",
+      "metric_id": "critical_failure_count"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable to the complete deterministic pipeline trace.",
+      "metric_id": "trace_completeness"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable only to Lane A local runtime timing; it is not GLM-5.2 provider latency evidence.",
+      "metric_id": "latency_ms"
+    },
+    {
+      "applicable": true,
+      "interpretation": "Applicable to Lane A replay-provider invocation accounting.",
+      "metric_id": "provider_attempt_count"
+    }
+  ],
+  "selected_retrieval_id": "phase5-operation-aware-rrf-stable-partition-v1",
+  "tuning_query_count": 18
+}

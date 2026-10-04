@@ -38,6 +38,8 @@ from rag_reliability.runtime.errors import (
     CitationValidationExecutionError,
     ComponentConfigurationMismatchError,
     ContextBudgetExhaustedError,
+    ProviderMalformedResponseError,
+    ProviderTimeoutError,
     ReplayResponseNotFoundError,
     RetrievalExecutionError,
     SourcePolicyExecutionError,
@@ -226,7 +228,33 @@ class DeterministicRagPipeline:
             provider_response = await self._provider.generate(
                 ProviderRequest(query=case.query, context=context)
             )
-        except ReplayResponseNotFoundError:
+        except ProviderTimeoutError:
+            events.append(
+                self._event(
+                    case.case_id,
+                    len(events) + 1,
+                    TraceStage.PROVIDER_GENERATION,
+                    TraceStatus.ERROR,
+                    provider_start,
+                    error_code=RuntimeErrorCode.PROVIDER_TIMEOUT.value,
+                )
+            )
+            error_outcome = ErrorOutcome(
+                error_code=RuntimeErrorCode.PROVIDER_TIMEOUT,
+                message="Provider generation timed out.",
+                retryable=False,
+            )
+            return self._finish(
+                case,
+                started_at,
+                events,
+                error_outcome,
+                FailureLabel.PROVIDER_TIMEOUT,
+            )
+        except (
+            ReplayResponseNotFoundError,
+            ProviderMalformedResponseError,
+        ):
             events.append(
                 self._event(
                     case.case_id,
@@ -239,7 +267,7 @@ class DeterministicRagPipeline:
             )
             error_outcome = ErrorOutcome(
                 error_code=RuntimeErrorCode.PROVIDER_MALFORMED_RESPONSE,
-                message="Replay provider has no configured response for this query.",
+                message="Provider returned an unusable response.",
                 retryable=False,
             )
             return self._finish(
