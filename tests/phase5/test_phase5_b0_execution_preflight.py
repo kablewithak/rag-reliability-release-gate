@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import asyncio
+from functools import lru_cache
 from pathlib import Path
 
 import pytest
@@ -17,40 +19,58 @@ from rag_reliability.evaluation.b0_execution_preflight import (
 from rag_reliability.evaluation.b0_replay_fixture_materializer import (
     Phase5B0ReplayFixtureCoverageV1,
     Phase5B0ReplayFixtureV1,
+    _build_materialization,
 )
 from rag_reliability.evaluation.b0_runtime_projection import (
     Phase5B0RuntimeProjectionV1,
     load_phase5_b0_runtime_projection,
 )
 from rag_reliability.evaluation.b0_specimen_authorization import (
-    build_phase5_b0_specimen_and_authorization,
     load_coverage,
-    load_raw_fixture,
 )
 
 ROOT = Path(__file__).resolve().parents[2]
+_AUTHORIZATION_PATH = (
+    ROOT
+    / "artifacts"
+    / "development"
+    / "phase5_b0_execution_authorization_v1.json"
+)
 
 
-def _objects() -> tuple[
+@lru_cache(maxsize=1)
+def _ci_portable_objects() -> tuple[
     Phase5B0ExecutionAuthorizationV1,
     Phase5B0ReplayFixtureCoverageV1,
     Phase5B0ReplayFixtureV1,
     Phase5B0RuntimeProjectionV1,
     RuntimeCaseInput,
 ]:
-    _specimen, authorization = build_phase5_b0_specimen_and_authorization(
-        ROOT,
-        require_clean_tracked_worktree=False,
+    authorization = Phase5B0ExecutionAuthorizationV1.model_validate_json(
+        _AUTHORIZATION_PATH.read_bytes()
     )
     coverage = load_coverage(ROOT)
-    fixture = load_raw_fixture(ROOT)
+
+    fixture, rebuilt_coverage = asyncio.run(
+        _build_materialization(ROOT)
+    )
+
+    if fixture is None:
+        raise AssertionError("deterministic B0 fixture did not materialize in memory")
+
+    if rebuilt_coverage != coverage:
+        raise AssertionError(
+            "in-memory B0 coverage does not match tracked frozen coverage"
+        )
+
     projection = load_phase5_b0_runtime_projection(ROOT)
     case = projection.development.cases[0]
+
     return authorization, coverage, fixture, projection, case
 
 
 def test_primary_slot_preflight_passes_for_exact_authorized_case() -> None:
-    authorization, coverage, fixture, projection, case = _objects()
+    authorization, coverage, fixture, projection, case = _ci_portable_objects()
 
     slot = preflight_execution_slot_with_objects(
         authorization=authorization,
@@ -69,7 +89,7 @@ def test_primary_slot_preflight_passes_for_exact_authorized_case() -> None:
 
 
 def test_protected_role_is_rejected() -> None:
-    authorization, coverage, fixture, _projection, case = _objects()
+    authorization, coverage, fixture, _projection, case = _ci_portable_objects()
 
     with pytest.raises(B0AuthorizationError, match="unauthorized role"):
         preflight_execution_slot_with_objects(
@@ -86,7 +106,7 @@ def test_protected_role_is_rejected() -> None:
 
 
 def test_consumed_slot_is_rejected() -> None:
-    authorization, coverage, fixture, projection, case = _objects()
+    authorization, coverage, fixture, projection, case = _ci_portable_objects()
     slot_id = f"primary:{case.case_id}"
 
     with pytest.raises(B0AuthorizationError, match="already consumed"):
@@ -104,7 +124,7 @@ def test_consumed_slot_is_rejected() -> None:
 
 
 def test_exhausted_budget_is_rejected() -> None:
-    authorization, coverage, fixture, projection, case = _objects()
+    authorization, coverage, fixture, projection, case = _ci_portable_objects()
     started = {slot.slot_id for slot in authorization.slots}
 
     with pytest.raises(B0AuthorizationError, match="budget exhausted"):
@@ -122,7 +142,7 @@ def test_exhausted_budget_is_rejected() -> None:
 
 
 def test_replication_before_valid_primary_custody_is_rejected() -> None:
-    authorization, coverage, fixture, projection, case = _objects()
+    authorization, coverage, fixture, projection, case = _ci_portable_objects()
 
     with pytest.raises(B0AuthorizationError, match="valid, custodied G5N primary"):
         preflight_execution_slot_with_objects(
@@ -139,7 +159,7 @@ def test_replication_before_valid_primary_custody_is_rejected() -> None:
 
 
 def test_wrong_query_is_rejected_before_provider() -> None:
-    authorization, coverage, fixture, projection, case = _objects()
+    authorization, coverage, fixture, projection, case = _ci_portable_objects()
 
     with pytest.raises(B0AuthorizationError, match="query does not match"):
         preflight_execution_slot_with_objects(
