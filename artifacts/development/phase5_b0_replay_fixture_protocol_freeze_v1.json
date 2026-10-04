@@ -1,0 +1,13 @@
+{
+  "b0_executed": false,
+  "baseline_execution_authorized": false,
+  "fixture_authoring_executed": false,
+  "held_out_outcomes_exposed": false,
+  "post_reject_confirmation_inspected": false,
+  "protocol_frozen": true,
+  "protocol_sha256": "c39ddce45a8c1204e596740061943c5f1da370897f8522a0b1f30b75b17a200b",
+  "protocol_version": "phase5-b0-replay-fixture-protocol-v1",
+  "receipt_version": "phase5-b0-replay-fixture-protocol-freeze-v1",
+  "release_eligible": false,
+  "replay_fixture_materialized": false
+}
