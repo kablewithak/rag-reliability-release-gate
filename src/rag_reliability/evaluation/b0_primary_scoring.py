@@ -568,13 +568,16 @@ def _ordered_cases_and_clusters(
     tuple[EvaluationCase, ...],
     dict[str, str],
 ]:
-    combined = (
-        *development.records,
-        *tuning.records,
-    )
+    by_case: dict[str, EvaluationCase] = {}
+    cluster_by_case: dict[str, str] = {}
 
-    by_case = {record.case.case_id: record.case for record in combined}
-    cluster_by_case = {record.case.case_id: record.cluster_id for record in combined}
+    for development_record in development.records:
+        by_case[development_record.case.case_id] = development_record.case
+        cluster_by_case[development_record.case.case_id] = development_record.cluster_id
+
+    for tuning_record in tuning.records:
+        by_case[tuning_record.case.case_id] = tuning_record.case
+        cluster_by_case[tuning_record.case.case_id] = tuning_record.cluster_id
 
     expected_ids = specimen.case_ids_in_execution_order
 
