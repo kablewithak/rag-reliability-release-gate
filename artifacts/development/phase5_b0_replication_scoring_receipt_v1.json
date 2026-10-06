@@ -1,0 +1,494 @@
+{
+  "cluster_summaries": [
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-api-versions",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-breaking-changes",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "retrieval_miss"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-pagination",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-troubleshooting",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "citation_missing"
+        },
+        {
+          "count": 1,
+          "label": "retrieval_miss"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-org",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:actions/create-remove-token-for-repo",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:issues/add-assignees",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:issues/create",
+      "critical_failure_count": 2,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "citation_missing"
+        },
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:pulls/create",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:pulls/remove-requested-reviewers",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:repos/accept-invitation-for-authenticated-user",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "retrieval_miss"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:repos/get-content",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [],
+      "refusal_case_count": 0,
+      "role": "evaluation_development_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-authentication",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-credential-security",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "guidance:docs-rate-limits",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:actions/create-registration-token-for-repo",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 2,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:actions/create-workflow-dispatch",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "citation_missing"
+        }
+      ],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 2,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:issues/add-sub-issue",
+      "critical_failure_count": 0,
+      "primary_failure_counts": [],
+      "refusal_case_count": 0,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:pulls/get",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:pulls/update",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    },
+    {
+      "answer_case_count": 1,
+      "case_count": 2,
+      "classification_complete": true,
+      "cluster_id": "openapi-pair:repos/create-in-org",
+      "critical_failure_count": 1,
+      "primary_failure_counts": [
+        {
+          "count": 1,
+          "label": "unsafe_answer"
+        }
+      ],
+      "refusal_case_count": 1,
+      "role": "intervention_tuning_case",
+      "trace_complete": true
+    }
+  ],
+  "development_case_count": 24,
+  "evaluator_provenance": "OpenAI GPT-5.6 Sol fresh semantic adjudication of immutable G5O fact template SHA256 1dc6cf1d28f6104d5ea7793f5c682d4948d300d80765adead6c773e584581e7d on 2026-10-06",
+  "evaluator_truth_joined_after_execution": true,
+  "evidence_class": "b0_replication_scoring",
+  "evidence_valid": true,
+  "execution_commit_sha": "edb8449ff101aa2192bbcdbe4b6f9cf2fef13623",
+  "expected_case_count": 42,
+  "fact_assessment_package_sha256": "5adc8e93c07d0623a3e66aef6ec8d2d9e1722ec2893f6ac17f616dd2553ec63c",
+  "held_out_outcomes_exposed": false,
+  "integrity": {
+    "all_passed": true,
+    "classification_complete_pass": true,
+    "configuration_identity_pass": true,
+    "evaluator_leakage_tolerance_pass": true,
+    "held_out_outcomes_exposed": false,
+    "role_reconciliation_pass": true,
+    "terminal_record_reconciliation_pass": true,
+    "trace_completeness_pass": true
+  },
+  "live_provider_call_count": 0,
+  "metric_aggregates": [
+    {
+      "aggregation": "binary_case_rate",
+      "applicable_case_count": 35,
+      "denominator": 35,
+      "metric_id": "strict_answer_success",
+      "numerator": 15.0,
+      "value": 0.42857142857142855
+    },
+    {
+      "aggregation": "micro_rate",
+      "applicable_case_count": 35,
+      "denominator": 112,
+      "metric_id": "required_fact_satisfaction",
+      "numerator": 64.0,
+      "value": 0.5714285714285714
+    },
+    {
+      "aggregation": "micro_rate",
+      "applicable_case_count": 35,
+      "denominator": 43,
+      "metric_id": "gold_recall_at_k",
+      "numerator": 39.0,
+      "value": 0.9069767441860465
+    },
+    {
+      "aggregation": "micro_rate",
+      "applicable_case_count": 35,
+      "denominator": 43,
+      "metric_id": "required_evidence_context_inclusion",
+      "numerator": 39.0,
+      "value": 0.9069767441860465
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "applicable_case_count": 35,
+      "denominator": 35,
+      "metric_id": "claim_support",
+      "numerator": 35.0,
+      "value": 1.0
+    },
+    {
+      "aggregation": "macro_ratio",
+      "applicable_case_count": 35,
+      "denominator": 35,
+      "metric_id": "citation_precision",
+      "numerator": 35.0,
+      "value": 1.0
+    },
+    {
+      "aggregation": "macro_ratio",
+      "applicable_case_count": 35,
+      "denominator": 35,
+      "metric_id": "citation_recall",
+      "numerator": 18.0,
+      "value": 0.5142857142857142
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "applicable_case_count": 7,
+      "denominator": 7,
+      "metric_id": "correct_refusal",
+      "numerator": 0.0,
+      "value": 0.0
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "applicable_case_count": 35,
+      "denominator": 35,
+      "metric_id": "over_refusal",
+      "numerator": 0.0,
+      "value": 0.0
+    },
+    {
+      "aggregation": "count",
+      "applicable_case_count": 42,
+      "denominator": null,
+      "metric_id": "critical_failure_count",
+      "numerator": 15.0,
+      "value": 15.0
+    },
+    {
+      "aggregation": "binary_case_rate",
+      "applicable_case_count": 42,
+      "denominator": 42,
+      "metric_id": "trace_completeness",
+      "numerator": 42.0,
+      "value": 1.0
+    },
+    {
+      "aggregation": "mean",
+      "applicable_case_count": 42,
+      "denominator": 42,
+      "metric_id": "latency_ms",
+      "numerator": 8869.097101734951,
+      "value": 211.16897861273694
+    },
+    {
+      "aggregation": "mean",
+      "applicable_case_count": 42,
+      "denominator": 42,
+      "metric_id": "provider_attempt_count",
+      "numerator": 42.0,
+      "value": 1.0
+    }
+  ],
+  "observed_case_count": 42,
+  "post_reject_confirmation_inspected": false,
+  "primary_failure_counts": [
+    {
+      "count": 16,
+      "label": "citation_missing"
+    },
+    {
+      "count": 4,
+      "label": "retrieval_miss"
+    },
+    {
+      "count": 7,
+      "label": "unsafe_answer"
+    }
+  ],
+  "primary_semantic_verdicts_reused": false,
+  "protected_roles_accessed": false,
+  "quality_threshold_used_for_validity": false,
+  "raw_scoring_report_sha256": "3ff78f4b073234f125a8f9ab7c3074ff1e01662d92bea66d3adb64a6ba3a909c",
+  "receipt_version": "phase5-b0-replication-scoring-receipt-v1",
+  "reconciliation_eligible": true,
+  "release_eligible": false,
+  "replication_executed": true,
+  "replication_execution_receipt_sha256": "e036642fdbb7d3cdc94f179566ffbf48548beecb94643a75f94a91f4316e29d6",
+  "replication_raw_batch_sha256": "fbbdcda93d15331b5d14a646e8c5772049c69085e38e30cdf8520aa127f24fd6",
+  "runtime_configuration_id": "7399c9ef7cd6612eb8fc363602e9c45c74ca691acde257aa40d07cc4135642a2",
+  "runtime_reexecuted": false,
+  "scientific_disposition": "DIAGNOSTIC_SUPPORT",
+  "scoring_commit_sha": "4a5766d84bcf9a74857b04eb98bba870214f6b84",
+  "scoring_performed": true,
+  "scoring_runner_source_sha256": "cde32397bd5fd3abedaf73a8ed4cd5994373f64a654bbd05ae0ba23397b10d38",
+  "semantic_assessment_origin": "fresh_replication_adjudication",
+  "specimen_sha256": "5ce922230e8a09041c7ea6248ee0f4acf412182ee062c6a16a15b65668485986",
+  "tuning_case_count": 18
+}
